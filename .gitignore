@@ -2,4 +2,5 @@ logs/*
 !.gitkeep
 node_modules/
 tmp
+app/css/
 .DS_Store
