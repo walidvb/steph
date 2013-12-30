@@ -1,6 +1,6 @@
 {
   "name": "angularjs-seed",
-  "main": "scripts/we-server.js",
+  "main": "scripts/web-server.js",
   "description": "A starter project for AngularJS",
   "repository": "https://github.com/angular/angular-seed",
   "devDependencies": {
