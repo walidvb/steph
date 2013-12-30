@@ -2,44 +2,44 @@
 
 /* http://docs.angularjs.org/guide/dev_guide.e2e-testing */
 
-describe('my app', function() {
+describe('Blumer Website', function() {
 
   beforeEach(function() {
     browser().navigateTo('app/index.html');
   });
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    expect(browser().location().url()).toBe("/view1");
+  it('should not redirect when location hash/fragment is empty', function() {
+    expect(browser().location().url()).toBe("");
   });
 
 
-  describe('view1', function() {
+  describe('home', function() {
 
     beforeEach(function() {
-      browser().navigateTo('#/view1');
+      browser().navigateTo('#/project/super');
     });
 
+    it('should include the menu, with a project link', function(){
+      expect(element('.navbar li:first').text()).toMatch(/Projects/)
+    })
 
-    it('should render view1 when user navigates to /view1', function() {
-      expect(element('[ng-view] p:first').text()).
-        toMatch(/partial for view 1/);
+    it('should include a list of projects', function(){
+      expect(element('#projects .project').count()).toBeGreaterThan(2);
+    })
+
+    it('should include a list of shows', function(){
+      expect(element('#projects .show').count()).toBeGreaterThan(2);
+    })
+
+    it('should include the bio', function(){
+      expect(element('#bio .bio-line').count()).toBeGreaterThan(2);
     });
+    // it('should render a project when user navigates to /project/super', function() {
+    //   expect(element('[ng-view] .project-title').text()).
+    //     toMatch(/Super/);
+    // });
 
   });
 
-
-  describe('view2', function() {
-
-    beforeEach(function() {
-      browser().navigateTo('#/view2');
-    });
-
-
-    it('should render view2 when user navigates to /view2', function() {
-      expect(element('[ng-view] p:first').text()).
-        toMatch(/partial for view 2/);
-    });
-
-  });
 });
