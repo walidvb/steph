@@ -16,6 +16,16 @@ angular.module('myApp.services', ['ngResource']).
 	factory('Bio', ['$resource',
 		function($resource)
 		{
-			return $resource('data/bio.json');
+			return $resource('data/bio.json', {}, {
+				getData: {method: 'GET', isArray: false}
+			});
 		}
-	]);
+	]).
+	factory('Home', ['$resource', 
+		function($resource)
+		{
+			return $resource('data/theme.json', {}, {
+				getData: {method: 'GET', isArray: false}
+			});
+		}
+		]);

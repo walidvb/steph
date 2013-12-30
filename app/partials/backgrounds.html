@@ -1,0 +1,6 @@
+<div ng-if="background.type == 'img'">
+  <img src='{{background.url}}'>
+</div>
+<div ng-if="background.type == 'video'">
+  <div ng-bind-html='{{background.url}}'></div>
+</div>

@@ -1,0 +1,13 @@
+<div ng-controller='homeCtrl'>
+  <div class='background-img' id='img1' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[0]]'>img1</div>
+  <div ng-controller='projectListCtrl'>
+    <section id='projects' ng-include src="'partials/projectList.html'"></section>
+    <div class='background-img' id='img2' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[1]]'>img2</div>
+    <section id='shows' ng-include src="'partials/showList.html'"></section>
+  </div>
+  <div class='background-img' id='img3' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[2]]'>img3</div>
+  <section id='bio' ng-controller='bioListCtrl' ng-include src="'partials/bio.html'"></section>
+  <div class='background-img' id='img4' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[3]]'>img4</div>
+  <section id='contact' ng-include src="'partials/contact.html'"></section>
+  <div class='background-img' id='img4' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[4]]'>img4</div>
+</div>

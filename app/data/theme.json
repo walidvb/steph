@@ -1,0 +1,26 @@
+{
+	"backgrounds" : [
+	{
+		"url" : "imgs/content/01.jpg",
+		"type" : "img"
+	},
+	{
+		"url" : "imgs/content/02.jpg",
+		"type" : "img"
+
+	},
+	{
+		"url" : "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+		"type" : "video"
+	},
+	{
+		"url" : "<iframe src=\"//player.vimeo.com/video/43105046?title=0&amp;byline=0&amp;portrait=0\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+		"type" : "video"
+
+	},
+	{
+		"url" : "imgs/content/05.jpg",
+		"type" : "img"
+	}
+	]
+}

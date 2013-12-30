@@ -1,0 +1,11 @@
+%div{"ng-controller" => "homeCtrl"}
+	.background-img#img1{"ng-repeat" => "background in [backgrounds[0]]", "ng-include" => "'partials/backgrounds.html'"} img1
+	%div{"ng-controller" => "projectListCtrl"}
+		%section#projects{"ng-include" => true, :src =>"'partials/projectList.html'"}
+		.background-img#img2{"ng-repeat" => "background in [backgrounds[1]]", "ng-include" => "'partials/backgrounds.html'"} img2
+		%section#shows{"ng-include" => true, :src =>"'partials/showList.html'"}
+	.background-img#img3{"ng-repeat" => "background in [backgrounds[2]]", "ng-include" => "'partials/backgrounds.html'"} img3
+	%section#bio{"ng-include" => true, :src =>"'partials/bio.html'", "ng-controller" => "bioListCtrl"}
+	.background-img#img4{"ng-repeat" => "background in [backgrounds[3]]", "ng-include" => "'partials/backgrounds.html'"} img4
+	%section#contact{"ng-include" => true, :src =>"'partials/contact.html'"}
+	.background-img#img4{"ng-repeat" => "background in [backgrounds[4]]", "ng-include" => "'partials/backgrounds.html'"} img4

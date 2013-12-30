@@ -1,0 +1,346 @@
+{
+		"header" : "Born in 1985 in Geneva, CH  Lives and works between Geneva, CH and London, UK",
+		"pdf" : {
+			"title" : "Download pdf version",
+			"url" : "http://steph.com/thepdf.pdf"
+			},
+		"bio" : [
+			{
+				"id" : "41",
+				"date" : "2010-2012",
+				"text" : "Goldsmiths University of London, MA Fine Art",
+				"venue" : "",
+				"location" : "London, UK",
+				"category" : "Education"
+			},
+			{
+				"id" : "40",
+				"date" : "2007-2010",
+				"text" : "Haute &Eacute;cole D&#39;Art et de Design (HEAD), BA Fine Art",
+				"venue" : "",
+				"location" : "Geneva, CH",
+				"category" : "Education"
+			},
+			{
+				"id" : "39",
+				"date" : "2014",
+				"text" : "Pro Helvetia Grant for Research",
+				"venue" : "",
+				"location" : "Shanghai, CN",
+				"category" : "Awards"
+			},
+			{
+				"id" : "38",
+				"date" : "2014",
+				"text" : "Research Residency",
+				"venue" : "The Institute For Provocation (IFP)",
+				"location" : "Beijing, CN",
+				"category" : "Awards"
+			},
+			{
+				"id" : "37",
+				"date" : "2012",
+				"text" : "Fondation H&eacute;l&egrave;ne et Victor Barbour",
+				"venue" : "",
+				"location" : "Geneva, CH",
+				"category" : "Awards"
+			},
+			{
+				"id" : "36",
+				"date" : "2010",
+				"text" : "Rotary Foundation Bursary",
+				"venue" : "",
+				"location" : "Geneva, CH",
+				"category" : "Awards"
+			},
+			{
+				"id" : "35",
+				"date" : "2013",
+				"text" : "(Super)latus",
+				"venue" : "Tivoli Kunsthalle",
+				"location" : "Geneva, CH",
+				"category" : "Solo"
+			},
+			{
+				"id" : "34",
+				"date" : "2012",
+				"text" : "Epi(deixis)",
+				"venue" : "BYCR gallery",
+				"location" : "Milan, IT",
+				"category" : "Solo"
+			},
+			{
+				"id" : "33",
+				"date" : "2012",
+				"text" : "Sweat Dreams",
+				"venue" : "Le Spot",
+				"location" : "Geneva, CH",
+				"category" : "Solo"
+			},
+			{
+				"id" : "32",
+				"date" : "2012",
+				"text" : "Dobra",
+				"venue" : "Flausina",
+				"location" : "Lisbon, PT",
+				"category" : "Solo"
+			},
+			{
+				"id" : "31",
+				"date" : "2013",
+				"text" : "Retrospective",
+				"venue" : "",
+				"location" : "Kerzers, CH",
+				"category" : "Group"
+			},
+			{
+				"id" : "30",
+				"date" : "2013",
+				"text" : "Praga Festival",
+				"venue" : "",
+				"location" : "Figueira da Foz, PT",
+				"category" : "Group"
+			},
+			{
+				"id" : "29",
+				"date" : "2013",
+				"text" : "Waterproof",
+				"venue" : "Urgent Paradise",
+				"location" : "Lausanne, CH",
+				"category" : "Group"
+			},
+			{
+				"id" : "28",
+				"date" : "2013",
+				"text" : "Waterproof",
+				"venue" : "Le 6B Galerie",
+				"location" : "Paris, FR",
+				"category" : "Group"
+			},
+			{
+				"id" : "27",
+				"date" : "2013",
+				"text" : "ArteFiera",
+				"venue" : "BYCR Gallery",
+				"location" : "Bologna, IT",
+				"category" : "Group"
+			},
+			{
+				"id" : "26",
+				"date" : "2013",
+				"text" : "The London Art Fair",
+				"venue" : "La Scatola Gallery",
+				"location" : "London, UK",
+				"category" : "Group"
+			},
+			{
+				"id" : "25",
+				"date" : "2012",
+				"text" : "Preposterous",
+				"venue" : "La Scatola Gallery",
+				"location" : "London, UK",
+				"category" : "Group"
+			},
+			{
+				"id" : "24",
+				"date" : "2012",
+				"text" : "Emoticons",
+				"venue" : "Urban Caprice at House of Saint Barnabas",
+				"location" : "London, UK",
+				"category" : "Group"
+			},
+			{
+				"id" : "23",
+				"date" : "2012",
+				"text" : "Goldsmiths MA final Show",
+				"venue" : "",
+				"location" : "London, UK",
+				"category" : "Group"
+			},
+			{
+				"id" : "22",
+				"date" : "2012",
+				"text" : "Inclusion",
+				"venue" : "The Stone Space",
+				"location" : "London, UK",
+				"category" : "Group"
+			},
+			{
+				"id" : "21",
+				"date" : "2012",
+				"text" : "Jusqu&rsquo;&agrave; &eacute;puisement des stocks / While supply last",
+				"venue" : "Galerie B312",
+				"location" : "Montreal, CA",
+				"category" : "Group"
+			},
+			{
+				"id" : "20",
+				"date" : "2011",
+				"text" : "The Face of the Shape",
+				"venue" : "La Scatola Gallery",
+				"location" : "London, UK",
+				"category" : "Group"
+			},
+			{
+				"id" : "19",
+				"date" : "2011",
+				"text" : "Rathania’s – Ars Similis Casus",
+				"venue" : "Musée Rath",
+				"location" : "Geneva, CH",
+				"category" : "Group"
+			},
+			{
+				"id" : "18",
+				"date" : "2011",
+				"text" : "Slow Forward",
+				"venue" : "The New Gallery London",
+				"location" : "London, UK",
+				"category" : "Group"
+			},
+			{
+				"id" : "17",
+				"date" : "2011",
+				"text" : "The Second Attempt Of Phane Terglo",
+				"venue" : "Lewisham Art House",
+				"location" : "London, UK",
+				"category" : "Group"
+			},
+			{
+				"id" : "16",
+				"date" : "2010",
+				"text" : "Anonymous Drawings – Archive 10",
+				"venue" : "Bl&uuml;tenweiss, Uferhallen / Wedding",
+				"location" : "Berlin, DE",
+				"category" : "Group"
+			},
+			{
+				"id" : "15",
+				"date" : "2010",
+				"text" : "F&ecirc;te de Famille",
+				"venue" : "Villa Dutoit",
+				"location" : "Geneva, CH",
+				"category" : "Group"
+			},
+			{
+				"id" : "14",
+				"date" : "2009",
+				"text" : "Anonymous Drawings n&deg;10",
+				"venue" : "Bl&uuml;tenweiss, Kunstraum Kreuzberg / Bethanien",
+				"location" : "Berlin, DE",
+				"category" : "Group"
+			},
+			{
+				"id" : "13",
+				"date" : "2009",
+				"text" : "Floating Details",
+				"venue" : "La Pinacoth&egrave;que",
+				"location" : "Geneva, CH",
+				"category" : "Group"
+			},
+			{
+				"id" : "12",
+				"date" : "2009",
+				"text" : "Folklore",
+				"venue" : "Villa Dutoit",
+				"location" : "Geneva, CH",
+				"category" : "Group"
+			},
+			{
+				"id" : "11",
+				"date" : "2009",
+				"text" : "Avant-Go&ucirc;t, with Norbert Bisky, curator Christoph Tannert",
+				"venue" : "Live In Your Head",
+				"location" : "Geneva, CH",
+				"category" : "Group"
+			},
+			{
+				"id" : "10",
+				"date" : "2009",
+				"text" : "Les Arts Incoh&eacute;rent",
+				"venue" : "Live In Your Head",
+				"location" : "Geneva, CH",
+				"category" : "Group"
+			},
+			{
+				"id" : "9",
+				"date" : "2013",
+				"text" : "Kritika",
+				"venue" : "Text by Emanuele Beluffi",
+				"location" : "Milan, IT",
+				"category" : "Publications",
+				"url" : "http://www.kritikaonline.com/stephane-blumer-epideixis/"
+			},
+			{
+				"id" : "8",
+				"date" : "2013",
+				"text" : "Artribune",
+				"venue" : "Text by Simone Monsi",
+				"location" : "Milan, IT",
+				"category" : "Publications",
+				"url" : "http://www.artribune.com/2013/02/stephane-blumer-e-lanalisi-del-linguaggio/"
+			},
+			{
+				"id" : "7",
+				"date" : "2013",
+				"text" : "Eternal-Optimist",
+				"venue" : "Text by Tatevik Sargsyan",
+				"location" : "London, UK",
+				"category" : "Publications",
+				"url" : "http://eternal-optimist.com/section/art/interview-stephane-blumer"
+			},
+			{
+				"id" : "6",
+				"date" : "2013",
+				"text" : "Juliet Art Magazine",
+				"venue" : "Interview by Simone Monsi",
+				"location" : "Milan, IT",
+				"category" : "Publications",
+				"url" : "http://julietartmagazine.com/it/stephane-blumer/"
+			},
+			{
+				"id" : "5",
+				"date" : "2012",
+				"text" : "Loud and Quiet Magazine",
+				"venue" : "Photographes by Phil Sharp",
+				"location" : "London, UK",
+				"category" : "Publications",
+				"url" : ""
+			},
+			{
+				"id" : "4",
+				"date" : "2011",
+				"text" : "The Face of The Shape (catalogue)",
+				"venue" : "La Scatola Gallery",
+				"location" : "London, UK",
+				"category" : "Publications",
+				"url" : ""
+			},
+			{
+				"id" : "3",
+				"date" : "2009",
+				"text" : "Avant-Go&ucirc;t (catalogue)",
+				"venue" : "Text by Christoph Tannert and Jean-Pierre Greff",
+				"location" : "Geneva, CH",
+				"category" : "Publications",
+				"url" : ""
+			},
+			{
+				"id" : "2",
+				"date" : "2009",
+				"text" : "Avant-Go&ucirc;t (Multiples)",
+				"venue" : "Limited Edition, with Norbert Bisky",
+				"location" : "Geneva, CH",
+				"category" : "Publications",
+				"url" : ""
+			},
+			{
+				"id" : "1",
+				"date" : "2009",
+				"text" : "Etumag n&deg;36",
+				"venue" : "Text by Alexandre Varela",
+				"location" : "Geneva, CH",
+				"category" : "Publications",
+				"url" : "http://www.etumag.ch/cms/etumag/036/stephane_blumer_students_art"
+			}
+		]
+}

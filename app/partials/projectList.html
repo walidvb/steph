@@ -1,0 +1,6 @@
+<ul class='project-list'>
+  <li class='project' ng-repeat="project in projects | filter: {type: 'project'}">
+    <div class='project-title'>{{project.title}}</div>
+    <img class='project-img' ng-src='{{project.thumb}}'>
+  </li>
+</ul>
