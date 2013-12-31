@@ -23,5 +23,6 @@ angular.module('myApp.controllers', []).
   controller('homeCtrl', ['$scope', 'Home', function($scope, Home) {
     Home.get(function(data){
       $scope.backgrounds = data.backgrounds;
+      $scope.test = {url: 'test', type: 'img'};
     })
   }]);

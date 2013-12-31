@@ -1,5 +1,5 @@
-%div{"ng-if" => "background.type == 'img'"}
-	%img{:src => "{{background.url}}"}
-%div{"ng-if" => "background.type == 'video'"}
-	%div{"ng-bind-html" => '{{background.url}}'}
+{{background}}{{test}}
+%div{"ng-if" => "background.type == 'img'", :style => "background-image:url('{{background.url}}')"} 
+/ %div{"ng-if" => "background.type == 'video'"}
+/ 	%div{"ng-bind-html" => "{{background.url}}"}
 

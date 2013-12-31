@@ -3,9 +3,11 @@
   %head
     %meta{:charset => "utf-8"}/
     %title Stéphane Blumer
-    %link{:href => "css/app.css", :rel => "stylesheet"}/
+    %link{:href => "css/app.css", :rel => "stylesheet"}
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    /%script{:src => "js/script.js"}
+
   %body
-    %div{"ng-include" => true, :src => "'partials/menu.html'"}
     %div{"ng-view" => true}
 
     -#%script{:src => "//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"}
