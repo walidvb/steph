@@ -1,0 +1,7 @@
+<ul class='show-list'>
+  <li class='show' ng-repeat="project in projects | filter: {type: 'show'}">
+    <span class='show-title'>{{project.title}}</span>
+    <span class='show-location'>{{project.location}}</span>
+    <span class='show-year'>{{project.date}}</span>
+  </li>
+</ul>

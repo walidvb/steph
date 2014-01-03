@@ -1,0 +1,4 @@
+%ul.project-list
+	%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'}"}
+		.project-title {{project.title}}
+		%img.project-img{"ng-src" => "{{project.thumb}}"}

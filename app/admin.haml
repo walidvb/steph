@@ -1,0 +1,21 @@
+!!!
+%html{:lang => "en", "ng-app" => "myApp"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Stéphane Blumer | Admin
+    %link{:href => "css/app.css", :rel => "stylesheet"}
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    /%script{:src => "js/script.js"}
+
+  %body
+    %div{"ng-view" => true}
+
+    -#%script{:src => "//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"}
+    %script{:src => "lib/angular/angular.js"}
+    %script{:src => "lib/angular/angular-route.js"}
+    %script{:src => "lib/angular/angular-resource.js"}
+    %script{:src => "js/appAdmin.js"}
+    %script{:src => "js/services.js"}
+    %script{:src => "js/controllersAdmin.js"}
+    %script{:src => "js/filters.js"}
+    %script{:src => "js/directivesAdmin.js"}

@@ -1,11 +1,11 @@
 {
 	"backgrounds" : [
 	{
-		"url" : "imgs/content/01.jpg",
+		"url" : "img/content/01.jpg",
 		"type" : "img"
 	},
 	{
-		"url" : "imgs/content/02.jpg",
+		"url" : "img/content/02.jpg",
 		"type" : "img"
 
 	},
@@ -19,7 +19,7 @@
 
 	},
 	{
-		"url" : "imgs/content/05.jpg",
+		"url" : "img/content/05.jpg",
 		"type" : "img"
 	}
 	]
