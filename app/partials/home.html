@@ -1,18 +1,18 @@
 <div id='home' ng-controller='homeCtrl'>
-  <div background-props='{{test}}' class='background-img' my-background-img test='ho'></div>
+  <div background-props='backgrounds[0]' class='background-img' my-background-img></div>
   <div fixed-menu id='menu' ng-include src="'partials/menu.html'"></div>
   <div ng-controller='projectListCtrl'>
     <section id='projects' ng-include src="'partials/projectList.html'"></section>
     <my-background-img src='{{backgrounds[1].src}}'></my-background-img>
-    <div class='background-img' id='img2' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[1]]'>img2</div>
+    <div background-props='backgrounds[1]' class='background-img' my-background-img></div>
     <section id='shows' ng-include src="'partials/showList.html'"></section>
   </div>
-  <div class='background-img' id='img3' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[2]]'>img3</div>
+  <div background-props='backgrounds[2]' class='background-img' my-background-img></div>
   <my-background-img index='2'></my-background-img>
   <section id='bio' ng-controller='bioListCtrl' ng-include src="'partials/bio.html'"></section>
   <my-background-img index='3'></my-background-img>
-  <div class='background-img' id='img4' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[3]]'>img4</div>
+  <div background-props='backgrounds[3]' class='background-img' my-background-img></div>
   <section id='contact' ng-include src="'partials/contact.html'"></section>
-  <my-background-img index='4'></my-background-img>
+  <div background-props='backgrounds[4]' class='background-img' my-background-img></div>
   <div class='background-img' id='img4' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[4]]'>img4</div>
 </div>

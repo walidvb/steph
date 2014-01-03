@@ -35,8 +35,8 @@ directive('fixedMenu', function(){
 			}).
 			on('resize', function(){
 				menu_pos = $(elem).offset().top;
-				menu_height = $(elem).height();
-				oldPadding = $(body).css('paddingTop');
+				menu_height = $(elem).outerHeight(true);
+				oldPadding = $('body').css('paddingTop');
 			});
 		}
 	}
@@ -46,7 +46,7 @@ directive('myBackgroundImg', function(){
 		restrict: 'AE',
 		templateUrl: "partials/backgrounds.html",
 		scope: {
-			background: "=backgroundprops",
+			background: "=backgroundProps",
 			test: "=",
 		},
 		link: function(scope, elem, attrs){
