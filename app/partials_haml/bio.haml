@@ -1,9 +1,51 @@
 .bio-header {{header}}
 %ul.bio-list
-	%li.bio{"ng-repeat" => "line in bio"}
-		%span.bio-date {{line.date}}
-		%span.bio-title {{line.text}}
-		%span.bio-location {{line.location}}
-		%span.bio-venue {{line.venue}}
+	%li{"ng-repeat" => "(category, experiences) in bio"}
+		%h3 {{category}}
+		%ul
+			/If it's an array, ie if it's not the later experiences
+			%li{"ng-repeat"=>"exp in experiences"}
+				%span.bio-date {{exp.date}}
+				%span.bio-title {{exp.text}}
+				%span.bio-location {{exp.location}}
+				%span.bio-venue {{exp.venue}}
+	%li
+		%h3 Selected Exhibitions
+		%ul
+			%li{"ng-repeat" => "(year, exp) in experience"}
+				.bio-year {{year}} 
+				%ul
+					%li{"ng-repeat" => "line in exp"} 
+						%span.bio-title {{line.text}}
+						%span.bio-location {{line.location}}
+						%span.bio-venue {{line.venue}}
+/ %ul.bio-list
+/ 	%li.bio-education
+/ 		%h3.bio-title Education
+/ 		%ul
+/ 			%li.bio{"ng-repeat" => "school in education"}
+/ 				%span.bio-date {{exp.date}}
+/ 				%span.bio-title {{exp.text}}
+/ 				%span.bio-location {{exp.location}}
+/ 				%span.bio-venue {{exp.venue}}
+/ 	%li.bio-awards
+/ 	%li.bio-list-exp
+/ 		%ul
+/ 			%li.bio{"ng-repeat" => "exp in experience"}
+/ 				%span.bio-date {{exp.date}}
+/ 				%span.bio-title {{exp.text}}
+/ 				%span.bio-location {{exp.location}}
+/ 				%span.bio-venue {{exp.venue}}
 		
 %a.bio-pdf{:href => "{{pdf.url}}"} {{pdf.title}}
+
+
+
+/ <div data-ng-repeat="(group, users) in groupedFriends">
+/     <h2>{{group}}</h2>        
+/     <ul>
+/         <li data-ng-repeat="user in users">
+/             {{ user.name }}
+/         </li>
+/     </ul>
+/ </div>

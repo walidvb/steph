@@ -39,6 +39,7 @@ function HttpServer(handlers) {
 }
 
 HttpServer.prototype.start = function(port) {
+  port = process.env.PORT || port;
   this.port = port;
   this.server.listen(port);
   util.puts('Http Server running at http://localhost:' + port + '/');

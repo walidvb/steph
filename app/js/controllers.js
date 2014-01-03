@@ -15,9 +15,22 @@ angular.module('myApp.controllers', []).
   }]).
   controller('bioListCtrl', ['$scope', 'Bio', function($scope, Bio) {
     Bio.get(function(data){
+      var category = 'category';
     	$scope.header = data.header;
-    	$scope.bio = data.bio;
     	$scope.pdf = data.pdf;
+      var bio = _.groupBy(data.bio, category);
+      var experiences = bio.Solo.concat(bio.Group);
+      var groupedExp = _.groupBy(experiences, "date");
+      $scope.bio = {};
+      $scope.bio.Awards = bio.Awards;
+      $scope.bio.Education = bio.Education;
+
+      var years = new Array();
+      angular.forEach(groupedExp, function(year, experiences){
+        var currentYear = {}
+      });
+      delete $scope.bio.Solo;
+      delete $scope.bio.Group;
     });
   }]).
   controller('homeCtrl', ['$scope', 'Home', function($scope, Home) {
