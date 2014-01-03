@@ -2,17 +2,16 @@
 	.background-img{"my-background-img" => true, "background-props" => "backgrounds[0]"}
 	#menu{"ng-include" => true, :src => "'partials/menu.html'", "fixed-menu" => true}
 	%div{"ng-controller" => "projectListCtrl"}
-		%section#projects{"ng-include" => true, :src =>"'partials/projectList.html'"}
+		%section#projects.work-list.row{"ng-include" => true, :src =>"'partials/projectList.html'"}
 		%my-background-img{"src" => "{{backgrounds[1].src}}"}
 		.background-img{"my-background-img" => true, "background-props" => "backgrounds[1]"}
-		%section#shows{"ng-include" => true, :src =>"'partials/showList.html'"}
+		%section#shows.row{"ng-include" => true, :src =>"'partials/showList.html'"}
 	.background-img{"my-background-img" => true, "background-props" => "backgrounds[2]"}
 	%my-background-img{"index" => "2"}
 
-	%section#bio{"ng-include" => true, :src =>"'partials/bio.html'", "ng-controller" => "bioListCtrl"}
-	%my-background-img{"index" => "3"}
+	%section#bio.row{"ng-include" => true, :src =>"'partials/bio.html'", "ng-controller" => "bioListCtrl"}
 	.background-img{"my-background-img" => true, "background-props" => "backgrounds[3]"}
-	%section#contact{"ng-include" => true, :src =>"'partials/contact.html'"}
+	%section#contact.row{"ng-include" => true, :src =>"'partials/contact.html'"}
 	.background-img{"my-background-img" => true, "background-props" => "backgrounds[4]"}
 
 	.background-img#img4{"ng-repeat" => "background in [backgrounds[4]]", "ng-include" => "'partials/backgrounds.html'"} img4

@@ -1,6 +1,10 @@
 <ul class='project-list'>
-  <li class='project' ng-repeat="project in projects | filter: {type: 'project'}">
-    <div class='project-title'>{{project.title}}</div>
-    <img class='project-img' ng-src='{{project.thumb}}'>
+  <li class='project' ng-repeat="project in projects | filter: {type: 'project'}" style="background-image: url('{{project.thumb}}')">
+    <a class='project-details' ng-href='{{project.title}}'>
+      <span class='project-title'>{{project.title}}</span>
+      ·
+      <span class='project-date'>{{project.date}}</span>
+      <span class='project-medium'>{{project.medium}}</span>
+    </a>
   </li>
 </ul>

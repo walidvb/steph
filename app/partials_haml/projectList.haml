@@ -1,4 +1,7 @@
 %ul.project-list
-	%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'}"}
-		.project-title {{project.title}}
-		%img.project-img{"ng-src" => "{{project.thumb}}"}
+	%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'}", :style => "background-image: url('{{project.thumb}}')"}
+		%a.project-details{"ng-href" => "{{project.title}}"}
+			%span.project-title {{project.title}}
+			·
+			%span.project-date {{project.date}}
+			%span.project-medium {{project.medium}}

@@ -1,3 +1,4 @@
 <div ng-if="background.type == 'img'" style="background-image:url('{{background.url}}')"></div>
-<!-- %div{"ng-if" => "background.type == 'video'"} -->
-<!-- %div{"ng-bind-html" => "{{background.url}}"} -->
+<div ng-if="background.type == 'video'">
+  <div ng-bind-html='{{background.url}}'></div>
+</div>
