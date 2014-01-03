@@ -5955,12 +5955,6 @@ td.visible-print {
     display: none !important;
   }
 }
-[ng-click] {
-  cursor: pointer;
-}
-ul {
-  margin: 0;
-}
 body {
   color: #494949;
   background: #ffffff;
@@ -6036,6 +6030,7 @@ a:hover {
 #shows li {
   line-height: 3.4;
   border-top: solid 1px #494949;
+  border-bottom: solid 1px #494949;
 }
 #shows li a {
   min-width: 100%;

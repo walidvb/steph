@@ -41,14 +41,9 @@ directive('fixedMenu', function(){
 		}
 	}
 }).
-directive('myBackgroundImg', function(){
+directive('myEditable', function(){
 	return {
-		restrict: 'AE',
 		templateUrl: "partials/backgrounds.html",
-		scope: {
-			background: "=backgroundprops",
-			test: "=",
-		},
 		link: function(scope, elem, attrs){
 			$(elem).height($(window).height()-$('#menu').height());
 		}
