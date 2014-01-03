@@ -1,17 +1,15 @@
 <div id='home' ng-controller='homeCtrl'>
-  <div background-props='backgrounds[0]' class='background-img' my-background-img></div>
+  <div background-props='backgrounds[0]' class='background-img' my-background-img my-fullscreen></div>
   <div fixed-menu id='menu' ng-include src="'partials/menu.html'"></div>
+  <div background-props='backgrounds[1]' class='background-img' my-background-img my-fullscreen></div>
   <div ng-controller='projectListCtrl'>
     <section class='work-list row' id='projects' ng-include src="'partials/projectList.html'"></section>
-    <my-background-img src='{{backgrounds[1].src}}'></my-background-img>
-    <div background-props='backgrounds[1]' class='background-img' my-background-img></div>
+    <div background-props='backgrounds[2]' class='background-img' my-background-img my-fullscreen></div>
     <section class='row' id='shows' ng-include src="'partials/showList.html'"></section>
   </div>
-  <div background-props='backgrounds[2]' class='background-img' my-background-img></div>
-  <my-background-img index='2'></my-background-img>
+  <div background-props='backgrounds[3]' class='background-img' my-background-img my-fullscreen></div>
   <section class='row' id='bio' ng-controller='bioListCtrl' ng-include src="'partials/bio.html'"></section>
-  <div background-props='backgrounds[3]' class='background-img' my-background-img></div>
-  <section class='row' id='contact' ng-include src="'partials/contact.html'"></section>
-  <div background-props='backgrounds[4]' class='background-img' my-background-img></div>
-  <div class='background-img' id='img4' ng-include="'partials/backgrounds.html'" ng-repeat='background in [backgrounds[4]]'>img4</div>
+  <div background-props='backgrounds[4]' class='background-img' my-background-img my-fullscreen></div>
+  <section class='row' id='contact' my-fullscreen ng-include src="'partials/contact.html'"></section>
+  <div background-props='backgrounds[0]' class='background-img' my-background-img my-fullscreen></div>
 </div>

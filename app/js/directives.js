@@ -41,6 +41,11 @@ directive('fixedMenu', function(){
 		}
 	}
 }).
+directive('myFullscreen', function(){
+	return function(scope, elem, attrs){
+			$(elem).height($(window).height()-$('#menu').height());
+		}
+}).
 directive('myBackgroundImg', function(){
 	return {
 		restrict: 'AE',
@@ -48,9 +53,6 @@ directive('myBackgroundImg', function(){
 		scope: {
 			background: "=backgroundProps",
 			test: "=",
-		},
-		link: function(scope, elem, attrs){
-			$(elem).height($(window).height()-$('#menu').height());
 		}
 	}
 });
