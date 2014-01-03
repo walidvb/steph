@@ -1,6 +1,55 @@
-<ul class='project-list'>
-  <li class='project' ng-repeat="project in projects | filter: {type: 'project'}">
-    <div class='project-title'>{{project.title}}</div>
-    <img class='project-img' ng-src='{{project.thumb}}'>
-  </li>
-</ul>
+<div class='column left-col col-sm-4 list'>
+  <ul class='project-list'>
+    <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | filter: {type: 'project'} | orderBy:'date'">
+      <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.date}})</a>
+    </li>
+    <li class='project add-new'>
+      <span class='glyphicon glyphicon-plus'></span>
+      <span ng-click='addProject();'>Add Project</span>
+    </li>
+  </ul>
+</div>
+<div class='column right-col col-sm-8 details'>
+  <div class='project-title'>
+    <h2>
+      <a editable-text='activeProject.title' href='#'>{{activeProject.title}}</a>
+      details
+    </h2>
+    (
+    <a editable-text='activeProject.url' href='#'>/project/{{activeProject.url || "url"}}</a>
+    )
+  </div>
+  <div class='field-list project-details'>
+    <div class='field project-date'>
+      <span class='field-title'>Date:</span>
+      <a editable-text='activeProject.date' href='#'>{{activeProject.date || "Date"}}</a>
+    </div>
+    <div class='field project-medium'>
+      <span class='field-title'>Medium:</span>
+      <a editable-text='activeProject.medium' href='#'>{{activeProject.medium || "medium"}}</a>
+    </div>
+    <div class='field project-thumb'>
+      <span class='field-title'>Thumbnail:</span>
+      <a editable-text='activeProject.thumb'>
+        <img class='project-thumb' ng-src='{{activeProject.thumb}}'>
+      </a>
+    </div>
+    <div class='field project-slides'>
+      <span class='field-title'>Slides:</span>
+      <ul>
+        <li class='project-slide' ng-repeat='slide in activeProject.slides'>
+          <select class='project-slide-type' ng-model='slide.type' ng-options='option for option in slideOptions'></select>
+          <div ng-if="slide.type == 'img'">
+            <a editable-textarea='slide.legend' href='#'>{{slide.legend || "legend"}}</a>
+            <img class='project-slide-img' editable-text='activeProject.slide' ng-src='{{slide.url}}'>
+          </div>
+          <div ng-if="slide.type == 'html'">
+            <a editable-textarea='slide.body' href='#' ng-bind-html='{{$sce.trustAsHtml(slide.body)}}'>{{slide.body || "Code html"}}</a>
+          </div>
+        </li>
+        <button class='btn' ng-click='addSlide(activeProject.slides)'>Add slide</button>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- .result {{projects | json}} -->

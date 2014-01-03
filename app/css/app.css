@@ -2267,8 +2267,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('../lib/bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('../lib/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../lib/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../lib/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../lib/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5955,6 +5955,12 @@ td.visible-print {
     display: none !important;
   }
 }
+[ng-click] {
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+}
 body {
   color: #494949;
   background: #ffffff;
@@ -6030,7 +6036,6 @@ a:hover {
 #shows li {
   line-height: 3.4;
   border-top: solid 1px #494949;
-  border-bottom: solid 1px #494949;
 }
 #shows li a {
   min-width: 100%;

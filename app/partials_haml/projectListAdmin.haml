@@ -1,4 +1,41 @@
-%ul.project-list
-	%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'}"}
-		.project-title {{project.title}}
-		%img.project-img{"ng-src" => "{{project.thumb}}"}
+.column.left-col.col-sm-4.list
+	%ul.project-list
+		%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'} | orderBy:'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active}"}
+			%a.project-title{:href => "#", "ng-click" => "$event.preventDefault()"} {{project.title}} ({{project.date}})
+		%li.project.add-new
+			%span.glyphicon.glyphicon-plus
+			%span{"ng-click" => "addProject();"} Add Project
+
+
+
+.column.right-col.col-sm-8.details
+	.project-title
+		%h2
+			%a{"editable-text" => "activeProject.title", :href => "#"} {{activeProject.title}} 
+			details
+		(
+		%a{"editable-text" => "activeProject.url", :href => "#"} /project/{{activeProject.url || "url"}}
+		)
+	.field-list.project-details
+		.field.project-date
+			%span.field-title Date: 
+			%a{"editable-text" => "activeProject.date", :href => "#"} {{activeProject.date || "Date"}}
+		.field.project-medium
+			%span.field-title Medium: 
+			%a{"editable-text" => "activeProject.medium", :href => "#"} {{activeProject.medium || "medium"}}
+		.field.project-thumb
+			%span.field-title Thumbnail:
+			%a{"editable-text" => "activeProject.thumb"}
+				%img.project-thumb{"ng-src" => "{{activeProject.thumb}}"}
+		.field.project-slides
+			%span.field-title Slides:
+			%ul
+				%li.project-slide{"ng-repeat" => "slide in activeProject.slides"}
+					%select.project-slide-type{"ng-model" => "slide.type", "ng-options" => "option for option in slideOptions"}
+					%div{"ng-if" => "slide.type == 'img'"}
+						%a{"editable-textarea" => "slide.legend", :href => "#"} {{slide.legend || "legend"}}
+						%img.project-slide-img{"ng-src" => "{{slide.url}}", "editable-text" => "activeProject.slide"}
+					%div{"ng-if" => "slide.type == 'html'"}
+						%a{"editable-textarea" => "slide.body", :href => "#", "ng-bind-html" => "{{$sce.trustAsHtml(slide.body)}}"} {{slide.body || "Code html"}}
+				%button.btn{"ng-click" => "addSlide(activeProject.slides)"} Add slide
+/.result {{projects | json}}

@@ -15,7 +15,7 @@
   <li>
     <h3>Selected Exhibitions</h3>
     <ul>
-      <li ng-repeat='(year, exp) in experience'>
+      <li ng-repeat='(year, exp) in experience | orderBy:reverse'>
         <div class='bio-year'>{{year}}</div>
         <ul>
           <li ng-repeat='line in exp'>

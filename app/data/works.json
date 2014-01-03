@@ -2,8 +2,8 @@
 {
 	"type" : "project",
 	"id" : "2",
-	"id_readable" : "superlatus Project",
-	"date" : "2013",
+	"url" : "superlatus Project",
+	"date" : "2012",
 	"title": "(Super)latus proj",
 	"category" :"video",
 	"medium":"HD videos, 5 minutes",
@@ -16,18 +16,18 @@
 		"body" : "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 		},
 		{
-			"type" : "image",
-			"url" : "img/superlatus/01.jpg",
+			"type" : "img",
+			"url" : "img/projects/superlatus/01.jpg",
 			"legend" : "Still from the work (Super)latus, 2013"
 		}
 		]
 
 	},
 	{
-		"type" : "show",
+		"type" : "project",
 		"id" : "1",
-		"id_readable" : "superlatus2",
-		"date" : "2013",
+		"url" : "superlatus2",
+		"date" : "2011",
 		"title": "(Super)latus show",
 		"category" :"video",
 		"medium":"HD videos, 5 minutes",
@@ -40,8 +40,8 @@
 			"body" : "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 			},
 			{
-				"type" : "image",
-				"url" : "img/superlatus/01.jpg",
+				"type" : "img",
+				"url" : "img/projects/superlatus/01.jpg",
 				"legend" : "Still from the work (Super)latus, 2013"
 			}
 			]
