@@ -51,10 +51,16 @@ angular.module('myApp.controllers', []).
       $scope.bio.Awards = bio.Awards;
       $scope.bio.Education = bio.Education;
 
-      var years = new Array();
-      angular.forEach(groupedExp, function(year, experiences){
-        var currentYear = {}
-      });
+      var years = [];
+      angular.forEach(groupedExp, function(exp, yearIndex){
+        var year = {
+          year: yearIndex,
+          experiences: exp,
+        }
+        years.push(year);
+      })
+      $scope.Experiences = years;
+      
       delete $scope.bio.Solo;
       delete $scope.bio.Group;
     });

@@ -1,11 +1,11 @@
 <div class='column left-col col-sm-4 list'>
   <ul class='project-list'>
-    <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | filter: {type: 'project'} | orderBy:'date'">
-      <a class='project-title' hrsef='#' ng-clicak='$event.preventDefault()'>{{project.title}} ({{project.date | date:'MM.yyyy'}})</a>
-    </li>
     <li class='project add-new'>
       <span class='glyphicon glyphicon-plus'></span>
       <span ng-click='addProject();'>Add Project</span>
+    </li>
+    <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | filter: {type: 'project'} | orderBy:'date'">
+      <a class='project-title' hrsef='#' ng-clicak='$event.preventDefault()'>{{project.title}} ({{project.date | date:'MM.yyyy'}})</a>
     </li>
   </ul>
 </div>

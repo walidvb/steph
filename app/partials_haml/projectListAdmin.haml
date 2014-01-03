@@ -1,12 +1,10 @@
 .column.left-col.col-sm-4.list
 	%ul.project-list
-		%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'} | orderBy:'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active}"}
-			%a.project-title{:hrsef => "#", "ng-clicak" => "$event.preventDefault()"} {{project.title}} ({{project.date | date:'MM.yyyy'}})
 		%li.project.add-new
 			%span.glyphicon.glyphicon-plus
 			%span{"ng-click" => "addProject();"} Add Project
-
-
+		%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'} | orderBy:'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active}"}
+			%a.project-title{:hrsef => "#", "ng-clicak" => "$event.preventDefault()"} {{project.title}} ({{project.date | date:'MM.yyyy'}})
 
 .column.right-col.col-sm-8.details
 	.project-title

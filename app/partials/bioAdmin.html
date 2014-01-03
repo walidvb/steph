@@ -1,8 +1,48 @@
-<a class='bio-header' editable-text='header' href='#'>{{header}}</a>
-<a class='bio-pdf' editable-text='pdf.title' href='#'>{{pdf.title}}</a>
-<li class='bio' ng-repeat='line in bio'>
-  <span class='bio-date'>{{line.date}}</span>
-  <span class='bio-title'>{{line.text}}</span>
-  <span class='bio-location'>{{line.location}}</span>
-  <span class='bio-venue'>{{line.venue}}</span>
-</li>
+<div class='bio-header field'>
+  <span class='field-title'>Header:</span>
+  <a editable-text='header' href='#'>{{header}}</a>
+</div>
+<div class='bio-pdf field'>
+  <span class='field-title'>Text to pdf:</span>
+  <a class='bio-pdf' editable-text='pdf.title' href='#'>{{pdf.title}}</a>
+  <span class='field-title'>Url to pdf:</span>
+  <a class='bio-pdf' editable-text='pdf.url' href='#'>{{pdf.url}}</a>
+</div>
+<ul class='bio-list'>
+  <li ng-repeat='(category, experiences) in bio'>
+    <h3>{{category}}</h3>
+    <ul>
+      <!-- If it's an array, ie if it's not the later experiences -->
+      <li ng-repeat="exp in experiences  | orderBy:'-date'">
+        <span class='bio-date' e-datepicker-popup='MM.yyyy' editable-bsdate='exp.date'>{{exp.date}}</span>
+        |
+        <span class='bio-title' editable-text='exp.text'>{{exp.text}}</span>
+        |
+        <span class='bio-location' editable-text='exp.location'>{{exp.location}}</span>
+        |
+        <span class='bio-venue' editable-text='exp.venue'>{{exp.venue}}</span>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h3>Selected Exhibitions</h3>
+    <ul>
+      <li ng-repeat="year in Experiences | orderBy:'-year'">
+        <div class='bio-year'>{{year.year}}</div>
+        <ul>
+          <li ng-repeat="line in year.experiences | orderBy:'-date'">
+            <span class='bio-year' e-datepicker-popup='MM.yyyy' editable-bsdate='line.date'>{{line.date}}</span>
+            |
+            <span class='bio-title' editable-text='line.text'>{{line.text}}</span>
+            |
+            <span class='bio-location' editable-text='line.location'>{{line.location}}</span>
+            |
+            <span class='bio-venue' editable-text='line.venue'>{{line.venue}}</span>
+            |
+            <span class='bio-url' editable-text='line.url'>{{line.url}}</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
