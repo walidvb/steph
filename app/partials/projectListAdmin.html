@@ -1,7 +1,7 @@
 <div class='column left-col col-sm-4 list'>
   <ul class='project-list'>
     <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | filter: {type: 'project'} | orderBy:'date'">
-      <a class='project-title' hrsef='#' ng-clicak='$event.preventDefault()'>{{project.title}} ({{project.date}})</a>
+      <a class='project-title' hrsef='#' ng-clicak='$event.preventDefault()'>{{project.title}} ({{project.date | date:'MM.yyyy'}})</a>
     </li>
     <li class='project add-new'>
       <span class='glyphicon glyphicon-plus'></span>
@@ -22,7 +22,11 @@
   <div class='field-list project-details'>
     <div class='field project-date'>
       <span class='field-title'>Date:</span>
-      <a editable-text='activeProject.date' href='#'>{{activeProject.date || "Date"}}</a>
+      <a e-datepicker-popup='MM.yyyy' editable-bsdate='activeProject.date' href='#'>{{(activeProject.date || "Date") | date:'MM.yyyy'}}</a>
+    </div>
+    <div class='field project-medium'>
+      <span class='field-title'>Category:</span>
+      <a editable-text='activeProject.category' href='#'>{{activeProject.category || "category"}}</a>
     </div>
     <div class='field project-medium'>
       <span class='field-title'>Medium:</span>

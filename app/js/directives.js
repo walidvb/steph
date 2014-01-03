@@ -38,6 +38,7 @@ directive('fixedMenu', ['$timeout', function(timer){
 					menu_pos = $(elem).offset().top;
 					menu_height = $(elem).outerHeight(true);
 					oldPadding = $('body').css('paddingTop');
+					fixMenu();
 				});
 			};
 			timer(fixIt, 0);
@@ -48,9 +49,9 @@ directive('myFullscreen', ['$timeout', function(timer){
 	return function(scope, elem, attrs){
 		var setSize = function() {$(elem).height($(window).height()-$('#menu').height())};
 		$(window).on('scroll resize', function()
-				{
-					setSize();
-				})
+		{
+			setSize();
+		});
 		timer(setSize, 0);
 	}
 }]).

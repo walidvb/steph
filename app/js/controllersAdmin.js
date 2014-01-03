@@ -8,7 +8,7 @@ angular.module('myApp.controllers', []).
   // projects = Projects.query();
   // projectID = $routeParams.projectID
   // project = $filter('filter')();
- //   $scope.project = project;
+ //  $scope.project = project;
   }]).
   controller('projectListCtrl', ['$scope', 'Projects', function($scope, Projects) {
     $scope.projects = Projects.query();

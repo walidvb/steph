@@ -30,14 +30,6 @@
 				"category" : "Awards"
 			},
 			{
-				"id" : "38",
-				"date" : "2014",
-				"text" : "Research Residency",
-				"venue" : "The Institute For Provocation (IFP)",
-				"location" : "Beijing, CN",
-				"category" : "Awards"
-			},
-			{
 				"id" : "37",
 				"date" : "2012",
 				"text" : "Fondation H&eacute;l&egrave;ne et Victor Barbour",
@@ -51,6 +43,14 @@
 				"text" : "Rotary Foundation Bursary",
 				"venue" : "",
 				"location" : "Geneva, CH",
+				"category" : "Awards"
+			},
+			{
+				"id" : "38",
+				"date" : "2014",
+				"text" : "Research Residency",
+				"venue" : "The Institute For Provocation (IFP)",
+				"location" : "Beijing, CN",
 				"category" : "Awards"
 			},
 			{

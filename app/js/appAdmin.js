@@ -8,7 +8,8 @@ angular.module('myApp', [
   'myApp.services',
   'myApp.directives',
   'myApp.controllers',
-  'xeditable'
+  'xeditable',
+  'ui.bootstrap'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/projects', {templateUrl: 'partials/projectListAdmin.html', controller: 'projectListCtrl'});

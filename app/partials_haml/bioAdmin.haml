@@ -1,9 +1,8 @@
-.bio-header {{header}}
-%ul.bio-list
-	%li.bio{"ng-repeat" => "line in bio"}
-		%span.bio-date {{line.date}}
-		%span.bio-title {{line.text}}
-		%span.bio-location {{line.location}}
-		%span.bio-venue {{line.venue}}
+%a.bio-header{"editable-text" => "header", :href => "#"} {{header}}
+%a.bio-pdf{"editable-text" => "pdf.title", :href => "#"} {{pdf.title}}
+%li.bio{"ng-repeat" => "line in bio"}
+	%span.bio-date {{line.date}}
+	%span.bio-title {{line.text}}
+	%span.bio-location {{line.location}}
+	%span.bio-venue {{line.venue}}
 		
-%a.bio-pdf{:href => "{{pdf.url}}"} {{pdf.title}}

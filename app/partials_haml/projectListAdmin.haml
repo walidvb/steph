@@ -1,7 +1,7 @@
 .column.left-col.col-sm-4.list
 	%ul.project-list
 		%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'} | orderBy:'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active}"}
-			%a.project-title{:hrsef => "#", "ng-clicak" => "$event.preventDefault()"} {{project.title}} ({{project.date}})
+			%a.project-title{:hrsef => "#", "ng-clicak" => "$event.preventDefault()"} {{project.title}} ({{project.date | date:'MM.yyyy'}})
 		%li.project.add-new
 			%span.glyphicon.glyphicon-plus
 			%span{"ng-click" => "addProject();"} Add Project
@@ -19,7 +19,10 @@
 	.field-list.project-details
 		.field.project-date
 			%span.field-title Date: 
-			%a{"editable-text" => "activeProject.date", :href => "#"} {{activeProject.date || "Date"}}
+			%a{"editable-bsdate" => "activeProject.date", "e-datepicker-popup" =>"MM.yyyy", :href => "#"} {{(activeProject.date || "Date") | date:'MM.yyyy'}}
+		.field.project-medium
+			%span.field-title Category: 
+			%a{"editable-text" => "activeProject.category", :href => "#"} {{activeProject.category || "category"}}
 		.field.project-medium
 			%span.field-title Medium: 
 			%a{"editable-text" => "activeProject.medium", :href => "#"} {{activeProject.medium || "medium"}}

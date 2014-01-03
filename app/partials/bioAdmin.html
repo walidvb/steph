@@ -1,10 +1,8 @@
-<div class='bio-header'>{{header}}</div>
-<ul class='bio-list'>
-  <li class='bio' ng-repeat='line in bio'>
-    <span class='bio-date'>{{line.date}}</span>
-    <span class='bio-title'>{{line.text}}</span>
-    <span class='bio-location'>{{line.location}}</span>
-    <span class='bio-venue'>{{line.venue}}</span>
-  </li>
-</ul>
-<a class='bio-pdf' href='{{pdf.url}}'>{{pdf.title}}</a>
+<a class='bio-header' editable-text='header' href='#'>{{header}}</a>
+<a class='bio-pdf' editable-text='pdf.title' href='#'>{{pdf.title}}</a>
+<li class='bio' ng-repeat='line in bio'>
+  <span class='bio-date'>{{line.date}}</span>
+  <span class='bio-title'>{{line.text}}</span>
+  <span class='bio-location'>{{line.location}}</span>
+  <span class='bio-venue'>{{line.venue}}</span>
+</li>

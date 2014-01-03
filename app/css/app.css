@@ -5982,7 +5982,7 @@ a:hover {
   text-transform: uppercase;
 }
 .navbar-fixed-top .navbar {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .navbar li:not(:first-child):before {
   content: '·';
