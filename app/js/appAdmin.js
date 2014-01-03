@@ -10,7 +10,6 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {templateUrl: 'partials/home.html'});
   $routeProvider.when('/projects', {templateUrl: 'partials/projectListAdmin.html', controller: 'projectListCtrl'});
   $routeProvider.when('/shows', {templateUrl: 'partials/showListAdmin.html', controller: 'projectListCtrl'});
   $routeProvider.when('/bio', {templateUrl: 'partials/bioAdmin.html', controller: 'bioCtrl'});
