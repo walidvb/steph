@@ -46,6 +46,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
     console.log($location);
     $scope.projects = Projects.query(function(data){
       $scope.activeProject = data[0];
+      $scope.activeProject.active = true;
     });
     $scope.activeProject = {};
 
@@ -62,6 +63,8 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
       var newProject = {
         title: 'New project',
         type: 'project',
+        id: 'new_project',
+        thumb: 'img/new_project/',
         slides: [],
       };
       $scope.projects.push(newProject);
@@ -70,7 +73,9 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
 
     $scope.addSlide = function(slides){
       var newSlide = {
-        type: 'image',
+        type: 'img',
+        url: 'img/'+$scope.activeProject.id+'/',
+
       };
       slides.push(newSlide);
     }

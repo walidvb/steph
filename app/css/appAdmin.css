@@ -6145,12 +6145,17 @@ body .navbar {
   border-bottom: solid 1px #494949;
   border-right: solid 1px #494949;
   border-radius: 2px;
+  background: rgba(255, 96, 0, 0.2);
 }
 .project-list li.project-active {
   border-right: none;
+  background: rgba(255, 96, 0, 0.1);
 }
 .project-list li:first-child {
   border-top: solid 1px #494949;
+}
+.project-list li:hover {
+  background: rgba(255, 96, 0, 0.2);
 }
 .details .project-title {
   padding-bottom: 15px;

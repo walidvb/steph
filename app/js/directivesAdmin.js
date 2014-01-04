@@ -103,9 +103,16 @@ directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 		{
 			var depth = (scope.html).split('.');
 			if(depth.length == 2)
+			{
+				scope.$parent[depth[0]][depth[1]] = scope.$parent[depth[0]][depth[1]] || 'html';
 				scope.$parent[depth[0]][depth[1]] = $sce.trustAsHtml(scope.$parent[depth[0]][depth[1]]);
+			}
 			else
+			{
+				scope.$parent[depth[0]] = 'html';
 				scope.$parent[depth[0]] = $sce.trustAsHtml(scope.$parent[depth[0]]);
+			}
+
 		}
 	}
 }]);

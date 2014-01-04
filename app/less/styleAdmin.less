@@ -38,11 +38,16 @@ body{
 		border-bottom: solid 1px @text-color;
 		border-right: solid 1px @text-color;
 		border-radius: 2px;
+		background: rgba(red(@theme-color),green(@theme-color),blue(@theme-color), 0.2);
 		&.project-active{
 			border-right: none;
+			background: rgba(red(@theme-color),green(@theme-color),blue(@theme-color), 0.1);
 		}
 		&:first-child{
 			border-top: solid 1px @text-color;
+		}
+		&:hover{
+			background: rgba(red(@theme-color),green(@theme-color),blue(@theme-color), 0.2);
 		}
 	}
 }

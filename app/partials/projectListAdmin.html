@@ -1,8 +1,8 @@
 <div class='column left-col col-sm-4 list'>
   <ul class='project-list'>
-    <li class='project add-new'>
+    <li class='project add-new' ng-click='addProject();'>
       <span class='glyphicon glyphicon-plus'></span>
-      <span ng-click='addProject();'>Add Project</span>
+      <span>Add Project</span>
     </li>
     <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | orderBy:'type':'date'">
       <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.type}})</a>
@@ -16,7 +16,8 @@
       details
     </h2>
     (
-    <a editable-text='activeProject.url' href='#'>/project/{{activeProject.url || "url"}}</a>
+    @
+    <a editable-text='activeProject.id' href='#'>/project/{{activeProject.id || "url"}}</a>
     )
   </div>
   <div class='field-list project-details'>
@@ -52,7 +53,7 @@
             <img class='project-slide-img' editable-text='slide.url' ng-src="{{slide.url || 'somesource'}}">
           </div>
           <div ng-if="slide.type == 'html'">
-            <a editable-textarea='slide.body' href='#' html="'slide.body'" my-html ng-bind-html='slide.body'>{{slide.body || "Code html"}}</a>
+            <a amy-html ang-bind-html='slide.body' editable-textarea='slide.body' href='#' html="'slide.body'">{{slide.body || "Code html"}}</a>
           </div>
         </li>
         <button class='btn' ng-click='addSlide(activeProject.slides)'>Add slide</button>
