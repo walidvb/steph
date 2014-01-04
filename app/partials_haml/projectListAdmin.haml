@@ -40,6 +40,6 @@
 						%a{"editable-textarea" => "slide.legend", :href => "#"} {{slide.legend || "legend"}}
 						%img.project-slide-img{"ng-src" => "{{slide.url || 'somesource'}}", "editable-text" => "slide.url"}
 					%div{"ng-if" => "slide.type == 'html'"}
-						%a{"editable-textarea" => "slide.body", :href => "#", "ng-bind-html" => "{{$sce.trustAsHtml(slide.body)}}"} {{slide.body || "Code html"}}
+						%a{"editable-textarea" => "slide.body", :href => "#", "ng-bind-html" => "slide.body", 'html' => "'slide.body'", 'my-html' => true} {{slide.body || "Code html"}}
 				%button.btn{"ng-click" => "addSlide(activeProject.slides)"} Add slide
 #result{"my-modal" => true, "my-data" => "projects", "my-target" => "works.json"}

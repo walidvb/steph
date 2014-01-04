@@ -52,7 +52,7 @@
             <img class='project-slide-img' editable-text='slide.url' ng-src="{{slide.url || 'somesource'}}">
           </div>
           <div ng-if="slide.type == 'html'">
-            <a editable-textarea='slide.body' href='#' ng-bind-html='{{$sce.trustAsHtml(slide.body)}}'>{{slide.body || "Code html"}}</a>
+            <a editable-textarea='slide.body' href='#' html="'slide.body'" my-html ng-bind-html='slide.body'>{{slide.body || "Code html"}}</a>
           </div>
         </li>
         <button class='btn' ng-click='addSlide(activeProject.slides)'>Add slide</button>
