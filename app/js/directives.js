@@ -14,9 +14,9 @@ directive('fixedMenu', ['$timeout', function(timer){
 		link: function(scope, elem, attr){
 			var fixIt = function(){
 				var menu_pos = $(elem).offset().top;
+				console.log('menu_pos', menu_pos);
 				var menu_height = $(elem).height();
 				var oldPadding = $('body').css('paddingTop');
-
 				var fixMenu = function(){
 					var pos = $(window).scrollTop();
 					if( pos >= menu_pos)
@@ -48,10 +48,12 @@ directive('fixedMenu', ['$timeout', function(timer){
 directive('myFullscreen', ['$timeout', function(timer){
 	return function(scope, elem, attrs){
 		var setSize = function() {
+			console.log('window', $(window).height());
+			console.log('menu', $('#menu').height());
 			$(elem).height($(window).height()-$('#menu').height())
 				.css('overflow', 'auto')
 		};
-		$(window).on('scroll resize', function()
+		$(window).on('resize', function()
 		{
 			setSize();
 		});
@@ -92,4 +94,43 @@ directive('myCarousel', ['$timeout', function(timer){
 			timer(slideIt, 1000);
 		},
 	};
+}]).
+directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
+	return {
+		link: function(scope, elem, attrs)
+		{
+			scope.$parent.slide.body = $sce.trustAsHtml(scope.$parent.slide.body);
+			var center = function(){
+				var wrapperHeight = $(elem).parents('.slide').height();
+				var elemHeight = $(elem).height();
+				$(elem).css({
+					position: 'relative',
+					top: wrapperHeight/2 - elemHeight/2,
+				})
+			};
+			timer(function(){
+			center();
+			$(window).on('resize', center);
+		}, 0);
+		}
+	}
+}]).
+directive('myCenter', ['$timeout', function(timer){
+	return {
+		link: function(scope, elem, attrs)
+		{
+			var center = function(){
+				var wrapperHeight = $(elem).parents('').height();
+				var elemHeight = $(elem).height();
+				$(elem).css({
+					position: 'relative',
+					top: wrapperHeight/2 - elemHeight/2,
+				})
+			};
+			timer(function(){
+				center();
+				$(window).on('resize', center);
+			}, 500);
+		}
+	}
 }]);

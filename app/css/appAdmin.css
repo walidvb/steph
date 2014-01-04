@@ -5980,6 +5980,7 @@ a:hover {
   opacity: 0.66;
   filter: alpha(opacity=66);
   text-transform: uppercase;
+  margin: 0px;
 }
 .navbar-fixed-top .navbar {
   padding-left: 15px;
@@ -6038,15 +6039,7 @@ body,
 .view {
   height: 100%;
 }
-body {
-  padding-top: 55px;
-}
 body .navbar {
-  position: fixed;
-  top: 0px;
-  border-bottom: 1px solid #494949;
-  left: 0;
-  right: 0;
   background: #ffffff;
   z-index: 1000;
 }
@@ -6056,10 +6049,17 @@ body .navbar {
   overflow-x: scroll;
   white-space: nowrap;
 }
+.project-details .project-info {
+  max-width: 33%;
+  min-width: 250px;
+  white-space: normal;
+  padding: 0px 5px 0px 10px;
+}
 .project-details .slide {
   vertical-align: top;
   height: 100%;
   display: inline-block;
+  position: relative;
 }
 .project-details .slide img {
   min-height: 100%;

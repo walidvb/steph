@@ -4,12 +4,12 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-controller('projectCtrl', ['$scope', '$routeParams', '$filter', 'Projects', function($scope, $routeParams, $filter, Projects) {
+controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Projects', function($scope, $routeParams, $filter, $sce, Projects) {
   Projects.query(function(data)
   {
     var project = $filter('filter')(data, $routeParams.projectID, 'url');
     $scope.project = project[0];
-
+    
     $scope.nextSlide = function(index){
       if(index < $scope.project.slides.length)
       {
