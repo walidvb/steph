@@ -11,17 +11,8 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
     <ul class='nav navbar-nav'>
-      <li>
-        <a href='#projects' ng-click="active = projects;scrollTo('projects');$event.preventDefault()">Projects</a>
-      </li>
-      <li>
-        <a href='#shows'>Shows</a>
-      </li>
-      <li>
-        <a href='#bio'>Bio</a>
-      </li>
-      <li>
-        <a href='#contact'>Contact</a>
+      <li ng-repeat='item in menu'>
+        <a ng-class='{active: item.active}' ng-click='scrollTo(item.name, $event);$event.preventDefault()' ng-href='/{{item.name}}'>{{item.name}}</a>
       </li>
     </ul>
   </div>

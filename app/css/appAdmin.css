@@ -5976,6 +5976,10 @@ a:active {
 a:hover {
   color: #ff6000;
 }
+section {
+  padding-top: 55px;
+  background: transparent;
+}
 .navbar {
   opacity: 0.66;
   filter: alpha(opacity=66);

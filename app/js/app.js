@@ -5,6 +5,7 @@
 angular.module('myApp', [
   'ngRoute',
   'ngAnimate',
+  'mgcrea.bootstrap.scrollspy',
   'myApp.filters',
   'myApp.services',
   'myApp.directives',
@@ -12,6 +13,7 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'partials/home.html'});
+  $routeProvider.when('/show/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});
   $routeProvider.when('/project/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});
   $routeProvider.otherwise({redirectTo: ''});
 }]);

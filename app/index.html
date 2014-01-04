@@ -15,8 +15,7 @@
     <script src='lib/scrollsnap/jquery.scrollsnap.js'></script>
     <script src='js/mySlider.js'></script>
   </head>
-  <body ng-class='{active}'>
-    {{active}}
+  <body ng-class='active' ng-controller='appCtrl'>
     <div fixed-menu id='menu' ng-include src="'partials/menu.html'"></div>
     <div class='view' ng-view></div>
     <script src='lib/angular/angular.js'></script>

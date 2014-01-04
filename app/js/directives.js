@@ -4,17 +4,15 @@
 
 
 angular.module('myApp.directives', []).
-directive('appVersion', ['version', function(version) {
-	return function(scope, elem, attrs) {
-		elem.text(version);
-	};
+directive('scrollSpy', ['$timeout', function(timer){
+	return {
+	}
 }]).
 directive('fixedMenu', ['$timeout', function(timer){
 	return{
 		link: function(scope, elem, attr){
 			var fixIt = function(){
 				var menu_pos = $(elem).offset().top;
-				console.log('menu_pos', menu_pos);
 				var menu_height = $(elem).height();
 				var oldPadding = $('body').css('paddingTop');
 				var fixMenu = function(){
@@ -48,10 +46,8 @@ directive('fixedMenu', ['$timeout', function(timer){
 directive('myFullscreen', ['$timeout', function(timer){
 	return function(scope, elem, attrs){
 		var setSize = function() {
-			console.log('window', $(window).height());
-			console.log('menu', $('#menu').height());
 			$(elem).height($(window).height()-$('#menu').height())
-				.css('overflow', 'auto')
+			.css('overflow', 'auto')
 		};
 		$(window).on('resize', function()
 		{
@@ -102,7 +98,6 @@ directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 		},
 		link: function(scope, elem, attrs)
 		{
-			console.log(scope);
 			var depth = (scope.html).split('.');
 			if(depth.length == 2)
 				scope.$parent[depth[0]][depth[1]] = $sce.trustAsHtml(scope.$parent[depth[0]][depth[1]]);

@@ -1,13 +1,12 @@
 #home{"ng-controller" => "homeCtrl"}
-	.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[0]"}
+	#background-img-0.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[0]"}
 	.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[1]"}
-	%div{"ng-controller" => "projectListCtrl"}
-		%section#projects.work-list.row{"ng-include" => true, :src =>"'partials/projectList.html'"}
-		.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[2]"}
-		%section#shows.row{"ng-include" => true, :src =>"'partials/showList.html'"}
+	%section#projects.row{"ng-include" => true, :src =>"'partials/projectList.html'","ng-controller" => "projectListCtrl", "scroll-spy" => true}
+	.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[2]"}
+	%section#shows.row{"ng-include" => true, :src =>"'partials/showList.html'","ng-controller" => "projectListCtrl", "scroll-spy" => true}
 	.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[3]"}
-	%section#bio.row{"ng-include" => true, :src =>"'partials/bio.html'", "ng-controller" => "bioListCtrl"}
+	%section#bio.row{"ng-include" => true, :src =>"'partials/bio.html'", "ng-controller" => "bioListCtrl", "scroll-spy" => true}
 	.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[4]"}
-	%section#contact.row{"ng-include" => true, "my-fullscreen" => true, :src =>"'partials/contact.html'"}
+	%section#contact.row{"ng-include" => true, "my-fullscreen" => true, :src =>"'partials/contact.html'", "scroll-spy" => true}
 	.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[0]"}
 

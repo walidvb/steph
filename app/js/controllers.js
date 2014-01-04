@@ -4,6 +4,37 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
+controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
+  $scope.menu = [
+    {name: 'projects'},
+    {name: 'shows'},
+    {name: 'bio'},
+    {name: 'contact'}
+    ];
+  $scope.currentMenu = '';
+  $scope.setActiveMenu = function(id)
+  {
+    $($scope.menu).each(function(){
+      if(this.name == id)
+      {
+        this.active = true;
+      }
+      else
+      {
+        this.active = false;
+      }
+    })
+  };
+  
+  $scope.scrollTo = function(id, event)
+    {
+      //event.preventDefault();
+      $location.hash(id);
+      setTimeout($anchorScroll, 1000);
+      //reset to old to keep any additional routing logic from kicking in
+      //$location.hash(old); 
+    };
+}]).
 controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Projects', function($scope, $routeParams, $filter, $sce, Projects) {
   Projects.query(function(data)
   {
