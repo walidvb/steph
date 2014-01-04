@@ -6138,6 +6138,12 @@ body .navbar {
   width: 559px;
   height: 280px;
 }
+body .editable-click,
+body a.editable-click {
+  text-decoration: none;
+  color: #ff6000;
+  border-bottom: dashed 1px #ff6000;
+}
 .project-list li {
   line-height: 3;
   list-style: none;
@@ -6156,6 +6162,7 @@ body .navbar {
 }
 .project-list li:hover {
   background: rgba(255, 96, 0, 0.2);
+  color: #ff6000;
 }
 .details .project-title {
   padding-bottom: 15px;

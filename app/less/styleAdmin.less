@@ -30,6 +30,12 @@ body{
 	width: 559px;
 	height: 280px;
 }
+body .editable-click,body a.editable-click {
+text-decoration: none;
+color: @theme-color;
+border-bottom: dashed 1px @theme-color;
+}
+
 .project-list{
 	li{
 		line-height: 3;
@@ -48,6 +54,7 @@ body{
 		}
 		&:hover{
 			background: rgba(red(@theme-color),green(@theme-color),blue(@theme-color), 0.2);
+			color: @theme-color;
 		}
 	}
 }
