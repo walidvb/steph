@@ -49,9 +49,32 @@ directive('myBackgroundImg', function(){
 		}
 	}
 }).
+directive('myModalTrigger', function(){
+	return{
+		link: function(scope, elem, attrs){
+			elem.on('click', function(){
+				$(attrs.target).modal('show');
+			});
+		}
+	}
+}).
+directive('myModal', function(){
+	return{
+		scope: {
+			data: '=myData',
+		},
+		templateUrl: "partials/modalResult.html",
+		link: function(scope, elem, attrs){
+			//$('#modal-result').modal();
+		}
+	}
+}).
 directive('myJsonOutput', function(){
 	return {
-		template: "<textarea>{{projects | json}}</textarea>",
+		scope: {
+			data: '=myData',
+		},
+		templateUrl: "partials/modalResult.html",
 		link: function(scope, elem, attrs){
 			console.log(elem);
 			elem = $(elem);

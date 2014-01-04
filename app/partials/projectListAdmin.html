@@ -4,8 +4,8 @@
       <span class='glyphicon glyphicon-plus'></span>
       <span ng-click='addProject();'>Add Project</span>
     </li>
-    <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | filter: {type: 'project'} | orderBy:'date'">
-      <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.date | date:'MM.yyyy'}})</a>
+    <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | orderBy:'type':'date'">
+      <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.type}}, {{project.date | date:'MM.yyyy'}})</a>
     </li>
   </ul>
 </div>
@@ -21,6 +21,8 @@
   </div>
   <div class='field-list project-details'>
     <div class='field project-date'>
+      <span class='field-title'>Category:</span>
+      <a editable-text='activeProject.type' href='#'>{{(activeProject.type || "Type")}}</a>
       <span class='field-title'>Date:</span>
       <a e-datepicker-popup='MM.yyyy' editable-bsdate='activeProject.date' href='#'>{{(activeProject.date || "Date") | date:'MM.yyyy'}}</a>
     </div>
@@ -56,4 +58,4 @@
     </div>
   </div>
 </div>
-<div id='result' my-data='projects' my-json-output>{{projects | json}}</div>
+<div id='result' my-data='projects' my-modal my-target='works.json'></div>

@@ -11,13 +11,14 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.5/mousetrap.min.js'></script>
     <script src='lib/zeroclipboard/ZeroClipboard.min.js'></script>
   </head>
-  <body>
-    <div class='menu' ng-include src="'partials/menu.html'"></div>
-    <button class='btn btn-large' id='copy-button' ng-click="console.log('asd');$('#result').toggleClass('finished');">View result!</button>
+  <body ng-class='active' ng-controller='appCtrl'>
+    <div fixed-menu id='menu' ng-include src="'partials/menu.html'"></div>
+    <button class='btn btn-large' data-target='#modal-result' id='copy-button' my-modal-trigger>Get result!</button>
     <div class='view' ng-view></div>
     <script src='lib/angular/angular.js'></script>
     <script src='lib/angular/angular-route.js'></script>
     <script src='lib/angular/angular-resource.js'></script>
+    <script src='///cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js'></script>
     <script src='js/appAdmin.js'></script>
     <script src='js/services.js'></script>
     <script src='js/controllersAdmin.js'></script>

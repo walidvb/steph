@@ -3,8 +3,8 @@
 		%li.project.add-new
 			%span.glyphicon.glyphicon-plus
 			%span{"ng-click" => "addProject();"} Add Project
-		%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'} | orderBy:'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active}"}
-			%a.project-title{:href => "#", "ng-click" => "$event.preventDefault()"} {{project.title}} ({{project.date | date:'MM.yyyy'}})
+		%li.project{"ng-repeat" => "project in projects | orderBy:'type':'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active}"}
+			%a.project-title{:href => "#", "ng-click" => "$event.preventDefault()"} {{project.title}} ({{project.type}}, {{project.date | date:'MM.yyyy'}})
 
 .column.right-col.col-sm-8.details
 	.project-title
@@ -16,6 +16,8 @@
 		)
 	.field-list.project-details
 		.field.project-date
+			%span.field-title Category: 
+			%a{"editable-text" => "activeProject.type", :href => "#"} {{(activeProject.type || "Type")}}
 			%span.field-title Date: 
 			%a{"editable-bsdate" => "activeProject.date", "e-datepicker-popup" =>"MM.yyyy", :href => "#"} {{(activeProject.date || "Date") | date:'MM.yyyy'}}
 		.field.project-medium
@@ -39,4 +41,4 @@
 					%div{"ng-if" => "slide.type == 'html'"}
 						%a{"editable-textarea" => "slide.body", :href => "#", "ng-bind-html" => "{{$sce.trustAsHtml(slide.body)}}"} {{slide.body || "Code html"}}
 				%button.btn{"ng-click" => "addSlide(activeProject.slides)"} Add slide
-#result{"my-json-output" => true, "my-data" => "projects"} {{projects | json}}
+#result{"my-modal" => true, "my-data" => "projects", "my-target" => "works.json"}

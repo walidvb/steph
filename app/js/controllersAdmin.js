@@ -3,6 +3,38 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
+controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
+  $scope.menu = [
+    {name: 'projects'},
+    {name: 'shows'},
+    {name: 'bio'},
+    {name: 'contact'}
+    ];
+  $scope.currentMenu = '';
+  $scope.setActiveMenu = function(id)
+  {
+    $($scope.menu).each(function(){
+      if(this.name == id)
+      {
+        this.active = true;
+      }
+      else
+      {
+        this.active = false;
+      }
+    })
+  };
+  
+  $scope.scrollTo = function(id, event)
+    {
+      console.log($location);
+      //event.preventDefault();
+      $//location.hash(id);
+      // setTimeout($anchorScroll, 1000);
+      //reset to old to keep any additional routing logic from kicking in
+      //$location.hash(old); 
+    };
+}]).
   controller('projectCtrl', ['$scope', 'Projects', function($scope, Projects) {
     
   // projects = Projects.query();
@@ -10,12 +42,14 @@ angular.module('myApp.controllers', []).
   // project = $filter('filter')();
  //  $scope.project = project;
   }]).
-  controller('projectListCtrl', ['$scope', 'Projects', function($scope, Projects) {
+  controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scope, $location, Projects) {
+    console.log($location);
     $scope.projects = Projects.query(function(data){
       $scope.activeProject = data[0];
     });
     $scope.activeProject = {};
-    $scope.filter = "project";    
+
+    $scope.filter = ($location.$$path == '/projects') ? 'project' : 'show';    
     $scope.slideOptions = ["img", "html"];
 
     $scope.setActiveProject = function(project){

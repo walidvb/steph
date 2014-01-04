@@ -11,9 +11,9 @@
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.5/mousetrap.min.js"}
     %script{:src => "lib/zeroclipboard/ZeroClipboard.min.js"}
 
-  %body
-    .menu{"ng-include" => true, :src => "'partials/menu.html'"}
-    %button.btn.btn-large#copy-button{"ng-click" => "console.log('asd');$('#result').toggleClass('finished');"} View result!
+  %body{"ng-class" => "", "ng-class" => "active", "ng-controller" => "appCtrl"}
+    #menu{"ng-include" => true, :src => "'partials/menu.html'", "fixed-menu" => true}
+    %button.btn.btn-large#copy-button{"data-target" => "#modal-result", "my-modal-trigger" => true} Get result!
     .view{"ng-view" => true}
 
 
@@ -21,6 +21,7 @@
     %script{:src => "lib/angular/angular.js"}
     %script{:src => "lib/angular/angular-route.js"}
     %script{:src => "lib/angular/angular-resource.js"}
+    %script{:src => "///cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"}
     %script{:src => "js/appAdmin.js"}
     %script{:src => "js/services.js"}
     %script{:src => "js/controllersAdmin.js"}

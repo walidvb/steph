@@ -5,7 +5,6 @@
 angular.module('myApp', [
   'ngRoute',
   'ngAnimate',
-  'mgcrea.bootstrap.scrollspy',
   'myApp.filters',
   'myApp.services',
   'myApp.directives',

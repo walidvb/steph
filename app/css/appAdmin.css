@@ -6124,6 +6124,10 @@ body .navbar {
   right: 20px;
   z-index: 1010;
 }
+.modal textarea {
+  width: 559px;
+  height: 280px;
+}
 .project-list li {
   line-height: 3;
   list-style: none;
