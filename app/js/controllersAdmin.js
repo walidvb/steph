@@ -11,7 +11,9 @@ angular.module('myApp.controllers', []).
  //  $scope.project = project;
   }]).
   controller('projectListCtrl', ['$scope', 'Projects', function($scope, Projects) {
-    $scope.projects = Projects.query();
+    $scope.projects = Projects.query(function(data){
+      $scope.activeProject = data[0];
+    });
     $scope.activeProject = {};
     $scope.filter = "project";    
     $scope.slideOptions = ["img", "html"];
@@ -19,7 +21,6 @@ angular.module('myApp.controllers', []).
     $scope.setActiveProject = function(project){
       $scope.activeProject.active = false;
       $scope.activeProject = project;
-      $scope.projects
       project.active = true;
     };
 
@@ -27,6 +28,7 @@ angular.module('myApp.controllers', []).
       var newProject = {
         title: 'New project',
         type: 'project',
+        slides: [],
       };
       $scope.projects.push(newProject);
       $scope.setActiveProject(newProject);
@@ -40,8 +42,9 @@ angular.module('myApp.controllers', []).
     }
   }]).
   controller('bioCtrl', ['$scope', 'Bio', function($scope, Bio) {
-    Bio.get(function(data){
+    var init = function(data){
       var category = 'category';
+      $scope.raw = data;
       $scope.header = data.header;
       $scope.pdf = data.pdf;
       var bio = _.groupBy(data.bio, category);
@@ -63,7 +66,14 @@ angular.module('myApp.controllers', []).
       
       delete $scope.bio.Solo;
       delete $scope.bio.Group;
-    });
+
+    };
+    Bio.get(init);
+    $scope.addLine = function(){
+      var newLine = {
+      };
+      $scope.raw.bio.push(newLine);
+    };
   }]).
   controller('homeCtrl', ['$scope', 'Home', function($scope, Home) {
     Home.get(function(data){

@@ -1,6 +1,6 @@
 %ul.project-list
 	%li.project{"ng-repeat" => "project in projects", :style => "background-image: url('{{project.thumb}}')"}
-		%a.project-details{"ng-href" => "{{project.title}}"}
+		%a.project-details{"ng-href" => "#project/{{project.url}}"}
 			%span.project-title {{project.title}}
 			·
 			%span.project-date {{project.date}}

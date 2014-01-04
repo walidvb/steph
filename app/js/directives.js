@@ -47,7 +47,10 @@ directive('fixedMenu', ['$timeout', function(timer){
 }]).
 directive('myFullscreen', ['$timeout', function(timer){
 	return function(scope, elem, attrs){
-		var setSize = function() {$(elem).height($(window).height()-$('#menu').height())};
+		var setSize = function() {
+			$(elem).height($(window).height()-$('#menu').height())
+				.css('overflow', 'auto')
+		};
 		$(window).on('scroll resize', function()
 		{
 			setSize();
@@ -64,4 +67,29 @@ directive('myBackgroundImg', function(){
 			test: "=",
 		}
 	}
-});
+}).
+directive('mySlide', function(){
+	return {
+		restrict: 'AE',
+		templateUrl: "partials/slide.html",
+		scope: {
+			slide: "=mySlides",
+		}
+	}
+}).
+directive('myCarousel', ['$timeout', function(timer){
+	return{
+		link: function(scope, elem, attrs)
+		{
+			var slideIt = function()
+			{
+				$(elem).scrollsnap({
+					direction: 'x',
+					snaps: '.slide',
+					proximity: 350,
+				});
+			};
+			timer(slideIt, 1000);
+		},
+	};
+}]);

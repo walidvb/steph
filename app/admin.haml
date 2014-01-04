@@ -9,10 +9,11 @@
     / %script{:src => "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"}
     %script{:src => "lib/underscore-min.js"}
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.5/mousetrap.min.js"}
-
+    %script{:src => "lib/zeroclipboard/ZeroClipboard.min.js"}
 
   %body
     .menu{"ng-include" => true, :src => "'partials/menu.html'"}
+    %button.btn.btn-large#copy-button{"ng-click" => "console.log('asd');$('#result').toggleClass('finished');"} View result!
     .view{"ng-view" => true}
 
 

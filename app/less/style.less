@@ -11,7 +11,7 @@ body{
 a{
 	text-decoration: none;
 	&, &:visited, &:active{
-	color: inherit;
+		color: inherit;
 	}
 	&:hover{
 		color: @theme-color;
@@ -23,8 +23,8 @@ a{
 
 //---------Mixins
 .background(){
-		background-size: cover;
-		background-position: center;	
+	background-size: cover;
+	background-position: center;	
 }
 
 .fill(){
@@ -36,8 +36,8 @@ a{
 
 .navbar {
 	.opacity(@opacity);
- 	text-transform: uppercase;
- 	.navbar-fixed-top &{
+	text-transform: uppercase;
+	.navbar-fixed-top &{
 		padding-left: 15px;
 	}
 
@@ -87,6 +87,38 @@ a{
 	}
 }
 
+//----------ProjDetails
+html, body, .view {
+	height: 100%;
+}
+
+body{
+	padding-top: 55px;
+	.navbar{
+		position: fixed;
+		top: 0px;
+		border-bottom: 1px solid @text-color;
+		left: 0;
+		right: 0;
+		background: @background-color;
+		z-index: 1000;
+	}
+}
+.project-details{
+	height: 100%;
+	width: 100%;
+	overflow-x: scroll;
+	white-space: nowrap;
+	.slide{
+		vertical-align: top;
+		height: 100%;
+		display: inline-block;
+		img{
+			min-height: 100%;
+			max-height: 100%;
+		}
+	}
+}
 //----------ShowList
 @show-height: 45px;
 #shows{

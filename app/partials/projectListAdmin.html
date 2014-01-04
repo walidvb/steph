@@ -5,7 +5,7 @@
       <span ng-click='addProject();'>Add Project</span>
     </li>
     <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | filter: {type: 'project'} | orderBy:'date'">
-      <a class='project-title' hrsef='#' ng-clicak='$event.preventDefault()'>{{project.title}} ({{project.date | date:'MM.yyyy'}})</a>
+      <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.date | date:'MM.yyyy'}})</a>
     </li>
   </ul>
 </div>
@@ -45,7 +45,7 @@
           <select class='project-slide-type' ng-model='slide.type' ng-options='option for option in slideOptions'></select>
           <div ng-if="slide.type == 'img'">
             <a editable-textarea='slide.legend' href='#'>{{slide.legend || "legend"}}</a>
-            <img class='project-slide-img' editable-text='activeProject.slide' ng-src='{{slide.url}}'>
+            <img class='project-slide-img' editable-text='slide.url' ng-src="{{slide.url || 'somesource'}}">
           </div>
           <div ng-if="slide.type == 'html'">
             <a editable-textarea='slide.body' href='#' ng-bind-html='{{$sce.trustAsHtml(slide.body)}}'>{{slide.body || "Code html"}}</a>
@@ -56,4 +56,4 @@
     </div>
   </div>
 </div>
-<!-- .result {{projects | json}} -->
+<div id='result' my-data='projects' my-json-output>{{projects | json}}</div>

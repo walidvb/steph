@@ -9,9 +9,11 @@
     <!-- %script{:src => "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"} -->
     <script src='lib/underscore-min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.5/mousetrap.min.js'></script>
+    <script src='lib/zeroclipboard/ZeroClipboard.min.js'></script>
   </head>
   <body>
     <div class='menu' ng-include src="'partials/menu.html'"></div>
+    <button class='btn btn-large' id='copy-button' ng-click="console.log('asd');$('#result').toggleClass('finished');">View result!</button>
     <div class='view' ng-view></div>
     <script src='lib/angular/angular.js'></script>
     <script src='lib/angular/angular-route.js'></script>

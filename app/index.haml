@@ -10,9 +10,13 @@
     %script{:src => "lib/underscore-min.js"}
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.5/mousetrap.min.js"}
     %script{:src => "js/script.js"}
+    %script{:src => "lib/scrollsnap/jquery.event.special.js"}
+    %script{:src => "lib/scrollsnap/jquery.easing.min.js"}
+    %script{:src => "lib/scrollsnap/jquery.scrollsnap.js"}
+    %script{:src => "js/mySlider.js"}
 
   %body
-    %div{"ng-view" => true}
+    .view{"ng-view" => true}
 
     -#%script{:src => "//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"}
     %script{:src => "lib/angular/angular.js"}

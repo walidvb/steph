@@ -7,10 +7,13 @@
 	%span.field-title Url to pdf:
 	%a.bio-pdf{"editable-text" => "pdf.url", :href => "#"} {{pdf.url}}
 %ul.bio-list
+	%li.bio.add-new
+		%span.glyphicon.glyphicon-plus
+		%span{"ng-click" => "addLine();"} Add Experience
+
 	%li{"ng-repeat" => "(category, experiences) in bio"}
 		%h3 {{category}}
 		%ul
-			/If it's an array, ie if it's not the later experiences
 			%li{"ng-repeat"=>"exp in experiences  | orderBy:'-date'"}
 				%span.bio-date{"editable-bsdate" => "exp.date", "e-datepicker-popup" =>"MM.yyyy"} {{exp.date}}
 				|
@@ -26,7 +29,7 @@
 				.bio-year {{year.year}} 
 				%ul
 					%li{"ng-repeat" => "line in year.experiences | orderBy:'-date'"}
-						%span.bio-year{"editable-bsdate" => "line.date", "e-datepicker-popup" =>"MM.yyyy"} {{line.date}}
+						%span.bio-date{"editable-bsdate" => "line.date", "e-datepicker-popup" =>"MM.yyyy"} {{line.date}}
 						|
 						%span.bio-title{"editable-text" => "line.text"} {{line.text}}
 						|
@@ -36,3 +39,4 @@
 						|
 						%span.bio-url{"editable-text" => "line.url"} {{line.url}}
 		
+#result{"my-json-output" => true, "my-data" => "projects"} {{raw | json}}

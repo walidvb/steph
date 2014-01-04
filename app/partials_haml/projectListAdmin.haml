@@ -4,7 +4,7 @@
 			%span.glyphicon.glyphicon-plus
 			%span{"ng-click" => "addProject();"} Add Project
 		%li.project{"ng-repeat" => "project in projects | filter: {type: 'project'} | orderBy:'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active}"}
-			%a.project-title{:hrsef => "#", "ng-clicak" => "$event.preventDefault()"} {{project.title}} ({{project.date | date:'MM.yyyy'}})
+			%a.project-title{:href => "#", "ng-click" => "$event.preventDefault()"} {{project.title}} ({{project.date | date:'MM.yyyy'}})
 
 .column.right-col.col-sm-8.details
 	.project-title
@@ -35,8 +35,8 @@
 					%select.project-slide-type{"ng-model" => "slide.type", "ng-options" => "option for option in slideOptions"}
 					%div{"ng-if" => "slide.type == 'img'"}
 						%a{"editable-textarea" => "slide.legend", :href => "#"} {{slide.legend || "legend"}}
-						%img.project-slide-img{"ng-src" => "{{slide.url}}", "editable-text" => "activeProject.slide"}
+						%img.project-slide-img{"ng-src" => "{{slide.url || 'somesource'}}", "editable-text" => "slide.url"}
 					%div{"ng-if" => "slide.type == 'html'"}
 						%a{"editable-textarea" => "slide.body", :href => "#", "ng-bind-html" => "{{$sce.trustAsHtml(slide.body)}}"} {{slide.body || "Code html"}}
 				%button.btn{"ng-click" => "addSlide(activeProject.slides)"} Add slide
-/.result {{projects | json}}
+#result{"my-json-output" => true, "my-data" => "projects"} {{projects | json}}

@@ -9,10 +9,13 @@
   <a class='bio-pdf' editable-text='pdf.url' href='#'>{{pdf.url}}</a>
 </div>
 <ul class='bio-list'>
+  <li class='bio add-new'>
+    <span class='glyphicon glyphicon-plus'></span>
+    <span ng-click='addLine();'>Add Experience</span>
+  </li>
   <li ng-repeat='(category, experiences) in bio'>
     <h3>{{category}}</h3>
     <ul>
-      <!-- If it's an array, ie if it's not the later experiences -->
       <li ng-repeat="exp in experiences  | orderBy:'-date'">
         <span class='bio-date' e-datepicker-popup='MM.yyyy' editable-bsdate='exp.date'>{{exp.date}}</span>
         |
@@ -31,7 +34,7 @@
         <div class='bio-year'>{{year.year}}</div>
         <ul>
           <li ng-repeat="line in year.experiences | orderBy:'-date'">
-            <span class='bio-year' e-datepicker-popup='MM.yyyy' editable-bsdate='line.date'>{{line.date}}</span>
+            <span class='bio-date' e-datepicker-popup='MM.yyyy' editable-bsdate='line.date'>{{line.date}}</span>
             |
             <span class='bio-title' editable-text='line.text'>{{line.text}}</span>
             |
@@ -46,3 +49,4 @@
     </ul>
   </li>
 </ul>
+<div id='result' my-data='projects' my-json-output>{{raw | json}}</div>

@@ -1,0 +1,11 @@
+.menu{"ng-include" => true, "src" => "'partials/menu.html'"}
+.project-details{"my-carousel" => true}
+	.slide.project-info{"ng-click" => "nextSlide(0)", "ng-class" => "'slide-'+0"}
+		%h1.project-title {{project.title}}
+		.project-datae {{project.date}}
+		.project-medium {{project.medium}}
+
+		%h2 Apropos
+		.project-description{"ng-bind-html" => "project.description"}
+	.slide{"ng-repeat" => "slide in project.slides", "ng-click" => "nextSlide($index+1)", "ng-class" => "'slide-'+($index+1)"}
+		%div{"my-slide" => true, "my-slides" => "slide"}

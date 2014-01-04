@@ -11,6 +11,6 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'partials/home.html'});
-  $routeProvider.when('/:project', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});
+  $routeProvider.when('/project/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});
   $routeProvider.otherwise({redirectTo: ''});
 }]);

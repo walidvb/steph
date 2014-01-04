@@ -4,11 +4,6 @@
 
 
 angular.module('myApp.directives', []).
-directive('appVersion', ['version', function(version) {
-	return function(scope, elem, attrs) {
-		elem.text(version);
-	};
-}]).
 directive('fixedMenu', function(){
 	return{
 		link: function(scope, elem, attr){
@@ -52,5 +47,27 @@ directive('myBackgroundImg', function(){
 		link: function(scope, elem, attrs){
 			$(elem).height($(window).height()-$('#menu').height());
 		}
+	}
+}).
+directive('myJsonOutput', function(){
+	return {
+		template: "<textarea>{{projects | json}}</textarea>",
+		link: function(scope, elem, attrs){
+			console.log(elem);
+			elem = $(elem);
+			elem.on('focus', function() 
+			{
+				console.log('focus');
+				elem.select();
+
+		        // Work around Chrome's little problem
+		        elem.on('mouseup', function() 
+		        {
+		            // Prevent further mouseup intervention
+		            elem.onmouseup = null;
+		            return false;
+		        });
+	    	});
+		},
 	}
 });
