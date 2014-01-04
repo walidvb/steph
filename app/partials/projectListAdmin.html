@@ -5,7 +5,7 @@
       <span ng-click='addProject();'>Add Project</span>
     </li>
     <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | orderBy:'type':'date'">
-      <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.type}}, {{project.date | date:'MM.yyyy'}})</a>
+      <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.type}})</a>
     </li>
   </ul>
 </div>
@@ -20,9 +20,11 @@
     )
   </div>
   <div class='field-list project-details'>
+    <div class='field project-type'>
+      <span class='field-title'>Type:</span>
+      <a e-ng-options="type for type in ['show', 'project']" editable-select='activeProject.type' href='#'>{{(activeProject.type || "Type")}}</a>
+    </div>
     <div class='field project-date'>
-      <span class='field-title'>Category:</span>
-      <a editable-text='activeProject.type' href='#'>{{(activeProject.type || "Type")}}</a>
       <span class='field-title'>Date:</span>
       <a e-datepicker-popup='MM.yyyy' editable-bsdate='activeProject.date' href='#'>{{(activeProject.date || "Date") | date:'MM.yyyy'}}</a>
     </div>
