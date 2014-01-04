@@ -2,6 +2,12 @@
 ul{
 	margin: 0;
 }
+::selection {
+	background: @text-color; /* Safari */
+	}
+::-moz-selection {
+	background: @text-color; /* Firefox */
+}
 //--------Home
 body{
 	color: @text-color;

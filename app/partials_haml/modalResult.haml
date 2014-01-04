@@ -1,0 +1,16 @@
+.modal.fade#modal-result
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+        %h4.modal-title 
+          Paste to 
+          %em /web/app/data/works.json
+      .modal-body
+        %div Works count: {{data.length}}
+        %textarea {{data | json}}
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+    / /.modal-content
+  / /.modal-dialog
+/ /.modal

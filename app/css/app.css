@@ -5961,6 +5961,16 @@ td.visible-print {
 ul {
   margin: 0;
 }
+::selection {
+  background: #494949;
+  /* Safari */
+
+}
+::-moz-selection {
+  background: #494949;
+  /* Firefox */
+
+}
 body {
   color: #494949;
   background: #ffffff;

@@ -1,0 +1,23 @@
+<div class='modal fade' id='modal-result'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+        <h4 class='modal-title'>
+          Paste to
+          <em>/web/app/data/works.json</em>
+        </h4>
+      </div>
+      <div class='modal-body'>
+        <div>Works count: {{data.length}}</div>
+        <textarea>{{data | json}}</textarea>
+      </div>
+      <div class='modal-footer'>
+        <button class='btn btn-default' data-dismiss='modal' type='button'>Close</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
