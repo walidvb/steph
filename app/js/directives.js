@@ -97,21 +97,17 @@ directive('myCarousel', ['$timeout', function(timer){
 }]).
 directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 	return {
+		scope: {
+			html : "="
+		},
 		link: function(scope, elem, attrs)
 		{
-			scope.$parent.slide.body = $sce.trustAsHtml(scope.$parent.slide.body);
-			var center = function(){
-				var wrapperHeight = $(elem).parents('.slide').height();
-				var elemHeight = $(elem).height();
-				$(elem).css({
-					position: 'relative',
-					top: wrapperHeight/2 - elemHeight/2,
-				})
-			};
-			timer(function(){
-			center();
-			$(window).on('resize', center);
-		}, 0);
+			console.log(scope);
+			var depth = (scope.html).split('.');
+			if(depth.length == 2)
+				scope.$parent[depth[0]][depth[1]] = $sce.trustAsHtml(scope.$parent[depth[0]][depth[1]]);
+			else
+				scope.$parent[depth[0]] = $sce.trustAsHtml(scope.$parent[depth[0]]);
 		}
 	}
 }]).

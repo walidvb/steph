@@ -1,2 +1,4 @@
 <img ng-if="slide.type == 'img'" ng-src='{{slide.url}}'>
-<div class='html' my-html ng-bind-html='slide.body' ng-if="slide.type == 'html'"></div>
+  <div class='slide-legend' html="'slide.legend'" my-html ng-bind-html='slide.legend'></div>
+</img>
+<div class='html' html="'slide.body'" my-html ng-bind-html='slide.body' ng-if="slide.type == 'html'"></div>

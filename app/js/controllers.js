@@ -52,8 +52,17 @@ controller('bioListCtrl', ['$scope', 'Bio', function($scope, Bio) {
     delete $scope.bio.Group;
   });
 }]).
-controller('homeCtrl', ['$scope', 'Home', function($scope, Home) {
+controller('homeCtrl', ['$scope', '$location', '$anchorScroll', 'Home', function($scope, $location, $anchorScroll, Home) {
   Home.get(function(data){
     $scope.backgrounds = data.backgrounds;
+    $scope.scrollTo = function(id, event)
+    {
+      event.preventDefault();
+     var old = $location.hash();
+     $location.hash(id);
+     $anchorScroll();
+      //reset to old to keep any additional routing logic from kicking in
+      $location.hash(old); 
+    };
   })
 }]);

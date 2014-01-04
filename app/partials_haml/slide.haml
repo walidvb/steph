@@ -1,2 +1,3 @@
 %img{"ng-if" => "slide.type == 'img'", "ng-src" => "{{slide.url}}" }
-.html{"ng-if" => "slide.type == 'html'", "my-html" => true, "ng-bind-html" => 'slide.body'}
+	.slide-legend{"ng-bind-html" => "slide.legend", "my-html" => true, "html" => "'slide.legend'"}
+.html{"ng-if" => "slide.type == 'html'", "my-html" => true, "ng-bind-html" => 'slide.body', "html" => "'slide.body'"}

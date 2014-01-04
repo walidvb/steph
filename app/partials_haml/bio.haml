@@ -1,4 +1,4 @@
-.bio-header {{header}}
+.bio-header{"html" => "'header'", "my-html" => true, "ng-bind-html" => "header"}
 %ul.bio-list
 	%li{"ng-repeat" => "(category, experiences) in bio"}
 		%h3 {{category}}
@@ -11,7 +11,7 @@
 				%span.bio-venue {{exp.venue}}
 	%li
 		%h3 Selected Exhibitions
-		%ul
+		%ul.bio-years
 			%li{"ng-repeat" => "year in Experiences | orderBy:'-year'"}
 				.bio-year {{year.year}} 
 				%ul

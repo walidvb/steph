@@ -1,4 +1,4 @@
-<div class='bio-header'>{{header}}</div>
+<div class='bio-header' html="'header'" my-html ng-bind-html='header'></div>
 <ul class='bio-list'>
   <li ng-repeat='(category, experiences) in bio'>
     <h3>{{category}}</h3>
@@ -14,7 +14,7 @@
   </li>
   <li>
     <h3>Selected Exhibitions</h3>
-    <ul>
+    <ul class='bio-years'>
       <li ng-repeat="year in Experiences | orderBy:'-year'">
         <div class='bio-year'>{{year.year}}</div>
         <ul>
