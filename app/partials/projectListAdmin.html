@@ -60,7 +60,7 @@
             <img class='project-slide-img' editable-text='slide.url' ng-src="{{slide.url || 'somesource'}}">
           </div>
           <div ng-if="slide.type == 'html'">
-            <a amy-html ang-bind-html='slide.body' editable-textarea='slide.body' href='#' html="'slide.body'">{{slide.body || "Code html"}}</a>
+            <a amy-html ang-bind-html='slide.body' editable-text='slide.body' href='#' html="'slide.body'">{{slide.body || "Code html"}}</a>
           </div>
           <delete-item item-type="'slide'" my-class="'btn-xs'" ng-click='removeSlide(slide)'></delete-item>
         </li>
