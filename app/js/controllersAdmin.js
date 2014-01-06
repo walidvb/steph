@@ -59,7 +59,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
       project.active = true;
     };
 
-    $scope.addProject = function(){
+    $scope.addProject = function(projects){
       var newProject = {
         title: 'New project',
         type: 'project',
@@ -67,7 +67,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
         thumb: 'img/new_project/',
         slides: [],
       };
-      $scope.projects.push(newProject);
+      projects.push(newProject);
       $scope.setActiveProject(newProject);
     };
 

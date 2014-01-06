@@ -119,8 +119,12 @@ directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 }]).
 directive('addItem', ['$timeout', function(){
 	return {
-		restrict: 'A',
-		template: '<button class="btn btn-large"> Add</button>',
+		restrict: 'AE',
+		scope: {
+			itemType: "=itemType",
+			class: "=myClass"
+		},
+		template: '<button class="btn btn-large"> Add {{itemType}}</button>',
 		link: function(scope, elem, attrs) {
 
 		},

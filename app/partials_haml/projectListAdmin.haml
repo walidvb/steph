@@ -1,6 +1,6 @@
 .column.left-col.col-sm-4.list
 	%ul.project-list
-		%li.project.add-new{"ng-click" => "addProject();"}
+		%li.project.add-new{"ng-click" => "addProject(projects);"}
 			.btn.btn-lg.btn-success
 				%span.glyphicon.glyphicon-plus
 				%span Add Project
@@ -48,7 +48,6 @@
 					%div{"ng-if" => "slide.type == 'html'"}
 						%a{"editable-textarea" => "slide.body", :href => "#", "ang-bind-html" => "slide.body", 'html' => "'slide.body'", 'amy-html' => true} {{slide.body || "Code html"}}
 					%delete-item{"ng-click" => "removeSlide(slide)", "item-type" => "'slide'", "my-class" => "'btn-xs'"}
-				%button.btn.btn-sm.btn-success{"ng-click" => "addSlide(activeProject.slides)"} Add slide
-
+				%add-item{"ng-click" => "addSlide(activeProject.slides)", "item-type" => "'slide'", "my-class" => "'btn-lg'"}
 		%delete-item{"ng-click" => "removeProject(activeProject)", "item-type" => "'project'", "my-class" => "'btn-lg'"}
 #result{"my-modal" => true, "my-data" => "projects", "my-target" => "works.json"}
