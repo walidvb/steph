@@ -1,5 +1,5 @@
 <ul class='show-list'>
-  <li class='show' ng-repeat="project in projects | filter: {type: 'show'}">
+  <li class='show' ng-repeat="project in projects | filter: {type: 'show', public: true}">
     <a ng-href='{{project.title}}'>
       <span class='show-title'>{{project.title}}</span>
       ·

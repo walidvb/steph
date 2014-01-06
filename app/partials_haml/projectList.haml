@@ -1,7 +1,7 @@
 %ul.project-list
-	%li.project{"ng-repeat" => "project in projects | filter: {'public'}", :style => "background-image: url('{{project.thumb}}')"}
+	%li.project{"ng-repeat" => "project in projects | filter: {type: 'project', public: true}", :style => "background-image: url('{{project.thumb}}')"}
 		%a.project-details{"ng-href" => "#project/{{project.url}}"}
 			%span.project-title {{project.title}}
 			·
-			%span.project-date {{project.date}}
+			%span.project-date {{project.date | date:'MM.yyyy'}}
 			%span.project-medium {{project.medium}}

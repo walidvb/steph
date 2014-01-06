@@ -141,7 +141,7 @@ angular.module('xeditable').directive('editableTextarea', ['editableDirectiveFac
   function(editableDirectiveFactory) {
     return editableDirectiveFactory({
       directiveName: 'editableTextarea',
-      inputTpl: '<textarea ui-tinymce></textarea>',
+      inputTpl: '<textarea ui-tinymce="tinymceOptions"></textarea>',
       addListeners: function() {
         var self = this;
         self.parent.addListeners.call(self);

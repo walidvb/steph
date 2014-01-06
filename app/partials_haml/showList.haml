@@ -1,5 +1,5 @@
 %ul.show-list
-	%li.show{"ng-repeat" => "project in projects | filter: {type: 'show'}"}
+	%li.show{"ng-repeat" => "project in projects | filter: {type: 'show', public: true}"}
 		%a{"ng-href" => "{{project.title}}"}
 			%span.show-title {{project.title}}
 			·
