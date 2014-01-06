@@ -2,10 +2,10 @@
 <div class='project-details' my-carousel>
   <div class='slide project-info' ng-class="'slide-'+0" ng-click='nextSlide(0)'>
     <h1 class='project-title'>{{project.title}}</h1>
-    <div class='project-date'>{{project.date}}</div>
     <div class='project-medium'>{{project.medium}}</div>
+    <div class='project-date'>{{project.date}}</div>
     <h2>Apropos</h2>
-    <p class='project-body' ng-bind-html='project.body'></p>
+    <p class='project-body' html="'project.body'" my-html ng-bind-html='project.body'></p>
   </div>
   <div class='slide' my-center my-slide my-slides='slide' ng-class="'slide-'+($index+1)" ng-click='nextSlide($index+1)' ng-repeat='slide in project.slides'></div>
 </div>
