@@ -32,7 +32,7 @@
 			%a{"editable-text" => "activeProject.medium", :href => "#"} {{activeProject.medium || "medium"}}
 		.field.project-description
 			%span.field-title Description: 
-			%a{"editable-textarea" => "activeProject.body", :href => "#",  'html' => "'activeProject.body'", 'my-html' => true, "ng-bind-html" => "activeProject.body"} {{activeProject.body || "Description"}}
+			%a{"editable-textarea" => "activeProject.body", :href => "#",  'html' => "'activeProject.body'", 'my-html' => true, "ng-binda" => "activeProject.body"} {{activeProject.body || "Description"}}
 		.field.project-thumb
 			%span.field-title Thumbnail:
 			%a{"editable-text" => "activeProject.thumb"}
