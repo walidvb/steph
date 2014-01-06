@@ -3,7 +3,7 @@
 	.slide.project-info{"ng-click" => "nextSlide(0)", "ng-class" => "'slide-'+0"}
 		%h1.project-title {{project.title}}
 		.project-medium {{project.medium}}
-		.project-date {{project.date}}
+		.project-date {{project.date | date:'MM.yyyy'}}
 
 		%h2 Apropos
 		%p.project-body{"ng-bind-html" => "project.body", "my-html" => true, "html" => "'project.body'"}

@@ -1,6 +1,6 @@
 <ul class='project-list'>
   <li class='project' ng-repeat="project in projects | filter: {type: 'project', public: true}" style="background-image: url('{{project.thumb}}')">
-    <a class='project-details' ng-href='#project/{{project.url}}'>
+    <a class='project-details' ng-href='#project/{{project.id}}'>
       <span class='project-title'>{{project.title}}</span>
       ·
       <span class='project-date'>{{project.date | date:'MM.yyyy'}}</span>

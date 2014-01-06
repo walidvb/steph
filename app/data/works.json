@@ -1,9 +1,9 @@
 [
   {
     "type": "project",
-    "id": "2",
+    "id": "superlatus",
     "url": "superlatus Project",
-    "date": "2012",
+    "date": "2013-05-02T23:00:00.000Z",
     "title": "(Super)latus",
     "category": "video",
     "medium": "HD videos, 5 minutes",
@@ -15,7 +15,8 @@
         "body": "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
       }
     ],
-    "active": false
+    "active": true,
+    "public": true
   },
   {
     "type": "show",
@@ -198,5 +199,43 @@
     "date": "2012-01-01T00:00:00.000Z",
     "category": "video",
     "body": "The work INTER[&hellip;]VIEWS is a series of videos found on the internet drastically re-edited. What remains from the original video is an abstract speech emptied out of its former subject matter outlining in this way the phatic expressions of the speaker. Consequentially the media is extremely censored. In these videos the spokesperson is caught in the moments where he/she is rhetorically thinking about what will be said and how. In turn, subtle signs of personal gesture and social conventions more forcefully emerge and render substantial the gap between language and idea."
+  },
+  {
+    "title": "Dirt",
+    "type": "project",
+    "id": "dirt",
+    "thumb": "img/thumbs/dirt.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/dirt/01.jpg",
+        "legend": "<p>Installation view of the work Dirt, New Cross, London, 2012</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/dirt/02.jpg",
+        "legend": "<p>Dirt (details), New Cross, London, 2012</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/dirt/03.jpg",
+        "legend": "<p>Dirt (details), New Cross, London, 2012</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/dirt/04.jpg",
+        "legend": "<p>Dirt (details), New Cross, London, 2012</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/dirt/05.jpg",
+        "legend": "<p>Dirt (details), New Cross, London, 2012</p>"
+      }
+    ],
+    "active": false,
+    "public": true,
+    "date": "2012-06-27T23:00:00.000Z",
+    "category": "installation",
+    "medium": "Carbon &amp; oil on glass, spontaneous writing from the audience"
   }
 ]

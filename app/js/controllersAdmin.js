@@ -76,7 +76,7 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
       title: 'New project',
       type: 'project',
       id: 'new_project',
-      thumb: 'img/new_project/',
+      thumb: 'img/thumbs/black.jpg',
       slides: [],
     };
     projects.push(newProject);
