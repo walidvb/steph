@@ -71,6 +71,14 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
       $scope.setActiveProject(newProject);
     };
 
+    $scope.removeProject = function(project){
+      var index = $scope.projects.indexOf(project);
+      console.log(index);
+      if (index > -1) {
+        $scope.projects.splice(index, 1);
+      }
+    };
+
     $scope.addSlide = function(slides){
       var newSlide = {
         type: 'img',
@@ -79,6 +87,13 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
       };
       slides.push(newSlide);
     }
+    $scope.removeSlide = function(slide){
+      var index = $scope.activeProject.slides.indexOf(slide);
+      if (index > -1) {
+        $scope.activeProject.slides.splice(index, 1);
+      }
+    };
+
   }]).
   controller('bioCtrl', ['$scope', 'Bio', function($scope, Bio) {
     var init = function(data){

@@ -151,10 +151,10 @@ Mario
 <iframe src="//player.vimeo.com/video/83432027?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Emma
-
+<iframe src="//player.vimeo.com/video/83450977?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Gore
-<iframe src="//player.vimeo.com/video/83432025?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/83432025?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 The work INTER[…]VIEWS is a series of videos found on the internet drastically re-edited. What remains from the original video is an abstract speech emptied out of its former subject matter outlining in this way the phatic expressions of the speaker. Consequentially the media is extremely censored. In these videos the spokesperson is caught in the moments where he/she is rhetorically thinking about what will be said and how. In turn, subtle signs of personal gesture and social conventions more forcefully emerge and render substantial the gap between language and idea.
 

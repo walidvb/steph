@@ -13,7 +13,7 @@
 
   %body{"ng-class" => "", "ng-class" => "active", "ng-controller" => "appCtrl"}
     #menu{"ng-include" => true, :src => "'partials/menu.html'", "fixed-menu" => true}
-    %button.btn.btn-large#copy-button{"data-target" => "#modal-result", "my-modal-trigger" => true} Get result!
+    %button.btn.btn-lg.btn-success#copy-button{"data-target" => "#modal-result", "my-modal-trigger" => true} Get result!
     .view{"ng-view" => true}
 
 
@@ -21,6 +21,7 @@
     %script{:src => "lib/angular/angular.js"}
     %script{:src => "lib/angular/angular-route.js"}
     %script{:src => "lib/angular/angular-resource.js"}
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"}
     %script{:src => "///cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"}
     %script{:src => "js/appAdmin.js"}
     %script{:src => "js/services.js"}

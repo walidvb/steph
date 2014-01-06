@@ -1,8 +1,9 @@
 .column.left-col.col-sm-4.list
 	%ul.project-list
 		%li.project.add-new{"ng-click" => "addProject();"}
-			%span.glyphicon.glyphicon-plus
-			%span Add Project
+			.btn.btn-lg.btn-success
+				%span.glyphicon.glyphicon-plus
+				%span Add Project
 		%li.project{"ng-repeat" => "project in projects | orderBy:'type':'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active}"}
 			%a.project-title{:href => "#", "ng-click" => "$event.preventDefault()"} {{project.title}} ({{project.type}})
 
@@ -15,6 +16,7 @@
 		@ 
 		%a{"editable-text" => "activeProject.id", :href => "#"} /project/{{activeProject.id || "url"}}
 		)
+		%input{"type" => "checkbox", "ng-model" => "activeProject.public"} public
 	.field-list.project-details
 		.field.project-type
 			%span.field-title Type: 
@@ -22,19 +24,22 @@
 		.field.project-date
 			%span.field-title Date: 
 			%a{"editable-bsdate" => "activeProject.date", "e-datepicker-popup" =>"MM.yyyy", :href => "#"} {{(activeProject.date || "Date") | date:'MM.yyyy'}}
-		.field.project-medium
+		.field.project-category
 			%span.field-title Category: 
 			%a{"editable-text" => "activeProject.category", :href => "#"} {{activeProject.category || "category"}}
 		.field.project-medium
 			%span.field-title Medium: 
 			%a{"editable-text" => "activeProject.medium", :href => "#"} {{activeProject.medium || "medium"}}
+		.field.project-description
+			%span.field-title Description: 
+			%a{"editable-textarea" => "activeProject.body", :href => "#",  'html' => "'activeProject.body'", 'my-html' => true, "ng-bind-html" => "activeProject.body"} {{activeProject.body || "Description"}}
 		.field.project-thumb
 			%span.field-title Thumbnail:
 			%a{"editable-text" => "activeProject.thumb"}
 				%img.project-thumb{"ng-src" => "{{activeProject.thumb}}"}
 		.field.project-slides
 			%span.field-title Slides:
-			%ul
+			%ul{"ui-sortable" => true, "ng-model" => "activeProject.slides"}
 				%li.project-slide{"ng-repeat" => "slide in activeProject.slides"}
 					%select.project-slide-type{"ng-model" => "slide.type", "ng-options" => "option for option in slideOptions"}
 					%div{"ng-if" => "slide.type == 'img'"}
@@ -42,5 +47,8 @@
 						%img.project-slide-img{"ng-src" => "{{slide.url || 'somesource'}}", "editable-text" => "slide.url"}
 					%div{"ng-if" => "slide.type == 'html'"}
 						%a{"editable-textarea" => "slide.body", :href => "#", "ang-bind-html" => "slide.body", 'html' => "'slide.body'", 'amy-html' => true} {{slide.body || "Code html"}}
-				%button.btn{"ng-click" => "addSlide(activeProject.slides)"} Add slide
+					%delete-item{"ng-click" => "removeSlide(slide)", "item-type" => "'slide'", "my-class" => "'btn-xs'"}
+				%button.btn.btn-sm.btn-success{"ng-click" => "addSlide(activeProject.slides)"} Add slide
+
+		%delete-item{"ng-click" => "removeProject(activeProject)", "item-type" => "'project'", "my-class" => "'btn-lg'"}
 #result{"my-modal" => true, "my-data" => "projects", "my-target" => "works.json"}

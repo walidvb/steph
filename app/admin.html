@@ -13,11 +13,12 @@
   </head>
   <body ng-class='active' ng-controller='appCtrl'>
     <div fixed-menu id='menu' ng-include src="'partials/menu.html'"></div>
-    <button class='btn btn-large' data-target='#modal-result' id='copy-button' my-modal-trigger>Get result!</button>
+    <button class='btn btn-lg btn-success' data-target='#modal-result' id='copy-button' my-modal-trigger>Get result!</button>
     <div class='view' ng-view></div>
     <script src='lib/angular/angular.js'></script>
     <script src='lib/angular/angular-route.js'></script>
     <script src='lib/angular/angular-resource.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js'></script>
     <script src='///cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js'></script>
     <script src='js/appAdmin.js'></script>
     <script src='js/services.js'></script>

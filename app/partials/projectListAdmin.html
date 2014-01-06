@@ -1,8 +1,10 @@
 <div class='column left-col col-sm-4 list'>
   <ul class='project-list'>
     <li class='project add-new' ng-click='addProject();'>
-      <span class='glyphicon glyphicon-plus'></span>
-      <span>Add Project</span>
+      <div class='btn btn-lg btn-success'>
+        <span class='glyphicon glyphicon-plus'></span>
+        <span>Add Project</span>
+      </div>
     </li>
     <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | orderBy:'type':'date'">
       <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.type}})</a>
@@ -19,6 +21,7 @@
     @
     <a editable-text='activeProject.id' href='#'>/project/{{activeProject.id || "url"}}</a>
     )
+    <input ng-model='activeProject.public' type='checkbox'>public</input>
   </div>
   <div class='field-list project-details'>
     <div class='field project-type'>
@@ -29,13 +32,17 @@
       <span class='field-title'>Date:</span>
       <a e-datepicker-popup='MM.yyyy' editable-bsdate='activeProject.date' href='#'>{{(activeProject.date || "Date") | date:'MM.yyyy'}}</a>
     </div>
-    <div class='field project-medium'>
+    <div class='field project-category'>
       <span class='field-title'>Category:</span>
       <a editable-text='activeProject.category' href='#'>{{activeProject.category || "category"}}</a>
     </div>
     <div class='field project-medium'>
       <span class='field-title'>Medium:</span>
       <a editable-text='activeProject.medium' href='#'>{{activeProject.medium || "medium"}}</a>
+    </div>
+    <div class='field project-description'>
+      <span class='field-title'>Description:</span>
+      <a editable-textarea='activeProject.body' href='#' html="'activeProject.body'" my-html ng-bind-html='activeProject.body'>{{activeProject.body || "Description"}}</a>
     </div>
     <div class='field project-thumb'>
       <span class='field-title'>Thumbnail:</span>
@@ -45,7 +52,7 @@
     </div>
     <div class='field project-slides'>
       <span class='field-title'>Slides:</span>
-      <ul>
+      <ul ng-model='activeProject.slides' ui-sortable>
         <li class='project-slide' ng-repeat='slide in activeProject.slides'>
           <select class='project-slide-type' ng-model='slide.type' ng-options='option for option in slideOptions'></select>
           <div ng-if="slide.type == 'img'">
@@ -55,10 +62,12 @@
           <div ng-if="slide.type == 'html'">
             <a amy-html ang-bind-html='slide.body' editable-textarea='slide.body' href='#' html="'slide.body'">{{slide.body || "Code html"}}</a>
           </div>
+          <delete-item item-type="'slide'" my-class="'btn-xs'" ng-click='removeSlide(slide)'></delete-item>
         </li>
-        <button class='btn' ng-click='addSlide(activeProject.slides)'>Add slide</button>
+        <button class='btn btn-sm btn-success' ng-click='addSlide(activeProject.slides)'>Add slide</button>
       </ul>
     </div>
+    <delete-item item-type="'project'" my-class="'btn-lg'" ng-click='removeProject(activeProject)'></delete-item>
   </div>
 </div>
 <div id='result' my-data='projects' my-modal my-target='works.json'></div>

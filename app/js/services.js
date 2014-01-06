@@ -10,6 +10,9 @@ angular.module('myApp.services', ['ngResource']).
 	factory('Projects', ['$resource',
 		function($resource)
 		{
+			// var ret = $resource('https://www.dropbox.com/s/9jogzvut6v8xz62/works.json');
+			// console.log(ret);
+			// return ret;
 			return $resource('data/works.json');
 		}
 	]).

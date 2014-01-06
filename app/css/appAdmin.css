@@ -6130,8 +6130,8 @@ body .navbar {
 }
 #copy-button {
   position: fixed;
-  top: 8px;
-  right: 20px;
+  top: 3px;
+  right: 5px;
   z-index: 1010;
 }
 .modal textarea {
@@ -6164,6 +6164,9 @@ body a.editable-click {
   background: rgba(255, 96, 0, 0.2);
   color: #ff6000;
 }
+.details {
+  max-width: 100%;
+}
 .details .project-title {
   padding-bottom: 15px;
 }
@@ -6172,6 +6175,7 @@ body a.editable-click {
 }
 .details .field-list .field {
   display: block;
+  white-space: normal;
 }
 .details .field-list img {
   max-width: 150px;

@@ -31,7 +31,7 @@ directive('fixedMenu', function(){
 			on('resize', function(){
 				menu_pos = $(elem).offset().top;
 				menu_height = $(elem).height();
-				oldPadding = $(body).css('paddingTop');
+				oldPadding = $('body').css('paddingTop');
 			});
 		}
 	}
@@ -102,6 +102,7 @@ directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 		link: function(scope, elem, attrs)
 		{
 			var depth = (scope.html).split('.');
+			console.log(elem);
 			if(depth.length == 2)
 			{
 				scope.$parent[depth[0]][depth[1]] = scope.$parent[depth[0]][depth[1]] || 'html';
@@ -114,5 +115,27 @@ directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 			}
 
 		}
+	}
+}]).
+directive('addItem', ['$timeout', function(){
+	return {
+		restrict: 'A',
+		template: '<button class="btn btn-large"> Add</button>',
+		link: function(scope, elem, attrs) {
+
+		},
+	}
+}]).
+directive('deleteItem', ['$timeout', function(timer){
+	return {
+		restrict: 'AE',
+		scope: {
+			itemType: "=itemType",
+			class: "=myClass"
+		},
+		template: '<button class="btn btn-danger" net.Socket(options);g-class="{class}"> Delete {{itemType}}</button>',
+		link: function(scope, elem, attrs) {
+
+		},
 	}
 }]);
