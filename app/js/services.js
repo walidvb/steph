@@ -6,15 +6,13 @@
 // Demonstrate how to register services
 // In this case it is a simple value service.
 angular.module('myApp.services', ['ngResource']).
-	value('version', '0.1').
 	factory('Projects', ['$resource',
 		function($resource)
 		{
 			 var ret = $resource('https://dl.dropboxusercontent.com/s/9jogzvut6v8xz62/works.json',{}, {
 				getData: {method: 'GET'}});
-			 console.log(ret);
 			 return ret;
-			return $resource('data/works.json');
+			//return $resource('data/works.json');
 		}
 	]).
 	factory('Bio', ['$resource',

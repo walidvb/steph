@@ -5,10 +5,10 @@
 angular.module('myApp.controllers', []).
 controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
   $scope.menu = [
-  {name: 'projects'},
-  {name: 'shows'},
-  {name: 'bio'},
-  {name: 'contact'}
+    {name: 'projects'},
+    {name: 'shows'},
+    {name: 'bio'},
+    {name: 'contact'}
   ];
   $scope.currentMenu = '';
   $scope.setActiveMenu = function(id)

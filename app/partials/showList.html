@@ -1,6 +1,6 @@
 <ul class='show-list'>
   <li class='show' ng-repeat="project in projects | filter: {type: 'show', public: true}">
-    <a ng-href='{{project.title}}'>
+    <a ng-href='#shows/{{project.title}}'>
       <span class='show-title'>{{project.title}}</span>
       ·
       <span class='show-location'>{{project.location}}</span>

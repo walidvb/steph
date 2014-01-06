@@ -15,31 +15,8 @@
         "body": "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
       }
     ],
-    "active": true,
+    "active": false,
     "public": true
-  },
-  {
-    "type": "show",
-    "id": "1",
-    "url": "superlatus2",
-    "date": "2011",
-    "title": "(Super)latus show",
-    "category": "video",
-    "medium": "HD videos, 5 minutes",
-    "thumb": "img/thumbs/superlatus.jpg",
-    "body": "This works features two identical protagonists who are mutually critiquing each other with superlative adjectives, positives and negatives. Both counterparts become increasingly pixelated, censoring one another and disappearing over time. This work puts at stake the notion of critical subjectivity and the self-cancelling quality of such criticism. The vile for some may well be valuable to others. Even though it&#39;s often sterile, such criticism may sometimes create fertile antagonistic appreciations and clashes that result into third definitions.",
-    "slides": [
-      {
-        "type": "html",
-        "body": "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/superlatus/01.jpg",
-        "legend": "Still from the work (Super)latus, 2013"
-      }
-    ],
-    "active": false
   },
   {
     "title": "Inter[...]Views",
@@ -238,8 +215,7 @@
     "category": "installation",
     "medium": "Carbon &amp; oil on glass, spontaneous writing from the audience"
   },
-
-    {
+  {
     "title": "Full Stops",
     "type": "project",
     "id": "fullstops",
@@ -258,7 +234,7 @@
     "date": "2013-05-02T23:00:00.000Z",
     "category": "sound"
   },
-    {
+  {
     "title": "Best Of Best Of Best Of",
     "type": "project",
     "id": "bestof",
@@ -361,5 +337,161 @@
     "body": "<p>Best Of Best Of Best Of is a series of songs from various musicians and music bands. Each songs is a cumulative crescendo of the best of each artists turning into a cacophony. The work is shown within the form of an album listenable on iPod. &nbsp;</p>",
     "date": "2014-03-06T00:00:00.000Z",
     "medium": "Sound piece, 51 minutes"
+  },
+  {
+    "title": "Statues (Play#1)",
+    "type": "project",
+    "id": "new_project",
+    "thumb": "img/thumbs/statues.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43101783?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": true,
+    "category": "video",
+    "medium": "HD video, 10 minutes",
+    "public": true,
+    "date": "2013-04-30T23:00:00.000Z"
+  },
+  {
+    "title": "Rag Tag (Play#2)",
+    "type": "project",
+    "id": "new_project",
+    "thumb": "img/thumbs/ragtag.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43105046?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": true,
+    "category": "video",
+    "medium": "HD video, 15 minutes",
+    "public": true,
+    "date": "2013-04-30T23:00:00.000Z"
+  },
+  {
+    "title": "Inter(lude)",
+    "type": "project",
+    "id": "interlude",
+    "thumb": "img/thumbs/interlude.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/interlude/",
+        "body": "<iframe src=\"//player.vimeo.com/video/54714369?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": true,
+    "date": "2012-04-03T23:00:00.000Z",
+    "medium": "HD video, 21 minutes",
+    "public": true
+  },
+  {
+    "title": "Emoticons",
+    "type": "project",
+    "id": "emoticons",
+    "thumb": "img/thumbs/emoticons.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/01.jpg",
+        "legend": "<p>:) 2 x 21 x 21 cm &amp; 177 x 48 cm, 2011</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/02.jpg",
+        "legend": "<p>:o 2 x 21 x 21 cm &amp; &oslash; 110 cm, 2011</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/03.jpg",
+        "legend": "<p>:* 2 x 21 x 21 cm &amp; 60 x 60 cm, 2011</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/04.jpg",
+        "legend": "<p>:D 2 x 21 x 21 cm &amp; 120 x 110 cm, 2011</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/05.jpg",
+        "legend": "<p>:Ä± 2 x 21 x 21 cm &amp; 99 x 13 cm, 2011</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/06.jpg",
+        "legend": "<p>:P 2 x 21 x 21 cm &amp; 120 x 110 cm, 2011</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/07.jpg",
+        "legend": "<p>:| 2 x 21 x 21 cm &amp; 190 x 13 cm, 2011</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/08.jpg",
+        "legend": "<p>._. 2 x 21 x 21 cm &amp; 13 x 90 cm, 2012</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/09.jpg",
+        "legend": "<p>Emoticons series, installation view, BYCR gallery, Milan, IT, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/10.jpg",
+        "legend": "<p>:] 2 x 21 x 21 cm &amp; 177 x 15 cm, 2011</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/11.jpg",
+        "legend": "<p>:\\ 2 x 21 x 21 cm &amp; 160 x 15 cm, 2011</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/12.jpg",
+        "legend": "<p>&deg;v&deg; 2 x &oslash; 36 cm &amp; 56 x 69 cm, 2012</p>"
+      }
+    ],
+    "active": false,
+    "body": "<p>For the series of EMOTICONS, Blumer has objectified the most widespread icon representing our emotions. This hyperbolic manner of showing emoticons intends to stimulate the audience to reflect on our daily-mediated relationship to each other, whether it is in a superficial or profound way. The emoticons are sort of emptied out symbols. Their primordial iconicity fades away because of our overuse of them. One could say that the more we use an emoticon the less it actually represents our emotional state. It&rsquo;s, however, not always the case, the emoticons do still carry a profound power of self-reflectivity. Displayed within the traditional white cube, the Emoticons series doesn&rsquo;t leave indifferent. They continuously inspire a reaction. Whether the viewers smile or not, they are caught in a ceaseless play on signs and signification since the emoticon exists at this strange edge between pure abstraction and representation. &nbsp;</p>",
+    "medium": "Fabric on shaped stretchers",
+    "date": "2011-12-30T00:00:00.000Z",
+    "category": "object",
+    "public": true
+  },
+  {
+    "title": "Clock",
+    "type": "project",
+    "id": "clock",
+    "thumb": "img/thumbs/clock.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/clock/01.jpg"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/clock/02.jpg"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/clock/03.jpg"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/clock/04.jpg"
+      }
+    ],
+    "active": true,
+    "category": "object",
+    "date": "2011-11-10T00:00:00.000Z",
+    "public": true,
+    "medium": "Fabric on shaped Stretchers"
   }
 ]
