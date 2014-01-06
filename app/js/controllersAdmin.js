@@ -95,7 +95,6 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
     var newSlide = {
       type: 'img',
       url: 'img/'+$scope.activeProject.id+'/',
-
     };
     slides.push(newSlide);
   }

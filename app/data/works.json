@@ -237,5 +237,129 @@
     "date": "2012-06-27T23:00:00.000Z",
     "category": "installation",
     "medium": "Carbon &amp; oil on glass, spontaneous writing from the audience"
+  },
+
+    {
+    "title": "Full Stops",
+    "type": "project",
+    "id": "fullstops",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83450978?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" width=\"1000\" height=\"562\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": true,
+    "body": "<p>&lsquo;Full Stops&rsquo; is a musical arrangement made from the last notes of hundreds of the most famous classical songs downloaded on the Internet. Blending all classical eras from Baroque to Romantic passing by Classic, the work produces improbable encounters, including Mozart (&dagger; 1791) and Tchaikovsky (&dagger; 1893), Handel (&dagger; 1759) and Rachmaninoff (&dagger; 1943). The result is a new harmonious symphony, sometimes pompous, sometimes meditative, which begins and ends indefinitely, again and again.</p>\n<p>&nbsp;</p>",
+    "medium": "Sound piece",
+    "public": true,
+    "date": "2013-05-02T23:00:00.000Z",
+    "category": "sound"
+  },
+    {
+    "title": "Best Of Best Of Best Of",
+    "type": "project",
+    "id": "bestof",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78424760?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78425558?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78425954?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78426161?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78426427?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78426864?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78462268?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78463988?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548020?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548516?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548520?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548521?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548522?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548524?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78550353?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78550354?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78550355?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/bestof/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78550356?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": true,
+    "public": true,
+    "category": "sound",
+    "body": "<p>Best Of Best Of Best Of is a series of songs from various musicians and music bands. Each songs is a cumulative crescendo of the best of each artists turning into a cacophony. The work is shown within the form of an album listenable on iPod. &nbsp;</p>",
+    "date": "2014-03-06T00:00:00.000Z",
+    "medium": "Sound piece, 51 minutes"
   }
 ]
