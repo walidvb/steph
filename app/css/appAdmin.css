@@ -6160,7 +6160,7 @@ body a.editable-click {
 .project-list li:first-child {
   border-top: solid 1px #494949;
 }
-.project-list li:hover {
+.project-list li:hover:not(.project-active) {
   background: rgba(255, 96, 0, 0.2);
   color: #ff6000;
 }
