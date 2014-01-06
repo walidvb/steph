@@ -15,7 +15,7 @@
         "body": "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
       }
     ],
-    "active": true
+    "active": false
   },
   {
     "type": "show",
@@ -37,6 +37,166 @@
         "url": "img/projects/superlatus/01.jpg",
         "legend": "Still from the work (Super)latus, 2013"
       }
-    ]
+    ],
+    "active": false
+  },
+  {
+    "title": "Inter[...]Views",
+    "type": "project",
+    "id": "interviews",
+    "thumb": "img/thumbs/interviews.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42503732?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42793011?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42666147?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43862966?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42793010?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43098903?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "legend": "<iframe src=\"//player.vimeo.com/video/43098903?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "body": "<iframe src=\"//player.vimeo.com/video/42739529?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42642074?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43931578?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43931577?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43862967?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43501946?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43723054?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43495278?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43477481?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43103384?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43100682?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43099309?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42829353?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42739532?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42739530?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42666144?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42689483?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42666145?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42666146?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83432026?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83432027?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83450977?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83432025?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": true,
+    "public": true,
+    "date": "2012-01-01T00:00:00.000Z",
+    "category": "video",
+    "body": "The work INTER[&hellip;]VIEWS is a series of videos found on the internet drastically re-edited. What remains from the original video is an abstract speech emptied out of its former subject matter outlining in this way the phatic expressions of the speaker. Consequentially the media is extremely censored. In these videos the spokesperson is caught in the moments where he/she is rhetorically thinking about what will be said and how. In turn, subtle signs of personal gesture and social conventions more forcefully emerge and render substantial the gap between language and idea."
   }
 ]
