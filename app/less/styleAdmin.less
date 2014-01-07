@@ -94,12 +94,15 @@ border-bottom: dashed 1px @theme-color;
 		}
 	}
 	.project-slide{
-		padding: 5px 0px;
+		padding: 5px 5px;
+
 		&:nth-child(even) {
-		.background-color(@theme-color, 0.08);
-		border-top: 1px lighten(@theme-color, 40%) solid;
-		border-bottom: 1px lighten(@theme-color, 40%) solid;
-		margin: 10px 0px;
+			.background-color(@theme-color, 0.08);
+			border-top: 1px lighten(@theme-color, 40%) solid;
+			border-bottom: 1px lighten(@theme-color, 40%) solid;
+		}
+		&:hover{
+			.background-color(@theme-color, 0.3);
 		}
 	}
 }

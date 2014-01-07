@@ -55,6 +55,7 @@
 			%ul{"ui-sortable" => true, "ng-model" => "activeProject.slides"}
 				%li.project-slide{"ng-repeat" => "slide in activeProject.slides"}
 					%select.project-slide-type{"ng-model" => "slide.type", "ng-options" => "option for option in slideOptions"}
+					
 					%div{"ng-if" => "slide.type == 'img'"}
 						%a{"editable-textarea" => "slide.legend", :href => "#"} {{slide.legend || "legend"}}
 						%img.project-slide-img{"ng-src" => "{{slide.url || 'somesource'}}", "editable-text" => "slide.url"}

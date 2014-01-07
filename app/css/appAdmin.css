@@ -6205,11 +6205,13 @@ body a.editable-click {
   list-style-type: decimal;
 }
 .details .project-slide {
-  padding: 5px 0px;
+  padding: 5px 5px;
 }
 .details .project-slide:nth-child(even) {
   background: rgba(255, 96, 0, 0.08);
   border-top: 1px #ffdfcc solid;
   border-bottom: 1px #ffdfcc solid;
-  margin: 10px 0px;
+}
+.details .project-slide:hover {
+  background: rgba(255, 96, 0, 0.3);
 }
