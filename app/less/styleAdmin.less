@@ -36,23 +36,33 @@ color: @theme-color;
 border-bottom: dashed 1px @theme-color;
 }
 
+@list-color: @theme-color;
 .project-list{
 	li{
 		line-height: 3;
 		list-style: none;
 		line-height: 3.4;
-		border-bottom: solid 1px @text-color;
 		border-right: solid 1px @text-color;
 		border-radius: 2px;
-		background: rgba(red(@theme-color),green(@theme-color),blue(@theme-color), 0.2);
+		.background-color(@theme-color, 0.1);
+		&:nth-child(even){
+			border-bottom: solid 1px lighten(@theme-color, 30%);
+			border-top: solid 1px lighten(@theme-color, 30%);
+
+			.background-color(lighten(@theme-color, 15%), 0.1);
+		}
+
 		&.project-active{
+			border-top: solid 1px @text-color;
+
+			border-bottom: solid 1px @text-color;
 			border-right: none;
 			background: white;
 		
 			//background: rgba(red(@theme-color),green(@theme-color),blue(@theme-color), 0.1);
 		}
 		&:first-child{
-			border-top: solid 1px @text-color;
+			border-top: solid 1px lighten(@text-color, 15%);
 		}
 		&:hover:not(.project-active){
 			background: rgba(red(@theme-color),green(@theme-color),blue(@theme-color), 0.2);
@@ -81,6 +91,15 @@ border-bottom: dashed 1px @theme-color;
 		}
 		li{
 			list-style-type: decimal;
+		}
+	}
+	.project-slide{
+		padding: 5px 0px;
+		&:nth-child(even) {
+		.background-color(@theme-color, 0.08);
+		border-top: 1px lighten(@theme-color, 40%) solid;
+		border-bottom: 1px lighten(@theme-color, 40%) solid;
+		margin: 10px 0px;
 		}
 	}
 }

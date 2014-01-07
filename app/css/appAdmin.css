@@ -6163,17 +6163,23 @@ body a.editable-click {
   line-height: 3;
   list-style: none;
   line-height: 3.4;
-  border-bottom: solid 1px #323232;
   border-right: solid 1px #323232;
   border-radius: 2px;
-  background: rgba(255, 96, 0, 0.2);
+  background: rgba(255, 96, 0, 0.1);
+}
+.project-list li:nth-child(even) {
+  border-bottom: solid 1px #ffbf99;
+  border-top: solid 1px #ffbf99;
+  background: rgba(255, 144, 77, 0.1);
 }
 .project-list li.project-active {
+  border-top: solid 1px #323232;
+  border-bottom: solid 1px #323232;
   border-right: none;
   background: white;
 }
 .project-list li:first-child {
-  border-top: solid 1px #323232;
+  border-top: solid 1px #585858;
 }
 .project-list li:hover:not(.project-active) {
   background: rgba(255, 96, 0, 0.2);
@@ -6197,4 +6203,13 @@ body a.editable-click {
 }
 .details .field-list li {
   list-style-type: decimal;
+}
+.details .project-slide {
+  padding: 5px 0px;
+}
+.details .project-slide:nth-child(even) {
+  background: rgba(255, 96, 0, 0.08);
+  border-top: 1px #ffdfcc solid;
+  border-bottom: 1px #ffdfcc solid;
+  margin: 10px 0px;
 }

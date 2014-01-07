@@ -42,6 +42,10 @@ section{
 	min-height: 100%;
 	display: inline-block;
 }
+
+.background-color(@hex, @opacity: 1) {
+	background: rgba(red(@hex), green(@hex), blue(@hex), @opacity);
+}
 //----------Menu
 
 .navbar {

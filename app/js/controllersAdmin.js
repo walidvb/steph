@@ -58,15 +58,14 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
 
   $scope.projects = Projects.query(function(data){
     $scope.activeProject = _.find(data, function(project){ return project.active && project.type == $scope.filter});
+
   }); 
 
   $scope.slideOptions = ["img", "html"];
 
   $scope.setActiveProject = function(project){
-    console.log($scope.activeProject);
     if($scope.activeProject)
     {
-      console.log("wasn't undefined");
       $scope.activeProject.active = false;
     }
     $scope.activeProject = project;
@@ -76,6 +75,7 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
   $scope.addProject = function(projects){
     var newProject = {
       title: 'New ' + $scope.filterType,
+      public: true,
       type: $scope.filterType,
       id: 'new_' + $scope.filterType,
       thumb: 'img/thumbs/black.jpg',
@@ -97,6 +97,7 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
     var newSlide = {
       type: 'img',
       url: 'img/'+$scope.activeProject.id+'/',
+      public: true,
     };
     slides.push(newSlide);
   }
