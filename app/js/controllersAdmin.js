@@ -53,17 +53,22 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
     min_height: 160,
     height : 180
   };
-  $scope.projects = Projects.query(function(data){
-    //$scope.activeProject = data[0];
-    //$scope.activeProject.active = true;
-  });
-  $scope.activeProject = {};
 
-  $scope.filter = ($location.$$path == '/projects') ? 'project' : 'show';    
+  $scope.filter = ($location.$$path == '/projects') ? 'project' : 'show';
+
+  $scope.projects = Projects.query(function(data){
+    $scope.activeProject = _.find(data, function(project){ return project.active && project.type == $scope.filter});
+  }); 
+
   $scope.slideOptions = ["img", "html"];
 
   $scope.setActiveProject = function(project){
-    $scope.activeProject.active = false;
+    console.log($scope.activeProject);
+    if($scope.activeProject)
+    {
+      console.log("wasn't undefined");
+      $scope.activeProject.active = false;
+    }
     $scope.activeProject = project;
     project.active = true;
   };

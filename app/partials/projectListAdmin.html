@@ -28,9 +28,13 @@
       <span class='field-title'>Date:</span>
       <a e-datepicker-popup='MM.yyyy' editable-bsdate='activeProject.date' href='#'>{{(activeProject.date || "Date") | date:'MM.yyyy'}}</a>
     </div>
-    <div class='field project-category'>
+    <div class='field project-category' ng-if="activeProject.type == 'project'">
       <span class='field-title'>Category:</span>
       <a editable-text='activeProject.category' href='#'>{{activeProject.category || "category"}}</a>
+    </div>
+    <div class='field project-category' ng-if="activeProject.type == 'show'">
+      <span class='field-title'>Category:</span>
+      <a e-ng-options="category for category in ['group', 'solo']" editable-select='activeProject.category' href='#'>{{(activeProject.category || "Type")}}</a>
     </div>
     <div class='field project-medium' ng-if="activeProject.type == 'project'">
       <span class='field-title'>Medium:</span>
@@ -58,7 +62,7 @@
         <img class='project-thumb' ng-src='{{activeProject.thumb}}'>
       </a>
     </div>
-    <div class='field project-slides' ng-if="activeProject.type == 'project'">
+    <div class='field project-slides'>
       <span class='field-title'>Slides:</span>
       <ul ng-model='activeProject.slides' ui-sortable>
         <li class='project-slide' ng-repeat='slide in activeProject.slides'>
