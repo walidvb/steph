@@ -74,6 +74,7 @@
           <div ng-if="slide.type == 'html'">
             <a amy-html ang-bind-html='slide.body' editable-text='slide.body' href='#' html="'slide.body'">{{slide.body || "Code html"}}</a>
           </div>
+          <input ng-model='slide.public' type='checkbox'>public</input>
           <delete-item item-type="'slide'" my-class="'btn-xs'" ng-click='removeSlide(slide)'></delete-item>
         </li>
         <add-item item-type="'slide'" my-class="'btn-lg'" ng-click='addSlide(activeProject.slides)'></add-item>

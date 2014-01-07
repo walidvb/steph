@@ -60,6 +60,7 @@
 						%img.project-slide-img{"ng-src" => "{{slide.url || 'somesource'}}", "editable-text" => "slide.url"}
 					%div{"ng-if" => "slide.type == 'html'"}
 						%a{"editable-text" => "slide.body", :href => "#", "ang-bind-html" => "slide.body", 'html' => "'slide.body'", 'amy-html' => true} {{slide.body || "Code html"}}
+					%input{"type" => "checkbox", "ng-model" => "slide.public"} public
 					%delete-item{"ng-click" => "removeSlide(slide)", "item-type" => "'slide'", "my-class" => "'btn-xs'"}
 				%add-item{"ng-click" => "addSlide(activeProject.slides)", "item-type" => "'slide'", "my-class" => "'btn-lg'"}
 		%delete-item{"ng-click" => "removeProject(activeProject)", "item-type" => "'project'", "my-class" => "'btn-lg'"}

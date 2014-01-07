@@ -6,4 +6,4 @@
 		.project-date {{project.date | date:'yyyy'}}
 		%h2 Apropos
 		%p.project-body{"ng-bind-html" => "project.body", "my-html" => true, "html" => "'project.body'"}
-	.slide{"ng-repeat" => "slide in project.slides", "ng-click" => "nextSlide($index+1)", "ng-class" => "'slide-'+($index+1)", "my-slide" => true, "my-slides" => "slide", "my-center" => true}
+	.slide{"ng-repeat" => "slide in project.slides | filter: {public: true}", "ng-click" => "nextSlide($index+1)", "ng-class" => "'slide-'+($index+1)", "my-slide" => true, "my-slides" => "slide", "my-center" => true}
