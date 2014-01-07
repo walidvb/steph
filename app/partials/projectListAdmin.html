@@ -6,7 +6,7 @@
         <span>Add Project</span>
       </div>
     </li>
-    <li class='project' ng-class="{'project-active' : project.active}" ng-click='setActiveProject(project);' ng-repeat="project in projects | orderBy:'type':'date'">
+    <li class='project' ng-class="{'project-active' : project.active || false}" ng-click='setActiveProject(project);' ng-repeat="project in projects | orderBy:'type':'date'">
       <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.type}})</a>
     </li>
   </ul>

@@ -14,14 +14,19 @@
   </li>
   <li>
     <h3>Selected Exhibitions</h3>
-    <ul class='bio-years'>
-      <li ng-repeat="year in Experiences | orderBy:'-year'">
-        <div class='bio-year'>{{year.year}}</div>
-        <ul>
-          <li ng-repeat="line in year.experiences | orderBy:'-date'">
-            <span class='bio-title'>{{line.text}}</span>
-            <span class='bio-location'>{{line.location}}</span>
-            <span class='bio-venue'>{{line.venue}}</span>
+    <ul class='bio-shows'>
+      <li ng-repeat="(type, shows_) in shows | orderBy:'-type'">
+        <h4>{{type}}</h4>
+        <ul class='bio-years'>
+          <li ng-repeat="year in shows_ | orderBy:'-year'">
+            <div class='bio-year'>{{year.year}}</div>
+            <ul>
+              <li ng-repeat="line in year.experiences | orderBy:'-date'">
+                <span class='bio-title'>{{line.text}}</span>
+                <span class='bio-location'>{{line.location}}</span>
+                <span class='bio-venue'>{{line.venue}}</span>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>

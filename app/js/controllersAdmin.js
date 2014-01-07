@@ -36,11 +36,6 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
     };
   }]).
 controller('projectCtrl', ['$scope', 'Projects', function($scope, Projects) {
-
-  // projects = Projects.query();
-  // projectID = $routeParams.projectID
-  // project = $filter('filter')();
- //  $scope.project = project;
 }]).
 controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scope, $location, Projects) {
   $scope.tinymceOptions = 
@@ -57,8 +52,8 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
     height : 180
   };
   $scope.projects = Projects.query(function(data){
-    $scope.activeProject = data[0];
-    $scope.activeProject.active = true;
+    //$scope.activeProject = data[0];
+    //$scope.activeProject.active = true;
   });
   $scope.activeProject = {};
 

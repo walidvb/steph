@@ -4,7 +4,7 @@
 			.btn.btn-lg.btn-success
 				%span.glyphicon.glyphicon-plus
 				%span Add Project
-		%li.project{"ng-repeat" => "project in projects | orderBy:'type':'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active}"}
+		%li.project{"ng-repeat" => "project in projects | orderBy:'type':'date'", "ng-click" => "setActiveProject(project);", "ng-class" => "{'project-active' : project.active || false}"}
 			%a.project-title{:href => "#", "ng-click" => "$event.preventDefault()"} {{project.title}} ({{project.type}})
 
 .column.right-col.col-sm-8.details

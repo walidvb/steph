@@ -30,7 +30,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
     {
       //event.preventDefault();
       $location.hash(id);
-      setTimeout($anchorScroll, 1000);
+      setTimeout($anchorScroll, 200);
       //reset to old to keep any additional routing logic from kicking in
       //$location.hash(old); 
     };
@@ -63,22 +63,32 @@ controller('bioListCtrl', ['$scope', 'Bio', function($scope, Bio) {
     $scope.header = data.header;
     $scope.pdf = data.pdf;
     var bio = _.groupBy(data.bio, category);
-    var experiences = bio.Solo.concat(bio.Group);
-    var groupedExp = _.groupBy(experiences, "date");
-    $scope.bio = {};
-    $scope.bio.Awards = bio.Awards;
-    $scope.bio.Education = bio.Education;
 
-    var years = [];
-    angular.forEach(groupedExp, function(exp, yearIndex){
-      var year = {
-        year: yearIndex,
-        experiences: exp,
-      }
-      years.push(year);
-    })
-    $scope.Experiences = years;
+    $scope.bio = {
+      Awards: bio.Awards,
+      Education: bio.Education,
+    };
 
+    $scope.shows = {};
+    var shows = {
+      Solo: bio.Solo,
+      Group: bio.Group
+    };
+    angular.forEach(shows, function(shows, showType){
+      var groupedExp = _.groupBy(shows, "date");
+      var years = [];
+      angular.forEach(groupedExp, function(exp, yearIndex){
+        var year = {
+          year: yearIndex,
+          experiences: exp,
+        };
+        years.push(year);
+      });
+      console.log(years);
+      $scope.shows[showType] = years;
+    });
+
+    console.log($scope.shows);
     delete $scope.bio.Solo;
     delete $scope.bio.Group;
   });

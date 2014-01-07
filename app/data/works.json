@@ -420,7 +420,7 @@
       {
         "type": "img",
         "url": "img/projects/emoticons/05.jpg",
-        "legend": "<p>:Ä± 2 x 21 x 21 cm &amp; 99 x 13 cm, 2011</p>"
+        "legend": "<p>:ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â± 2 x 21 x 21 cm &amp; 99 x 13 cm, 2011</p>"
       },
       {
         "type": "img",
@@ -493,5 +493,94 @@
     "date": "2011-11-10T00:00:00.000Z",
     "public": true,
     "medium": "Fabric on shaped Stretchers"
+  },
+  {
+    "title": "Snow Rug (Shave#3)",
+    "type": "project",
+    "id": "snowrug",
+    "thumb": "img/thumbs/snowrug.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/snowrug/",
+        "body": "<iframe src=\"//player.vimeo.com/video/39334858?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": true,
+    "category": "video",
+    "medium": "HD videos, 15 minutes"
+  },
+  {
+    "title": "Ellipsis",
+    "type": "project",
+    "id": "new_project",
+    "thumb": "img/thumbs/ellipsis.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/39334469?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": true,
+    "body": "<p>In a text, the ellipsis is signalled by 3 dots and brackets (&hellip;) which indicates when an author takes out some parts of an original text that is quoted in order to follow the logic of the argument. This absence is inevitably catching our attention and our mind eventually creates something to feed the gap. It is this lack in content of a text that the performance Ellipsis intends to question. The performance is made of 3 black dots covered with faux-fur hanged on a wall carefully and slowly shaved-off by the performers. As the ellipsis, the work is created through a subtraction of some of the original material. This antithetical action contrasts with traditional painting where commonly the material (paint) is added onto the canvas to generate new meanings. It also and mainly emphasis on how the &ldquo;left un-told&rdquo; becomes a condition for multiple. In this case, the ellipsis is not only the representation of a silent omission but also enhances a creative and fertile process, unfolding a variety of meaning, exploiting the void until it becomes productive.</p>",
+    "medium": "HD video, 21 minutes",
+    "category": "video",
+    "public": true
+  },
+  {
+    "title": "Epi(deixis)",
+    "type": "show",
+    "id": "epideixis",
+    "thumb": "img/shows/epideixis.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/01.jpg",
+        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/02.jpg",
+        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/03.jpg",
+        "legend": "<p>View of the work&nbsp;<em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/04.jpg",
+        "legend": "<p>View of the work <em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/05.jpg",
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/06.jpg",
+        "legend": "<p>View of the&nbsp;work <em>:P from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/07.jpg",
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>:) from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/08.jpg",
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>:* from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/09.jpg",
+        "legend": "<p>View of installations<em>&nbsp;Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
+      }
+    ],
+    "active": true,
+    "public": true
   }
 ]

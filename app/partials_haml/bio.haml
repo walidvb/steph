@@ -6,19 +6,25 @@
 			/If it's an array, ie if it's not the later experiences
 			%li{"ng-repeat"=>"exp in experiences  | orderBy:'-date'"}
 				%span.bio-date {{exp.date}}
+				-# | date:'yyyy'}}
 				%span.bio-title {{exp.text}}
 				%span.bio-venue {{exp.venue}}
 				%span.bio-location {{exp.location}}
 	%li
 		%h3 Selected Exhibitions
-		%ul.bio-years
-			%li{"ng-repeat" => "year in Experiences | orderBy:'-year'"}
-				.bio-year {{year.year}} 
-				%ul
-					%li{"ng-repeat" => "line in year.experiences | orderBy:'-date'"} 
-						%span.bio-title {{line.text}}
-						%span.bio-location {{line.location}}
-						%span.bio-venue {{line.venue}}
+
+		%ul.bio-shows
+			%li{"ng-repeat" => "(type, shows_) in shows | orderBy:'-type'"}
+				%h4 {{type}}
+				%ul.bio-years
+					%li{"ng-repeat" => "year in shows_ | orderBy:'-year'"}
+						.bio-year {{year.year}}
+						-# | date:'yyyy'}} 
+						%ul
+							%li{"ng-repeat" => "line in year.experiences | orderBy:'-date'"} 
+								%span.bio-title {{line.text}}
+								%span.bio-location {{line.location}}
+								%span.bio-venue {{line.venue}}
 
 %a.bio-pdf{:href => "{{pdf.url}}"} {{pdf.title}}
 

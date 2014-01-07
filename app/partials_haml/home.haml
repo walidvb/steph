@@ -1,5 +1,6 @@
 #home{"ng-controller" => "homeCtrl"}
 	#background-img-0.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[0]"}
+	#menu{"ng-include" => true, :src => "'partials/menu.html'", "fixed-menu" => true}
 	.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[1]"}
 	%section#projects.row{"ng-include" => true, :src =>"'partials/projectList.html'","ng-controller" => "projectListCtrl", "scroll-spy" => true}
 	.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[2]"}
