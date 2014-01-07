@@ -19,6 +19,29 @@
     "public": true
   },
   {
+    "type": "show",
+    "id": "1",
+    "url": "superlatus2",
+    "date": "2011",
+    "title": "(Super)latus show",
+    "category": "video",
+    "medium": "HD videos, 5 minutes",
+    "thumb": "img/thumbs/superlatus.jpg",
+    "body": "This works features two identical protagonists who are mutually critiquing each other with superlative adjectives, positives and negatives. Both counterparts become increasingly pixelated, censoring one another and disappearing over time. This work puts at stake the notion of critical subjectivity and the self-cancelling quality of such criticism. The vile for some may well be valuable to others. Even though it&#39;s often sterile, such criticism may sometimes create fertile antagonistic appreciations and clashes that result into third definitions.",
+    "slides": [
+      {
+        "type": "html",
+        "body": "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      },
+      {
+        "type": "img",
+        "url": "img/projects/superlatus/01.jpg",
+        "legend": "Still from the work (Super)latus, 2013"
+      }
+    ],
+    "active": false
+  },
+  {
     "title": "Inter[...]Views",
     "type": "project",
     "id": "interviews",
@@ -227,11 +250,11 @@
         "body": "<iframe src=\"//player.vimeo.com/video/83450978?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" width=\"1000\" height=\"562\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
       }
     ],
-    "active": false,
+    "active": true,
     "body": "<p>&lsquo;Full Stops&rsquo; is a musical arrangement made from the last notes of hundreds of the most famous classical songs downloaded on the Internet. Blending all classical eras from Baroque to Romantic passing by Classic, the work produces improbable encounters, including Mozart (&dagger; 1791) and Tchaikovsky (&dagger; 1893), Handel (&dagger; 1759) and Rachmaninoff (&dagger; 1943). The result is a new harmonious symphony, sometimes pompous, sometimes meditative, which begins and ends indefinitely, again and again.</p>\n<p>&nbsp;</p>",
     "medium": "Sound piece",
     "public": true,
-    "date": "2014-03-05T00:00:00.000Z",
+    "date": "2013-05-02T23:00:00.000Z",
     "category": "sound"
   },
   {
@@ -339,298 +362,21 @@
     "medium": "Sound piece, 51 minutes"
   },
   {
-    "title": "Statues (Play#1)",
-    "type": "project",
-    "id": "new_project",
-    "thumb": "img/thumbs/statues.jpg",
-    "slides": [
-      {
-        "type": "html",
-        "url": "img/new_project/",
-        "body": "<iframe src=\"//player.vimeo.com/video/43101783?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-      }
-    ],
-    "active": false,
-    "category": "video",
-    "medium": "HD video, 10 minutes",
-    "public": true,
-    "date": "2012-04-30T23:00:00.000Z"
-  },
-  {
     "title": "Rag Tag (Play#2)",
     "type": "project",
-    "id": "new_project",
+    "id": "ragtag",
     "thumb": "img/thumbs/ragtag.jpg",
     "slides": [
       {
         "type": "html",
-        "url": "img/new_project/",
+        "url": "img/ragtag/",
         "body": "<iframe src=\"//player.vimeo.com/video/43105046?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
       }
     ],
-    "active": false,
-    "category": "video",
+    "active": true,
     "medium": "HD video, 15 minutes",
+    "category": "video",
     "public": true,
     "date": "2012-05-01T23:00:00.000Z"
-  },
-  {
-    "title": "Inter(lude)",
-    "type": "project",
-    "id": "interlude",
-    "thumb": "img/thumbs/interlude.jpg",
-    "slides": [
-      {
-        "type": "html",
-        "url": "img/interlude/",
-        "body": "<iframe src=\"//player.vimeo.com/video/54714369?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-      }
-    ],
-    "active": false,
-    "date": "2012-04-03T23:00:00.000Z",
-    "medium": "HD video, 21 minutes",
-    "public": true,
-    "category": "video"
-  },
-  {
-    "title": "Emoticons",
-    "type": "project",
-    "id": "emoticons",
-    "thumb": "img/thumbs/emoticons.jpg",
-    "slides": [
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/01.jpg",
-        "legend": "<p>:) 2 x 21 x 21 cm &amp; 177 x 48 cm, 2011</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/02.jpg",
-        "legend": "<p>:o 2 x 21 x 21 cm &amp; &oslash; 110 cm, 2011</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/03.jpg",
-        "legend": "<p>:* 2 x 21 x 21 cm &amp; 60 x 60 cm, 2011</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/04.jpg",
-        "legend": "<p>:D 2 x 21 x 21 cm &amp; 120 x 110 cm, 2011</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/05.jpg",
-        "legend": "<p>:ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â± 2 x 21 x 21 cm &amp; 99 x 13 cm, 2011</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/06.jpg",
-        "legend": "<p>:P 2 x 21 x 21 cm &amp; 120 x 110 cm, 2011</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/07.jpg",
-        "legend": "<p>:| 2 x 21 x 21 cm &amp; 190 x 13 cm, 2011</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/08.jpg",
-        "legend": "<p>._. 2 x 21 x 21 cm &amp; 13 x 90 cm, 2012</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/09.jpg",
-        "legend": "<p>Emoticons series, installation view, BYCR gallery, Milan, IT, 2013</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/10.jpg",
-        "legend": "<p>:] 2 x 21 x 21 cm &amp; 177 x 15 cm, 2011</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/11.jpg",
-        "legend": "<p>:\\ 2 x 21 x 21 cm &amp; 160 x 15 cm, 2011</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/emoticons/12.jpg",
-        "legend": "<p>&deg;v&deg; 2 x &oslash; 36 cm &amp; 56 x 69 cm, 2012</p>"
-      }
-    ],
-    "active": false,
-    "body": "<p>For the series of EMOTICONS, Blumer has objectified the most widespread icon representing our emotions. This hyperbolic manner of showing emoticons intends to stimulate the audience to reflect on our daily-mediated relationship to each other, whether it is in a superficial or profound way. The emoticons are sort of emptied out symbols. Their primordial iconicity fades away because of our overuse of them. One could say that the more we use an emoticon the less it actually represents our emotional state. It&rsquo;s, however, not always the case, the emoticons do still carry a profound power of self-reflectivity. Displayed within the traditional white cube, the Emoticons series doesn&rsquo;t leave indifferent. They continuously inspire a reaction. Whether the viewers smile or not, they are caught in a ceaseless play on signs and signification since the emoticon exists at this strange edge between pure abstraction and representation. &nbsp;</p>",
-    "medium": "Fabric on shaped stretchers",
-    "date": "2011-12-30T00:00:00.000Z",
-    "category": "object",
-    "public": true
-  },
-  {
-    "title": "Clock",
-    "type": "project",
-    "id": "clock",
-    "thumb": "img/thumbs/clock.jpg",
-    "slides": [
-      {
-        "type": "img",
-        "url": "img/projects/clock/01.jpg"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/clock/02.jpg"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/clock/03.jpg"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/clock/04.jpg"
-      }
-    ],
-    "active": true,
-    "category": "object",
-    "date": "2011-11-10T00:00:00.000Z",
-    "public": true,
-    "medium": "Fabric on shaped Stretchers"
-  },
-  {
-    "title": "Snow Rug (Shave#3)",
-    "type": "project",
-    "id": "snowrug",
-    "thumb": "img/thumbs/snowrug.jpg",
-    "slides": [
-      {
-        "type": "html",
-        "url": "img/snowrug/",
-        "body": "<iframe src=\"//player.vimeo.com/video/39334858?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-      }
-    ],
-    "active": true,
-    "category": "video",
-    "medium": "HD videos, 15 minutes"
-  },
-  {
-    "title": "Ellipsis",
-    "type": "project",
-    "id": "new_project",
-    "thumb": "img/thumbs/ellipsis.jpg",
-    "slides": [
-      {
-        "type": "html",
-        "url": "img/new_project/",
-        "body": "<iframe src=\"//player.vimeo.com/video/39334469?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
-      }
-    ],
-    "active": false,
-    "body": "<p>In a text, the ellipsis is signalled by 3 dots and brackets (&hellip;) which indicates when an author takes out some parts of an original text that is quoted in order to follow the logic of the argument. This absence is inevitably catching our attention and our mind eventually creates something to feed the gap. It is this lack in content of a text that the performance Ellipsis intends to question. The performance is made of 3 black dots covered with faux-fur hanged on a wall carefully and slowly shaved-off by the performers. As the ellipsis, the work is created through a subtraction of some of the original material. This antithetical action contrasts with traditional painting where commonly the material (paint) is added onto the canvas to generate new meanings. It also and mainly emphasis on how the &ldquo;left un-told&rdquo; becomes a condition for multiple. In this case, the ellipsis is not only the representation of a silent omission but also enhances a creative and fertile process, unfolding a variety of meaning, exploiting the void until it becomes productive.</p>",
-    "medium": "HD video, 21 minutes",
-    "category": "video",
-    "public": true,
-    "date": "2011-02-02T00:00:00.000Z"
-  },
-  {
-    "title": "Epi(deixis)",
-    "type": "show",
-    "id": "epideixis",
-    "thumb": "img/shows/epideixis.jpg",
-    "slides": [
-      {
-        "type": "img",
-        "url": "img/shows/epideixis/01.jpg",
-        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/shows/epideixis/02.jpg",
-        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/shows/epideixis/03.jpg",
-        "legend": "<p>View of the work&nbsp;<em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/shows/epideixis/04.jpg",
-        "legend": "<p>View of the work <em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/shows/epideixis/05.jpg",
-        "legend": "<p>View of the&nbsp;work&nbsp;<em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/shows/epideixis/06.jpg",
-        "legend": "<p>View of the&nbsp;work <em>:P from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/shows/epideixis/07.jpg",
-        "legend": "<p>View of the&nbsp;work&nbsp;<em>:) from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/shows/epideixis/08.jpg",
-        "legend": "<p>View of the&nbsp;work&nbsp;<em>:* from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
-      },
-      {
-        "type": "img",
-        "url": "img/shows/epideixis/09.jpg",
-        "legend": "<p>View of installations<em>&nbsp;Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
-      }
-    ],
-    "active": false,
-    "public": true,
-    "date": "2013-01-17T00:00:00.000Z",
-    "body": "<p>The word epideictic (epidittico in Italian) comes from the ancient Greek <em>epideiktikos</em>based on <em>deiknunai,</em> which means &lsquo;to show&rsquo;. It is one of the three subdivisions of rhetoric as described in Aristotle&rsquo;s book <em>Rhetoric (367 &ndash; 322 BC). Epideixis </em>is characterized by or designed to display rhetorical or oratorical skill. <em>Epideixis </em>is a demonstrative speech commonly used for opening events, anniversaries, births and funeral orations. Aristotle and many philosophers after him define<em> Epideixis</em> as a speech of style from which neither agonistic achievement nor polemic arouses. An epideictic oratorical demonstration does not provoke controversy but promotes values that are shared in the communities.&nbsp;</p>"
-  },
-  {
-    "title": "Balloons",
-    "type": "project",
-    "id": "balloons",
-    "thumb": "img/thumbs/balloons.jpg",
-    "slides": [],
-    "active": false,
-    "public": true,
-    "category": "object",
-    "medium": "Latex & Wood",
-    "body": "<p>The Balloon's Sculptures are simple metaphorical shapes expressing the confrontation between two&nbsp;languages, the agencies of the materials employed and the structure's layout.</p>",
-    "date": "2011-01-12T00:00:00.000Z"
-  },
-  {
-    "title": "Livestock",
-    "type": "project",
-    "id": "livestock",
-    "thumb": "img/thumbs/livestock.jpg",
-    "slides": [
-      {
-        "type": "img",
-        "url": "img/projects/livestock/02.jpg"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/livestock/01.jpg"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/livestock/04.jpg"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/livestock/05.jpg"
-      },
-      {
-        "type": "img",
-        "url": "img/projects/livestock/06.jpg"
-      }
-    ],
-    "active": true,
-    "date": "2010-10-27T23:00:00.000Z",
-    "category": "performance",
-    "medium": "Salt on canvas, chairs, hairdryer",
-    "body": "<p>Livestock is a performance made at Goldsmiths College in 2009 that marks a transition between the 2 years work on the series Sweat Dreams and a new body of works opening up on different other mediums - performance, video, sculptures. It&rsquo;s composed of an installation of 2 chairs, 1 salt painting representing a sheep, a hairdryer. The performer seated on the first chair makes a speech quoting Winston Churchill on notions of tradition, then licks half of the sheep painting, kneeling in front of it, dries the canvas out with the hairdryer and sits on the second chair.&nbsp;</p>"
   }
 ]

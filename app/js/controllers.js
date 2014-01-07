@@ -69,10 +69,11 @@ controller('bioListCtrl', ['$scope', 'Bio', function($scope, Bio) {
       Education: bio.Education,
     };
 
-    $scope.shows = {};
+    $scope.shows = [];
     var shows = {
+      Group: bio.Group,
       Solo: bio.Solo,
-      Group: bio.Group
+
     };
     angular.forEach(shows, function(shows, showType){
       var groupedExp = _.groupBy(shows, "date");
@@ -85,7 +86,11 @@ controller('bioListCtrl', ['$scope', 'Bio', function($scope, Bio) {
         years.push(year);
       });
       console.log(years);
-      $scope.shows[showType] = years;
+      $scope.shows.push( 
+        {
+          shows: years,
+          categoryName: showType
+        });
     });
 
     console.log($scope.shows);

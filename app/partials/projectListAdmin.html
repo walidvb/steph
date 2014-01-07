@@ -6,7 +6,7 @@
         <span>Add Project</span>
       </div>
     </li>
-    <li class='project' ng-class="{'project-active' : project.active || false}" ng-click='setActiveProject(project);' ng-repeat="project in projects | orderBy:'type':'date'">
+    <li class='project' ng-class="{'project-active' : project.active || false}" ng-click='setActiveProject(project);' ng-repeat="project in projects | filter: {type: filterType} | orderBy:'type':'date'">
       <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.type}})</a>
     </li>
   </ul>
@@ -44,13 +44,21 @@
       <span class='field-title'>Description:</span>
       <a editable-textarea='activeProject.body' href='#' html="'activeProject.body'" my-html ng-binda='activeProject.body'>{{activeProject.body || "Description"}}</a>
     </div>
-    <div class='field project-thumb'>
+    <div class='field project-location' ng-if="activeProject.type == 'show'">
+      <span class='field-title'>Location:</span>
+      <a editable-text='activeProject.location' href='#'>{{activeProject.location || "location"}}</a>
+    </div>
+    <div class='field project-venue' ng-if="activeProject.type == 'show'">
+      <span class='field-title'>Venue:</span>
+      <a editable-text='activeProject.venue' href='#'>{{activeProject.venue || "venue"}}</a>
+    </div>
+    <div class='field project-thumb' ng-if="activeProject.type == 'project'">
       <span class='field-title'>Thumbnail:</span>
       <a editable-text='activeProject.thumb'>
         <img class='project-thumb' ng-src='{{activeProject.thumb}}'>
       </a>
     </div>
-    <div class='field project-slides'>
+    <div class='field project-slides' ng-if="activeProject.type == 'project'">
       <span class='field-title'>Slides:</span>
       <ul ng-model='activeProject.slides' ui-sortable>
         <li class='project-slide' ng-repeat='slide in activeProject.slides'>

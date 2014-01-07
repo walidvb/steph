@@ -13,12 +13,11 @@
     </ul>
   </li>
   <li>
-    <h3>Selected Exhibitions</h3>
     <ul class='bio-shows'>
-      <li ng-repeat="(type, shows_) in shows | orderBy:'-type'">
-        <h4>{{type}}</h4>
+      <li ng-repeat="category in shows | orderBy:'-categoryName'">
+        <h3>{{category.categoryName}} Exhibitions</h3>
         <ul class='bio-years'>
-          <li ng-repeat="year in shows_ | orderBy:'-year'">
+          <li ng-repeat="year in category.shows | orderBy:'-year'">
             <div class='bio-year'>{{year.year}}</div>
             <ul>
               <li ng-repeat="line in year.experiences | orderBy:'-date'">

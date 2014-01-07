@@ -38,6 +38,8 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
 controller('projectCtrl', ['$scope', 'Projects', function($scope, Projects) {
 }]).
 controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scope, $location, Projects) {
+  //$scope.filter = {};
+  $scope.filterType = ($location.$$url == '/shows') ? 'show' : 'project';
   $scope.tinymceOptions = 
   {
     plugins: [
@@ -69,7 +71,7 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
   $scope.addProject = function(projects){
     var newProject = {
       title: 'New project',
-      type: 'project',
+      type: $scope.filterType,
       id: 'new_project',
       thumb: 'img/thumbs/black.jpg',
       slides: [],
@@ -121,7 +123,7 @@ controller('bioCtrl', ['$scope', 'Bio', function($scope, Bio) {
         experiences: exp,
       }
       years.push(year);
-    })
+    });
     $scope.Experiences = years;
 
     delete $scope.bio.Solo;

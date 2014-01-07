@@ -3,7 +3,7 @@ ul{
 	margin: 0;
 }
 ::selection {
-	background: @text-color; /* Safari */
+	background: black; /* Safari */
 	}
 ::-moz-selection {
 	background: @text-color; /* Firefox */
@@ -123,9 +123,22 @@ body{
 		vertical-align: top;
 		height: 100%;
 		display: inline-block;
-		img{
+		.slide-img{
+			position: relative;
 			min-height: 100%;
 			max-height: 100%;
+		}
+		.slide-legend{
+			opacity: 0;
+		}
+		&:hover .slide-legend{
+			opacity: 1;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 5px 5px 5px;
+			background: rgba(red(@background-color), green(@background-color), blue(@background-color), @opacity);
 		}
 		position: relative;
 	}

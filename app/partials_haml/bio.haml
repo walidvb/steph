@@ -11,13 +11,11 @@
 				%span.bio-venue {{exp.venue}}
 				%span.bio-location {{exp.location}}
 	%li
-		%h3 Selected Exhibitions
-
 		%ul.bio-shows
-			%li{"ng-repeat" => "(type, shows_) in shows | orderBy:'-type'"}
-				%h4 {{type}}
+			%li{"ng-repeat" => "category in shows | orderBy:'-categoryName'"}
+				%h3 {{category.categoryName}} Exhibitions
 				%ul.bio-years
-					%li{"ng-repeat" => "year in shows_ | orderBy:'-year'"}
+					%li{"ng-repeat" => "year in category.shows | orderBy:'-year'"}
 						.bio-year {{year.year}}
 						-# | date:'yyyy'}} 
 						%ul
