@@ -70,9 +70,9 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
 
   $scope.addProject = function(projects){
     var newProject = {
-      title: 'New project',
+      title: 'New ' + $scope.filterType,
       type: $scope.filterType,
-      id: 'new_project',
+      id: 'new_' + $scope.filterType,
       thumb: 'img/thumbs/black.jpg',
       slides: [],
     };

@@ -24,10 +24,6 @@
     <input ng-model='activeProject.public' type='checkbox'>public</input>
   </div>
   <div class='field-list project-details'>
-    <div class='field project-type'>
-      <span class='field-title'>Type:</span>
-      <a e-ng-options="type for type in ['show', 'project']" editable-select='activeProject.type' href='#'>{{(activeProject.type || "Type")}}</a>
-    </div>
     <div class='field project-date'>
       <span class='field-title'>Date:</span>
       <a e-datepicker-popup='MM.yyyy' editable-bsdate='activeProject.date' href='#'>{{(activeProject.date || "Date") | date:'MM.yyyy'}}</a>
@@ -36,13 +32,13 @@
       <span class='field-title'>Category:</span>
       <a editable-text='activeProject.category' href='#'>{{activeProject.category || "category"}}</a>
     </div>
-    <div class='field project-medium'>
+    <div class='field project-medium' ng-if="activeProject.type == 'project'">
       <span class='field-title'>Medium:</span>
       <a editable-text='activeProject.medium' href='#'>{{activeProject.medium || "medium"}}</a>
     </div>
-    <div class='field project-description'>
-      <span class='field-title'>Description:</span>
-      <a editable-textarea='activeProject.body' href='#' html="'activeProject.body'" my-html ng-binda='activeProject.body'>{{activeProject.body || "Description"}}</a>
+    <div class='field project-dimensions' ng-if="activeProject.type == 'project'">
+      <span class='field-dimensions'>Dimensions:</span>
+      <a editable-text='activeProject.dimensions' href='#'>{{activeProject.dimensions || "dimensions"}}</a>
     </div>
     <div class='field project-location' ng-if="activeProject.type == 'show'">
       <span class='field-title'>Location:</span>
@@ -51,6 +47,10 @@
     <div class='field project-venue' ng-if="activeProject.type == 'show'">
       <span class='field-title'>Venue:</span>
       <a editable-text='activeProject.venue' href='#'>{{activeProject.venue || "venue"}}</a>
+    </div>
+    <div class='field project-description'>
+      <span class='field-title'>Description:</span>
+      <a editable-textarea='activeProject.body' href='#' html="'activeProject.body'" my-html ng-binda='activeProject.body'>{{activeProject.body || "Description"}}</a>
     </div>
     <div class='field project-thumb' ng-if="activeProject.type == 'project'">
       <span class='field-title'>Thumbnail:</span>

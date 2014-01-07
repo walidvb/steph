@@ -6009,6 +6009,7 @@ section {
   max-width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 #projects {
@@ -6019,6 +6020,7 @@ section {
   list-style: none;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 150px;
   position: relative;
   min-height: 1px;

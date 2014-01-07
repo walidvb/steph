@@ -7,7 +7,8 @@ var clip;
 		});
 
 		setTimeout(function()
-			{$.stellar({
+			{
+		$.stellar({
 			verticalOffset: 0, 
 			horizontalScrolling: false
 		});

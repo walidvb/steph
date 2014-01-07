@@ -18,7 +18,7 @@
 		)
 		%input{"type" => "checkbox", "ng-model" => "activeProject.public"} public
 	.field-list.project-details
-		.field.project-type
+		-#.field.project-type
 			%span.field-title Type: 
 			%a{"editable-select" => "activeProject.type", :href => "#", "e-ng-options" => "type for type in ['show', 'project']"} {{(activeProject.type || "Type")}}
 		.field.project-date
@@ -27,18 +27,22 @@
 		.field.project-category
 			%span.field-title Category: 
 			%a{"editable-text" => "activeProject.category", :href => "#"} {{activeProject.category || "category"}}
-		.field.project-medium
+		.field.project-medium{"ng-if" => "activeProject.type == 'project'"}
 			%span.field-title Medium: 
 			%a{"editable-text" => "activeProject.medium", :href => "#"} {{activeProject.medium || "medium"}}
-		.field.project-description
-			%span.field-title Description: 
-			%a{"editable-textarea" => "activeProject.body", :href => "#",  'html' => "'activeProject.body'", 'my-html' => true, "ng-binda" => "activeProject.body"} {{activeProject.body || "Description"}}
+		.field.project-dimensions{"ng-if" => "activeProject.type == 'project'"}
+			%span.field-dimensions Dimensions: 
+			%a{"editable-text" => "activeProject.dimensions", :href => "#"} {{activeProject.dimensions || "dimensions"}}
 		.field.project-location{"ng-if" => "activeProject.type == 'show'"}
 			%span.field-title Location: 
 			%a{"editable-text" => "activeProject.location", :href => "#"} {{activeProject.location || "location"}}
 		.field.project-venue{"ng-if" => "activeProject.type == 'show'"}
 			%span.field-title Venue: 
 			%a{"editable-text" => "activeProject.venue", :href => "#"} {{activeProject.venue || "venue"}}
+		.field.project-description
+			%span.field-title Description: 
+			%a{"editable-textarea" => "activeProject.body", :href => "#",  'html' => "'activeProject.body'", 'my-html' => true, "ng-binda" => "activeProject.body"} {{activeProject.body || "Description"}}
+
 		.field.project-thumb{"ng-if" => "activeProject.type == 'project'"}
 			%span.field-title Thumbnail:
 			%a{"editable-text" => "activeProject.thumb"}
