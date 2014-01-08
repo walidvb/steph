@@ -44,7 +44,14 @@ controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Project
     console.log(project);
 
     $scope.project = project[0];
-    
+    $scope.allSlides = $scope.project.slides;
+    $scope.slides = $scope.allSlides.slice(0, 3);
+    $scope.loadSlide = function(){
+      
+      var newSlides = $scope.allSlides.splice($scope.slides.length);
+      $scope.slides = $scope.slides.concat(newSlides);
+    };
+
     $scope.nextSlide = function(index){
       if(index < $scope.project.slides.length)
       {
