@@ -5,6 +5,7 @@
 angular.module('myApp', [
   'ngRoute',
   'ngAnimate',
+  'infinite-scroll',
   'myApp.filters',
   'myApp.services',
   'myApp.directives',
