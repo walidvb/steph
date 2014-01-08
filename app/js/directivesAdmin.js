@@ -76,7 +76,6 @@ directive('myJsonOutput', function(){
 		},
 		templateUrl: "partials/modalResult.html",
 		link: function(scope, elem, attrs){
-			console.log(elem);
 			elem = $(elem);
 			elem.on('focus', function() 
 			{

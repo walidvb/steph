@@ -63,7 +63,7 @@
       </a>
     </div>
     <div class='field project-slides'>
-      <span class='field-title'>Slides:</span>
+      <span class='field-title'>Slides ({{activeProject.slides.length}}):</span>
       <ul ng-model='activeProject.slides' ui-sortable>
         <li class='project-slide' ng-repeat='slide in activeProject.slides'>
           <select class='project-slide-type' ng-model='slide.type' ng-options='option for option in slideOptions'></select>

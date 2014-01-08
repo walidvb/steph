@@ -14,5 +14,5 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'partials/home.html'});
   $routeProvider.when('/show/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});
   $routeProvider.when('/project/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});
-  $routeProvider.otherwise({redirectTo: ''});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);

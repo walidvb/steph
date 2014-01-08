@@ -38,7 +38,11 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
 controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Projects', function($scope, $routeParams, $filter, $sce, Projects) {
   Projects.query(function(data)
   {
-    var project = $filter('filter')(data, $routeParams.projectID, 'url');
+    console.log($routeParams.projectID);
+    var project = $filter('filter')(data, {id: $routeParams.projectID});
+    console.log(data);
+    console.log(project);
+
     $scope.project = project[0];
     
     $scope.nextSlide = function(index){
@@ -47,7 +51,7 @@ controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Project
         var nextSlide =  $('.slide-' + (index+1) );
         var pos = nextSlide.position().left;
         $('.project-details').animate({
-          'scrollLeft': '+='+pos
+          'scrollLeft': '+='+pos,
         });
       }
     };
@@ -57,7 +61,7 @@ controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Project
 controller('projectListCtrl', ['$scope',  'Projects', function($scope, Projects) {
  $scope.projects = Projects.query();
 }]).
-controller('bioListCtrl', ['$scope', 'Bio', function($scope, Bio) {
+controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter, Bio) {
   Bio.get(function(data){
     var category = 'category';
     $scope.header = data.header;
@@ -75,7 +79,11 @@ controller('bioListCtrl', ['$scope', 'Bio', function($scope, Bio) {
       Solo: bio.Solo,
 
     };
+    // for each solo & group show
     angular.forEach(shows, function(shows, showType){
+      //format dates
+      angular.forEach(shows, function(show){ show.date = $filter("date")(show.date, 'yyyy');})
+      //group shows by dates
       var groupedExp = _.groupBy(shows, "date");
       var years = [];
       angular.forEach(groupedExp, function(exp, yearIndex){
@@ -85,7 +93,6 @@ controller('bioListCtrl', ['$scope', 'Bio', function($scope, Bio) {
         };
         years.push(year);
       });
-      console.log(years);
       $scope.shows.push( 
         {
           shows: years,

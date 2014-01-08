@@ -1075,12 +1075,159 @@
     "type": "show",
     "id": "whilesupplylast",
     "thumb": "img/thumbs/black.jpg",
-    "slides": [],
-    "active": true,
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/01.jpg",
+        "public": true,
+        "legend": "<p>Installation view of <em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/02.jpg",
+        "public": true,
+        "legend": "<p>Installation view of <em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/03.jpg",
+        "public": true,
+        "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/04.jpg",
+        "public": true,
+        "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/05.jpg",
+        "public": true,
+        "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/06.jpg",
+        "public": true,
+        "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/07.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/08.jpg",
+        "public": true
+      }
+    ],
+    "active": false,
     "public": true,
     "date": "2012-01-01T00:00:00.000Z",
     "category": "group",
     "location": "Montreal, CA",
-    "venue": "Galerie B-312"
+    "venue": "Galerie B-312",
+    "body": "<p>This group exhibition, held at Galerie B-312 in Montreal, was only visible on USB sticks that the audience could take home in order to watch privately each works of each anonymous artists from the show under numbered folders.</p>\n<p>The work proposed was a webpage that would give access to a webcam installed in the solo exhibition ELLIPSIS at La Scatola Gallery in London during the same time as the show in Montreal. People would be able to watch the exhibition in London as voyeurs from Canada.&nbsp;</p>\n<p>Exhibition curated by Maud Marique, Vincent Routhier &amp; Alexandre</p>"
+  },
+  {
+    "title": "Ellipsis",
+    "public": true,
+    "type": "show",
+    "id": "ellipsis",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/ellipsis/01.jpg",
+        "public": true,
+        "legend": "<p>View of the&nbsp;works&nbsp;<em>EMOTICONS,&nbsp;</em>fabric on shaped stretchers, since 2011 &amp;&nbsp;<em>EGGTIMER (B</em><em>ALLOONS#5),&nbsp;</em>latex &amp; pinewood, 2012</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/ellipsis/02.jpg",
+        "public": true,
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>ELLIPSIS (SHAVE#2),&nbsp;</em>HD video, 21 minutes, 2011</p>"
+      }
+    ],
+    "active": false,
+    "date": "2012-01-23T00:00:00.000Z",
+    "category": "solo",
+    "location": "London, UK",
+    "venue": "La Scatola Gallery",
+    "body": "<p>Press Release</p>\n<p>La Scatola Gallery is pleased to present&nbsp;<em><strong>Ellipsis</strong></em>, a compilation of new and continuing works from St&eacute;phane Blumer's&nbsp;fieldwork in the realm of object, medium, and the dimensions of expression.</p>\n<p>As abstractly metonymic as they are directly childish in rudimentary expression, emoticons have more and more pervasively (and perversely) peppered messages. By removing these symbols from their text-based homes and inserting them, black, big and bleakly, onto white gallery walls, their significance to feeling and function is monochromatically magnified. Blumer&rsquo;s translation of fundamental images of emotion back into a stark, complex language is a compelling commentary on the communication between humans and their seemingly always winking minds.</p>\n<p>A highlight from Blumer&rsquo;s oeuvre, &lsquo;Balloon&rsquo;, will also be on display. This piece, like much of his work, shows the artist&rsquo;s interest in the constant, excessively curious compromises that humans must make with the materials granted to them, and in the bargains the elements must make amongst themselves.</p>\n<p>Blumer&rsquo;s work communicates its subtle and straightforward messages through a combination of precise experimentation and the chances that well-defined research provides. La Scatola Gallery would like to invite you to partake in this exciting artist&rsquo;s discussion with spheres that would otherwise remain incommunicable and without shape.</p>\n<p>An exhibition curated by Valentina Fois<br />Text by&nbsp;Chris Piegza</p>"
+  },
+  {
+    "title": "The Face Of The Shape",
+    "public": true,
+    "type": "show",
+    "id": "thefaceoftheshape",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/thefaceoftheshape/01.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/thefaceoftheshape/02.jpg",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/thefaceoftheshape/",
+        "public": true,
+        "body": "<iframe src=\"//player.vimeo.com/video/34368046?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": false,
+    "date": "2011-12-08T00:00:00.000Z",
+    "category": "group",
+    "location": "London, UK",
+    "venue": "La Scatola Gallery",
+    "body": "<p>Press Release</p>\n<p>Without the innovative approaches to medium that a handful of up-and-coming artists have displayed, La Scatola Gallery could not have so fully realised its first-year ambitions.</p>\n<p>La Scatola Gallery is pleased to present a group exhibition with the best multinational emerging artists working in London, Rebecca Ackroyd, St&eacute;phane Blumer, Balint Bolygo, Ronin Cho, Blue Curry, Daniel Eatock, Rowena Harris, Hirofumi Isoya, Hannah Catherine Jones, Jukhee Kwon, Fabio Lattanzi Antinori, Russell Maurice, Steven Morgana, Alicja Pytlewska, Tal Regev, Lisa Selby, Richard Stone, Sarah Tew, Dominic Wilcox, Kentaro Yamada, Gyeong Yoon An.</p>\n<p>At a time when &lsquo;mixed media&rsquo; has become a blanket with which to cover and obscure the formerly well-defined and hard-fought realms of sculpture, painting and installation, any working definition of medium becomes both abstruse and all-inclusive. Rather than abide complacently within the abyss of namelessness, &lsquo;THE FACE OF THE SHAPE&rsquo; will showcase a new era of sculpture, one that does, in fact, mix media to explore form, but also embraces each dimension, of space and of concept, more fully, in contour, craft and narrative, than its recent predecessors. To highlight the success both of the gallery and of the pioneering practices of a select group of artists, La Scatola is pleased to present &lsquo;THE FACE OF THE SHAPE&rsquo;.(...)<br />Although each artist&rsquo; s young ouevre is individually intriguing, it is the ambition of this group show to accentuate the new course that they are taking sculpture in. Whilst unable and unwilling to label the astounding differences between each featured artists&rsquo; aspirations, this show presents a common vision of expression through sculpture. Please join us as the gallery and the artists welcome the new directions shaping the future of form.</p>\n<p>An exhibition curated by Valentina Fois<br />Texts by&nbsp;Chris Piegza</p>"
+  },
+  {
+    "title": "Dobra",
+    "public": true,
+    "type": "show",
+    "id": "dobra",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/dobra/02.jpg",
+        "public": true,
+        "legend": "<p>Installation view of INTER[...]VIEWS, 2012</p>"
+      }
+    ],
+    "active": false,
+    "date": "2012-09-04T23:00:00.000Z",
+    "category": "solo",
+    "location": "Lisbon, PT",
+    "venue": "Flausina",
+    "body": "<p>Dobra was a solo show at Flausina, an independant art space in Lisbon, PT. It was a collaboration with S for Seward in the form of a live concert/performance with the work INTER[...]VIEWS.&nbsp;</p>"
+  },
+  {
+    "title": "Folklore",
+    "public": true,
+    "type": "show",
+    "id": "folklore",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/folklore/01.jpg",
+        "public": true
+      }
+    ],
+    "active": true,
+    "date": "2009-05-13T23:00:00.000Z",
+    "category": "group",
+    "location": "Geneva, CH",
+    "venue": "La Villa Dutoit",
+    "body": "<p>This group show emphasised in a satirical way on the notions of folklore. The work shown was a dyptic of two of Manuel Krebs design.&nbsp;</p>"
   }
 ]

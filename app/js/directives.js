@@ -81,11 +81,11 @@ directive('myCarousel', ['$timeout', function(timer){
 		{
 			var slideIt = function()
 			{
-				$(elem).scrollsnap({
-					direction: 'x',
-					snaps: '.slide',
-					proximity: 350,
-				});
+				// $(elem).scrollsnap({
+				// 	direction: 'x',
+				// 	snaps: '.slide',
+				// 	proximity: 350,
+				// });
 			};
 			timer(slideIt, 1000);
 		},
@@ -98,14 +98,11 @@ directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 		},
 		link: function(scope, elem, attrs)
 		{
-			console.log(scope);
-			var depth = (scope.html).split('.');
-			console.log(scope.$parent["body"]);
-			console.log(scope.$parent[depth[0]]);
-			if(depth.length == 2)
-				scope.$parent[depth[0]][depth[1]] = $sce.trustAsHtml(scope.$parent[depth[0]][depth[1]]);
-			else
-				scope.$parent[depth[0]] = $sce.trustAsHtml(scope.$parent[depth[0]]);
+			// var depth = (scope.html).split('.');
+			// if(depth.length == 2)
+			// 	scope.$parent[depth[0]][depth[1]] = $sce.trustAsHtml(scope.$parent[depth[0]][depth[1]]);
+			// else
+			// 	scope.$parent[depth[0]] = $sce.trustAsHtml(scope.$parent[depth[0]]);
 		}
 	}
 }]).
@@ -124,7 +121,7 @@ directive('myCenter', ['$timeout', function(timer){
 			timer(function(){
 				center();
 				$(window).on('resize', center);
-			}, 500);
+			}, 0);
 		}
 	}
 }]);
