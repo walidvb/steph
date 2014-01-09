@@ -1,12 +1,16 @@
 <ul class='project-list'>
   <li class='project' ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'" style="background-image: url('{{project.thumb}}')">
     <a class='project-details' ng-href='#project/{{project.id}}'>
-      <span class='project-title'>{{project.title}}</span>
-      ·
-      <span class='project-date'>{{project.date | date:'MM.yyyy'}}</span>
-      <span class='project-category'>{{project.category}}</span>
-      ·
-      <span class='project-dimensions'>{{project.dimensions}}</span>
+      <div>
+        <span class='project-title'>{{project.title}}</span>
+        ·
+        <span class='project-date'>{{project.date | date:'yyyy'}}</span>
+      </div>
+      <div>
+        <span class='project-category'>{{project.category}}</span>
+        ·
+        <span class='project-dimensions'>{{project.dimensions}}</span>
+      </div>
     </a>
   </li>
 </ul>

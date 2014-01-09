@@ -7,7 +7,7 @@
       </div>
     </li>
     <li class='project' ng-class="{'project-active' : project.active || false}" ng-click='setActiveProject(project);' ng-repeat="project in projects | filter: {type: filterType} | orderBy:'type':'date'">
-      <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}} ({{project.type}})</a>
+      <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}}</a>
     </li>
   </ul>
 </div>

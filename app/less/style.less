@@ -116,18 +116,23 @@ body{
 .project-details{
 	height: 100%;
 	width: 100%;
-	overflow-x: scroll;
+	//overflow-x: auto;
 	white-space: nowrap;
+	//display: inline-block;
 	.project-info{
 		max-width: 33%;
 		min-width: 250px;
 		white-space: normal;
-		padding: 0px 5px 0px 10px;
+		padding: 0px 5px 20px 10px;
 	}
 	.slide{
 		vertical-align: top;
 		height: 100%;
+		overflow-y: scroll;
 		display: inline-block;
+		&:not(:last-child){
+			margin-right: 15px;
+		}
 		.slide-img{
 			position: relative;
 			min-height: 100%;

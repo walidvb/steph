@@ -4,7 +4,7 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
+controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', function($scope, $location, $anchorScroll, $sce){
   $scope.menu = [
     {name: 'projects'},
     {name: 'shows'},
@@ -12,6 +12,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
     {name: 'contact'}
     ];
   $scope.currentMenu = '';
+
   $scope.setActiveMenu = function(id)
   {
     $($scope.menu).each(function(){
@@ -25,7 +26,6 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
       }
     })
   };
-  
   $scope.scrollTo = function(id, event)
     {
       //event.preventDefault();
@@ -38,17 +38,15 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
 controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Projects', function($scope, $routeParams, $filter, $sce, Projects) {
   Projects.query(function(data)
   {
-    console.log($routeParams.projectID);
     var project = $filter('filter')(data, {id: $routeParams.projectID});
-    console.log(data);
-    console.log(project);
 
     $scope.project = project[0];
+
     $scope.allSlides = $scope.project.slides;
-    $scope.slides = $scope.allSlides.slice(0, 3);
+    $scope.slides = $scope.allSlides;//.slice(0, 3);
     $scope.loadSlide = function(){
-      
-      var newSlides = $scope.allSlides.splice($scope.slides.length);
+      var lastSlideIndex = $scope.slides.length;
+      var newSlides = $scope.allSlides.slice(lastSlideIndex, lastSlideIndex+3);
       $scope.slides = $scope.slides.concat(newSlides);
     };
 
@@ -106,8 +104,6 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
           categoryName: showType
         });
     });
-
-    console.log($scope.shows);
     delete $scope.bio.Solo;
     delete $scope.bio.Group;
   });

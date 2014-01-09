@@ -94,15 +94,14 @@ directive('myCarousel', ['$timeout', function(timer){
 directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 	return {
 		scope: {
-			html : "="
+			myHtml : "=",
 		},
-		link: function(scope, elem, attrs)
+		template: "<span ng-bind-html='trustMe(myHtml)'></span>",
+		controller: function($scope, $element)
 		{
-			// var depth = (scope.html).split('.');
-			// if(depth.length == 2)
-			// 	scope.$parent[depth[0]][depth[1]] = $sce.trustAsHtml(scope.$parent[depth[0]][depth[1]]);
-			// else
-			// 	scope.$parent[depth[0]] = $sce.trustAsHtml(scope.$parent[depth[0]]);
+			$scope.trustMe = function(html) {
+				return $sce.trustAsHtml(html);
+			}
 		}
 	}
 }]).

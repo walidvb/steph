@@ -6062,20 +6062,23 @@ body .navbar {
 .project-details {
   height: 100%;
   width: 100%;
-  overflow-x: scroll;
   white-space: nowrap;
 }
 .project-details .project-info {
   max-width: 33%;
   min-width: 250px;
   white-space: normal;
-  padding: 0px 5px 0px 10px;
+  padding: 0px 5px 20px 10px;
 }
 .project-details .slide {
   vertical-align: top;
   height: 100%;
+  overflow-y: scroll;
   display: inline-block;
   position: relative;
+}
+.project-details .slide:not(:last-child) {
+  margin-right: 15px;
 }
 .project-details .slide .slide-img {
   position: relative;
