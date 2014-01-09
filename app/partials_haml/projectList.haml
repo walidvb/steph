@@ -1,11 +1,13 @@
-%ul.project-list
-	%li.project{"ng-repeat" => "project in projects | filter: {type: 'project', public: true} | orderBy:'-date'", :style => "background-image: url('{{project.thumb}}')"}
-		%a.project-details{"ng-href" => "#project/{{project.id}}"}
-			%div
-				%span.project-title {{project.title}}
-				·
-				%span.project-date {{project.date | date:'yyyy'}}
-			%div
-				%span.project-category {{project.category}}
-				·
-				%span.project-dimensions {{project.dimensions}}
+%ul.project-list{"my-isotope" => "'li'"}
+	%li{"ng-repeat" => "project in projects | filter: {type: 'project', public: true} | orderBy:'-date'", "ng-class" => "getFormat()", "ng-init" => ""} 
+		%a.project{:style => "background-image: url('{{project.thumb}}')", "ng-href" => "#project/{{project.id}}"}
+			{{setClasses(project)}}
+			.project-details
+				%div.project-details-header
+					%span.project-title {{project.title}}
+					·
+					%span.project-date {{project.date | date:'yyyy'}}
+				%div.project-details-body
+					%span.project-category {{project.category}}
+					·
+					%span.project-dimensions {{project.dimensions}}

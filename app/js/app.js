@@ -11,6 +11,11 @@ angular.module('myApp', [
   'myApp.directives',
   'myApp.controllers'
 ]).
+run(function($rootScope){
+  $rootScope.scrollTo = function(){
+    console.log('scrollTo');
+  }
+}).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'partials/home.html'});
   $routeProvider.when('/show/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});

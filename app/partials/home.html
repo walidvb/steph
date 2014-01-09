@@ -1,5 +1,5 @@
 <div id='home' ng-controller='homeCtrl'>
-  <div background-props='backgrounds[0]' class='background-img' id='background-img-0' my-background-img my-fullscreen></div>
+  <a background-props='backgrounds[0]' class='background-img' id='background-img-0' my-background-img my-fullscreen ng-click="scrollTo('menu', $event);" ng-href='#menu'></a>
   <div fixed-menu id='menu' ng-include src="'partials/menu.html'"></div>
   <div background-props='backgrounds[1]' class='background-img' my-background-img my-fullscreen></div>
   <section class='row' id='projects' ng-controller='projectListCtrl' ng-include scroll-spy src="'partials/projectList.html'"></section>

@@ -1,15 +1,18 @@
-<ul class='project-list'>
-  <li class='project' ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'" style="background-image: url('{{project.thumb}}')">
-    <a class='project-details' ng-href='#project/{{project.id}}'>
-      <div>
-        <span class='project-title'>{{project.title}}</span>
-        ·
-        <span class='project-date'>{{project.date | date:'yyyy'}}</span>
-      </div>
-      <div>
-        <span class='project-category'>{{project.category}}</span>
-        ·
-        <span class='project-dimensions'>{{project.dimensions}}</span>
+<ul class='project-list' my-isotope="'li'">
+  <li ng-class='getFormat()' ng-init='' ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'">
+    <a class='project' ng-href='#project/{{project.id}}' style="background-image: url('{{project.thumb}}')">
+      {{setClasses(project)}}
+      <div class='project-details'>
+        <div class='project-details-header'>
+          <span class='project-title'>{{project.title}}</span>
+          ·
+          <span class='project-date'>{{project.date | date:'yyyy'}}</span>
+        </div>
+        <div class='project-details-body'>
+          <span class='project-category'>{{project.category}}</span>
+          ·
+          <span class='project-dimensions'>{{project.dimensions}}</span>
+        </div>
       </div>
     </a>
   </li>

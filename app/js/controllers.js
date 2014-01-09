@@ -44,27 +44,50 @@ controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Project
 
     $scope.allSlides = $scope.project.slides;
     $scope.slides = $scope.allSlides;//.slice(0, 3);
-    $scope.loadSlide = function(){
-      var lastSlideIndex = $scope.slides.length;
-      var newSlides = $scope.allSlides.slice(lastSlideIndex, lastSlideIndex+3);
-      $scope.slides = $scope.slides.concat(newSlides);
-    };
+   
+  });
+ $scope.loadSlide = function(){
+    var lastSlideIndex = $scope.slides.length;
+    var newSlides = $scope.allSlides.slice(lastSlideIndex, lastSlideIndex+3);
+    $scope.slides = $scope.slides.concat(newSlides);
+  };
 
-    $scope.nextSlide = function(index){
-      if(index < $scope.project.slides.length)
-      {
-        var nextSlide =  $('.slide-' + (index+1) );
-        var pos = nextSlide.position().left;
-        $('.project-details').animate({
-          'scrollLeft': '+='+pos,
-        });
-      }
-    };
-  })
+  $scope.nextSlide = function(index){
+    if(index < $scope.project.slides.length)
+    {
+      var nextSlide =  $('.slide-' + (index+1) );
+      var pos = nextSlide.position().left;
+      $('.project-details').animate({
+        'scrollLeft': '+='+pos,
+      });
+    }
+  };
 
 }]).
 controller('projectListCtrl', ['$scope',  'Projects', function($scope, Projects) {
  $scope.projects = Projects.query();
+  var high = 0;
+  var longer = 0;
+  var longMax = 3;
+  var highMax = 3;
+
+  $scope.getFormat = function(){
+    var rdm = Math.floor(Math.random() * 3);
+    console.log('rdm', rdm, 'highMax', high, 'longMax', longer );
+    //var rdm = 0;
+    switch(rdm) {
+      case 0:
+        return 'normal';
+      break;
+      case 1: 
+
+        return high++ >= highMax ? 'normal' : 'high';
+      break;
+      case 2: 
+        return longer++ >= longMax ? 'normal' : 'long';
+      break;
+    }
+  }
 }]).
 controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter, Bio) {
   Bio.get(function(data){
@@ -74,8 +97,8 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
     var bio = _.groupBy(data.bio, category);
 
     $scope.bio = {
-      Awards: bio.Awards,
-      Education: bio.Education,
+      "Education": bio.Education,
+      "Awards/Scholarships/Residencies": bio.Awards,
     };
 
     $scope.shows = [];
@@ -87,7 +110,7 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
     // for each solo & group show
     angular.forEach(shows, function(shows, showType){
       //format dates
-      angular.forEach(shows, function(show){ show.date = $filter("date")(show.date, 'yyyy');})
+      angular.forEach(shows, function(show){ show.date = $filter("date")(show.date);})
       //group shows by dates
       var groupedExp = _.groupBy(shows, "date");
       var years = [];

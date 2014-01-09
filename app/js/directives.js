@@ -123,4 +123,16 @@ directive('myCenter', ['$timeout', function(timer){
 			}, 0);
 		}
 	}
+}]).
+directive('myIsotope', ['$timeout', function(timer){
+	return {
+		link: function(scope, elem, attrs)
+		{
+			timer(function() {
+			// $(elem).isotope({
+			// 	itemSelector: 'li',
+			// });
+			}, 500);
+		}
+	}
 }]);
