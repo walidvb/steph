@@ -6085,6 +6085,8 @@ a.background-img {
   padding-top: 55px;
   text-align: center;
   position: absolute;
+}
+.no-touch #projects .project .project-details {
   top: 100%;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -6095,7 +6097,7 @@ a.background-img {
 #projects .project .project-details .project-details-header .project-title {
   font-weight: bold;
 }
-#projects .project:hover .project-details {
+.no-touch #projects .project:hover .project-details {
   top: 0;
   opacity: 1;
   filter: alpha(opacity=100);
