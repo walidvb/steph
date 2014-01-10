@@ -6140,6 +6140,7 @@ a.background-img {
   transition: all 0.15s 0.15s linear;
   text-transform: uppercase;
   color: #323232;
+  height: 100%;
   background: rgba(255, 96, 0, 0.66);
   text-align: center;
   position: relative;
@@ -6172,43 +6173,43 @@ body .navbar {
   z-index: 1000;
   font-weight: bolder;
 }
-.project-details {
+.project-details.project-single {
   top: 50px;
   bottom: 0;
   white-space: nowrap;
   position: absolute;
 }
-.project-details .project-info {
+.project-details.project-single .project-info {
   max-width: 500px;
   min-width: 250px;
   white-space: normal;
   padding: 0px 5px 20px 10px;
   text-align: justify;
 }
-.project-details .project-info .apropos {
+.project-details.project-single .project-info .apropos {
   text-transform: uppercase;
   font-size: inherit;
   font-weight: normal;
 }
-.project-details .slide {
+.project-details.project-single .slide {
   vertical-align: top;
   overflow-y: scroll;
   display: inline-block;
   white-space: normal;
   position: relative;
 }
-.project-details .slide:not(:last-child) {
+.project-details.project-single .slide:not(:last-child) {
   margin-right: 50px;
 }
-.project-details .slide .img {
+.project-details.project-single .slide .img {
   height: 100%;
 }
-.project-details .slide .slide-img {
+.project-details.project-single .slide .slide-img {
   position: relative;
   min-height: 100%;
   max-height: 100%;
 }
-.project-details .slide .slide-legend {
+.project-details.project-single .slide .slide-legend {
   text-align: center;
   opacity: 0;
   bottom: -100%;
@@ -6220,10 +6221,10 @@ body .navbar {
   padding: 5px 5px 5px;
   background: rgba(255, 255, 255, 0.66);
 }
-.project-details .slide .slide-legend p {
+.project-details.project-single .slide .slide-legend p {
   margin: 0;
 }
-.project-details .slide:hover .slide-legend {
+.project-details.project-single .slide:hover .slide-legend {
   bottom: 0%;
   opacity: 1;
   -webkit-transition: all 0.15s linear;

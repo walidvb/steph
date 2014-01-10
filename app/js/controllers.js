@@ -12,7 +12,9 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', function(
     {name: 'contact'}
     ];
   $scope.currentMenu = '';
-
+  $scope.url = function(item) {
+    return '#/#' + item.name;
+  }
   $scope.setActiveMenu = function(id)
   {
     $($scope.menu).each(function(){
@@ -121,7 +123,7 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
 controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', 'Home', function($scope, $location, $anchorScroll, timer, Home) {
   Home.get(function(data){
     $scope.backgrounds = data.backgrounds;
-    console.log(timer);
+    console.log($location);
     $scope.scrollTo = function(id, event)
     {
       event.preventDefault();
