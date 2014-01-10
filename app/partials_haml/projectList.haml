@@ -1,7 +1,6 @@
 %ul.project-list{"my-isotope" => "'li'"}
-	%li{"ng-repeat" => "project in projects | filter: {type: 'project', public: true} | orderBy:'-date'", "my-layout" => true} 
+	%li{"ng-repeat" => "project in projects | filter: {type: 'project', public: true} | orderBy:'-date'", "my-layout" => "$index"} 
 		%a.project{:style => "background-image: url('{{project.thumb}}')", "ng-href" => "#project/{{project.id}}"}
-			{{setClasses(project)}}
 			.project-details
 				%div.project-details-header
 					%span.project-title {{project.title}}
@@ -10,4 +9,4 @@
 				%div.project-details-body
 					%span.project-category {{project.category}}
 					·
-					%span.project-dimensions{"ng-bind" => "project.dimensions"}
+					%span.project-dimensions {{project.dimensions}}

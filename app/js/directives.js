@@ -140,23 +140,25 @@ directive('myLayout', ['$timeout', function(timer){
 	return {
 		controller: function($scope, $element){
 			console.log($element);
-			var high = 0;
+			$scope.high = 0;
 			var longer = 0;
 			var longMax = 3;
 			var highMax = 3;
 			var formats = [];
 			$scope.getNewFormat = function(){
 				var rdm = Math.floor(Math.random() * 3);
-				console.log('rdm', rdm, 'highMax', high, 'longMax', longer );
+				console.log('rdm', rdm, 'highMax', $scope.high, 'longMax', longer );
 			    //var rdm = 0;
 			    switch(rdm) {
 			    	case 0:
 			    	return 'normal';
 			    	break;
-			    	case 1: 
-			    	return high++ >= highMax ? 'normal' : 'high';
+			    	case 1:
+			    	++$scope.high;
+			    	return ++$scope.high >= highMax ? 'normal' : 'high';
 			    	break;
 			    	case 2: 
+			    	longer++;
 			    	return longer++ >= longMax ? 'normal' : 'long';
 			    	break;
 			    }

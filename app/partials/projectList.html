@@ -1,7 +1,6 @@
 <ul class='project-list' my-isotope="'li'">
-  <li my-layout ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'">
+  <li my-layout='$index' ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'">
     <a class='project' ng-href='#project/{{project.id}}' style="background-image: url('{{project.thumb}}')">
-      {{setClasses(project)}}
       <div class='project-details'>
         <div class='project-details-header'>
           <span class='project-title'>{{project.title}}</span>
@@ -11,7 +10,7 @@
         <div class='project-details-body'>
           <span class='project-category'>{{project.category}}</span>
           ·
-          <span class='project-dimensions' ng-bind='project.dimensions'></span>
+          <span class='project-dimensions'>{{project.dimensions}}</span>
         </div>
       </div>
     </a>

@@ -13,6 +13,14 @@ h1, h2, h3, h4{
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
+// Media query variables.
+@notmobile: ~"(min-width: 481px)";
+@mobile:  ~"(max-width: 767px)";
+@tablet:  ~"(min-width: 768px) and (max-width: 979px)";
+@normal:  ~"(min-width: 980px) and (max-width: 1199px)";
+@wide:    ~"(min-width: 1200px)";
+
 //--------Home
 body{
 	color: @text-color;
@@ -233,7 +241,9 @@ body{
 
 //----------Bio
 #bio{
-	-webkit-column-count: 2;
+	@media @notmobile{
+		-webkit-column-count: 2;
+	}
 	padding-left: 25px;
 	padding-right: 25px;
 	.bio-years > li{
