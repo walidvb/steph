@@ -140,7 +140,7 @@ directive('myLayout', ['$timeout', function(timer){
 	return {
 		controller: function($scope, $element){
 			console.log($element);
-			$scope.high = 0;
+			var high = 0;
 			var longer = 0;
 			var longMax = 3;
 			var highMax = 3;

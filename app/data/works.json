@@ -990,43 +990,43 @@
     "slides": [
       {
         "type": "img",
-        "url": "img/projects/waterproof/01.jpg",
+        "url": "img/shows/waterproof/01.jpg",
         "legend": "<p><em>Rebelotte</em>, plastic bottle, 100 American dollars' bill, 25 cm, 2013</p>",
         "public": true
       },
       {
         "type": "img",
-        "url": "img/projects/waterproof/02.jpg",
+        "url": "img/shows/waterproof/02.jpg",
         "legend": "<p>Installation View at&nbsp;Urgent Paradise, Lausanne, CH, photo by&nbsp;Manuel Publication</p>",
         "public": true
       },
       {
         "type": "img",
-        "url": "img/projects/waterproof/03.jpg",
+        "url": "img/shows/waterproof/03.jpg",
         "legend": "<p>Installation View at&nbsp;Urgent Paradise, Lausanne, CH, photo by&nbsp;Manuel Publication</p>",
         "public": true
       },
       {
         "type": "img",
-        "url": "img/projects/waterproof/04.jpg",
+        "url": "img/shows/waterproof/04.jpg",
         "legend": "<p>Installation View at&nbsp;Urgent Paradise, Lausanne, CH, photo by&nbsp;Manuel Publication</p>",
         "public": true
       },
       {
         "type": "img",
-        "url": "img/projects/waterproof/05.jpg",
+        "url": "img/shows/waterproof/05.jpg",
         "legend": "<p>Installation View at Urgent Paradise, Lausanne, CH, photo by&nbsp;Manuel Publication</p>",
         "public": true
       },
       {
         "type": "img",
-        "url": "img/projects/waterproof/06.jpg",
+        "url": "img/shows/waterproof/06.jpg",
         "legend": "<p>Installation View at Le 6B Gallery, Paris, FR, photo by Assi Joseph Meidan</p>",
         "public": true
       },
       {
         "type": "img",
-        "url": "img/projects/waterproof/07.jpg",
+        "url": "img/shows/waterproof/07.jpg",
         "legend": "<p>Installation View at Le 6B Gallery, Paris, FR, photo by Assi Joseph Meidan</p>",
         "public": true
       },
@@ -1037,7 +1037,7 @@
         "body": "<iframe src=\"//www.youtube.com/embed/TQFtXcISx08\" frameborder=\"0\" allowfullscreen></iframe>"
       }
     ],
-    "active": false,
+    "active": true,
     "category": "group",
     "location": "Lausanne, CH & Paris, FR",
     "venue": "Urgent Paradise, Le 6B Galerie",
@@ -1223,7 +1223,7 @@
         "public": true
       }
     ],
-    "active": true,
+    "active": false,
     "date": "2009-05-13T23:00:00.000Z",
     "category": "group",
     "location": "Geneva, CH",

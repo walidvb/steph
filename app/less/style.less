@@ -12,6 +12,8 @@ ul{
 h1, h2, h3, h4{
 	font-weight: bold;
 	text-transform: uppercase;
+		font-size: @font-size-h3;
+
 }
 
 // Media query variables.
@@ -66,7 +68,7 @@ section{
 
 .navbar {
 	text-transform: uppercase;
-	font-size: @font-size-large;
+	font-size: @font-size-h3;
 	margin: 0px;
 	.navbar-fixed-top &{
 		padding-left: 15px;
@@ -185,11 +187,17 @@ body{
 	padding-top: @navbar-height;
 	//display: inline-block;
 	.project-info{
-		max-width: 33%;
+		max-width: 45%;
 		min-width: 250px;
 		white-space: normal;
 		padding: 0px 5px 20px 10px;
+		.apropos {
+			text-transform: uppercase;
+			font-size: inherit;
+			font-weight: normal;
+		}
 	}
+
 	.slide{
 		vertical-align: top;
 		height: 100%;

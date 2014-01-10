@@ -2,9 +2,9 @@
 <div class='project-details' my-carousel>
   <div class='slide project-info' ng-class="'slide-'+0" ng-click='nextSlide(0)'>
     <h1 class='project-title'>{{project.title}}</h1>
-    <div class='project-medium'>{{project.medium}}</div>
     <div class='project-date'>{{project.date | date:'yyyy'}}</div>
-    <h2>Apropos</h2>
+    <div class='project-medium'>{{project.medium}}</div>
+    <h2 class='apropos'>Apropos</h2>
     <p class='project-body' my-html='project.body'></p>
   </div>
   <div style='position:fixed;top:5px;right:5px;z-index: 3000'>{{slides.length}}</div>

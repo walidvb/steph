@@ -3,9 +3,9 @@
 	-#.project-slides{"infinite-scroll" => "loadSlide()", "infinite-scroll-distance" => 0, "infinite-scroll-direction" => "horz"}
 	.slide.project-info{"ng-click" => "nextSlide(0)", "ng-class" => "'slide-'+0"}
 		%h1.project-title {{project.title}}
-		.project-medium {{project.medium}}
 		.project-date {{project.date | date:'yyyy'}}
-		%h2 Apropos
+		.project-medium {{project.medium}}
+		%h2.apropos Apropos
 		%p.project-body{"my-html" => "project.body"}
 	%div{"style" => "position:fixed;top:5px;right:5px;z-index: 3000"} {{slides.length}}
 	.slide{"ng-repeat" => "slide in slides | filter: {public: true}", "ng-click" => "nextSlide($index+1)", "ng-class" => "'slide-'+($index+1)", "my-slide" => true, "my-slides" => "slide", "my-center" => true}
