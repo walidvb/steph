@@ -1,5 +1,5 @@
 %ul.project-list{"my-isotope" => "'li'"}
-	%li{"ng-repeat" => "project in projects | filter: {type: 'project', public: true} | orderBy:'-date'", "my-layout" => "$index"} 
+	%li{"ng-repeat" => "project in projects | filter: {type: 'project', public: true} | orderBy:'-date'", "my-layosut" => "$index", "ng-class" => "getFormat($index)"} 
 		%a.project{:style => "background-image: url('{{project.thumb}}')", "ng-href" => "#project/{{project.id}}"}
 			.project-details
 				%div.project-details-header

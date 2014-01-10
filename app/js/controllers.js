@@ -65,7 +65,43 @@ controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Project
 
 }]).
 controller('projectListCtrl', ['$scope',  'Projects', function($scope, Projects) {
- $scope.projects = Projects.query();
+$scope.formats = [];
+
+ $scope.projects = Projects.query(function(data){
+
+  var high = 0;
+  var longer = 0;
+  var longMax = 3;
+  var highMax = 3;
+  var lastNormal = 0
+  var getNewFormat = function(){
+        var rdm = Math.floor(Math.random() * 2)+1;
+        //console.log('rdm', rdm, 'highMax', high, 'longMax', longer );
+          //var rdm = 0;
+          switch(rdm) {
+            case 0:
+            lastNormal++;
+            return 'normal';
+            break;
+            case 1:
+            ++$scope.high;
+            return high >= highMax ? 'normal' : 'high';
+            break;
+            case 2: 
+            longer++;
+            return longer++ >= longMax ? 'normal' : 'long';
+            break;
+          }
+      };
+
+  for(var i = 0; i < data.length; i++)
+  {
+     $scope.formats.push((i%3 >= 2) ? getNewFormat() : 'normal');
+  }
+ });
+ $scope.getFormat = function (index){
+  return $scope.formats[index];
+ }
 }]).
 controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter, Bio) {
   Bio.get(function(data){

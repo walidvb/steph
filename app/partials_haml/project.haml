@@ -1,7 +1,7 @@
 .menu.navbar-fixed-top{"ng-include" => true, "src" => "'partials/menu.html'"}
-.project-details{"my-carousel" => true}
+.project-details{"my-horizontal-scroll" => true}
 	-#.project-slides{"infinite-scroll" => "loadSlide()", "infinite-scroll-distance" => 0, "infinite-scroll-direction" => "horz"}
-	.slide.project-info{"ng-click" => "nextSlide(0)", "ng-class" => "'slide-'+0"}
+	.slide.project-info{"ng-clyick" => "nextSlide(0)", "ng-class" => "'slide-'+0"}
 		%h1.project-title {{project.title}}
 		.project-date {{project.date | date:'yyyy'}}
 		.project-medium {{project.medium}}

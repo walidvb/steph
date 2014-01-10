@@ -46,15 +46,15 @@ directive('fixedMenu', ['$timeout', function(timer){
 directive('myFullscreen', ['$timeout', function(timer){
 	return function(scope, elem, attrs){
 		var setSize = function() {
-			$(elem).height($(window).height()-$('#menu').height())
-			.css('overflow', 'auto')
-		};
-		$(window).on('resize', function()
-		{
-			setSize();
-		});
-		timer(setSize, 0);
-	}
+			$(elem).height($(window).height())//-$('#menu').height())
+.css('overflow', 'auto')
+};
+$(window).on('resize', function()
+{
+	setSize();
+});
+timer(setSize, 0);
+}
 }]).
 directive('myBackgroundImg', function(){
 	return {
@@ -128,49 +128,29 @@ directive('myIsotope', ['$timeout', function(timer){
 	return {
 		link: function(scope, elem, attrs)
 		{
-			// timer(function() {
-			// 	$(elem).isotope({
-			// 		itemSelector: 'li',
-			// 	});
-			// }, 1500);
+			timer(function() {
+				$(elem).isotope({
+					itemSelector: 'li',
+				});
+			}, 1500);
 		}
 	}
 }]).
-directive('myLayout', ['$timeout', function(timer){
+directive('myHorizontalScroll', ['$timeout', function(timer){
 	return {
-		controller: function($scope, $element){
-			console.log($element);
-			var high = 0;
-			var longer = 0;
-			var longMax = 3;
-			var highMax = 3;
-			var formats = [];
-			$scope.getNewFormat = function(){
-				var rdm = Math.floor(Math.random() * 3);
-				console.log('rdm', rdm, 'highMax', $scope.high, 'longMax', longer );
-			    //var rdm = 0;
-			    switch(rdm) {
-			    	case 0:
-			    	return 'normal';
-			    	break;
-			    	case 1:
-			    	++$scope.high;
-			    	return ++$scope.high >= highMax ? 'normal' : 'high';
-			    	break;
-			    	case 2: 
-			    	longer++;
-			    	return longer++ >= longMax ? 'normal' : 'long';
-			    	break;
-			    }
-			};
-			//formats.push(getNewFormat());
-		},
 		link: function(scope, elem, attrs)
 		{
-			console.log(scope);
 			timer(function() {
-				$(elem).addClass(scope.getNewFormat());
-			}, 0);
+				// $('html, body').mousewheel(function(event, delta) {
+
+				// 	this.scrollLeft -= (delta * 2);
+
+				// 	event.preventDefault();
+
+				// });
+			}, 1500);
 		}
 	}
 }]);
+
+

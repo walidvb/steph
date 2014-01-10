@@ -1,7 +1,13 @@
 [ng-click]{cursor: pointer;}
-ul{
-	margin: 0;
-}
+	ul{
+		-webkit-margin-before: 0;
+	    -webkit-margin-after: 0;
+	    -webkit-padding-start: 0;
+		margin: 0;
+		li{
+			list-style: none;
+		}
+	}
 ::selection {
 	background: darken(@text-color,1%); /* Safari */
 	color: @text-color;
@@ -27,7 +33,6 @@ h1, h2, h3, h4{
 body{
 	color: @text-color;
 	background: @background-color;
-	font-family: "blumer";
 }
 
 a{
@@ -70,16 +75,24 @@ section{
 	text-transform: uppercase;
 	font-size: @font-size-h3;
 	margin: 0px;
+	border: none;
 	.navbar-fixed-top &{
 		padding-left: 15px;
 	}
-
+	li > a{
+		padding-top: 17px!important;
+		padding-bottom: 13px!important;
+		padding-left: 33px;
+		padding-right: 30px;
+	}
 	li:not(:first-child):before{
 		content: '\00B7';
 		font-family: 'blumer';
 		float: left;
-		padding: 15px 0px;
+		padding: 7px 0px;
+
 	}
+
 }
 
 .background-img{
@@ -139,7 +152,7 @@ section{
 		.fill();
 
 		.project-details{
-			.transition(all .15s linear);
+			.transition(all .15s .15s linear);
 			text-transform: uppercase;
 			color: @text-color;
 
@@ -163,6 +176,8 @@ section{
 		.no-touch &:hover .project-details{
 			top: 0;
 			.opacity(1);
+			.transition(all .15s linear);
+
 		}
 		
 	}
@@ -192,6 +207,7 @@ body{
 		min-width: 250px;
 		white-space: normal;
 		padding: 0px 5px 20px 10px;
+		text-align: justify;
 		.apropos {
 			text-transform: uppercase;
 			font-size: inherit;
@@ -204,6 +220,8 @@ body{
 		height: 100%;
 		overflow-y: scroll;
 		display: inline-block;
+		white-space: normal;
+
 		&:not(:last-child){
 			margin-right: @navbar-height;
 		}
@@ -213,16 +231,24 @@ body{
 			max-height: 100%;
 		}
 		.slide-legend{
+			text-align: center;
+
 			opacity: 0;
-		}
-		&:hover .slide-legend{
-			opacity: 1;
+			bottom: -100%;
+			.transition(all .15s .15s linear);
 			position: absolute;
-			bottom: 0;
 			left: 0;
 			right: 0;
 			padding: 5px 5px 5px;
 			background: rgba(red(@background-color), green(@background-color), blue(@background-color), @opacity);
+			p{
+				margin: 0;
+			}
+		}
+		&:hover .slide-legend{
+			bottom: 0%;
+			opacity: 1;
+			.transition(all .15s linear);
 		}
 		position: relative;
 	}
@@ -258,14 +284,7 @@ body{
 	.bio-years > li{
 				margin-bottom: 1em;
 			}
-	ul{
-		-webkit-margin-before: 0;
-	    -webkit-margin-after: 0;
-	    -webkit-padding-start: 0;	
-		li{
-			list-style: none;
-		}
-	}
+
 	.bio-pdf{
 		font-size: larger;
 		text-transform: uppercase;
