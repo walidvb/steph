@@ -6010,7 +6010,8 @@ section {
   padding-left: 15px;
 }
 .navbar li:not(:first-child):before {
-  content: '·';
+  content: '\00B7';
+  font-family: 'blumer';
   float: left;
   padding: 15px 0px;
 }
