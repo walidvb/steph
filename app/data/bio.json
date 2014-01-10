@@ -23,7 +23,7 @@
 			},
 			{
 				"id" : "39",
-				"date" : "2014-05-02T23:00:00.000Z",
+				"date" : "2014",
 				"text" : "Pro Helvetia Grant for Research",
 				"venue" : "",
 				"location" : "Shanghai, CN",
@@ -31,7 +31,7 @@
 			},
 			{
 				"id" : "37",
-				"date" : "2012-05-02T23:00:00.000Z",
+				"date" : "2012",
 				"text" : "Fondation H&eacute;l&egrave;ne et Victor Barbour",
 				"venue" : "",
 				"location" : "Geneva, CH",
@@ -39,7 +39,7 @@
 			},
 			{
 				"id" : "36",
-				"date" : "2010-05-02T23:00:00.000Z",
+				"date" : "2010",
 				"text" : "Rotary Foundation Bursary",
 				"venue" : "",
 				"location" : "Geneva, CH",
@@ -47,7 +47,7 @@
 			},
 			{
 				"id" : "38",
-				"date" : "2014-05-02T23:00:00.000Z",
+				"date" : "2014",
 				"text" : "Research Residency",
 				"venue" : "The Institute For Provocation (IFP)",
 				"location" : "Beijing, CN",

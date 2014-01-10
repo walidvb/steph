@@ -3,8 +3,8 @@ ul{
 	margin: 0;
 }
 ::selection {
-	background: darken(@theme-color,1%); /* Safari */
-	color: @theme-color;
+	background: darken(@text-color,1%); /* Safari */
+	color: @text-color;
 	}
 ::-moz-selection {
 	background: @text-color; /* Firefox */
@@ -203,7 +203,11 @@ body{
 	li{
 		line-height: 3.4;
 		border-top: solid 1px @text-color;
-
+		text-transform: uppercase;
+		font-size: larger;
+		.show-title{
+			font-weight: bold;
+		}
 		&:hover, &:hover + li{
 			border-top: solid 1px @theme-color;
 			

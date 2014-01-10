@@ -5962,10 +5962,10 @@ ul {
   margin: 0;
 }
 ::selection {
-  background: #fa5e00;
+  background: #2f2f2f;
   /* Safari */
 
-  color: #ff6000;
+  color: #323232;
 }
 ::-moz-selection {
   background: #323232;
@@ -6156,6 +6156,11 @@ body .navbar {
 #shows li {
   line-height: 3.4;
   border-top: solid 1px #323232;
+  text-transform: uppercase;
+  font-size: larger;
+}
+#shows li .show-title {
+  font-weight: bold;
 }
 #shows li:hover,
 #shows li:hover + li {
