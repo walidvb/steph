@@ -9,6 +9,10 @@ ul{
 ::-moz-selection {
 	background: @text-color; /* Firefox */
 }
+h1, h2, h3, h4{
+	font-weight: bold;
+	text-transform: uppercase;
+}
 //--------Home
 body{
 	color: @text-color;
@@ -95,15 +99,23 @@ section{
 		&.normal{
 			.make-sm-column(4);
 			height: @project-height;
+			.project-details{
+				padding-top: (@project-height/2)-20;
+			}
 		}
 		&.long{
 			height: @project-height;
 			.make-sm-column(8);
+			.project-details{
+				padding-top: (@project-height/2)-20;
+			}
 		}
 		&.high{
 			height: @project-height*2 + @project-margin;
 			.make-sm-column(4);
-
+			.project-details{
+				padding-top: (@project-height)-20;
+			}
 		}
 	}
 	.project{
@@ -121,9 +133,10 @@ section{
 			color: @text-color;
 
 			.background-color();
-			padding-top: (@project-height/2)-20;
+
 			text-align: center;
 			position: relative;
+			
 			.no-touch &{
 				top: 100%;
 				.opacity(0);
@@ -240,7 +253,6 @@ body{
 		
 	}
 }
-
 
 
 //------------fonts 
