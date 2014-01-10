@@ -1,3 +1,22 @@
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: (1600px - @grid-gutter-width);
+    }
+}
+@media screen and (min-width: 1900px) {
+    .container {
+        max-width: (1900px - @grid-gutter-width);
+    }
+}
+
+.container{
+	padding-left: 0px;
+	padding-right: 0px;
+	.row{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+}
 [ng-click]{cursor: pointer;}
 	ul{
 		-webkit-margin-before: 0;
@@ -48,11 +67,23 @@ a{
 }
 
 section{
-	padding-top: 55px;
+	padding: 5px 0px;
+	display: block;
 	background: transparent;
 }
 
+@alignToMenu: ~".show, #bio";
 
+@paddingLeftPage: 20px;
+
+@{alignToMenu} {
+	padding-left: @paddingLeftPage;
+	padding-right: @paddingLeftPage;
+	
+}
+#projects{
+	padding-left: @paddingLeftPage - 10;
+}
 //---------Mixins
 .background(){
 	background-size: cover;
@@ -76,14 +107,17 @@ section{
 	font-size: @font-size-h3;
 	margin: 0px;
 	border: none;
-	.navbar-fixed-top &{
-		padding-left: 15px;
+	.navbar-collapse{
+		padding-left: 0px;
 	}
 	li > a{
 		padding-top: 17px!important;
 		padding-bottom: 13px!important;
 		padding-left: 33px;
 		padding-right: 30px;
+	}
+	li:first-child  a{
+		padding-left: 20px;
 	}
 	li:not(:first-child):before{
 		content: '\00B7';
@@ -117,9 +151,7 @@ section{
 		list-style: none;
 		height: @project-height;
 		//different thumbnail sizes
-		&{
 			margin-bottom: @project-margin;
-		}
 		&.normal{
 			.make-sm-column(4);
 			height: @project-height;
@@ -141,6 +173,9 @@ section{
 				padding-top: (@project-height)-20;
 			}
 		}
+				// padding-left: 0px!important;
+				// padding-right: 0px!important;
+
 	}
 	.project{
 		position: relative;
@@ -196,14 +231,14 @@ body{
 	}
 }
 .project-details{
-	height: 100%;
-	width: 100%;
+	top: @navbar-height;
+	bottom: 0;
 	//overflow-x: auto;
 	white-space: nowrap;
-	padding-top: @navbar-height;
-	//display: inline-block;
+	position: absolute;
 	.project-info{
-		max-width: 45%;
+
+		max-width: 500px;
 		min-width: 250px;
 		white-space: normal;
 		padding: 0px 5px 20px 10px;
@@ -217,7 +252,6 @@ body{
 
 	.slide{
 		vertical-align: top;
-		height: 100%;
 		overflow-y: scroll;
 		display: inline-block;
 		white-space: normal;
@@ -225,10 +259,14 @@ body{
 		&:not(:last-child){
 			margin-right: @navbar-height;
 		}
+		.img{
+			height: 100%;
+		}
 		.slide-img{
 			position: relative;
 			min-height: 100%;
 			max-height: 100%;
+
 		}
 		.slide-legend{
 			text-align: center;
@@ -256,6 +294,7 @@ body{
 //----------ShowList
 @show-height: 45px;
 #shows{
+	padding-top: 0px;
 	li{
 		line-height: 3.4;
 		border-top: solid 1px @text-color;
@@ -279,8 +318,8 @@ body{
 	@media @notmobile{
 		-webkit-column-count: 2;
 	}
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-right: 30px;
+	padding-bottom: 10px;
 	.bio-years > li{
 				margin-bottom: 1em;
 			}

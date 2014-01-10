@@ -684,12 +684,12 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 740px;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 960px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -5955,6 +5955,24 @@ td.visible-print {
     display: none !important;
   }
 }
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1580px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .container {
+    max-width: 1880px;
+  }
+}
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.container .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
 [ng-click] {
   cursor: pointer;
 }
@@ -6003,8 +6021,16 @@ a:hover {
   text-decoration: none;
 }
 section {
-  padding-top: 55px;
+  padding: 5px 0px;
+  display: block;
   background: transparent;
+}
+.show, #bio {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#projects {
+  padding-left: 10px;
 }
 .navbar {
   text-transform: uppercase;
@@ -6012,14 +6038,17 @@ section {
   margin: 0px;
   border: none;
 }
-.navbar-fixed-top .navbar {
-  padding-left: 15px;
+.navbar .navbar-collapse {
+  padding-left: 0px;
 }
 .navbar li > a {
   padding-top: 17px!important;
   padding-bottom: 13px!important;
   padding-left: 33px;
   padding-right: 30px;
+}
+.navbar li:first-child a {
+  padding-left: 20px;
 }
 .navbar li:not(:first-child):before {
   content: '\00B7';
@@ -6045,8 +6074,6 @@ a.background-img {
 #projects li {
   list-style: none;
   height: 150px;
-}
-#projects li {
   margin-bottom: 20px;
 }
 #projects li.normal {
@@ -6146,13 +6173,13 @@ body .navbar {
   font-weight: bolder;
 }
 .project-details {
-  height: 100%;
-  width: 100%;
+  top: 50px;
+  bottom: 0;
   white-space: nowrap;
-  padding-top: 50px;
+  position: absolute;
 }
 .project-details .project-info {
-  max-width: 45%;
+  max-width: 500px;
   min-width: 250px;
   white-space: normal;
   padding: 0px 5px 20px 10px;
@@ -6165,7 +6192,6 @@ body .navbar {
 }
 .project-details .slide {
   vertical-align: top;
-  height: 100%;
   overflow-y: scroll;
   display: inline-block;
   white-space: normal;
@@ -6173,6 +6199,9 @@ body .navbar {
 }
 .project-details .slide:not(:last-child) {
   margin-right: 50px;
+}
+.project-details .slide .img {
+  height: 100%;
 }
 .project-details .slide .slide-img {
   position: relative;
@@ -6200,6 +6229,9 @@ body .navbar {
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
 }
+#shows {
+  padding-top: 0px;
+}
 #shows li {
   line-height: 3.4;
   border-top: solid 1px #323232;
@@ -6219,8 +6251,8 @@ body .navbar {
   display: inline-block;
 }
 #bio {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 30px;
+  padding-bottom: 10px;
 }
 @media (min-width: 481px) {
   #bio {

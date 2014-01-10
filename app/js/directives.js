@@ -75,22 +75,6 @@ directive('mySlide', function(){
 		}
 	}
 }).
-directive('myCarousel', ['$timeout', function(timer){
-	return{
-		link: function(scope, elem, attrs)
-		{
-			var slideIt = function()
-			{
-				// $(elem).scrollsnap({
-				// 	direction: 'x',
-				// 	snaps: '.slide',
-				// 	proximity: 350,
-				// });
-};
-timer(slideIt, 1000);
-},
-};
-}]).
 directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 	return {
 		scope: {
@@ -110,11 +94,11 @@ directive('myCenter', ['$timeout', function(timer){
 		link: function(scope, elem, attrs)
 		{
 			var center = function(){
-				var wrapperHeight = $(elem).parents('').height();
+				var wrapperHeight = $(elem).parents('section').height();
 				var elemHeight = $(elem).height();
 				$(elem).css({
 					position: 'relative',
-					top: wrapperHeight/2 - elemHeight/2,
+					top: -wrapperHeight/2 + elemHeight/2,
 				})
 			};
 			timer(function(){
@@ -124,7 +108,7 @@ directive('myCenter', ['$timeout', function(timer){
 		}
 	}
 }]).
-directive('myIsotope', ['$timeout', function(timer){
+directive('myIsotopea', ['$timeout', function(timer){
 	return {
 		link: function(scope, elem, attrs)
 		{
@@ -148,7 +132,7 @@ directive('myHorizontalScroll', ['$timeout', function(timer){
 				// 	event.preventDefault();
 
 				// });
-			}, 1500);
+		}, 1500);
 		}
 	}
 }]);

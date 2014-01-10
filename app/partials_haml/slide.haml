@@ -1,3 +1,4 @@
-%img.slide-img{"ng-if" => "slide.type == 'img'", "ng-src" => "{{slide.url}}" }
+.img
+	%img.slide-img{"ng-if" => "slide.type == 'img'", "ng-src" => "{{slide.url}}" }
 	.slide-legend{"my-html" => "slide.legend"}
-.html{"ng-if" => "slide.type == 'html'", "my-html" => 'slide.body', "test" => 'asd'}
+.html{"ng-if" => "slide.type == 'html'", "my-html" => 'slide.body', "my-center" => ""}

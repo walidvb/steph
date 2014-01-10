@@ -1,4 +1,5 @@
-<img class='slide-img' ng-if="slide.type == 'img'" ng-src='{{slide.url}}'>
+<div class='img'>
+  <img class='slide-img' ng-if="slide.type == 'img'" ng-src='{{slide.url}}'>
   <div class='slide-legend' my-html='slide.legend'></div>
-</img>
-<div class='html' my-html='slide.body' ng-if="slide.type == 'html'" test='asd'></div>
+</div>
+<div class='html' my-center='' my-html='slide.body' ng-if="slide.type == 'html'"></div>

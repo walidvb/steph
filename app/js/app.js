@@ -11,13 +11,10 @@ angular.module('myApp', [
   'myApp.directives',
   'myApp.controllers'
 ]).
-run(function($rootScope){
-  $rootScope.scrollTo = function(){
-    console.log('scrollTo');
-  }
+run(function($rootScope, $location){
 }).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {templateUrl: 'partials/home.html'});
+  $routeProvider.when('/', {templateUrl: 'partials/home.html', reloadOnSearch: false, controller: 'homeCtrl'});
   $routeProvider.when('/show/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});
   $routeProvider.when('/project/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});
   $routeProvider.otherwise({redirectTo: '/'});

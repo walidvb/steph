@@ -1,4 +1,4 @@
-#home{"ng-controller" => "homeCtrl"}
+#home.container{"ng-controller" => "homeCtrl"}
 	%a#background-img-0.background-img{"ng-href" => "#menu","my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[0]", "ng-click" => "scrollTo('menu', $event);"}
 	#menu{"ng-include" => true, :src => "'partials/menu.html'", "fixed-menu" => true}
 	.background-img{"my-background-img" => true, "my-fullscreen" => true, "background-props" => "backgrounds[1]"}

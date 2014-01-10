@@ -26,14 +26,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', function(
       }
     })
   };
-  $scope.scrollTo = function(id, event)
-    {
-      //event.preventDefault();
-      $location.hash(id);
-      setTimeout($anchorScroll, 200);
-      //reset to old to keep any additional routing logic from kicking in
-      //$location.hash(old); 
-    };
+  
 }]).
 controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Projects', function($scope, $routeParams, $filter, $sce, Projects) {
   Projects.query(function(data)
@@ -64,34 +57,15 @@ controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Project
   };
 
 }]).
+//The projectListCtrl controls both projects and shows, for the moment
 controller('projectListCtrl', ['$scope',  'Projects', function($scope, Projects) {
 $scope.formats = [];
 
  $scope.projects = Projects.query(function(data){
 
-  var high = 0;
-  var longer = 0;
-  var longMax = 3;
-  var highMax = 3;
-  var lastNormal = 0
   var getNewFormat = function(){
-        var rdm = Math.floor(Math.random() * 2)+1;
-        //console.log('rdm', rdm, 'highMax', high, 'longMax', longer );
-          //var rdm = 0;
-          switch(rdm) {
-            case 0:
-            lastNormal++;
-            return 'normal';
-            break;
-            case 1:
-            ++$scope.high;
-            return high >= highMax ? 'normal' : 'high';
-            break;
-            case 2: 
-            longer++;
-            return longer++ >= longMax ? 'normal' : 'long';
-            break;
-          }
+        var rdm = Math.floor(Math.random() * 2);
+        return (rdm == 0) ? 'high' : 'long'
       };
 
   for(var i = 0; i < data.length; i++)
@@ -119,7 +93,6 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
     var shows = {
       Group: bio.Group,
       Solo: bio.Solo,
-
     };
     // for each solo & group show
     angular.forEach(shows, function(shows, showType){
@@ -145,17 +118,26 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
     delete $scope.bio.Group;
   });
 }]).
-controller('homeCtrl', ['$scope', '$location', '$anchorScroll', 'Home', function($scope, $location, $anchorScroll, Home) {
+controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', 'Home', function($scope, $location, $anchorScroll, timer, Home) {
   Home.get(function(data){
     $scope.backgrounds = data.backgrounds;
+    console.log(timer);
     $scope.scrollTo = function(id, event)
     {
       event.preventDefault();
-     var old = $location.hash();
-     $location.hash(id);
-     $anchorScroll();
-      //reset to old to keep any additional routing logic from kicking in
-      $location.hash(old); 
+      console.log('going to '+id);
+
+      var menuHeight = 0; 
+      if(id != "menu"){
+            $location.hash(id); 
+            menuHeight = $('#menu').height();
+      }
+      $('html, body').animate({
+        scrollTop: $('#'+id).offset().top -menuHeight,
+      });
     };
+    timer(function(){
+      $scope.scrollTo($location.$$hash, {preventDefault: function(){}})
+    }, 0);
   })
 }]);
