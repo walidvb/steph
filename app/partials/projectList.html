@@ -1,5 +1,5 @@
 <ul class='project-list' my-isotope="'li'">
-  <li ng-class='getFormat()' ng-init='' ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'">
+  <li my-layout ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'">
     <a class='project' ng-href='#project/{{project.id}}' style="background-image: url('{{project.thumb}}')">
       {{setClasses(project)}}
       <div class='project-details'>

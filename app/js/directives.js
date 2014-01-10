@@ -86,10 +86,10 @@ directive('myCarousel', ['$timeout', function(timer){
 				// 	snaps: '.slide',
 				// 	proximity: 350,
 				// });
-			};
-			timer(slideIt, 1000);
-		},
-	};
+};
+timer(slideIt, 1000);
+},
+};
 }]).
 directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
 	return {
@@ -128,11 +128,47 @@ directive('myIsotope', ['$timeout', function(timer){
 	return {
 		link: function(scope, elem, attrs)
 		{
+			// timer(function() {
+			// 	$(elem).isotope({
+			// 		itemSelector: 'li',
+			// 	});
+			// }, 1500);
+		}
+	}
+}]).
+directive('myLayout', ['$timeout', function(timer){
+	return {
+		controller: function($scope, $element){
+			console.log($element);
+			var high = 0;
+			var longer = 0;
+			var longMax = 3;
+			var highMax = 3;
+			var formats = [];
+			$scope.getNewFormat = function(){
+				var rdm = Math.floor(Math.random() * 3);
+				console.log('rdm', rdm, 'highMax', high, 'longMax', longer );
+			    //var rdm = 0;
+			    switch(rdm) {
+			    	case 0:
+			    	return 'normal';
+			    	break;
+			    	case 1: 
+			    	return high++ >= highMax ? 'normal' : 'high';
+			    	break;
+			    	case 2: 
+			    	return longer++ >= longMax ? 'normal' : 'long';
+			    	break;
+			    }
+			};
+			//formats.push(getNewFormat());
+		},
+		link: function(scope, elem, attrs)
+		{
+			console.log(scope);
 			timer(function() {
-			// $(elem).isotope({
-			// 	itemSelector: 'li',
-			// });
-			}, 500);
+				$(elem).addClass(scope.getNewFormat());
+			}, 0);
 		}
 	}
 }]);

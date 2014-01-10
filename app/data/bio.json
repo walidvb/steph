@@ -23,7 +23,7 @@
 			},
 			{
 				"id" : "39",
-				"date" : "2014",
+				"date" : "2014-05-02T23:00:00.000Z",
 				"text" : "Pro Helvetia Grant for Research",
 				"venue" : "",
 				"location" : "Shanghai, CN",
@@ -31,7 +31,7 @@
 			},
 			{
 				"id" : "37",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Fondation H&eacute;l&egrave;ne et Victor Barbour",
 				"venue" : "",
 				"location" : "Geneva, CH",
@@ -39,7 +39,7 @@
 			},
 			{
 				"id" : "36",
-				"date" : "2010",
+				"date" : "2010-05-02T23:00:00.000Z",
 				"text" : "Rotary Foundation Bursary",
 				"venue" : "",
 				"location" : "Geneva, CH",
@@ -47,7 +47,7 @@
 			},
 			{
 				"id" : "38",
-				"date" : "2014",
+				"date" : "2014-05-02T23:00:00.000Z",
 				"text" : "Research Residency",
 				"venue" : "The Institute For Provocation (IFP)",
 				"location" : "Beijing, CN",
@@ -55,7 +55,7 @@
 			},
 			{
 				"id" : "35",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "(Super)latus",
 				"venue" : "Tivoli Kunsthalle",
 				"location" : "Geneva, CH",
@@ -63,7 +63,7 @@
 			},
 			{
 				"id" : "34",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Epi(deixis)",
 				"venue" : "BYCR gallery",
 				"location" : "Milan, IT",
@@ -71,7 +71,7 @@
 			},
 			{
 				"id" : "33",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Sweat Dreams",
 				"venue" : "Le Spot",
 				"location" : "Geneva, CH",
@@ -79,7 +79,7 @@
 			},
 			{
 				"id" : "32",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Dobra",
 				"venue" : "Flausina",
 				"location" : "Lisbon, PT",
@@ -87,7 +87,7 @@
 			},
 			{
 				"id" : "31",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "Retrospective",
 				"venue" : "",
 				"location" : "Kerzers, CH",
@@ -95,7 +95,7 @@
 			},
 			{
 				"id" : "30",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "Praga Festival",
 				"venue" : "",
 				"location" : "Figueira da Foz, PT",
@@ -103,7 +103,7 @@
 			},
 			{
 				"id" : "29",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "Waterproof",
 				"venue" : "Urgent Paradise",
 				"location" : "Lausanne, CH",
@@ -111,7 +111,7 @@
 			},
 			{
 				"id" : "28",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "Waterproof",
 				"venue" : "Le 6B Galerie",
 				"location" : "Paris, FR",
@@ -119,7 +119,7 @@
 			},
 			{
 				"id" : "27",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "ArteFiera",
 				"venue" : "BYCR Gallery",
 				"location" : "Bologna, IT",
@@ -127,7 +127,7 @@
 			},
 			{
 				"id" : "26",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "The London Art Fair",
 				"venue" : "La Scatola Gallery",
 				"location" : "London, UK",
@@ -135,7 +135,7 @@
 			},
 			{
 				"id" : "25",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Preposterous",
 				"venue" : "La Scatola Gallery",
 				"location" : "London, UK",
@@ -143,7 +143,7 @@
 			},
 			{
 				"id" : "24",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Emoticons",
 				"venue" : "Urban Caprice at House of Saint Barnabas",
 				"location" : "London, UK",
@@ -151,7 +151,7 @@
 			},
 			{
 				"id" : "23",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Goldsmiths MA final Show",
 				"venue" : "",
 				"location" : "London, UK",
@@ -159,7 +159,7 @@
 			},
 			{
 				"id" : "22",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Inclusion",
 				"venue" : "The Stone Space",
 				"location" : "London, UK",
@@ -167,7 +167,7 @@
 			},
 			{
 				"id" : "21",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Jusqu&rsquo;&agrave; &eacute;puisement des stocks / While supply last",
 				"venue" : "Galerie B312",
 				"location" : "Montreal, CA",
@@ -175,7 +175,7 @@
 			},
 			{
 				"id" : "20",
-				"date" : "2011",
+				"date" : "2011-05-02T23:00:00.000Z",
 				"text" : "The Face of the Shape",
 				"venue" : "La Scatola Gallery",
 				"location" : "London, UK",
@@ -183,7 +183,7 @@
 			},
 			{
 				"id" : "19",
-				"date" : "2011",
+				"date" : "2011-05-02T23:00:00.000Z",
 				"text" : "Rathania’s – Ars Similis Casus",
 				"venue" : "Musée Rath",
 				"location" : "Geneva, CH",
@@ -191,7 +191,7 @@
 			},
 			{
 				"id" : "18",
-				"date" : "2011",
+				"date" : "2011-05-02T23:00:00.000Z",
 				"text" : "Slow Forward",
 				"venue" : "The New Gallery London",
 				"location" : "London, UK",
@@ -199,7 +199,7 @@
 			},
 			{
 				"id" : "17",
-				"date" : "2011",
+				"date" : "2011-05-02T23:00:00.000Z",
 				"text" : "The Second Attempt Of Phane Terglo",
 				"venue" : "Lewisham Art House",
 				"location" : "London, UK",
@@ -207,7 +207,7 @@
 			},
 			{
 				"id" : "16",
-				"date" : "2010",
+				"date" : "2010-05-02T23:00:00.000Z",
 				"text" : "Anonymous Drawings – Archive 10",
 				"venue" : "Bl&uuml;tenweiss, Uferhallen / Wedding",
 				"location" : "Berlin, DE",
@@ -215,7 +215,7 @@
 			},
 			{
 				"id" : "15",
-				"date" : "2010",
+				"date" : "2010-05-02T23:00:00.000Z",
 				"text" : "F&ecirc;te de Famille",
 				"venue" : "Villa Dutoit",
 				"location" : "Geneva, CH",
@@ -223,7 +223,7 @@
 			},
 			{
 				"id" : "14",
-				"date" : "2009",
+				"date" : "2009-05-02T23:00:00.000Z",
 				"text" : "Anonymous Drawings n&deg;10",
 				"venue" : "Bl&uuml;tenweiss, Kunstraum Kreuzberg / Bethanien",
 				"location" : "Berlin, DE",
@@ -231,7 +231,7 @@
 			},
 			{
 				"id" : "13",
-				"date" : "2009",
+				"date" : "2009-05-02T23:00:00.000Z",
 				"text" : "Floating Details",
 				"venue" : "La Pinacoth&egrave;que",
 				"location" : "Geneva, CH",
@@ -239,7 +239,7 @@
 			},
 			{
 				"id" : "12",
-				"date" : "2009",
+				"date" : "2009-05-02T23:00:00.000Z",
 				"text" : "Folklore",
 				"venue" : "Villa Dutoit",
 				"location" : "Geneva, CH",
@@ -247,7 +247,7 @@
 			},
 			{
 				"id" : "11",
-				"date" : "2009",
+				"date" : "2009-05-02T23:00:00.000Z",
 				"text" : "Avant-Go&ucirc;t, with Norbert Bisky, curator Christoph Tannert",
 				"venue" : "Live In Your Head",
 				"location" : "Geneva, CH",
@@ -255,7 +255,7 @@
 			},
 			{
 				"id" : "10",
-				"date" : "2009",
+				"date" : "2009-05-02T23:00:00.000Z",
 				"text" : "Les Arts Incoh&eacute;rent",
 				"venue" : "Live In Your Head",
 				"location" : "Geneva, CH",
@@ -263,7 +263,7 @@
 			},
 			{
 				"id" : "9",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "Kritika",
 				"venue" : "Text by Emanuele Beluffi",
 				"location" : "Milan, IT",
@@ -272,7 +272,7 @@
 			},
 			{
 				"id" : "8",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "Artribune",
 				"venue" : "Text by Simone Monsi",
 				"location" : "Milan, IT",
@@ -281,7 +281,7 @@
 			},
 			{
 				"id" : "7",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "Eternal-Optimist",
 				"venue" : "Text by Tatevik Sargsyan",
 				"location" : "London, UK",
@@ -290,7 +290,7 @@
 			},
 			{
 				"id" : "6",
-				"date" : "2013",
+				"date" : "2013-05-02T23:00:00.000Z",
 				"text" : "Juliet Art Magazine",
 				"venue" : "Interview by Simone Monsi",
 				"location" : "Milan, IT",
@@ -299,7 +299,7 @@
 			},
 			{
 				"id" : "5",
-				"date" : "2012",
+				"date" : "2012-05-02T23:00:00.000Z",
 				"text" : "Loud and Quiet Magazine",
 				"venue" : "Photographes by Phil Sharp",
 				"location" : "London, UK",
@@ -308,7 +308,7 @@
 			},
 			{
 				"id" : "4",
-				"date" : "2011",
+				"date" : "2011-05-02T23:00:00.000Z",
 				"text" : "The Face of The Shape (catalogue)",
 				"venue" : "La Scatola Gallery",
 				"location" : "London, UK",
@@ -317,7 +317,7 @@
 			},
 			{
 				"id" : "3",
-				"date" : "2009",
+				"date" : "2009-05-02T23:00:00.000Z",
 				"text" : "Avant-Go&ucirc;t (catalogue)",
 				"venue" : "Text by Christoph Tannert and Jean-Pierre Greff",
 				"location" : "Geneva, CH",
@@ -326,7 +326,7 @@
 			},
 			{
 				"id" : "2",
-				"date" : "2009",
+				"date" : "2009-05-02T23:00:00.000Z",
 				"text" : "Avant-Go&ucirc;t (Multiples)",
 				"venue" : "Limited Edition, with Norbert Bisky",
 				"location" : "Geneva, CH",
@@ -335,7 +335,7 @@
 			},
 			{
 				"id" : "1",
-				"date" : "2009",
+				"date" : "2009-05-02T23:00:00.000Z",
 				"text" : "Etumag n&deg;36",
 				"venue" : "Text by Alexandre Varela",
 				"location" : "Geneva, CH",

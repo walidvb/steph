@@ -5986,6 +5986,7 @@ a:active {
 }
 a:hover {
   color: #ff6000;
+  text-decoration: none;
 }
 section {
   padding-top: 55px;
@@ -6084,7 +6085,7 @@ a.background-img {
   background: rgba(255, 96, 0, 0.66);
   padding-top: 55px;
   text-align: center;
-  position: absolute;
+  position: relative;
 }
 .no-touch #projects .project .project-details {
   top: 100%;
@@ -6154,6 +6155,10 @@ body .navbar {
 #shows li {
   line-height: 3.4;
   border-top: solid 1px #323232;
+}
+#shows li:hover,
+#shows li:hover + li {
+  border-top: solid 1px #ff6000;
 }
 #shows li a {
   width: 100%;
