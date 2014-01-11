@@ -11,6 +11,9 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
     {name: 'contact'}
   ];
   $scope.currentMenu = '';
+  $scope.url = function(item) {
+    return '#/' + item.name;
+  }
   $scope.setActiveMenu = function(id)
   {
     $($scope.menu).each(function(){
@@ -29,7 +32,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
   {
     console.log($location);
       //event.preventDefault();
-      $//location.hash(id);
+      //location.hash(id);
       // setTimeout($anchorScroll, 1000);
       //reset to old to keep any additional routing logic from kicking in
       //$location.hash(old); 
@@ -138,8 +141,7 @@ controller('bioCtrl', ['$scope', 'Bio', function($scope, Bio) {
   };
   Bio.get(init);
   $scope.addLine = function(){
-    var newLine = {
-    };
+    var newLine = {};
     $scope.raw.bio.push(newLine);
   };
 }]).

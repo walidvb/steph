@@ -98,17 +98,17 @@ directive('myCenter', ['$timeout', function(timer){
 				var elemHeight = $(elem).height();
 				$(elem).css({
 					position: 'relative',
-					top: -wrapperHeight/2 + elemHeight/2,
+					top: wrapperHeight/2 - elemHeight/2,
 				})
 			};
 			timer(function(){
 				center();
 				$(window).on('resize', center);
-			}, 0);
+			}, 10);
 		}
 	}
 }]).
-directive('myIsotopea', ['$timeout', function(timer){
+directive('myIsotopes', ['$timeout', function(timer){
 	return {
 		link: function(scope, elem, attrs)
 		{
@@ -132,7 +132,7 @@ directive('myHorizontalScroll', ['$timeout', function(timer){
 				// 	event.preventDefault();
 
 				// });
-		}, 1500);
+		}, 0);
 		}
 	}
 }]);

@@ -72,7 +72,7 @@ $scope.formats = [];
 
   for(var i = 0; i < data.length; i++)
   {
-     $scope.formats.push((i%3 >= 2) ? getNewFormat() : 'normal');
+     $scope.formats.push((i%4 >= 3) ? getNewFormat() : 'normal');
   }
  });
  $scope.getFormat = function (index){
@@ -126,9 +126,6 @@ controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', 'Hom
     console.log($location);
     $scope.scrollTo = function(id, event)
     {
-      event.preventDefault();
-      console.log('going to '+id);
-
       var menuHeight = 0; 
       if(id != "menu"){
             $location.hash(id); 
@@ -140,6 +137,6 @@ controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', 'Hom
     };
     timer(function(){
       $scope.scrollTo($location.$$hash, {preventDefault: function(){}})
-    }, 0);
+    }, 150);
   })
 }]);
