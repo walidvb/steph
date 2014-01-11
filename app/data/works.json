@@ -270,7 +270,7 @@
     "active": false,
     "body": "<p>&lsquo;Full Stops&rsquo; is a musical arrangement made from the last notes of hundreds of the most famous classical songs downloaded on the Internet. Blending all classical eras from Baroque to Romantic passing by Classic, the work produces improbable encounters, including Mozart (&dagger; 1791) and Tchaikovsky (&dagger; 1893), Handel (&dagger; 1759) and Rachmaninoff (&dagger; 1943). The result is a new harmonious symphony, sometimes pompous, sometimes meditative, which begins and ends indefinitely, again and again.</p>\n<p>&nbsp;</p>",
     "medium": "Sound piece",
-    "public": false,
+    "public": true,
     "date": "2014-03-05T00:00:00.000Z",
     "category": "sound",
     "dimensions": "51 minutes"
@@ -391,7 +391,7 @@
       }
     ],
     "active": true,
-    "public": false,
+    "public": true,
     "category": "sound",
     "body": "<p>Best Of Best Of Best Of is a series of songs from various musicians and music bands. Each songs is a cumulative crescendo of the best of each artists turning into a cacophony. The work is shown within the form of an album listenable on iPod. &nbsp;</p>",
     "date": "2014-03-06T00:00:00.000Z",
@@ -629,53 +629,62 @@
       {
         "type": "img",
         "url": "img/shows/epideixis/01.jpg",
-        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>"
+        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
       },
       {
         "type": "img",
         "url": "img/shows/epideixis/02.jpg",
-        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>"
+        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
       },
       {
         "type": "img",
         "url": "img/shows/epideixis/03.jpg",
-        "legend": "<p>View of the work&nbsp;<em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>"
+        "legend": "<p>View of the work&nbsp;<em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
       },
       {
         "type": "img",
         "url": "img/shows/epideixis/04.jpg",
-        "legend": "<p>View of the work <em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>"
+        "legend": "<p>View of the work <em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
       },
       {
         "type": "img",
         "url": "img/shows/epideixis/05.jpg",
-        "legend": "<p>View of the&nbsp;work&nbsp;<em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>"
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
       },
       {
         "type": "img",
         "url": "img/shows/epideixis/06.jpg",
-        "legend": "<p>View of the&nbsp;work <em>:P from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
+        "legend": "<p>View of the&nbsp;work <em>:P from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
       },
       {
         "type": "img",
         "url": "img/shows/epideixis/07.jpg",
-        "legend": "<p>View of the&nbsp;work&nbsp;<em>:) from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>:) from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
       },
       {
         "type": "img",
         "url": "img/shows/epideixis/08.jpg",
-        "legend": "<p>View of the&nbsp;work&nbsp;<em>:* from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>:* from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
       },
       {
         "type": "img",
         "url": "img/shows/epideixis/09.jpg",
-        "legend": "<p>View of installations<em>&nbsp;Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>"
+        "legend": "<p>View of installations<em>&nbsp;Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
       }
     ],
-    "active": false,
+    "active": true,
     "public": true,
     "date": "2013-01-17T00:00:00.000Z",
-    "body": "<p>The word epideictic (epidittico in Italian) comes from the ancient Greek <em>epideiktikos</em>based on <em>deiknunai,</em> which means &lsquo;to show&rsquo;. It is one of the three subdivisions of rhetoric as described in Aristotle&rsquo;s book <em>Rhetoric (367 &ndash; 322 BC). Epideixis </em>is characterized by or designed to display rhetorical or oratorical skill. <em>Epideixis </em>is a demonstrative speech commonly used for opening events, anniversaries, births and funeral orations. Aristotle and many philosophers after him define<em> Epideixis</em> as a speech of style from which neither agonistic achievement nor polemic arouses. An epideictic oratorical demonstration does not provoke controversy but promotes values that are shared in the communities.&nbsp;</p>"
+    "body": "<p>The word epideictic (epidittico in Italian) comes from the ancient Greek <em>epideiktikos&nbsp;</em>based on <em>deiknunai,</em> which means &lsquo;to show&rsquo;. It is one of the three subdivisions of rhetoric as described in Aristotle&rsquo;s book <em>Rhetoric (367 &ndash; 322 BC). Epideixis </em>is characterized by or designed to display rhetorical or oratorical skill. <em>Epideixis </em>is a demonstrative speech commonly used for opening events, anniversaries, births and funeral orations. Aristotle and many philosophers after him define<em> Epideixis</em> as a speech of style from which neither agonistic achievement nor polemic arouses. An epideictic oratorical demonstration does not provoke controversy but promotes values that are shared in the communities.&nbsp;</p>"
   },
   {
     "title": "Balloons",
@@ -1037,7 +1046,7 @@
         "body": "<iframe src=\"//www.youtube.com/embed/TQFtXcISx08\" frameborder=\"0\" allowfullscreen></iframe>"
       }
     ],
-    "active": true,
+    "active": false,
     "category": "group",
     "location": "Lausanne, CH & Paris, FR",
     "venue": "Urgent Paradise, Le 6B Galerie",

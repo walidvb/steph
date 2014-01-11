@@ -240,15 +240,17 @@ body{
 }
 
 .project-details.project-single{
-
 	padding-left: @paddingLeftPage;
 	padding-right: @paddingLeftPage;
-
+	
 	@media @notmobile{
-		top: @navbar-height;
+		top: @navbar-height;	
 		bottom: 0;
 		white-space: nowrap;
-		position: absolute;		
+		position: absolute;	
+	}
+	@media @mobile{
+		padding-top: @navbar-height;
 	}
 	.project-info{
 		width: 100%;
@@ -256,12 +258,14 @@ body{
 			max-width: 360px;
 			min-width: 250px;
 			white-space: normal;
-			text-align: justify;
 		}
 		.apropos {
 			text-transform: uppercase;
 			font-size: inherit;
 			font-weight: normal;
+		}
+		.project-body{
+			text-align: justify;
 		}
 	}
 
@@ -304,13 +308,13 @@ body{
 				max-height: 100%;
 
 			}
-			.no-touch .slide-legend{
+			.slide-legend{
 				opacity: 0;
 				bottom: -100%;
 				.transition(all .15s .15s linear);
 				
 			}
-			.no-touch &:hover .slide-legend{
+			&:hover .slide-legend{
 				bottom: 0%;
 				opacity: 1;
 				.transition(all .15s linear);

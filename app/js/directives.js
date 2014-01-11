@@ -11,6 +11,7 @@ directive('scrollSpy', ['$timeout', function(timer){
 directive('fixedMenu', ['$timeout', function(timer){
 	return{
 		link: function(scope, elem, attr){
+			console.log(elem);
 			var fixIt = function(){
 				var menu_pos = $(elem).offset().top;
 				var menu_height = $(elem).height();
