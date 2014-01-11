@@ -45,17 +45,19 @@ directive('fixedMenu', ['$timeout', function(timer){
 }]).
 directive('myFullscreen', ['$timeout', function(timer){
 	return function(scope, elem, attrs){
-		var setSize = function() {
-			$(elem).height($(window).height())//-$('#menu').height())
-.css('overflow', 'auto')
-};
-$(window).on('resize', function()
-{
-	setSize();
-});
-timer(setSize, 0);
-}
-}]).
+		if(!Modernizr.touch)
+		{
+			var setSize = function() {
+				$(elem).height($(window).height()).css('overflow', 'auto')
+			};
+			$(window).on('resize', function()
+			{
+				setSize();
+			});
+			timer(setSize, 0);
+		}
+	}
+	}]).
 directive('myBackgroundImg', function(){
 	return {
 		restrict: 'AE',

@@ -1,10 +1,10 @@
 .bio-header{"my-html" => "header"}
 %ul.bio-list
-	%li{"ng-repeat" => "(category, experiences) in bio"}
-		%h3 {{category}}
+	%li{"ng-repeat" => "category in bio"}
+		%h3 {{category.category}}
 		%ul
 			/If it's an array, ie if it's not the later experiences
-			%li{"ng-repeat"=>"exp in experiences  | orderBy:'-date'"}
+			%li{"ng-repeat"=>"exp in category.data  | orderBy:'-date'"}
 				%span.bio-date {{exp.date}}
 				-# | date:'yyyy'}}
 				%span.bio-title {{exp.text}}

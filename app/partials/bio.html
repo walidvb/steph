@@ -1,10 +1,10 @@
 <div class='bio-header' my-html='header'></div>
 <ul class='bio-list'>
-  <li ng-repeat='(category, experiences) in bio'>
-    <h3>{{category}}</h3>
+  <li ng-repeat='category in bio'>
+    <h3>{{category.category}}</h3>
     <ul>
       <!-- If it's an array, ie if it's not the later experiences -->
-      <li ng-repeat="exp in experiences  | orderBy:'-date'">
+      <li ng-repeat="exp in category.data  | orderBy:'-date'">
         <span class='bio-date'>{{exp.date}}</span>
         <span class='bio-title'>{{exp.text}}</span>
         <span class='bio-venue'>{{exp.venue}}</span>

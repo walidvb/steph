@@ -76,7 +76,7 @@ $scope.formats = [];
   }
  });
  $scope.getFormat = function (index){
-  return $scope.formats[index];
+  return Modernizr.touch ? 'normal' : $scope.formats[index];
  }
 }]).
 controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter, Bio) {
@@ -86,10 +86,16 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
     $scope.pdf = data.pdf;
     var bio = _.groupBy(data.bio, category);
 
-    $scope.bio = {
-      "Education": bio.Education,
-      "Awards/Scholarships/Residencies": bio.Awards,
-    };
+    $scope.bio = [
+      {
+        category: "Education", 
+        data: bio.Education,
+      },
+      {
+        category: "Awards/Scholarships/Residencies",
+        data: bio.Awards
+      }
+    ];
 
     $scope.shows = [];
     var shows = {
@@ -133,7 +139,7 @@ controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', 'Hom
       }
       $('html, body').animate({
         scrollTop: $('#'+id).offset().top -menuHeight,
-      });
+      }, 800);
     };
     timer(function(){
       $scope.scrollTo($location.$$hash, {preventDefault: function(){}})

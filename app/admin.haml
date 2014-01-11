@@ -13,7 +13,7 @@
     %script{:src => "lib/zeroclipboard/ZeroClipboard.min.js"}
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"}
 
-  %body{"ng-class" => "", "ng-class" => "active", "ng-controller" => "appCtrl"}
+  %body.admin{"ng-class" => "active", "ng-controller" => "appCtrl"}
     #menu{"ng-include" => true, :src => "'partials/menu.html'", "fixed-menu" => true}
     %button.btn.btn-lg.btn-success#copy-button{"data-target" => "#modal-result", "my-modal-trigger" => true} Get result!
     .view{"ng-view" => true}
