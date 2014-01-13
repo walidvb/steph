@@ -72,7 +72,7 @@ $scope.formats = [];
 
   for(var i = 0; i < data.length; i++)
   {
-     $scope.formats.push((i%4 >= 3) ? getNewFormat() : 'normal');
+     $scope.formats.push((i%3 >= 2) ? getNewFormat() : 'normal');
   }
  });
  $scope.getFormat = function (index){

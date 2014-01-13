@@ -58,7 +58,7 @@ a{
 }
 
 section{
-	padding: 20px 0px;
+	padding: 20px 0px 0px;
 	display: block;
 	background: transparent;
 }
@@ -178,7 +178,7 @@ section{
 			height: @project-height*2 + @project-margin;
 			.make-sm-column(4);
 			.project-details{
-				padding-top: (@project-height)-20;
+				padding-top: (@project-height)-10;
 			}
 		}
 				// padding-left: 0px!important;
@@ -259,6 +259,9 @@ body{
 			min-width: 250px;
 			white-space: normal;
 		}
+		.project-title{
+			margin-top: 0px;
+		}
 		.apropos {
 			text-transform: uppercase;
 			font-size: inherit;
@@ -336,7 +339,12 @@ body{
 		}
 		&:hover, &:hover + li{
 			border-top: solid 1px @theme-color;
-			
+		}
+		&:last-child{
+			border-bottom: solid 1px @text-color;
+			&:hover{
+				border-bottom: solid 1px @theme-color;
+			}
 		}
 		a{
 			.fill();
@@ -358,7 +366,9 @@ body{
 	.bio-years > li{
 		margin-bottom: 1em;
 	}
-
+	.bio-title{
+		font-style: italic;
+	}
 	.bio-pdf{
 		font-size: larger;
 		text-transform: uppercase;

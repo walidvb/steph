@@ -6013,7 +6013,7 @@ a:hover {
   text-decoration: none;
 }
 section {
-  padding: 20px 0px;
+  padding: 20px 0px 0px;
   display: block;
   background: transparent;
 }
@@ -6132,7 +6132,7 @@ section {
   }
 }
 #projects li.high .project-details {
-  padding-top: 130px;
+  padding-top: 140px;
 }
 #projects .project {
   position: relative;
@@ -6209,6 +6209,9 @@ body .navbar {
     min-width: 250px;
     white-space: normal;
   }
+}
+.project-details.project-single .project-info .project-title {
+  margin-top: 0px;
 }
 .project-details.project-single .project-info .apropos {
   text-transform: uppercase;
@@ -6288,6 +6291,12 @@ body .navbar {
 #shows li:hover + li {
   border-top: solid 1px #ff6000;
 }
+#shows li:last-child {
+  border-bottom: solid 1px #323232;
+}
+#shows li:last-child:hover {
+  border-bottom: solid 1px #ff6000;
+}
 #shows li a {
   width: 100%;
   height: 100%;
@@ -6308,6 +6317,9 @@ body .navbar {
 }
 #bio .bio-years > li {
   margin-bottom: 1em;
+}
+#bio .bio-title {
+  font-style: italic;
 }
 #bio .bio-pdf {
   font-size: larger;

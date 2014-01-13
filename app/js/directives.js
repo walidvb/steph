@@ -12,16 +12,30 @@ directive('fixedMenu', ['$timeout', function(timer){
 	return{
 		link: function(scope, elem, attr){
 			console.log(elem);
-			var fixIt = function(){
+			var fixIt = function(e){
 				var menu_pos = $(elem).offset().top;
 				var menu_height = $(elem).height();
 				var oldPadding = $('body').css('paddingTop');
-				var fixMenu = function(){
+				var lastPos = $(window).scrollTop();
+
+				var timeout;
+				var fixMenu = function(e){
+
 					var pos = $(window).scrollTop();
+					lastPos = $(window).scrollTop();
+					var scrollingDown = e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0;
+					console.log(scrollingDown);
 					if( pos >= menu_pos)
 					{
 						$(elem).addClass('navbar-fixed-top');
 						$('body').css('paddingTop', menu_height);
+						if(scrollingDown){
+							var newTop = Math.min(menu_height, lastPos - pos)
+							;
+							$(elem).css({
+								top: "+=" + 1
+							})
+						}
 					}
 					else
 					{
@@ -29,15 +43,15 @@ directive('fixedMenu', ['$timeout', function(timer){
 						$('body').css('paddingTop', oldPadding);
 					}
 				}
-				$(window).on('scroll', function()
+				$(window).on('scroll', function(e)
 				{
-					fixMenu();
+					fixMenu(e);
 				}).
-				on('resize', function(){
+				on('resize', function(e){
 					menu_pos = $(elem).offset().top;
 					menu_height = $(elem).outerHeight(true);
 					oldPadding = $('body').css('paddingTop');
-					fixMenu();
+					fixMenu(e);
 				});
 			};
 			timer(fixIt, 0);
@@ -111,7 +125,7 @@ directive('myCenter', ['$timeout', function(timer){
 		}
 	}
 }]).
-directive('myIsotopes', ['$timeout', function(timer){
+directive('myIsotope', ['$timeout', function(timer){
 	return {
 		link: function(scope, elem, attrs)
 		{

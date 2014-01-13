@@ -390,7 +390,7 @@
         "public": true
       }
     ],
-    "active": true,
+    "active": false,
     "public": true,
     "category": "sound",
     "body": "<p>Best Of Best Of Best Of is a series of songs from various musicians and music bands. Each songs is a cumulative crescendo of the best of each artists turning into a cacophony. The work is shown within the form of an album listenable on iPod. &nbsp;</p>",
@@ -401,7 +401,7 @@
   {
     "title": "Statues (Play#1)",
     "type": "project",
-    "id": "new_project",
+    "id": "statues",
     "thumb": "img/thumbs/statues.jpg",
     "slides": [
       {
@@ -540,7 +540,7 @@
     "active": false,
     "body": "<p>For the series of EMOTICONS, Blumer has objectified the most widespread icon representing our emotions. This hyperbolic manner of showing emoticons intends to stimulate the audience to reflect on our daily-mediated relationship to each other, whether it is in a superficial or profound way. The emoticons are sort of emptied out symbols. Their primordial iconicity fades away because of our overuse of them. One could say that the more we use an emoticon the less it actually represents our emotional state. It&rsquo;s, however, not always the case, the emoticons do still carry a profound power of self-reflectivity. Displayed within the traditional white cube, the Emoticons series doesn&rsquo;t leave indifferent. They continuously inspire a reaction. Whether the viewers smile or not, they are caught in a ceaseless play on signs and signification since the emoticon exists at this strange edge between pure abstraction and representation. &nbsp;</p>",
     "medium": "Fabric on shaped stretchers",
-    "date": "2011-12-30T00:00:00.000Z",
+    "date": "2012-03-07T00:00:00.000Z",
     "category": "object",
     "public": true
   },
@@ -603,16 +603,17 @@
   {
     "title": "Ellipsis",
     "type": "project",
-    "id": "new_project",
+    "id": "ellipsis",
     "thumb": "img/thumbs/ellipsis.jpg",
     "slides": [
       {
         "type": "html",
         "url": "img/new_project/",
-        "body": "<iframe src=\"//player.vimeo.com/video/39334469?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+        "body": "<iframe src=\"//player.vimeo.com/video/39334469?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
       }
     ],
-    "active": false,
+    "active": true,
     "body": "<p>In a text, the ellipsis is signalled by 3 dots and brackets (&hellip;) which indicates when an author takes out some parts of an original text that is quoted in order to follow the logic of the argument. This absence is inevitably catching our attention and our mind eventually creates something to feed the gap. It is this lack in content of a text that the performance Ellipsis intends to question. The performance is made of 3 black dots covered with faux-fur hanged on a wall carefully and slowly shaved-off by the performers. As the ellipsis, the work is created through a subtraction of some of the original material. This antithetical action contrasts with traditional painting where commonly the material (paint) is added onto the canvas to generate new meanings. It also and mainly emphasis on how the &ldquo;left un-told&rdquo; becomes a condition for multiple. In this case, the ellipsis is not only the representation of a silent omission but also enhances a creative and fertile process, unfolding a variety of meaning, exploiting the void until it becomes productive.</p>",
     "medium": "HD video",
     "category": "video",
