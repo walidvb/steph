@@ -1,5 +1,5 @@
 <div class='menu navbar-fixed-top' ng-include src="'partials/menu.html'"></div>
-<div class='project-details project-single' my-horizontal-scroll>
+<div class='project-details project-single' id='{{project.type}}' my-horizontal-scroll>
   <div class='slide project-info' ng-class="'slide-'+0" ng-click='nextSlide(0)'>
     <h1 class='project-title'>{{project.title}}</h1>
     <div class='project-date'>{{project.date | date:'yyyy'}}</div>

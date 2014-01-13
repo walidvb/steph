@@ -129,7 +129,6 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
 controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', 'Home', function($scope, $location, $anchorScroll, timer, Home) {
   Home.get(function(data){
     $scope.backgrounds = data.backgrounds;
-    console.log($location);
     $scope.scrollTo = function(id, event)
     {
       var menuHeight = 0; 
@@ -137,9 +136,12 @@ controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', 'Hom
             $location.hash(id); 
             menuHeight = $('#menu').height();
       }
-      $('html, body').animate({
-        scrollTop: $('#'+id).offset().top -menuHeight,
-      }, 800);
+      if($('#'+id).length)
+      {
+        $('html, body').animate({
+          scrollTop: $('#'+id).offset().top -menuHeight,
+        }, 800);
+    }
     };
     timer(function(){
       $scope.scrollTo($location.$$hash, {preventDefault: function(){}})

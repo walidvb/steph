@@ -1,35 +1,38 @@
-<div class='bio-header' my-html='header'></div>
-<ul class='bio-list'>
-  <li ng-repeat='category in bio'>
-    <h3>{{category.category}}</h3>
-    <ul>
-      <!-- If it's an array, ie if it's not the later experiences -->
-      <li ng-repeat="exp in category.data  | orderBy:'-date'">
-        <span class='bio-date'>{{exp.date}}</span>
-        <span class='bio-title'>{{exp.text}}</span>
-        <span class='bio-venue'>{{exp.venue}}</span>
-        <span class='bio-location'>{{exp.location}}</span>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <ul class='bio-shows'>
-      <li ng-repeat="category in shows | orderBy:'-categoryName'">
-        <h3>{{category.categoryName}} Exhibitions</h3>
-        <ul class='bio-years'>
-          <li ng-repeat="year in category.shows | orderBy:'-year'">
-            <div class='bio-year'>{{year.year}}</div>
-            <ul>
-              <li ng-repeat="line in year.experiences | orderBy:'-date'">
-                <span class='bio-title'>{{line.text}}</span>
-                <span class='bio-location'>{{line.location}}</span>
-                <span class='bio-venue'>{{line.venue}}</span>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-<a class='bio-pdf' href='{{pdf.url}}'>{{pdf.title}}</a>
+<h1 class='section-header' my-accordion>CV</h1>
+<div class='section-body'>
+  <div class='bio-header' my-html='header'></div>
+  <ul class='bio-list'>
+    <li ng-repeat='category in bio'>
+      <h3>{{category.category}}</h3>
+      <ul>
+        <!-- If it's an array, ie if it's not the later experiences -->
+        <li ng-repeat="exp in category.data  | orderBy:'-date'">
+          <span class='bio-date'>{{exp.date}}</span>
+          <span class='bio-title'>{{exp.text}}</span>
+          <span class='bio-venue'>{{exp.venue}}</span>
+          <span class='bio-location'>{{exp.location}}</span>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class='bio-shows'>
+        <li ng-repeat="category in shows | orderBy:'-categoryName'">
+          <h3>{{category.categoryName}} Exhibitions</h3>
+          <ul class='bio-years'>
+            <li ng-repeat="year in category.shows | orderBy:'-year'">
+              <div class='bio-year'>{{year.year}}</div>
+              <ul>
+                <li ng-repeat="line in year.experiences | orderBy:'-date'">
+                  <span class='bio-title'>{{line.text}}</span>
+                  <span class='bio-location'>{{line.location}}</span>
+                  <span class='bio-venue'>{{line.venue}}</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <a class='bio-pdf' href='{{pdf.url}}'>{{pdf.title}}</a>
+</div>

@@ -1,27 +1,28 @@
-.bio-header{"my-html" => "header"}
-%ul.bio-list
-	%li{"ng-repeat" => "category in bio"}
-		%h3 {{category.category}}
-		%ul
-			/If it's an array, ie if it's not the later experiences
-			%li{"ng-repeat"=>"exp in category.data  | orderBy:'-date'"}
-				%span.bio-date {{exp.date}}
-				-# | date:'yyyy'}}
-				%span.bio-title {{exp.text}}
-				%span.bio-venue {{exp.venue}}
-				%span.bio-location {{exp.location}}
-	%li
-		%ul.bio-shows
-			%li{"ng-repeat" => "category in shows | orderBy:'-categoryName'"}
-				%h3 {{category.categoryName}} Exhibitions
-				%ul.bio-years
-					%li{"ng-repeat" => "year in category.shows | orderBy:'-year'"}
-						.bio-year {{year.year}}
-						-# | date:'yyyy'}} 
-						%ul
-							%li{"ng-repeat" => "line in year.experiences | orderBy:'-date'"} 
-								%span.bio-title {{line.text}}
-								%span.bio-location {{line.location}}
-								%span.bio-venue {{line.venue}}
+%h1.section-header{"my-accordion" => true} CV
+.section-body
+	.bio-header{"my-html" => "header"}
+	%ul.bio-list
+		%li{"ng-repeat" => "category in bio"}
+			%h3 {{category.category}}
+			%ul
+				/If it's an array, ie if it's not the later experiences
+				%li{"ng-repeat"=>"exp in category.data  | orderBy:'-date'"}
+					%span.bio-date {{exp.date}}
+					%span.bio-title {{exp.text}}
+					%span.bio-venue {{exp.venue}}
+					%span.bio-location {{exp.location}}
+		%li
+			%ul.bio-shows
+				%li{"ng-repeat" => "category in shows | orderBy:'-categoryName'"}
+					%h3 {{category.categoryName}} Exhibitions
+					%ul.bio-years
+						%li{"ng-repeat" => "year in category.shows | orderBy:'-year'"}
+							.bio-year {{year.year}}
+							-# | date:'yyyy'}} 
+							%ul
+								%li{"ng-repeat" => "line in year.experiences | orderBy:'-date'"} 
+									%span.bio-title {{line.text}}
+									%span.bio-location {{line.location}}
+									%span.bio-venue {{line.venue}}
 
-%a.bio-pdf{:href => "{{pdf.url}}"} {{pdf.title}}
+	%a.bio-pdf{:href => "{{pdf.url}}"} {{pdf.title}}

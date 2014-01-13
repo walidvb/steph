@@ -9,6 +9,6 @@
   / Collect the nav links, forms, and other content for toggling
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
     %ul.nav.navbar-nav
-      %li{"ng-repeat" => "item in menu"}
+      %li{"ng-repeat" => "item in menu", "spy" => "{{item.name}}"}
         %a{"ng-href" => "{{url(item)}}", "ng-click" => "scrollTo(item.name, $event);", "ng-class" => "{active: item.active}"} {{item.name}}
   / /.navbar-collapse

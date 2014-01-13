@@ -19,8 +19,8 @@
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"}
     %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.6/jquery.mousewheel.min.js"}
     %script{:src => "js/script.js"}
-  %body{"ng-class" => "", "ng-class" => "active", "ng-controller" => "appCtrl"}
-    .view{"ng-view" => true}
+  %body{"ng-class" => "", "ng-class" => "active", "ng-controller" => "appCtrl", "scroll-spy" => true}
+    .view{"ng-view" => true, "my-view"=>true}
 
     -#%script{:src => "//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"}
     %script{:src => "lib/angular/angular.js"}

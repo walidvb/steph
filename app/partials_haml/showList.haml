@@ -1,8 +1,10 @@
-%ul.show-list
+%h1.section-header{"my-accordion" => true} Shows
+
+%ul.section-body.show-list
 	%li.show{"ng-repeat" => "project in projects | filter: {type: 'show', public: true} | orderBy:'-date'"}
 		%a{"ng-href" => "#show/{{project.id}}"}
 			%span.show-title {{project.title}}
-			·
+			%span.dot-separator·
 			%span.show-location {{project.location}}
 			·
 			%span.show-year {{project.date | date:'yyyy'}}
