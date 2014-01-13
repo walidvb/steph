@@ -10,25 +10,15 @@ directive('fixedMenu', ['$timeout', function(timer){
         var menu_pos = $(elem).offset().top;
         var menu_height = $(elem).height();
         var oldPadding = $('body').css('paddingTop');
-        var lastPos = $(window).scrollTop();
 
         var timeout;
         var fixMenu = function(e){
 
           var pos = $(window).scrollTop();
-          lastPos = $(window).scrollTop();
-          var scrollingDown = e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0;
           if( pos >= menu_pos)
           {
             $(elem).addClass('navbar-fixed-top');
             $('body').css('paddingTop', menu_height);
-            if(scrollingDown){
-              var newTop = Math.min(menu_height, lastPos - pos)
-              ;
-              $(elem).css({
-                top: "+=" + 1
-              })
-            }
           }
           else
           {
@@ -115,9 +105,11 @@ directive('myCenter', ['$timeout', function(timer){
     link: function(scope, elem, attrs)
     {
       var center = function(){
-        var wrapperHeight = $(elem).parents('section').height();
-        var elemHeight = $(elem).height();
-        $(elem).css({
+        elem = angular.element(elem);
+        var wrapperHeight = elem.parents('.project-details').height();
+        var elemHeight = elem.height();
+        console.log("wrapperHeight", wrapperHeight, "elemHeight", elemHeight);
+        elem.css({
           position: 'relative',
           top: wrapperHeight/2 - elemHeight/2,
         })
@@ -196,8 +188,6 @@ directive('scrollSpy', function($window, $location) {
               spy.pos = pos;
               if (highlightSpy == null) {
                 highlightSpy = spy;
-                          $location.hash(spy.id);
-
               }
               if (highlightSpy.pos < spy.pos) {
                 highlightSpy = spy;
@@ -237,9 +227,6 @@ directive('spy', function($location) {
       });
     }
   };
-}).
-directive('myView', function(){
-  console.log('hello ng view');
 });
 
 

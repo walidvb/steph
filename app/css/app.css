@@ -5974,7 +5974,7 @@ ul {
   -webkit-padding-start: 0;
   margin: 0;
 }
-ul :not(.admin) li {
+ul li {
   list-style: none;
 }
 ::selection {
@@ -6094,6 +6094,7 @@ section {
 }
 #projects {
   background: #ffffff;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 #projects li {
@@ -6265,11 +6266,15 @@ body .navbar {
 }
 @media (min-width: 768px) {
   .project-details.project-single .slide {
-    overflow-y: scroll;
     white-space: normal;
+  }
+  .project-details.project-single .slide iframe {
+    min-width: 600px;
+    min-height: 340px;
   }
   .project-details.project-single .slide.project-info {
     height: 100%;
+    overflow-y: scroll;
   }
   .project-details.project-single .slide:not(:last-child) {
     margin-right: 50px;

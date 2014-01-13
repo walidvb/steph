@@ -14,7 +14,7 @@ ul{
 	-webkit-margin-after: 0;
 	-webkit-padding-start: 0;
 	margin: 0;
-	:not(.admin) li{
+	li{
 		list-style: none;
 	}
 }
@@ -172,6 +172,7 @@ section{
 @project-margin: @grid-gutter-width;
 #projects{
 	background: @background-color;
+	padding-top: 20px;
 	padding-bottom: 20px;
 	li{
 		list-style: none;
@@ -313,12 +314,17 @@ body{
 			margin-bottom: 10px;
 		}
 		@media @notmobile{
-			
-			overflow-y: scroll;
+
+			iframe{
+				min-width: 600px;
+				min-height: 340px;
+			}
 			white-space: normal;
 
 			&.project-info{
 				height: 100%;
+				overflow-y: scroll;
+
 			}
 			&:not(:last-child){
 				margin-right: @navbar-height;
