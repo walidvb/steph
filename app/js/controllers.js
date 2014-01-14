@@ -61,7 +61,7 @@ controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Project
 }]).
 //The projectListCtrl controls both projects and shows, for the moment
 controller('projectListCtrl', ['$scope',  'Projects', function($scope, Projects) {
-$scope.formats = [];
+  $scope.formats = [];
 
  $scope.projects = Projects.query(function(data){
 

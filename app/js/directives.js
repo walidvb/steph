@@ -106,7 +106,7 @@ directive('myCenter', ['$timeout', function(timer){
     {
       var center = function(){
         elem = angular.element(elem);
-        var wrapperHeight = elem.parents('.project-details').height();
+        var wrapperHeight = elem.parents('.project-details, #contact').height();
         var elemHeight = elem.height();
         console.log("wrapperHeight", wrapperHeight, "elemHeight", elemHeight);
         elem.css({
