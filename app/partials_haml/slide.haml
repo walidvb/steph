@@ -1,4 +1,4 @@
-.img
-	%img.slide-img{"ng-if" => "slide.type == 'img'", "ng-src" => "{{slide.url}}" }
+.img{"my-iframe" => "img"}
+	%img.slide-img.img-responsive{"ng-if" => "slide.type == 'img'", "ng-src" => "{{slide.url}}" }
 	.slide-legend{"my-html" => "slide.legend"}
-.html{"ng-if" => "slide.type == 'html'", "my-html" => 'slide.body', "my-center" => ""}
+.html{"ng-if" => "slide.type == 'html'", "my-html" => 'slide.body', "my-center" => "",  "my-iframe" => "html"}

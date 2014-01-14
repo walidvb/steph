@@ -6304,14 +6304,14 @@ body .navbar {
   padding-top: 0px;
 }
 #shows li {
-  line-height: 2;
+  line-height: 1.99;
   border-top: solid 1px #323232;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
   #shows li {
     font-size: 24px;
-    line-height: 3.4;
+    line-height: 1.99;
   }
 }
 #shows li .show-title {

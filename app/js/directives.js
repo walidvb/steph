@@ -1,39 +1,35 @@
 angular.module('myApp.directives', []).
-directive('scrollSpy', ['$timeout', function(timer){
-  return {
-  }
-}]).
-directive('fixedMenu', ['$timeout', function(timer){
+directive('fixedMenu', ['$timeout', '$window', function(timer, $window){
   return{
     link: function(scope, elem, attr){
       var fixIt = function(e){
-        var menu_pos = $(elem).offset().top;
-        var menu_height = $(elem).height();
-        var oldPadding = $('body').css('paddingTop');
+        var menu_pos = angular.element(elem).offset().top;
+        var menu_height = angular.element(elem).height();
+        var oldPadding = angular.element('body').css('paddingTop');
 
         var timeout;
         var fixMenu = function(e){
 
-          var pos = $(window).scrollTop();
+          var pos = $window.scrollY;
           if( pos >= menu_pos)
           {
-            $(elem).addClass('navbar-fixed-top');
-            $('body').css('paddingTop', menu_height);
+            angular.element(elem).addClass('navbar-fixed-top');
+            angular.element('body').css('paddingTop', menu_height);
           }
           else
           {
-            $(elem).removeClass('navbar-fixed-top');
-            $('body').css('paddingTop', oldPadding);
+            angular.element(elem).removeClass('navbar-fixed-top');
+            angular.element('body').css('paddingTop', oldPadding);
           }
         }
-        $(window).on('scroll', function(e)
+        angular.element($window).bind('scroll', function(e)
         {
           fixMenu(e);
         }).
         on('resize', function(e){
-          menu_pos = $(elem).offset().top;
-          menu_height = $(elem).outerHeight(true);
-          oldPadding = $('body').css('paddingTop');
+          menu_pos = angular.element(elem).offset().top;
+          menu_height = angular.element(elem).outerHeight(true);
+          oldPadding = angular.element('body').css('paddingTop');
           fixMenu(e);
         });
       };
@@ -52,14 +48,14 @@ directive('myAccordion', ['$timeout', function(timer){
     }
   }
 }]).
-directive('myFullscreen', ['$timeout', function(timer){
+directive('myFullscreen', ['$timeout', '$window', function(timer, $window){
   return function(scope, elem, attrs){
     if(!Modernizr.touch)
     {
       var setSize = function() {
-        $(elem).height($(window).height()).css('overflow', 'auto')
+        angular.element(elem).height($window.innerHeight).css('overflow', 'auto')
       };
-      $(window).on('resize', function()
+      angular.element($window).bind('resize', function()
       {
         setSize();
       });
@@ -73,7 +69,6 @@ directive('myBackgroundImg', function(){
     templateUrl: "partials/backgrounds.html",
     scope: {
       background: "=backgroundProps",
-      test: "=",
     }
   }
 }).
@@ -100,7 +95,7 @@ directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
     }
   }
 }]).
-directive('myCenter', ['$timeout', function(timer){
+directive('myCenter', ['$timeout', '$window', function(timer, $window){
   return {
     link: function(scope, elem, attrs)
     {
@@ -108,7 +103,6 @@ directive('myCenter', ['$timeout', function(timer){
         elem = angular.element(elem);
         var wrapperHeight = elem.parents('.project-details, #contact').height();
         var elemHeight = elem.height();
-        console.log("wrapperHeight", wrapperHeight, "elemHeight", elemHeight);
         elem.css({
           position: 'relative',
           top: wrapperHeight/2 - elemHeight/2,
@@ -116,12 +110,12 @@ directive('myCenter', ['$timeout', function(timer){
       };
       timer(function(){
         center();
-        $(window).on('resize', center);
+        angular.element($window).bind('resize', center);
       }, 10);
     }
   }
 }]).
-directive('myIsotope', ['$timeout', '$window', function(timer, $window){
+directive('myIsotopes', ['$timeout', '$window', function(timer, $window){
   return {
     link: function(scope, elem, attrs)
     {
@@ -158,7 +152,6 @@ directive('scrollSpy', function($window, $location) {
     controller: function($scope) {
       $scope.spies = [];
       $scope.test = 0;
-      setTimeout(function(){console.log('$scope.test changed');$scope.test = 8}, 1000)
       this.addSpy = function(spyObj) {
         $scope.spies.push(spyObj);
       };
@@ -184,7 +177,7 @@ directive('scrollSpy', function($window, $location) {
           spy.out();
           spyElems[spy.id] = spyElems[spy.id].length === 0 ? elem.find('#' + spy.id) : spyElems[spy.id];
           if (spyElems[spy.id].length !== 0) {
-            if ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= angular.element('#menu').height()) {
+            if ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= $window.innerHeight) {
               spy.pos = pos;
               if (highlightSpy == null) {
                 highlightSpy = spy;
@@ -213,7 +206,6 @@ directive('spy', function($location) {
           $location.hash(attrs.spy);
         });
       });
-      console.log(elem.find('a'));
       scrollSpy.addSpy({
         id: attrs.spy,
         in: function() {
@@ -227,7 +219,46 @@ directive('spy', function($location) {
       });
     }
   };
-});
+}).
+directive('myIframe', ['$timeout', '$window', function(timer, $window){
+  return function(scope, elem, attrs) {
+    var setFull = function() {
+      console.log(elem);
+      var ratio = 1280/720,
+          newCss = {},
+          maxWidth = $window.innerHeight*ratio;
+          if(!Modernizr.touch && maxWidth < $window.innerWidth)
+         {
+          newCss.h = $window.innerHeight,
+          newCss.w = newCss.h*ratio;
+          }
+          else
+          {
+            newCss.w = $window.innerWidth;
+            newCss.h = newCss.w/ratio;
+          }
+          console.log(attrs);
+          console.log($window.innerHeight);
+        if(attrs.myIframe == 'html')
+        {
+          newCss = {
+            minWidth: newCss.w,
+            minHeight: newCss.h,
+          };
+        }
+        else{
+          newCss = {
+            maxWidth: newCss.w,
+            maxHeight: newCss.h,
+          };
+        }
+        console.log(newCss);
+          angular.element(elem).find('iframe, img').css(newCss);
+    };
+    angular.element($window).bind('resize', setFull);
+    timer(setFull, 0);
+  }
+}]);
 
 
 

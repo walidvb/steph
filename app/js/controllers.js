@@ -17,6 +17,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', function(
   }
   $scope.setActiveMenu = function(id)
   {
+    console.log(id);
     $($scope.menu).each(function(){
       if(this.name == id)
       {
@@ -28,9 +29,8 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', function(
       }
     })
   };
-  
 }]).
-controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Projects', function($scope, $routeParams, $filter, $sce, Projects) {
+controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', '$location', 'Projects', function($scope, $routeParams, $filter, $sce, $location, Projects) {
   Projects.query(function(data)
   {
     var project = $filter('filter')(data, {id: $routeParams.projectID});
@@ -39,8 +39,11 @@ controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', 'Project
 
     $scope.allSlides = $scope.project.slides;
     $scope.slides = $scope.allSlides;//.slice(0, 3);
-   
+    $scope.setActiveMenu($scope.project.type+'s');
+
   });
+  //'s' is added to 
+  console.log($location);
  $scope.loadSlide = function(){
     var lastSlideIndex = $scope.slides.length;
     var newSlides = $scope.allSlides.slice(lastSlideIndex, lastSlideIndex+3);
@@ -126,25 +129,29 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
     delete $scope.bio.Group;
   });
 }]).
-controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', 'Home', function($scope, $location, $anchorScroll, timer, Home) {
+controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', '$window', 'Home', function($scope, $location, $anchorScroll, timer, $window, Home) {
   Home.get(function(data){
     $scope.backgrounds = data.backgrounds;
+    var timeout;
     $scope.scrollTo = function(id, event)
     {
       var menuHeight = 0; 
       if(id != "menu"){
             $location.hash(id); 
-            menuHeight = $('#menu').height();
+            menuHeight = angular.element('#menu').height();
       }
-      if($('#'+id).length)
+      if(angular.element('#'+id).length)
       {
-        $('html, body').animate({
+        var anim = angular.element('html, body').animate({
           scrollTop: $('#'+id).offset().top -menuHeight,
         }, 800);
-    }
+        angular.element($window).bind('scroll touchstart', function(){
+          anim.stop();
+        })
+      }
     };
     timer(function(){
       $scope.scrollTo($location.$$hash, {preventDefault: function(){}})
-    }, 150);
+    }, 500);
   })
 }]);
