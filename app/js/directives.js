@@ -3,7 +3,7 @@ directive('fixedMenu', ['$timeout', '$window', function(timer, $window){
   return{
     link: function(scope, elem, attr){
       var fixIt = function(e){
-        var menu_pos = angular.element(elem).offset().top;
+        var menu_pos = $window.innerHeight;//angular.element(elem).offset().top;
         var menu_height = angular.element(elem).height();
         var oldPadding = angular.element('body').css('paddingTop');
 
@@ -115,7 +115,7 @@ directive('myCenter', ['$timeout', '$window', function(timer, $window){
     }
   }
 }]).
-directive('myIsotopes', ['$timeout', '$window', function(timer, $window){
+directive('myIsotope', ['$timeout', '$window', function(timer, $window){
   return {
     link: function(scope, elem, attrs)
     {
@@ -159,6 +159,7 @@ directive('scrollSpy', function($window, $location) {
     link: function(scope, elem, attrs) {
       var spyElems = [];
       scope.$watch('spies', function(spies) {
+        console.log('added spy');
         for (var _i = 0; _i < spies.length; _i++) {
           var spy = spies[_i];
           if (spyElems[spy.id] == null) {
@@ -167,7 +168,7 @@ directive('scrollSpy', function($window, $location) {
         }
       }, true);
 
-      $($window).scroll(function() {
+      angular.element($window).scroll(function() {
         var highlightSpy, pos, spy, _i, _len, _ref;
         highlightSpy = null;
         _ref = scope.spies;

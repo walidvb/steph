@@ -1,5 +1,5 @@
 .menu.navbar-fixed-top{"ng-include" => true, "src" => "'partials/menu.html'"}
-.project-details.project-single{"my-horizontal-scroll" => true, "id" => "{{project.type}}"}
+.project-details.project-single{"my-horizontal-scroll" => true, "id" => "{{project.type+s}}"}
 	-#.project-slides{"infinite-scroll" => "loadSlide()", "infinite-scroll-distance" => 0, "infinite-scroll-direction" => "horz"}
 	.slide.project-info{"ng-click" => "nextSlide(0)", "ng-class" => "'slide-'+0"}
 		%h1.project-title {{project.title}}

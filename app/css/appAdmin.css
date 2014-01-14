@@ -6311,7 +6311,7 @@ body .navbar {
 @media (min-width: 768px) {
   #shows li {
     font-size: 24px;
-    line-height: 1.99;
+    line-height: 2.5;
   }
 }
 #shows li .show-title {

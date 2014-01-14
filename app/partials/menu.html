@@ -12,7 +12,7 @@
   <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
     <ul class='nav navbar-nav'>
       <li ng-repeat='item in menu' spy='{{item.name}}'>
-        <a ng-class='{active: item.active}' ng-click='scrollTo(item.name, $event);' ng-href='{{url(item)}}'>{{item.name}}</a>
+        <a ng-class='{active: item.active}' ng-click='scrollTo(item.name, true, $event);' ng-href='{{url(item)}}'>{{item.name}}</a>
       </li>
     </ul>
   </div>
