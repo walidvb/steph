@@ -4,3 +4,4 @@ node_modules/
 tmp
 *.css
 .DS_Store
+README.txt

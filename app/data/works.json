@@ -613,7 +613,7 @@
         "public": true
       }
     ],
-    "active": true,
+    "active": false,
     "body": "<p>In a text, the ellipsis is signalled by 3 dots and brackets (&hellip;) which indicates when an author takes out some parts of an original text that is quoted in order to follow the logic of the argument. This absence is inevitably catching our attention and our mind eventually creates something to feed the gap. It is this lack in content of a text that the performance Ellipsis intends to question. The performance is made of 3 black dots covered with faux-fur hanged on a wall carefully and slowly shaved-off by the performers. As the ellipsis, the work is created through a subtraction of some of the original material. This antithetical action contrasts with traditional painting where commonly the material (paint) is added onto the canvas to generate new meanings. It also and mainly emphasis on how the &ldquo;left un-told&rdquo; becomes a condition for multiple. In this case, the ellipsis is not only the representation of a silent omission but also enhances a creative and fertile process, unfolding a variety of meaning, exploiting the void until it becomes productive.</p>",
     "medium": "HD video",
     "category": "video",
@@ -709,7 +709,7 @@
       {
         "type": "img",
         "url": "img/projects/livestock/02.jpg",
-        "public": true
+        "public": false
       },
       {
         "type": "img",
@@ -986,7 +986,7 @@
         "public": true
       }
     ],
-    "active": false,
+    "active": true,
     "medium": "Fabric on shaped stretchers",
     "category": "object",
     "date": "2012-01-01T00:00:00.000Z",

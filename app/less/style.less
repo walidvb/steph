@@ -68,6 +68,9 @@ section{
 	}
 	@media @mobile{
 		.section-body{
+			//display: none;
+		}
+		.section-header{
 			display: none;
 		}
 		border-top: 1px solid @text-color;
@@ -76,7 +79,7 @@ section{
 		}
 		.section-header{
 			padding-left: 15px;
-			}
+		}
 
 	}
 	
@@ -120,9 +123,6 @@ section{
 //----------Menu
 
 .navbar {
-	@media @mobile{
-		display: none;
-	}
 	text-transform: uppercase;
 	font-size: @font-size-h3;
 	margin: 0px;
@@ -130,41 +130,73 @@ section{
 	.navbar-collapse{
 		padding-left: 0px;
 	}
-	@media @notmobile{
-		li > a{
-			padding-top: 17px!important;
-			padding-bottom: 13px!important;
-			padding-left: 33px;
-			padding-right: 30px;
-		}
+	
+	li{
+		@media @mobile{
 
-		li:first-child  a{
-			padding-left: 20px;
+			width: 20%;
+			text-align: center;
+			float: left;
+			.transition(width 0.2s ease-out);
+			.menu-title{
+				display: none;
+				transition: all 1s ease-out;
+			}
+			&.active{
+				width: 40%;
+				.menu-title{
+					display: inline-block
+				}
+				.glyphicon{
+					display: none;
+				}
+			}
 		}
-		li:not(:first-child):before{
-			.dot-before();
-			padding: 7px 0px;
+		@media @notmobile{
+			> a{
+				.transition(all 0.1s ease-out);
+				padding-top: 17px!important;
+				padding-bottom: 13px!important;
+				padding-left: 33px;
+				padding-right: 30px;
+			}
 
+			&:first-child  a{
+				padding-left: 20px;
+			}
+			&:not(:first-child):before{
+				.dot-before();
+				padding: 7px 0px;
+
+			}
 		}
+	}	
+}
+@media @mobile{
+	#menu:not(.navbar-fixed-top) .navbar li {
+		width: 25%;
 	}
 }
+.background-img{
+	a&{
+		display: block;
+	}
+	@media @notmobile{
 
-@media @notmobile{
-	.background-img{
 		> div{
 			height: 100%;
 			max-width: 100%;
 			.background();
 			background-attachment: fixed;
 		}
-		a&{
-			display: block;
-		}
+
 	}
-}
-@media @mobile{
-	.background-img{
-		display: none;
+
+	@media @mobile{
+		.background-img > div{
+
+			height: 80px;
+		}
 	}
 }
 //----------ProjList

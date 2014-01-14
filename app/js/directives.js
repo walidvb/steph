@@ -122,7 +122,7 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
       if(!Modernizr.touch)
       {
         timer(function(){
-          $(elem.isotope({
+          $(elem.masonry({
             itemSelector: "li"
           }))     
         }, 1500);
@@ -162,7 +162,9 @@ directive('scrollSpy', function($window, $location) {
         console.log('added spy');
         for (var _i = 0; _i < spies.length; _i++) {
           var spy = spies[_i];
-          if (spyElems[spy.id] == null) {
+          console.log('spyElem changed!', spyElems[spy.id] !== elem.find('#' + spy.id) );
+          if (spyElems[spy.id] == null || spyElems[spy.id] !== elem.find('#' + spy.id) ) 
+          {
             spyElems[spy.id] = (elem.find('#' + spy.id));
           }
         }
@@ -172,7 +174,7 @@ directive('scrollSpy', function($window, $location) {
         var highlightSpy, pos, spy, _i, _len, _ref;
         highlightSpy = null;
         _ref = scope.spies;
-
+        console.log('spies', _ref);
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           spy = _ref[_i];
           spy.out();
@@ -180,15 +182,13 @@ directive('scrollSpy', function($window, $location) {
           if (spyElems[spy.id].length !== 0) {
             if ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= $window.innerHeight) {
               spy.pos = pos;
-              if (highlightSpy == null) {
-                highlightSpy = spy;
-              }
-              if (highlightSpy.pos < spy.pos) {
+              if (highlightSpy == null || highlightSpy.pos < spy.pos) {
                 highlightSpy = spy;
               }
             }
           }
         }
+        console.log("highlightedSpy: ", highlightSpy);
         return highlightSpy != null ? highlightSpy["in"]() : void 0;
       });
     }
@@ -204,7 +204,7 @@ directive('spy', function($location) {
       }
       elem.click(function() {
         scope.$apply(function() {
-          $location.hash(attrs.spy);
+
         });
       });
       scrollSpy.addSpy({
@@ -224,22 +224,21 @@ directive('spy', function($location) {
 directive('myIframe', ['$timeout', '$window', function(timer, $window){
   return function(scope, elem, attrs) {
     var setFull = function() {
-      console.log(elem);
-      var ratio = 1280/720,
-          newCss = {},
-          maxWidth = $window.innerHeight*ratio;
-          if(!Modernizr.touch && maxWidth < $window.innerWidth)
-         {
+      if(!Modernizr.touch)
+      {
+        var ratio = 1280/720,
+        newCss = {},
+        maxWidth = $window.innerHeight*ratio;
+        if(!Modernizr.touch && maxWidth < $window.innerWidth)
+        {
           newCss.h = $window.innerHeight,
           newCss.w = newCss.h*ratio;
-          }
-          else
-          {
-            newCss.w = $window.innerWidth;
-            newCss.h = newCss.w/ratio;
-          }
-          console.log(attrs);
-          console.log($window.innerHeight);
+        }
+        else
+        {
+          newCss.w = $window.innerWidth;
+          newCss.h = newCss.w/ratio;
+        }
         if(attrs.myIframe == 'html')
         {
           newCss = {
@@ -253,11 +252,11 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
             maxHeight: newCss.h,
           };
         }
-        console.log(newCss);
-          angular.element(elem).find('iframe, img').css(newCss);
-    };
-    angular.element($window).bind('resize', setFull);
-    timer(setFull, 0);
+        angular.element(elem).find('iframe, img').css(newCss);
+      };
+      angular.element($window).bind('resize', setFull);
+      timer(setFull, 0);
+    }
   }
 }]);
 
