@@ -95,7 +95,7 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
       $scope.projects.splice(index, 1);
     }
   };
-
+  
   $scope.addSlide = function(slides){
     var newSlide = {
       type: 'img',

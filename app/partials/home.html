@@ -1,12 +1,12 @@
 <div class='container' id='home' ng-controller='homeCtrl' scroll-spy>
-  <a background-props='backgrounds[0]' class='background-img' id='background-img-0' my-background-img my-fullscreen ng-click="scrollTo('menu', true,$event);$event.prevenDefault();" ng-href='#menu'></a>
-  <div fixed-menu id='menu' ng-include src="'partials/menu.html'"></div>
-  <div background-props='backgrounds[1]' class='background-img' my-background-img my-fullscreen></div>
-  <section class='row' id='projects' ng-controller='projectListCtrl' ng-include src="'partials/projectList.html'"></section>
-  <div background-props='backgrounds[2]' class='background-img' my-background-img my-fullscreen></div>
-  <section class='row' id='shows' ng-controller='projectListCtrl' ng-include src="'partials/showList.html'"></section>
-  <div background-props='backgrounds[3]' class='background-img' my-background-img my-fullscreen></div>
-  <section class='row' id='bio' ng-controller='bioListCtrl' ng-include src="'partials/bio.html'"></section>
-  <div background-props='backgrounds[4]' class='background-img' my-background-img my-fullscreen></div>
-  <section class='row' id='contact' my-fullscreen ng-include src="'partials/contact.html'"></section>
+  <div background-props='backgrounds[0]' class='background-img' id='background-img-0' my-background-img my-fullscreen ng-click="scrollTo('menu', true,$event);$event.prevenDefault();" ng-cloak='true'></div>
+  <div fixed-menu id='menu' ng-cloak='true' ng-include src="'partials/menu.html'"></div>
+  <div background-props='backgrounds[1]' class='background-img' my-background-img my-fullscreen ng-cloak='true'></div>
+  <section class='row' id='projects' ng-cloak='true' ng-controller='projectListCtrl' ng-include src="'partials/projectList.html'"></section>
+  <div background-props='backgrounds[2]' class='background-img' my-background-img my-fullscreen ng-cloak='true'></div>
+  <section class='row' id='shows' ng-cloak='true' ng-controller='projectListCtrl' ng-include src="'partials/showList.html'"></section>
+  <div background-props='backgrounds[3]' class='background-img' my-background-img my-fullscreen ng-cloak='true'></div>
+  <section class='row' id='bio' ng-cloak='true' ng-controller='bioListCtrl' ng-include src="'partials/bio.html'"></section>
+  <div background-props='backgrounds[4]' class='background-img' my-background-img my-fullscreen ng-cloak='true'></div>
+  <section class='row' id='contact' my-fullscreen ng-cloak='true' ng-include src="'partials/contact.html'"></section>
 </div>

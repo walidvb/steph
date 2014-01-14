@@ -1,12 +1,11 @@
 <div class='menu navbar-fixed-top' ng-include src="'partials/menu.html'"></div>
-<div class='project-details project-single' id='{{project.type+s}}' my-horizontal-scroll>
-  <div class='slide project-info' ng-class="'slide-'+0" ng-click='nextSlide(0)'>
+<div class='project-details project-single' id='{{project.type+s}}' my-horizontal-scroll ng-cloak='true'>
+  <div class='slide project-info' ng-class="'slide-'+0">
     <h1 class='project-title'>{{project.title}}</h1>
     <div class='project-date'>{{project.date | date:'yyyy'}}</div>
     <div class='project-medium'>{{project.medium}}</div>
     <h2 class='apropos'>Apropos</h2>
     <p class='project-body' my-html='project.body'></p>
   </div>
-  <div style='position:fixed;top:5px;right:5px;z-index: 3000'>{{slides.length}}</div>
-  <div class='slide' my-slide my-slides='slide' ng-class="'slide-'+($index+1)" ng-click='nextSlide($index+1)' ng-repeat='slide in slides | filter: {public: true}'></div>
+  <div class='slide' my-slide my-slides='slide' ng-class="'slide-'+($index+1)" ng-repeat='slide in slides | filter: {public: true}'></div>
 </div>

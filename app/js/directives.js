@@ -2,7 +2,14 @@ angular.module('myApp.directives', []).
 directive('fixedMenu', ['$timeout', '$window', function(timer, $window){
   return{
     link: function(scope, elem, attr){
-      var fixIt = function(e){
+      if(Modernizr.touch)
+      {
+            angular.element(elem).addClass('navbar-fixed-top');
+
+      }
+      else
+      {
+        var fixIt = function(e){
         var menu_pos = $window.innerHeight;//angular.element(elem).offset().top;
         var menu_height = angular.element(elem).height();
         var oldPadding = angular.element('body').css('paddingTop');
@@ -36,6 +43,7 @@ directive('fixedMenu', ['$timeout', '$window', function(timer, $window){
       timer(fixIt, 0);
     }
   }
+}
 }]).
 directive('myAccordion', ['$timeout', function(timer){
   return {
@@ -115,7 +123,7 @@ directive('myCenter', ['$timeout', '$window', function(timer, $window){
     }
   }
 }]).
-directive('myIsotope', ['$timeout', '$window', function(timer, $window){
+directive('myIsotopes', ['$timeout', '$window', function(timer, $window){
   return {
     link: function(scope, elem, attrs)
     {
@@ -136,11 +144,8 @@ directive('myHorizontalScroll', ['$timeout', function(timer){
     {
       timer(function() {
         // $('html, body').mousewheel(function(event, delta) {
-
         //  this.scrollLeft -= (delta * 2);
-
         //  event.preventDefault();
-
         // });
     }, 0);
     }
@@ -159,10 +164,10 @@ directive('scrollSpy', function($window, $location) {
     link: function(scope, elem, attrs) {
       var spyElems = [];
       scope.$watch('spies', function(spies) {
-        console.log('added spy');
+        //console.log('added spy');
         for (var _i = 0; _i < spies.length; _i++) {
           var spy = spies[_i];
-          console.log('spyElem changed!', spyElems[spy.id] !== elem.find('#' + spy.id) );
+          //console.log('spyElem changed!', spyElems[spy.id] !== elem.find('#' + spy.id) );
           if (spyElems[spy.id] == null || spyElems[spy.id] !== elem.find('#' + spy.id) ) 
           {
             spyElems[spy.id] = (elem.find('#' + spy.id));
@@ -174,21 +179,21 @@ directive('scrollSpy', function($window, $location) {
         var highlightSpy, pos, spy, _i, _len, _ref;
         highlightSpy = null;
         _ref = scope.spies;
-        console.log('spies', _ref);
+        //console.log('spies', _ref);
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           spy = _ref[_i];
           spy.out();
           spyElems[spy.id] = spyElems[spy.id].length === 0 ? elem.find('#' + spy.id) : spyElems[spy.id];
           if (spyElems[spy.id].length !== 0) {
-            if ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= $window.innerHeight) {
-              spy.pos = pos;
-              if (highlightSpy == null || highlightSpy.pos < spy.pos) {
-                highlightSpy = spy;
-              }
-            }
-          }
+            if ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= $window.innerHeight){//0 && pos + spyElems[spy.id].height() > $window.scrollY) {
+        spy.pos = pos;
+        if (highlightSpy == null || highlightSpy.pos < spy.pos) {
+          highlightSpy = spy;
         }
-        console.log("highlightedSpy: ", highlightSpy);
+      }
+    }
+  }
+        //console.log("highlightedSpy: ", highlightSpy);
         return highlightSpy != null ? highlightSpy["in"]() : void 0;
       });
     }
@@ -199,25 +204,30 @@ directive('spy', function($location) {
     restrict: "A",
     require: "^scrollSpy",
     link: function(scope, elem, attrs, scrollSpy) {
-      if (attrs.spyClass == null) {
-        attrs.spyClass = "active";
-      }
-      elem.click(function() {
-        scope.$apply(function() {
+      if(scrollSpy != "undefined" || 1)
+      {
 
-        });
-      });
-      scrollSpy.addSpy({
-        id: attrs.spy,
-        in: function() {
-          elem.addClass(attrs.spyClass);
-          $location.hash(attrs.spy);
-
-        },
-        out: function() {
-          elem.removeClass(attrs.spyClass);
+        if (attrs.spyClass == null) {
+          attrs.spyClass = "active";
         }
-      });
+        elem.click(function() {
+          scope.$apply(function() {
+
+          });
+        });
+        scrollSpy.addSpy({
+          id: attrs.spy,
+          in: function() {
+            elem.addClass(attrs.spyClass);
+            $location.hash(attrs.spy);
+
+          },
+          out: function() {
+            elem.removeClass(attrs.spyClass);
+          }
+        });
+        
+      }
     }
   };
 }).

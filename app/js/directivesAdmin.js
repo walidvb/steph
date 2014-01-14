@@ -94,27 +94,18 @@ directive('myJsonOutput', function(){
 	}
 }).
 directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
-	return {
-		scope: {
-			html : "="
-		},
-		link: function(scope, elem, attrs)
-		{
-			var depth = (scope.html).split('.');
-			console.log(elem);
-			// if(depth.length == 2)
-			// {
-			// 	scope.$parent[depth[0]][depth[1]] = scope.$parent[depth[0]][depth[1]] || 'html';
-			// 	scope.$parent[depth[0]][depth[1]] = $sce.trustAsHtml(scope.$parent[depth[0]][depth[1]]);
-			// }
-			// else
-			// {
-			// 	scope.$parent[depth[0]] = 'html';
-			// 	scope.$parent[depth[0]] = $sce.trustAsHtml(scope.$parent[depth[0]]);
-			// }
-
-		}
-	}
+  return {
+    scope: {
+      myHtml : "=",
+    },
+    template: "<span ng-bind-html='trustMe(myHtml)'></span>",
+    controller: function($scope, $element)
+    {
+      $scope.trustMe = function(html) {
+        return $sce.trustAsHtml(html);
+      }
+    }
+  }
 }]).
 directive('addItem', ['$timeout', function(){
 	return {

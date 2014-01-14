@@ -98,7 +98,7 @@ controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', '$locati
 controller('projectListCtrl', ['$scope',  'Projects', function($scope, Projects) {
   $scope.formats = [];
 
- $scope.projects = Projects.query(function(data){
+  $scope.projects = Projects.query(function(data){
 
   var getNewFormat = function(){
         var rdm = Math.floor(Math.random() * 2);

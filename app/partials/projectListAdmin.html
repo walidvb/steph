@@ -54,7 +54,7 @@
     </div>
     <div class='field project-description'>
       <span class='field-title'>Description:</span>
-      <a editable-textarea='activeProject.body' href='#' html="'activeProject.body'" my-html ng-binda='activeProject.body'>{{activeProject.body || "Description"}}</a>
+      <a editable-textarea='activeProject.body' href='#' my-html='activeProject.body'>{{activeProject.body || "Description"}}</a>
     </div>
     <div class='field project-thumb' ng-if="activeProject.type == 'project'">
       <span class='field-title'>Thumbnail:</span>
@@ -68,11 +68,11 @@
         <li class='project-slide' ng-repeat='slide in activeProject.slides'>
           <select class='project-slide-type' ng-model='slide.type' ng-options='option for option in slideOptions'></select>
           <div ng-if="slide.type == 'img'">
-            <a editable-textarea='slide.legend' href='#'>{{slide.legend || "legend"}}</a>
+            <a editable-textarea='slide.legend' href='#' my-html='slide.legend'>{{slide.legend || "legend"}}</a>
             <img class='project-slide-img' editable-text='slide.url' ng-src="{{slide.url || 'somesource'}}">
           </div>
           <div ng-if="slide.type == 'html'">
-            <a amy-html ang-bind-html='slide.body' editable-text='slide.body' href='#' html="'slide.body'">{{slide.body || "Code html"}}</a>
+            <a editable-text='slide.body' href='#' my-html='slide.body'>{{"Code html"}}</a>
           </div>
           <input ng-model='slide.public' type='checkbox'>public</input>
           <delete-item item-type="'slide'" my-class="'btn-xs'" ng-click='removeSlide(slide)'></delete-item>

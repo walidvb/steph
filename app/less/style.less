@@ -9,6 +9,9 @@
 	}
 }
 [ng-click]{cursor: pointer;}
+[ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 ul{
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
@@ -133,15 +136,16 @@ section{
 	
 	li{
 		@media @mobile{
-
 			width: 20%;
 			text-align: center;
 			float: left;
+			font-size: @font-size-h4;
 			.transition(width 0.2s ease-out);
 			.menu-title{
 				display: none;
 				transition: all 1s ease-out;
 			}
+
 			&.active{
 				width: 40%;
 				.menu-title{
@@ -149,6 +153,7 @@ section{
 				}
 				.glyphicon{
 					display: none;
+					top: 3px
 				}
 			}
 		}
@@ -159,6 +164,9 @@ section{
 				padding-bottom: 13px!important;
 				padding-left: 33px;
 				padding-right: 30px;
+				.glyphicon{
+					display: none;
+				}
 			}
 
 			&:first-child  a{
@@ -178,6 +186,9 @@ section{
 	}
 }
 .background-img{
+	>div{
+		.background();
+	}
 	a&{
 		display: block;
 	}
@@ -186,16 +197,19 @@ section{
 		> div{
 			height: 100%;
 			max-width: 100%;
-			.background();
 			background-attachment: fixed;
 		}
 
 	}
 
 	@media @mobile{
-		.background-img > div{
+		&:nth-child(3){
+			display: none;
+		}
+		max-height: 350px;
+		div{
 
-			height: 80px;
+			height: 100%;
 		}
 	}
 }
@@ -207,6 +221,9 @@ section{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	li{
+		@media @mobile{
+			position: static!important;
+		}
 		list-style: none;
 		height: @project-height;
 		//different thumbnail sizes
@@ -330,6 +347,7 @@ body{
 		display: inline-block;
 		vertical-align: top;
 		position: relative;
+		overflow: hidden;
 		.slide-legend{
 			position: absolute;
 			left: 0;
@@ -346,17 +364,16 @@ body{
 			margin-bottom: 10px;
 		}
 		@media @notmobile{
+			height: 100%;
+			white-space: normal;
 
 			iframe{
 				min-width: 600px;
 				min-height: 340px;
 			}
-			white-space: normal;
-
 			&.project-info{
 				height: 100%;
 				overflow-y: scroll;
-
 			}
 			&:not(:last-child){
 				margin-right: @navbar-height;
@@ -368,13 +385,11 @@ body{
 				position: relative;
 				min-height: 100%;
 				max-height: 100%;
-
 			}
 			.slide-legend{
 				opacity: 0;
-				bottom: -100%;
+				bottom: -10%;
 				.transition(all .15s .15s linear);
-				
 			}
 			&:hover .slide-legend{
 				bottom: 0%;

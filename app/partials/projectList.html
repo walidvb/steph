@@ -1,7 +1,7 @@
 <h1 class='section-header' my-accordion>Projects</h1>
 <ul class='section-body project-list' my-isotope="'li'">
-  <li my-layosut='$index' ng-class='getFormat($index)' ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'">
-    <a class='project' ng-href='#project/{{project.id}}' style="background-image: url('{{project.thumb}}')">
+  <li ng-class='getFormat($index)' ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'">
+    <a class='project' ng-href='#project/{{project.id}}' ng-style="{'background-image': 'url('+project.thumb+')'}">
       <div class='project-details'>
         <div class='project-details-header'>
           <span class='project-title'>{{project.title}}</span>

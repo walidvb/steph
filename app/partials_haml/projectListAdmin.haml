@@ -44,7 +44,7 @@
 			%a{"editable-text" => "activeProject.venue", :href => "#"} {{activeProject.venue || "venue"}}
 		.field.project-description
 			%span.field-title Description: 
-			%a{"editable-textarea" => "activeProject.body", :href => "#",  'html' => "'activeProject.body'", 'my-html' => true, "ng-binda" => "activeProject.body"} {{activeProject.body || "Description"}}
+			%a{"editable-textarea" => "activeProject.body", :href => "#", "my-html" => "activeProject.body"} {{activeProject.body || "Description"}}
 
 		.field.project-thumb{"ng-if" => "activeProject.type == 'project'"}
 			%span.field-title Thumbnail:
@@ -55,12 +55,11 @@
 			%ul{"ui-sortable" => true, "ng-model" => "activeProject.slides"}
 				%li.project-slide{"ng-repeat" => "slide in activeProject.slides"}
 					%select.project-slide-type{"ng-model" => "slide.type", "ng-options" => "option for option in slideOptions"}
-
 					%div{"ng-if" => "slide.type == 'img'"}
-						%a{"editable-textarea" => "slide.legend", :href => "#"} {{slide.legend || "legend"}}
+						%a{"editable-textarea" => "slide.legend", :href => "#", "my-html" => "slide.legend"} {{slide.legend || "legend"}}
 						%img.project-slide-img{"ng-src" => "{{slide.url || 'somesource'}}", "editable-text" => "slide.url"}
 					%div{"ng-if" => "slide.type == 'html'"}
-						%a{"editable-text" => "slide.body", :href => "#", "ang-bind-html" => "slide.body", 'html' => "'slide.body'", 'amy-html' => true} {{slide.body || "Code html"}}
+						%a{"editable-text" => "slide.body", :href => "#", "my-html" => "slide.body"} {{"Code html"}}
 					%input{"type" => "checkbox", "ng-model" => "slide.public"} public
 					%delete-item{"ng-click" => "removeSlide(slide)", "item-type" => "'slide'", "my-class" => "'btn-xs'"}
 				%add-item{"ng-click" => "addSlide(activeProject.slides)", "item-type" => "'slide'", "my-class" => "'btn-lg'"}
