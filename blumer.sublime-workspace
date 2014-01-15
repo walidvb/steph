@@ -1,0 +1,2078 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bo",
+				"bolder"
+			],
+			[
+				"padding",
+				"paddingLeftPage"
+			],
+			[
+				"scroll",
+				"scrollLeft	.scrollLeft()"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"htt",
+				"httpBackend	\\$httpBackend"
+			],
+			[
+				"clear",
+				"clearTimeout();"
+			],
+			[
+				"array_",
+				"array_combine"
+			],
+			[
+				"strt",
+				"strtotime"
+			],
+			[
+				"drupal_json",
+				"drupal_json_encode	drupal_json_encode"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"variables",
+				"variables"
+			],
+			[
+				"menu_se",
+				"menu_set_active_trail"
+			],
+			[
+				"menu_s",
+				"menu_set_active_trail"
+			],
+			[
+				"menu_set_ac",
+				"menu_set_active_item"
+			],
+			[
+				"ent",
+				"entity_info"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"padding-",
+				"padding-right"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"media",
+				"media landscape	landscape"
+			],
+			[
+				"do",
+				"dow	downto(0) { |n| .. }"
+			],
+			[
+				"en",
+				"encrypt"
+			],
+			[
+				"password_",
+				"password_confirmation"
+			],
+			[
+				"font-si",
+				"font-size-large"
+			],
+			[
+				"font",
+				"font-family-second"
+			],
+			[
+				"vars",
+				"vars"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"facebook",
+				"facebookCommentsSelector"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"node_is",
+				"node_is_past"
+			],
+			[
+				"nav",
+				"nav-link-bg"
+			],
+			[
+				"body",
+				"body-bg"
+			],
+			[
+				"tri",
+				"trigger	trigger"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"bck",
+				"background-color"
+			],
+			[
+				"con",
+				"console.log(message);"
+			],
+			[
+				"targetConta",
+				"targetContainerSelector"
+			],
+			[
+				"load",
+				"load_more"
+			],
+			[
+				"drupal",
+				"drupal_add_js"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"pager-",
+				"pager-previous"
+			],
+			[
+				"query",
+				"querystring.parse(qs, sep, eq);"
+			],
+			[
+				"postDa",
+				"postDataChunk"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"pro",
+				"processed"
+			],
+			[
+				"di",
+				"digi_"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"va",
+				"variables"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"blo",
+				"block-system-main-menu"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"attr",
+				"attributes"
+			],
+			[
+				"field_view",
+				"field_view_value"
+			],
+			[
+				"user",
+				"user_load	user_load"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/less/style.less",
+			"settings":
+			{
+				"buffer_size": 8150,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/directives.js",
+			"settings":
+			{
+				"buffer_size": 3285,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/partials_haml/bio.haml",
+			"settings":
+			{
+				"buffer_size": 937,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/partials_haml/home.haml",
+			"settings":
+			{
+				"buffer_size": 1410,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/LESS-build/LESS.sublime-build",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"idnen",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"cdnj",
+				"Cdnjs: Import URL only"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"haml",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"cdn",
+				"Cdnjs: Import URL only"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"cdnjs",
+				"Cdnjs: Import URL only"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sublime",
+				"Sublimerge: Compare to Snapshot"
+			],
+			[
+				"git",
+				"Git: Quick Commit"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"format ",
+				"Format: Php"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"snippet ",
+				"Snippet: html"
+			],
+			[
+				"hook_menu",
+				"Snippet: hook_menu"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"javas",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"syntax",
+				"Set Syntax: PHP"
+			],
+			[
+				"preproce",
+				"Snippet: hook_preprocess"
+			],
+			[
+				"syn haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"2haml",
+				"HTML2Haml: Convert file"
+			],
+			[
+				"js2",
+				"JS2Coffee: Convert & Make New File"
+			],
+			[
+				"coffee",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"2ham",
+				"HTML2Haml: Convert file"
+			],
+			[
+				"coffe",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"inden	",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"indent	",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"drupal_add",
+				"Snippet: drupal_add_js"
+			],
+			[
+				"hook_preprocess_",
+				"Snippet: hook_preprocess_HOOK"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"insall",
+				"Package Control: Install Package"
+			],
+			[
+				"preprocess",
+				"Snippet: hook_preprocess_page"
+			],
+			[
+				"field_formatter settings",
+				"Snippet: h_field_formatter_settings_form"
+			],
+			[
+				"hook_formatt",
+				"Snippet: hook_field_formatter_view"
+			],
+			[
+				"hook_prepr",
+				"Snippet: hook_preprocess_page"
+			],
+			[
+				"hook_preprocess",
+				"Snippet: hook_preprocess_HOOK"
+			],
+			[
+				"drupal add ",
+				"Snippet: drupal_add_js"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"drup",
+				"Snippet: hook_field_storage_update_field"
+			],
+			[
+				"php",
+				"Snippet: h_preprocess"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"insa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"check",
+				"Snippet: check_markup"
+			],
+			[
+				"region",
+				"Snippet: template_preprocess_region"
+			],
+			[
+				"link",
+				"Snippet: theme_link"
+			],
+			[
+				"prepr	",
+				"Snippet: h_preprocess"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/data/works.json",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/less/styleAdmin.less",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/index.html",
+		"/Users/Gaston/Dropbox/Stephane Website/web/.gitignore",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/bootstrap/less/git",
+		"/Users/Gaston/Dropbox/Stephane Website/web/cim",
+		"/Users/Gaston/Dropbox/Stephane Website/web/formats bio headers",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/data/bio.json",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/bootstrap/less/utilities.less",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/bio.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/bootstrap/less/mixins.less",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/project.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/js/app.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/ngInfiniteScroll/ng-infinite-scroll.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/index.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/ngInfiniteScroll/ng-infinite-scroll.coffee",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/menu.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/js/filters.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/slide.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/projectListAdmin.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/contact.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/showList.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/js/controllersAdmin.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/modalResult.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/home.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/TO READ.txt",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/admin.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/projectList.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/backgrounds.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/js/directivesAdmin.js",
+		"/Users/Gaston/dev/jsFiller/README.md",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/js/services.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials/showList.html",
+		"/Users/Gaston/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials/projectListAdmin.html",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/js/controllers.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/ui-sortable/src/sortable.js",
+		"/Users/Gaston/Dropbox/Stephane Website/angular/src/data/content.json",
+		"/Users/Gaston/Dropbox/Stephane Website/angular/src/data/works.json",
+		"/Users/Gaston/Dropbox/Stephane Website/angular/src/works.json",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/angular-bootstrap-scrollspy.min.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/scrollsnap/jquery.scrollsnap.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/less/style.less",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/js/script.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/js/appAdmin.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/jquery.panelSnap.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/scrollsnap/jquery.event.special.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/scrollsnap/jquery.easing.min.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/js/directives.js",
+		"/Users/Gaston/Dropbox/Stephane Website/angular-phonecat/app/js/controllers.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/less/app.less",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials_haml/bioAdmin.haml",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/zeroclipboard/ZeroClipboard.min.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials/contactAdmin.html",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/bootstrap/less/type.less",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/less/appAdmin.less",
+		"/Users/Gaston/Dropbox/Stephane Website/web/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/app.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/lib/bootstrap/less/glyphicons.less",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/less/variables.less",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/css/appAdmin.css",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/data/theme.json",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials/contact.html",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials/home.html",
+		"/Users/Gaston/Dropbox/Stephane Website/web/scripts/web-server.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/Procfile",
+		"/Users/Gaston/Dropbox/Stephane Website/angular-phonecat/app/js/services.js",
+		"/Users/Gaston/Dropbox/Stephane Website/angular-phonecat/test/unit/controllersSpec.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/package.json",
+		"/Users/Gaston/Dropbox/Stephane Website/web/test/e2e/scenarios.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/test/unit/controllersSpec.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/test/unit/servicesSpec.js",
+		"/Users/Gaston/Dropbox/Stephane Website/web/app/partials/partial2.html",
+		"/Users/Gaston/Dropbox/Stephane Website/angular-phonecat/config/karma.conf.js",
+		"/Users/Gaston/Dropbox/Stephane Website/angular-phonecat/node_modules/karma/config.tpl.coffee",
+		"/Users/Gaston/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/Gaston/Library/Caches/Cleanup At Startup/Transmit/69A405B7-9F37-409A-B811-A89DDBAF1ED6/myJS.js",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/panels_bootstrap_layouts/plugins/layouts/bootstrap_twocol_7_5_stacked/bootstrap_twocol_stacked.inc",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/panels_bootstrap_layouts/plugins/layouts/bootstrap_twocol_5_7_stacked/bootstrap-twocol-5-7-stacked.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/panels_bootstrap_layouts/plugins/layouts/bootstrap_twocol_7_5_stacked/bootstrap-twocol-7-5-stacked.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/libs/jquery.pin.js",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/node--event.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/field--artist-collection.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo/date.inc",
+		"/Users/Gaston/Library/Caches/Cleanup At Startup/Transmit/34FB04FC-032C-4CFE-9318-7A41E4B933A5/date.tokens.inc",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/less/node.less",
+		"/Users/Gaston/Library/Caches/Cleanup At Startup/Transmit/DE8C2BA5-65F1-4B3F-8E87-4A548B27D51A/date.inc",
+		"/Users/Gaston/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo_feed/resource.processor.inc",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo_feed/lezoo_feed.module",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo_feed/lezoo_feed.info",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo/modal.inc",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo/lezoo.module",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/lezoo.info",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/template.php",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/js/myAngular.js",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/imagecache_token/imagecache_token.module",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/date/date.tokens.inc",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/less/widget.less",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/page.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/js/custom.js",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/imagecache_actions/utility-form.inc",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/imagecache_actions/canvasactions/imagecache_canvasactions.module",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/imagecache_actions/canvasactions/canvasactions.inc",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/less/blog.less",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/less/style.less",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/less/variables.less",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/node--installations--mini.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/less/home.less",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/node--event--teaser.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/less/install.less",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/node.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/views-view-fields--carousel--events-carousel.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo/date_filter.inc",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/_node--event--teaser.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/views_infinite_scroll/js/views_infinite_scroll.js",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/views-bootstrap-carousel-plugin-rows--events-carousel.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/panels_bootstrap_layouts/plugins/layouts/bootstrap_twocol_stacked/bootstrap-twocol-stacked.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/node--installations.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo/custom.js",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/page_emulator/page_emulator.module",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo/lezoo.info",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/node--blog-post--mini.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/templates/node--blog-post.tpl.php",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/views_infinite_scroll/views_infinite_scroll.module",
+		"/Users/Gaston/Sites/zoo/sites/all/themes/lezoo/less/footer.less",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo/admin.js",
+		"/Users/Gaston/Sites/zoo/.git/MERGE_MSG",
+		"/Users/Gaston/Sites/zoo/sites/all/modules/custom/lezoo_modules/modal.inc"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bolder",
+			"rowa",
+			"row",
+			".\ndirective('myIsotope', ['$timeout', function(timer){\n	return {\n		link: function(scope, elem, attrs)\n		{\n			timer(function() {\n				$(elem).isotope({\n					itemSelector: 'li',\n				});\n			}, 1500);\n		}\n	}\n}])",
+			"'univers'",
+			"univers",
+			"url('",
+			"row",
+			"2009",
+			"2010",
+			"2014",
+			"2011",
+			"2013",
+			"2012",
+			"high",
+			"Awards",
+			"elem",
+			"$elem",
+			"scope",
+			"elementTop",
+			"\"public\": false",
+			"i",
+			"type",
+			"location",
+			"Location",
+			"location",
+			"\"active\"",
+			"slide",
+			"description",
+			"#428bca",
+			"lastScrollPos",
+			"wrapperSelector",
+			"textBox",
+			"type",
+			"id_readable",
+			"@height",
+			"opacity",
+			"imgs",
+			"exp",
+			"    %script{:src => \"//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js\"}\n",
+			"line",
+			"backgrounds",
+			"content",
+			"image",
+			"{{background",
+			"backgrounds[",
+			"img-placeholder",
+			"location",
+			"\"category\"",
+			"project",
+			"href",
+			"bootstrap",
+			"date_orig",
+			"_",
+			"$date_orig",
+			"$date ",
+			"date_orig",
+			"type",
+			"_render_date",
+			"render_date",
+			"lezoo-node-date",
+			"PATH_SHELTER_FILES",
+			"240",
+			"imagecache_actions_file_field_description",
+			"topPadding",
+			"paddingTop",
+			"details",
+			"vars",
+			"ezoo",
+			"lezoo",
+			"bigimage",
+			"flyer",
+			"'field_flyer'",
+			"dpm",
+			"genre",
+			"field_soundcloud",
+			"jQuery",
+			"strtotime($date)",
+			"secondary",
+			"white",
+			"inks_to_social",
+			"label",
+			"section",
+			" MYMODULE",
+			"dotted",
+			"class=\"\"",
+			"scripts",
+			";",
+			"now",
+			"attrs",
+			"user",
+			"coverImage",
+			"description",
+			"class=\"field",
+			"element",
+			"'Sign up'",
+			":key",
+			"value",
+			"key",
+			"books_page",
+			"2.5",
+			"1s",
+			"1.5",
+			"/assets/fonts/",
+			";",
+			"assets",
+			"fonts",
+			"public",
+			"assets",
+			"webfonts",
+			"home_path",
+			"                           ",
+			"$})",
+			"Sample",
+			"url('",
+			"helveticaneueltpro",
+			"HelveticaNeueLTPro",
+			"helveticaneueltpro",
+			"contain",
+			"cover",
+			"aumbryproject",
+			"example",
+			"[your_theme_name]",
+			"example",
+			"dpm",
+			"d",
+			"controls",
+			"futuralt"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/less/style.less",
+					"settings":
+					{
+						"buffer_size": 8150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4436,
+								4436
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": false,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3321.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/js/directives.js",
+					"settings":
+					{
+						"buffer_size": 3285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": false,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "app/partials_haml/bio.haml",
+					"settings":
+					{
+						"buffer_size": 937,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								656,
+								656
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": false,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/partials_haml/home.haml",
+					"settings":
+					{
+						"buffer_size": 1410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1410,
+								1410
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": false,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"direct",
+				"app/js/directives.js"
+			],
+			[
+				"home",
+				"app/partials_haml/home.haml"
+			],
+			[
+				"bio.haml",
+				"app/partials_haml/bio.haml"
+			],
+			[
+				"style",
+				"app/less/style.less"
+			],
+			[
+				"control",
+				"app/js/controllers.js"
+			],
+			[
+				"project",
+				"app/partials_haml/projectList.haml"
+			],
+			[
+				"direc",
+				"app/js/directives.js"
+			],
+			[
+				"dir",
+				"app/js/directives.js"
+			],
+			[
+				"app.",
+				"app/js/app.js"
+			],
+			[
+				"dire",
+				"app/js/directives.js"
+			],
+			[
+				"proj",
+				"app/partials_haml/project.haml"
+			],
+			[
+				"proje",
+				"app/partials_haml/project.haml"
+			],
+			[
+				"menu",
+				"app/partials_haml/menu.haml"
+			],
+			[
+				"projecthaml",
+				"app/partials_haml/project.haml"
+			],
+			[
+				"index",
+				"app/index.haml"
+			],
+			[
+				"slide",
+				"app/partials_haml/slide.haml"
+			],
+			[
+				"contac",
+				"app/partials_haml/contact.haml"
+			],
+			[
+				"bioham",
+				"app/partials_haml/bio.haml"
+			],
+			[
+				"contr",
+				"app/js/controllersAdmin.js"
+			],
+			[
+				"bio",
+				"app/partials_haml/bio.haml"
+			],
+			[
+				"contro",
+				"app/js/controllers.js"
+			],
+			[
+				"controll",
+				"app/js/controllers.js"
+			],
+			[
+				"admin",
+				"app/admin.haml"
+			],
+			[
+				"sty",
+				"app/less/style.less"
+			],
+			[
+				"contradmin",
+				"app/js/controllersAdmin.js"
+			],
+			[
+				"sli",
+				"app/partials_haml/slide.haml"
+			],
+			[
+				"app",
+				"app/js/app.js"
+			],
+			[
+				"service",
+				"app/js/services.js"
+			],
+			[
+				"projec",
+				"app/partials_haml/project.haml"
+			],
+			[
+				"biohaml",
+				"app/partials_haml/bio.haml"
+			],
+			[
+				"works",
+				"app/data/works.json"
+			],
+			[
+				"bio.json",
+				"app/data/bio.json"
+			],
+			[
+				"variabl",
+				"app/less/variables.less"
+			],
+			[
+				"mixin",
+				"app/lib/bootstrap/less/mixins.less"
+			],
+			[
+				"torea",
+				"TO READ.txt"
+			],
+			[
+				"showlist",
+				"app/partials_haml/showList.haml"
+			],
+			[
+				"projlist",
+				"app/partials_haml/projectList.haml"
+			],
+			[
+				"conta",
+				"app/partials_haml/contact.haml"
+			],
+			[
+				"inde",
+				"app/index.haml"
+			],
+			[
+				"fil",
+				"app/js/filters.js"
+			],
+			[
+				"app.js",
+				"app/js/app.js"
+			],
+			[
+				"projadmin",
+				"app/partials_haml/projectListAdmin.haml"
+			],
+			[
+				"ngcoffe",
+				"app/lib/ngInfiniteScroll/ng-infinite-scroll.coffee"
+			],
+			[
+				"infini",
+				"app/lib/ngInfiniteScroll/ng-infinite-scroll.js"
+			],
+			[
+				"styadm",
+				"app/less/styleAdmin.less"
+			],
+			[
+				"varia",
+				"app/less/variables.less"
+			],
+			[
+				"mixi",
+				"app/lib/bootstrap/less/mixins.less"
+			],
+			[
+				"var",
+				"app/less/variables.less"
+			],
+			[
+				"back",
+				"app/partials_haml/backgrounds.haml"
+			],
+			[
+				"script",
+				"app/js/script.js"
+			],
+			[
+				"hom",
+				"app/partials_haml/home.haml"
+			],
+			[
+				"show",
+				"app/partials_haml/showList.haml"
+			],
+			[
+				"shw",
+				"app/partials_haml/showList.haml"
+			],
+			[
+				"tore",
+				"TO READ.txt"
+			],
+			[
+				"conadmin",
+				"app/js/controllersAdmin.js"
+			],
+			[
+				"sholis",
+				"app/partials_haml/showList.haml"
+			],
+			[
+				"directive",
+				"app/js/directives.js"
+			],
+			[
+				"showli",
+				"app/partials_haml/showList.haml"
+			],
+			[
+				"",
+				"app/js/app.js"
+			],
+			[
+				"projadmiha",
+				"app/partials_haml/projectListAdmin.haml"
+			],
+			[
+				"projectl",
+				"app/partials_haml/projectList.haml"
+			],
+			[
+				"appadmin",
+				"app/js/appAdmin.js"
+			],
+			[
+				"showl",
+				"app/partials_haml/showList.haml"
+			],
+			[
+				"showlis",
+				"app/partials_haml/showList.haml"
+			],
+			[
+				"xedit",
+				"app/lib/angular-xeditable/xeditable.js"
+			],
+			[
+				"sortable",
+				"app/lib/ui-sortable/src/sortable.js"
+			],
+			[
+				"serv",
+				"app/js/services.js"
+			],
+			[
+				"work",
+				"app/data/works.json"
+			],
+			[
+				"cotadmin",
+				"app/js/controllersAdmin.js"
+			],
+			[
+				"modal",
+				"app/partials_haml/modalResult.haml"
+			],
+			[
+				"diradmin",
+				"app/js/directivesAdmin.js"
+			],
+			[
+				"projlistadmin",
+				"app/partials_haml/projectListAdmin.haml"
+			],
+			[
+				"contadmin",
+				"app/js/controllersAdmin.js"
+			],
+			[
+				"scrollsp",
+				"app/lib/angular-bootstrap-scrollspy.min.js"
+			],
+			[
+				"angularscroll",
+				"app/lib/angular-bootstrap-scrollspy.min.js"
+			],
+			[
+				"angularboo",
+				"app/lib/angular-bootstrap-scrollspy.min.js"
+			],
+			[
+				"stylea",
+				"app/less/styleAdmin.less"
+			],
+			[
+				"styleless",
+				"app/less/style.less"
+			],
+			[
+				"scroll",
+				"app/lib/scrollsnap/jquery.scrollsnap.js"
+			],
+			[
+				"index.haml",
+				"app/index.haml"
+			],
+			[
+				"easing",
+				"app/lib/scrollsnap/jquery.easing.min.js"
+			],
+			[
+				"event",
+				"app/lib/scrollsnap/jquery.event.special.js"
+			],
+			[
+				"scrollsn",
+				"app/lib/scrollsnap/jquery.scrollsnap.js"
+			],
+			[
+				"panel",
+				"app/lib/jquery.panelSnap.js"
+			],
+			[
+				"mysl",
+				"app/js/mySlider.js"
+			],
+			[
+				"projli",
+				"app/partials_haml/projectList.haml"
+			],
+			[
+				"app.j",
+				"app/js/app.js"
+			],
+			[
+				"styel",
+				"app/less/styleAdmin.less"
+			],
+			[
+				"zeromin",
+				"app/lib/zeroclipboard/ZeroClipboard.min.js"
+			],
+			[
+				"controlladmin",
+				"app/js/controllersAdmin.js"
+			],
+			[
+				"bioadmin",
+				"app/partials_haml/bioAdmin.haml"
+			],
+			[
+				"proadmiham",
+				"app/partials_haml/projectListAdmin.haml"
+			],
+			[
+				"projead",
+				"app/partials/projectListAdmin.html"
+			],
+			[
+				"scr",
+				"app/js/script.js"
+			],
+			[
+				"appless",
+				"app/less/app.less"
+			],
+			[
+				"vari",
+				"app/less/variables.less"
+			],
+			[
+				"glyph",
+				"app/lib/bootstrap/less/glyphicons.less"
+			],
+			[
+				"type",
+				"app/lib/bootstrap/less/type.less"
+			],
+			[
+				"projectlist",
+				"app/partials_haml/projectList.haml"
+			],
+			[
+				"mixins",
+				"app/lib/bootstrap/less/mixins.less"
+			],
+			[
+				"appadless",
+				"app/less/styleAdmin.less"
+			],
+			[
+				"appadminjs",
+				"app/js/appAdmin.js"
+			],
+			[
+				"theme",
+				"app/data/theme.json"
+			],
+			[
+				"variable",
+				"app/less/variables.less"
+			],
+			[
+				"contact.ham",
+				"app/partials_haml/contact.haml"
+			],
+			[
+				"contact",
+				"app/partials/contact.html"
+			],
+			[
+				"home.",
+				"app/partials/home.html"
+			],
+			[
+				"proc",
+				"Procfile"
+			],
+			[
+				"web-ser",
+				"scripts/web-server.js"
+			],
+			[
+				"bio.js",
+				"app/data/bio.json"
+			],
+			[
+				"appa",
+				"app/js/appAdmin.js"
+			],
+			[
+				"d",
+				"app/js/directives.js"
+			],
+			[
+				"web",
+				"scripts/web-server.js"
+			],
+			[
+				"index.",
+				"app/index.haml"
+			],
+			[
+				"angu",
+				"app/lib/angular/angular.js"
+			],
+			[
+				"karmacon",
+				"config/karma.conf.js"
+			],
+			[
+				"karmaconfi",
+				"node_modules/karma/config.tpl.coffee"
+			],
+			[
+				"specs",
+				"test/unit/controllersSpec.js"
+			],
+			[
+				"nodeeven",
+				"lezoo/templates/node--event.tpl.php"
+			],
+			[
+				"date",
+				"custom/lezoo/date.inc"
+			],
+			[
+				"pin",
+				"lezoo/libs/jquery.pin.js"
+			],
+			[
+				"nodeblog",
+				"lezoo/templates/node--blog-post.tpl.php"
+			],
+			[
+				"coll",
+				"lezoo/templates/field--artist-collection.tpl.php"
+			],
+			[
+				"nodeev",
+				"lezoo/templates/node--event.tpl.php"
+			],
+			[
+				"templa",
+				"lezoo/template.php"
+			],
+			[
+				"field",
+				"lezoo/templates/field--artist-collection.tpl.php"
+			],
+			[
+				"custom",
+				"lezoo/js/custom.js"
+			],
+			[
+				"fieldcoll",
+				"lezoo/templates/field--artist-collection.tpl.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true
+}

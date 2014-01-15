@@ -144,7 +144,7 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
         timer(function(){
           angular.element(elem).masonry({
             itemSelector: attrs.myIsotope,
-            gutter: 10,
+            gutter: 20,
           }).animate({'opacity': 1});
           angular.element($window).bind('resize', function(){
             if($window.innerWidth < mobileWidth)

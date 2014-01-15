@@ -1,0 +1,10 @@
+
+%nav.navbar.navbar-default{:role => "navigation"}
+  / Brand and toggle get grouped for better mobile display
+  .navbar-header
+    %ul.nav.navbar-nav
+      %li{"ng-repeat" => "item in menu", "ng-class" => "{active: item.name == project.type+'s'}"}
+        %a{"ng-href" => "{{url(item)}}", "ng-click" => "scrollTo(item.name, true, $event);"} 
+          %span.glyphicon{"ng-class" => "item.icon"}
+          %span.menu-title {{item.name}}
+  / /.navbar-collapse
