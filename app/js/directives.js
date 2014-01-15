@@ -140,18 +140,19 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
     {
       if(!Modernizr.touch && $window.innerWidth > mobileWidth)
       {
+        angular.element(elem).css('opacity', 0);
         timer(function(){
-          $(elem).masonry({
+          angular.element(elem).masonry({
             itemSelector: attrs.myIsotope,
             gutter: 10,
-          });
+          }).animate({'opacity': 1});
           angular.element($window).bind('resize', function(){
             if($window.innerWidth < mobileWidth)
             {
-              $(elem).masonry('destroy');
+              angular.element(elem).masonry('destroy');
             }
           });
-        }, 1500);
+        }, 400);
       }
     },
   };
@@ -199,7 +200,9 @@ directive('scrollSpy', function($window, $location) {
           spyElems[spy.id] = spyElems[spy.id].length === 0 ? elem.find('#' + spy.id) : spyElems[spy.id];
 
           if (spyElems[spy.id].length !== 0) {
-            if ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= angular.element('#menu').height() && pos + spyElems[spy.id].height() > $window.scrollY) {
+            //distinguish between mobile and desktop
+            var condition = (Modernizr.touch) ? ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= $window.innerHeight) : ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= angular.element('#menu').height() && pos + spyElems[spy.id].height() > $window.scrollY)
+            if (condition) {
               spy.pos = pos;
               if (highlightSpy == null || highlightSpy.pos < spy.pos) {
                 highlightSpy = spy;
@@ -207,12 +210,15 @@ directive('scrollSpy', function($window, $location) {
             }
           }
         }
-        return highlightSpy != null ? highlightSpy["in"]() : void 0;
+        if(highlightSpy != null){
+          highlightSpy["in"]()
+          $location.hash(highlightSpy.id);
+        };
       });
     }
   };
 }).
-directive('spy', function($location) {
+directive('spy', ['$location', function($location) {
   return {
     restrict: "A",
     require: "^scrollSpy",
@@ -225,12 +231,11 @@ directive('spy', function($location) {
 
         });
       });
+
       scrollSpy.addSpy({
         id: attrs.spy,
         in: function() {
           elem.addClass(attrs.spyClass);
-          $location.hash(attrs.spy);
-
         },
         out: function() {
           elem.removeClass(attrs.spyClass);
@@ -239,7 +244,7 @@ directive('spy', function($location) {
 
     }
   };
-}).
+}]).
 directive('myIframe', ['$timeout', '$window', function(timer, $window){
   return function(scope, elem, attrs) {
     var center = function(){
