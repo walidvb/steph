@@ -4,7 +4,7 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', function($scope, $location, $anchorScroll, $sce){
+controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', '$timeout', function($scope, $location, $anchorScroll, $sce, $timeout){
   $scope.menu = [
     {
       name: 'projects',
@@ -27,12 +27,8 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', function(
   $scope.url = function(item) {
     return '#/#' + item.name;
   }
-}]).
-controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', '$window', 'Home', function($scope, $location, $anchorScroll, timer, $window, Home) {
-  Home.get(function(data){
-    $scope.backgrounds = data.backgrounds;
-    var timeout;
-    $scope.scrollTo = function(id, animated)
+
+  $scope.scrollTo = function(id, animated)
     {
       animated = animated || false;
       console.log('$location.$$hash before: ', $location.$$hash);
@@ -42,7 +38,7 @@ controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', '$wi
             menuHeight = angular.element('#menu').height();
       }
       console.log('$location.$$hash after: ', $location.$$hash);
-      console.log('scrollTo(', id, animated, ')');
+      console.log('scrollTo(', id, animated, '), to ', angular.element('#'+id));
       if(angular.element('#'+id).length)
       {
         var targetScrollTop = $('#'+id).offset().top - menuHeight;
@@ -51,22 +47,36 @@ controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', '$wi
           var anim = angular.element('html, body').animate({
             scrollTop: targetScrollTop,
           }, 800);
-          // angular.element($window).bind('scroll touchstart', function(){
-          //   anim.stop();
-          // });
         }
         else
         {
           console.log('targetScrollTop', targetScrollTop);
+          $anchorScroll(targetScrollTop);
           angular.element('html, body').scrollTop(targetScrollTop);
         }
       }
     };
-    timer(function(){
-      console.log('hash is ' ,$location.$$hash);
-      ;
-      $scope.scrollTo($location.$$hash, false)
-    }, 0);
+  $scope.forceAnchor = function(){
+    console.log('$location.$$hash', $location.$$hash);
+    $scope.scrollTo($location.$$hash, false)  
+  };
+  $scope.navigate = function(){};
+  console.log('hash is ' ,$location.$$hash);
+  $scope.$on('$viewContentLoaded', function() {
+    console.log('$viewContentLoaded triggered');
+    $timeout(function(){
+    //$anchorScroll($location.$$hash);
+  }, 2000);
+    //$scope.scrollTo($location.$$hash, false)
+  });
+}]).
+controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', '$window', 'Home', function($scope, $location, $anchorScroll, timer, $window, Home) {
+  Home.get(function(data){
+    $scope.backgrounds = data.backgrounds;
+    var timeout;
+    
+
+    
   })
 }]).
 controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', '$location', 'Projects', function($scope, $routeParams, $filter, $sce, $location, Projects) {

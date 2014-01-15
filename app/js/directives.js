@@ -1,3 +1,4 @@
+var mobileWidth = 769;
 angular.module('myApp.directives', []).
 directive('fixedMenu', ['$timeout', '$window', function(timer, $window){
   return{
@@ -129,7 +130,7 @@ directive('myCenter', ['$timeout', '$window', function(timer, $window){
       timer(function(){
         center();
         angular.element($window).bind('resize', center);
-      }, 10);
+      }, 0);
     }
   }
 }]).
@@ -137,12 +138,19 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
   return {
     link: function(scope, elem, attrs)
     {
-      if(!Modernizr.touch)
+      if(!Modernizr.touch && $window.innerWidth > mobileWidth)
       {
         timer(function(){
           $(elem).masonry({
-            itemSelector: attrs.myIsotope
-          })     
+            itemSelector: attrs.myIsotope,
+            gutter: 10,
+          });
+          angular.element($window).bind('resize', function(){
+            if($window.innerWidth < mobileWidth)
+            {
+              $(elem).masonry('destroy');
+            }
+          });
         }, 1500);
       }
     },
@@ -221,7 +229,7 @@ directive('spy', function($location) {
         id: attrs.spy,
         in: function() {
           elem.addClass(attrs.spyClass);
-          //location.hash = attrs.spy;
+          $location.hash(attrs.spy);
 
         },
         out: function() {
@@ -234,7 +242,9 @@ directive('spy', function($location) {
 }).
 directive('myIframe', ['$timeout', '$window', function(timer, $window){
   return function(scope, elem, attrs) {
-
+    var center = function(){
+        
+      };
     var setFull = function() {
       console.log('fuck your mom');
 
@@ -266,15 +276,19 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
             maxWidth: newCss.w,
             maxHeight: newCss.h,
           };
+          newCss = {};
         }
         angular.element(elem).find('iframe, img').css(newCss);
+        elem = angular.element(elem);
+        var wrapperHeight = elem.parents('.project-details, #contact').height();
+        var elemHeight = elem.height();
+        elem.css({
+          position: 'relative',
+          top: wrapperHeight/2 - elemHeight/2,
+        })
       };
     }
     angular.element($window).bind('resize', setFull);
     timer(setFull, 0);
   }
 }]);
-
-
-
-

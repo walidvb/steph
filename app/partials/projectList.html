@@ -1,6 +1,6 @@
 <h1 class='section-header' my-accordion>Projects</h1>
-<div class='section-body project-list' my-isotope='.project-wrapper'>
-  <div class='project-wrapper' ng-class='getFormat($index)' ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'">
+<ul class='section-body project-list' my-isotope='.project-wrapper'>
+  <li class='project-wrapper' ng-class='getFormat($index)' ng-repeat="project in projects | filter: {type: 'project', public: true} | orderBy:'-date'">
     <a class='project' ng-href='#project/{{project.id}}' ng-style="{'background-image': 'url('+project.thumb+')'}">
       <div class='project-details'>
         <div class='project-details-header'>
@@ -13,5 +13,5 @@
         </div>
       </div>
     </a>
-  </div>
-</div>
+  </li>
+</ul>

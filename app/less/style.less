@@ -10,7 +10,7 @@
 }
 [ng-click]{cursor: pointer;}
 [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
+	display: none !important;
 }
 ul{
 	-webkit-margin-before: 0;
@@ -84,7 +84,7 @@ section{
 	
 }
 
-@alignToMenu: ~".show, #bio .section-body";
+@alignToMenu: ~".show, #bio .section-body, #projects .section-body";
 
 @paddingLeftPage: 20px;
 
@@ -93,10 +93,7 @@ section{
 	padding-right: @paddingLeftPage;
 	
 }
-#projects .section-body{
-	padding-right: @paddingLeftPage - 10;
-	padding-left: @paddingLeftPage - 10;
-}
+
 //---------Mixins
 .background(){
 	background-size: cover;
@@ -182,12 +179,12 @@ section{
 	}
 }
 .background-img{
-		.background();
+	.background();
 	@media @notmobile{
 
-			height: 100%;
-			max-width: 100%;
-			background-attachment: fixed;
+		height: 100%;
+		max-width: 100%;
+		background-attachment: fixed;
 	}
 
 	@media @mobile{
@@ -199,7 +196,7 @@ section{
 }
 //----------ProjList
 @project-height : 150px;
-@project-margin: @grid-gutter-width;
+@project-margin: 10px;
 #projects{
 	background: @background-color;
 	padding-top: 20px;
@@ -212,25 +209,28 @@ section{
 		height: @project-height;
 		//different thumbnail sizes
 		margin-bottom: @project-margin;
-		&.normal{
-			.make-sm-column(4);
-			height: @project-height;
-			.project-details{
-				padding-top: (@project-height/2)-20;
+						.project-details{
+					padding-top: (@project-height/2)-20;
+				}
+		@media @notmobile{
+			&.normal{
+				width: 31.5%;
+				height: @project-height;
+
 			}
-		}
-		&.long{
-			height: @project-height;
-			.make-sm-column(8);
-			.project-details{
-				padding-top: (@project-height/2)-20;
+			&.long{
+				height: @project-height;
+				width: 63.8%;
+				.project-details{
+					padding-top: (@project-height/2)-20;
+				}
 			}
-		}
-		&.high{
-			height: @project-height*2 + @project-margin;
-			.make-sm-column(4);
-			.project-details{
-				padding-top: (@project-height)-10;
+			&.high{
+				height: @project-height*2 + @project-margin;
+				width: 31.5%;
+				.project-details{
+					padding-top: (@project-height)-10;
+				}
 			}
 		}
 				// padding-left: 0px!important;
@@ -454,7 +454,7 @@ body{
 .contact-details{
 	padding: 10px 0px;
 	@media @mobile{
-		padding: 750px;
+		padding: 150px 0px;
 	}
 }
 
