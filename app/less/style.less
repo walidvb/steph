@@ -76,10 +76,6 @@ section{
 		.section-header{
 			display: none;
 		}
-		border-top: 1px solid @text-color;
-		&:last-child{
-			border-bottom: 1px solid @text-color;
-		}
 		.section-header{
 			padding-left: 15px;
 		}
@@ -153,7 +149,7 @@ section{
 				}
 				.glyphicon{
 					display: none;
-					top: 3px
+					top: 3px;
 				}
 			}
 		}
@@ -186,31 +182,19 @@ section{
 	}
 }
 .background-img{
-	>div{
 		.background();
-	}
-	a&{
-		display: block;
-	}
 	@media @notmobile{
 
-		> div{
 			height: 100%;
 			max-width: 100%;
 			background-attachment: fixed;
-		}
-
 	}
 
 	@media @mobile{
-		&:nth-child(3){
+		&:first-child{
 			display: none;
 		}
-		max-height: 350px;
-		div{
-
-			height: 100%;
-		}
+		height: 350px;
 	}
 }
 //----------ProjList
@@ -220,7 +204,7 @@ section{
 	background: @background-color;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	li{
+	.project-wrapper{
 		@media @mobile{
 			position: static!important;
 		}
@@ -321,7 +305,7 @@ body{
 		position: absolute;	
 	}
 	@media @mobile{
-		padding-top: @navbar-height;
+		padding-top: @navbar-height+6;
 	}
 	.project-info{
 		width: 100%;
@@ -469,6 +453,9 @@ body{
 
 .contact-details{
 	padding: 10px 0px;
+	@media @mobile{
+		padding: 750px;
+	}
 }
 
 //------------fonts 

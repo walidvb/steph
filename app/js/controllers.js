@@ -57,6 +57,7 @@ controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', '$wi
         }
         else
         {
+          console.log('targetScrollTop', targetScrollTop);
           angular.element('html, body').scrollTop(targetScrollTop);
         }
       }

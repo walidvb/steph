@@ -1,11 +1,11 @@
-.menu.navbar-fixed-top{"ng-include" => true, "src" => "'partials/menu.html'"}
+.menu.navbar-fixed-top{"ng-include" => true, "src" => "'partials/menu_project.html'"}
 .project-details.project-single{"my-horizontal-scroll" => true, "id" => "{{project.type+s}}", "ng-cloak" => "true"}
 	-#.project-slides{"infinite-scroll" => "loadSlide()", "infinite-scroll-distance" => 0, "infinite-scroll-direction" => "horz"}
 	.slide.project-info{"ng-class" => "'slide-'+0"}
 		%h1.project-title {{project.title}}
 		.project-date {{project.date | date:'yyyy'}}
 		.project-medium {{project.medium}}
-		%h2.apropos Apropos
+		%h2.apropos{"ng-if" => 'project.body.length > 0'} Apropos 
 		%p.project-body{"my-html" => "project.body"}
 	-#%div{"style" => "position:fixed;top:5px;right:5px;z-index: 3000"} {{slides.length}}
-	.slide{"ng-repeat" => "slide in slides | filter: {public: true}", "ng-class" => "'slide-'+($index+1)", "my-slide" => true, "my-slides" => "slide"}
+	.slide{"ng-repeat" => "slide in slides | filter: {public: true}", "ng-class" => "'slide-'+($index+1)", "my-slide" => true, "my-slides" => "slide", "ng-class" => "slide.type"}
