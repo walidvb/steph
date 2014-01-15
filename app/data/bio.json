@@ -16,7 +16,7 @@
 			{
 				"id" : "40",
 				"date" : "2007-2010",
-				"text" : "Haute &Eacute;cole D&#39;Art et de Design (HEAD), BA Fine Art",
+				"text" : "Haute Ecole D'Art et Design (HEAD), BA Fine Art",
 				"venue" : "",
 				"location" : "Geneva, CH",
 				"category" : "Education"
@@ -32,7 +32,7 @@
 			{
 				"id" : "37",
 				"date" : "2012",
-				"text" : "Fondation H&eacute;l&egrave;ne et Victor Barbour",
+				"text" : "Fondation H&eacute;l&egrave;ne et Victor Barbour,",
 				"venue" : "",
 				"location" : "Geneva, CH",
 				"category" : "Awards"
@@ -52,6 +52,14 @@
 				"venue" : "The Institute For Provocation (IFP)",
 				"location" : "Beijing, CN",
 				"category" : "Awards"
+			},
+			{
+				"id" : "42",
+				"date" : "2013-05-02T23:00:00.000Z",
+				"text" : "Etcetera 等等",
+				"venue" : "Institute For Provocation (IFP)",
+				"location" : "Beijing, CN",
+				"category" : "Solo"
 			},
 			{
 				"id" : "35",
