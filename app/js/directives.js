@@ -72,7 +72,7 @@ directive('myFullscreen', ['$timeout', '$window', function(timer, $window){
     }
   }
 }]).
-directive('myBackgroundImg', ['$window', '$timeout', function($window,timer){
+directive('myBackgroundsImg', ['$window', '$timeout', function($window,timer){
 
   return {
     restrict: 'AE',
@@ -81,12 +81,12 @@ directive('myBackgroundImg', ['$window', '$timeout', function($window,timer){
       if(!Modernizr.touch)
       {
         timer(function(){
-        angular.element($window).scroll(function(){
-          var yPos = (angular.element(elem).offset().top-$window.scrollY) * 0.15;
-          var coords = "50% "+yPos+"px";
-          angular.element(elem).css("backgroundPosition", coords);
-        });
-      }, 0);
+          angular.element($window).scroll(function(){
+            var yPos = (angular.element(elem).offset().top-$window.scrollY) * 0.15;
+            var coords = "50% "+yPos+"px";
+            angular.element(elem).css("backgroundPosition", coords);
+          });
+        }, 0);
       }
     }
   }
@@ -140,10 +140,9 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
   return {
     link: function(scope, elem, attrs)
     {
-      if(!Modernizr.touch && $window.innerWidth > mobileWidth)
-      {
-        angular.element(elem).css('opacity', 0);
-        timer(function(){
+      function isotopeIt() {
+        if(angular.element(elem).find(attrs.myIsotope).length)
+        {
           angular.element(elem).masonry({
             itemSelector: attrs.myIsotope,
             gutter: 20,
@@ -152,16 +151,22 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
               return containerWidth / 3;
             }
           }).animate({'opacity': 1});
-          // angular.element($window).bind('resize', function(){
-          //   if($window.innerWidth < mobileWidth)
-          //   {
-          //     angular.element(elem).masonry('destroy');
-          //   }
-          // });
-      }, 1000);
+        }
+        else
+        {
+          setTimeout(function(){isotopeIt()}, 100);
+        }
       }
-    },
-  };
+      if(!Modernizr.touch && $window.innerWidth > mobileWidth)
+      {
+       angular.element(elem).css('opacity', 0);
+       timer(function(){   
+        isotopeIt()
+      }, 1000);
+
+     }
+   },
+ };
 }]).
 directive('myHorizontalScroll', ['$timeout', function(timer){
   return {
@@ -209,22 +214,21 @@ directive('scrollSpy', function($window, $location) {
             //distinguish between mobile and desktop
             var condition = (Modernizr.touch) ? 
             ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= $window.innerHeight) : 
-            ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= angular.element('#menu').height() && pos + spyElems[spy.id].height() > $window.scrollY)
-            if (condition) {
-              spy.pos = pos;
-              if (highlightSpy == null || highlightSpy.pos < spy.pos) {
-                highlightSpy = spy;
-              }
-            }
-          }
+            ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= angular.element('#menu').height() || pos - $window.scrollY <= $window.innerHeight);//pos + spyElems[spy.id].height() > $window.scrollY)
+      if (condition) {
+        spy.pos = pos;
+        if (highlightSpy == null || highlightSpy.pos < spy.pos) {
+          highlightSpy = spy;
         }
-        if(highlightSpy != null){
-          highlightSpy["in"]()
-          $location.hash(highlightSpy.id);
-        };
-      });
-}
-};
+      }
+    }
+  }
+  if(highlightSpy != null){
+    highlightSpy["in"]();
+  };
+});
+    }
+  };
 }).
 directive('spy', ['$location', function($location) {
   return {
@@ -244,6 +248,7 @@ directive('spy', ['$location', function($location) {
         id: attrs.spy,
         in: function() {
           elem.addClass(attrs.spyClass);
+          $location.hash(attrs.id);
         },
         out: function() {
           elem.removeClass(attrs.spyClass);

@@ -1,7 +1,7 @@
 %h1.section-header{"my-accordion" => true} Projects
 %ul.section-body.project-list{"my-isotope" => ".project-wrapper"}
 	%li.project-wrapper{"ng-repeat" => "project in projects | filter: {type: 'project', public: true} | orderBy:'-date'", "ng-class" => "getFormat($index)"} 
-		%a.project{"ng-style" => "{'background-image': 'url('+project.thumb+')'}", "ng-href" => "#project/{{project.id}}"}
+		%a.project{"ng-style" => "{'background-image': 'url('+project.thumb+')'}", "ng-href" => "project/{{project.id}}"}
 			.project-details
 				%div.project-details-header
 					%span.project-title {{project.title}}

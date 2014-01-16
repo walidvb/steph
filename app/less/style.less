@@ -199,7 +199,6 @@ section{
 @project-margin: 10px;
 #projects{
 	background: @background-color;
-	padding-top: 20px;
 	padding-bottom: 20px;
 	.project-wrapper{
 		@media @mobile{
@@ -457,9 +456,12 @@ body{
 }
 
 .contact-details{
-	padding: 10px 0px;
+	padding: 50px @paddingLeftPage;
+	font-size: @font-size-h3;
+	font-size: bold;
 	@media @mobile{
-		padding: 150px 0px;
+		padding: 50px 10px;
+		margin: auto;
 	}
 }
 
