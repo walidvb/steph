@@ -1,17 +1,22 @@
-.project-details.ng-enter {
+.ng-enter {
   /* standard transition code */
-  -webkit-transition: 0.6s ease-out all;
-  transition: 0.6s ease-out all;
-  position: relative;
-  top: 100%;
-  #menu{
-    opacity: 0;
+  animation: slideInRight 2s;
+
+  & .project-details{
+      position: relative;
+
+    left: 100%;
+    #menu{
+      opacity: 0;
+    }
   }
 }
-.project-details.ng-enter-stagger {
+.ng-enter-stagger {
 }
-.project-details.ng-enter.ng-enter-active {
+.ng-enter.ng-enter-active {
   /* standard transition styles */
-  top:0%;
+  & .project-details{
 
+    left:0%;
+  }
 }

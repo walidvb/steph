@@ -6116,7 +6116,7 @@ section {
   .background-img {
     height: 350px;
   }
-  .background-img:first-child {
+  .background-img:nth-child(3) {
     display: none;
   }
 }
@@ -6139,6 +6139,10 @@ section {
   padding-top: 55px;
 }
 @media (min-width: 768px) {
+  #projects .project-wrapper {
+    margin-left: -1px;
+    transform: translateX(1px);
+  }
   #projects .project-wrapper.normal {
     width: 31.5%;
     height: 150px;

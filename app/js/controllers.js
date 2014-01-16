@@ -31,14 +31,11 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', '$timeout
   $scope.scrollTo = function(id, animated)
     {
       animated = animated || false;
-      console.log('$location.$$hash before: ', $location.$$hash);
       var menuHeight = 0; 
       if(id != "menu"){
             $location.hash(id); 
             menuHeight = angular.element('#menu').height();
       }
-      console.log('$location.$$hash after: ', $location.$$hash);
-      console.log('scrollTo(', id, animated, '), to ', angular.element('#'+id));
       if(angular.element('#'+id).length)
       {
         var targetScrollTop = $('#'+id).offset().top - menuHeight;
@@ -50,20 +47,16 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', '$timeout
         }
         else
         {
-          console.log('targetScrollTop', targetScrollTop);
           $anchorScroll(targetScrollTop);
           angular.element('html, body').scrollTop(targetScrollTop);
         }
       }
     };
   $scope.forceAnchor = function(){
-    console.log('$location.$$hash', $location.$$hash);
     $scope.scrollTo($location.$$hash, false)  
   };
   $scope.navigate = function(){};
-  console.log('hash is ' ,$location.$$hash);
   $scope.$on('$viewContentLoaded', function() {
-    console.log('$viewContentLoaded triggered');
     $timeout(function(){
     //$anchorScroll($location.$$hash);
   }, 2000);

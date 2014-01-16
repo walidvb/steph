@@ -8,9 +8,9 @@
 				/If it's an array, ie if it's not the later experiences
 				%li{"ng-repeat"=>"exp in category.data  | orderBy:'-date'"}
 					%span.bio-date {{exp.date}}
-					%span.bio-title {{exp.text}}
-					%span.bio-venue {{exp.venue}}
-					%span.bio-location {{exp.location}}
+					%span.bio-title{"my-html" => 'exp.text'}
+					%span.bio-venue{"my-html" => 'exp.venue'}
+					%span.bio-location{"my-html" => 'exp.location'}
 		%li
 			%ul.bio-shows
 				%li{"ng-repeat" => "category in shows | orderBy:'-categoryName'"}
@@ -21,8 +21,8 @@
 							-# | date:'yyyy'}} 
 							%ul
 								%li{"ng-repeat" => "line in year.experiences | orderBy:'-date'"} 
-									%span.bio-title {{line.text}}
-									%span.bio-location {{line.location}}
-									%span.bio-venue {{line.venue}}
+									%span.bio-title{"my-html" => 'line.text'}
+									%span.bio-location{"my-html" => 'line.location'}
+									%span.bio-venue{"my-html" => 'line.venue'}
 
 	%a.bio-pdf{:href => "{{pdf.url}}"} {{pdf.title}}

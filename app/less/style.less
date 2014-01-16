@@ -188,7 +188,7 @@ section{
 	}
 
 	@media @mobile{
-		&:first-child{
+		&:nth-child(3){
 			display: none;
 		}
 		height: 350px;
@@ -209,10 +209,12 @@ section{
 		height: @project-height;
 		//different thumbnail sizes
 		margin-bottom: @project-margin;
-						.project-details{
+				.project-details{
 					padding-top: (@project-height/2)-20;
 				}
 		@media @notmobile{
+			margin-left:-1px;
+   			transform:translateX(1px);
 			&.normal{
 				width: 31.5%;
 				height: @project-height;

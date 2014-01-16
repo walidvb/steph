@@ -41,10 +41,10 @@ directive('fixedMenu', ['$timeout', '$window', function(timer, $window){
             fixMenu(e);
           });
         };
-      timer(fixIt, 0);
+        timer(fixIt, 0);
+      }
     }
   }
-}
 }]).
 directive('myAccordion', ['$timeout', function(timer){
   return {
@@ -73,21 +73,21 @@ directive('myFullscreen', ['$timeout', '$window', function(timer, $window){
   }
 }]).
 directive('myBackgroundImg', ['$window', '$timeout', function($window,timer){
-      
+
   return {
     restrict: 'AE',
     replace: true,
-
     link: function(scope, elem, attrs){
-      timer(function(){
-
-        var top = $(elem).offset().top;//-angular.element(elem).height();
+      if(!Modernizr.touch)
+      {
+        timer(function(){
         angular.element($window).scroll(function(){
-          var yPos = (top-$window.scrollY) * 0.15;
+          var yPos = (angular.element(elem).offset().top-$window.scrollY) * 0.15;
           var coords = "50% "+yPos+"px";
-          //angular.element(elem).css("backgroundPosition", coords);
+          angular.element(elem).css("backgroundPosition", coords);
         });
       }, 0);
+      }
     }
   }
 }]).
@@ -119,7 +119,9 @@ directive('myCenter', ['$timeout', '$window', function(timer, $window){
     link: function(scope, elem, attrs)
     {
       var center = function(){
-        elem = angular.element(elem);
+
+        var elem = angular.element(elem);
+        console.log(elem);
         var wrapperHeight = elem.parents('.project-details, #contact').height();
         var elemHeight = elem.height();
         elem.css({
@@ -130,7 +132,7 @@ directive('myCenter', ['$timeout', '$window', function(timer, $window){
       timer(function(){
         center();
         angular.element($window).bind('resize', center);
-      }, 0);
+      }, 10);
     }
   }
 }]).
@@ -145,14 +147,18 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
           angular.element(elem).masonry({
             itemSelector: attrs.myIsotope,
             gutter: 20,
-          }).animate({'opacity': 1});
-          angular.element($window).bind('resize', function(){
-            if($window.innerWidth < mobileWidth)
-            {
-              angular.element(elem).masonry('destroy');
+            columnWidth: function( containerWidth ) {
+              console.log('containerWidth', containerWidth);
+              return containerWidth / 3;
             }
-          });
-        }, 400);
+          }).animate({'opacity': 1});
+          // angular.element($window).bind('resize', function(){
+          //   if($window.innerWidth < mobileWidth)
+          //   {
+          //     angular.element(elem).masonry('destroy');
+          //   }
+          // });
+      }, 1000);
       }
     },
   };
@@ -201,7 +207,9 @@ directive('scrollSpy', function($window, $location) {
 
           if (spyElems[spy.id].length !== 0) {
             //distinguish between mobile and desktop
-            var condition = (Modernizr.touch) ? ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= $window.innerHeight) : ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= angular.element('#menu').height() && pos + spyElems[spy.id].height() > $window.scrollY)
+            var condition = (Modernizr.touch) ? 
+            ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= $window.innerHeight) : 
+            ((pos = spyElems[spy.id].offset().top) - $window.scrollY <= angular.element('#menu').height() && pos + spyElems[spy.id].height() > $window.scrollY)
             if (condition) {
               spy.pos = pos;
               if (highlightSpy == null || highlightSpy.pos < spy.pos) {
@@ -215,8 +223,8 @@ directive('scrollSpy', function($window, $location) {
           $location.hash(highlightSpy.id);
         };
       });
-    }
-  };
+}
+};
 }).
 directive('spy', ['$location', function($location) {
   return {
@@ -248,11 +256,9 @@ directive('spy', ['$location', function($location) {
 directive('myIframe', ['$timeout', '$window', function(timer, $window){
   return function(scope, elem, attrs) {
     var center = function(){
-        
-      };
-    var setFull = function() {
-      console.log('fuck your mom');
 
+    };
+    var setFull = function() {
       if(!Modernizr.touch)
       {
 

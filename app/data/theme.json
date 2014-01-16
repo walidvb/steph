@@ -10,18 +10,14 @@
 
 	},
 	{
-		"url" : "img/content/05.jpg",
+		"url" : "img/content/03.jpg",
 		"type" : "img"
 
 	},
 	{
-		"url" : "img/content/02.jpg",
+		"url" : "img/content/04.jpg",
 		"type" : "img"
 
-	},
-	{
-		"url" : "img/content/05.jpg",
-		"type" : "img"
 	}
 	]
 }
