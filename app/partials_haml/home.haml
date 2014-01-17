@@ -1,5 +1,5 @@
 #home.container{"ng-controller" => "homeCtrl", "scroll-spy" => true}
-	#background-img-0.background-img{"my-background-img" => true, "my-fullscreen" => true, "ng-style" => "{'background-image': 'url('+backgrounds[0].url+')'}", "ng-click" => "scrollTo('menu', true,$event);$event.prevenDefault();", "ng-cloak" => "true", "data-stellar-ratio" => "0.15"}
+	#background-img-0.background-img{"my-background-img" => true, "my-fullscreen" => "true", "ng-style" => "{'background-image': 'url('+backgrounds[0].url+')'}", "ng-click" => "scrollTo('menu', true,$event);$event.prevenDefault();", "ng-cloak" => "true", "data-stellar-ratio" => "0.15"}
 	#menu{"ng-include" => true, :src => "'partials/menu.html'", "fixed-menu" => true, "ng-cloak" => "true"}
 	%section#projects.row{"ng-include" => true, :src =>"'partials/projectList.html'","ng-controller" => "projectListCtrl", "ng-cloak" => "true"}
 	#background-img-2.background-img{"my-background-img" => true, "my-fullscreen" => true, "ng-style" => "{'background-image': 'url('+backgrounds[1].url+')'}", "ng-cloak" => "true", "data-stellar-ratio" => "0.15"}
@@ -7,6 +7,6 @@
 	#background-img-3.background-img{"my-background-img" => true, "my-fullscreen" => true, "ng-style" => "{'background-image': 'url('+backgrounds[2].url+')'}", "ng-cloak" => "true", "data-stellar-ratio" => "0.15"}
 	%section#bio.row{"ng-include" => true, :src =>"'partials/bio.html'", "ng-controller" => "bioListCtrl", "ng-cloak" => "true"}
 	#background-img-4.background-img{"my-background-img" => true, "my-fullscreen" => true, "ng-style" => "{'background-image': 'url('+backgrounds[3].url+')'}", "ng-cloak" => "true", "data-stellar-ratio" => "0.15"}
-	%section#contact.row{"ng-include" => true, :src =>"'partials/contact.html'", "ng-cloak" => "true"}
+	%section#contact.row{"ng-include" => true, :src =>"'partials/contact.html'", "ng-cloak" => "true", "my-fullscreen" => true}
 	{{forceAnchor()}}
 

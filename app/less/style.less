@@ -62,6 +62,7 @@ a{
 }
 
 section{
+	position: relative;
 	display: block;
 	background: transparent;
 	@media @notmobile{
@@ -208,12 +209,12 @@ section{
 		height: @project-height;
 		//different thumbnail sizes
 		margin-bottom: @project-margin;
-				.project-details{
-					padding-top: (@project-height/2)-20;
-				}
+		.project-details{
+			padding-top: (@project-height/2)-20;
+		}
 		@media @notmobile{
 			margin-left:-1px;
-   			transform:translateX(1px);
+			transform:translateX(1px);
 			&.normal{
 				width: 31.5%;
 				height: @project-height;
@@ -462,6 +463,12 @@ body{
 	@media @mobile{
 		padding: 50px 10px;
 		margin: auto;
+	}
+	.credits{
+		font-size: small;
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
 	}
 }
 

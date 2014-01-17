@@ -62,7 +62,8 @@ directive('myFullscreen', ['$timeout', '$window', function(timer, $window){
     if(!Modernizr.touch)
     {
       var setSize = function() {
-        angular.element(elem).height($window.innerHeight).css('overflow', 'auto')
+        var menu_height = attrs.myFullscreen ? 0 :angular.element('#menu').height();
+        angular.element(elem).height($window.innerHeight-menu_height).css('overflow', 'auto')
       };
       angular.element($window).bind('resize', function()
       {
@@ -72,7 +73,7 @@ directive('myFullscreen', ['$timeout', '$window', function(timer, $window){
     }
   }
 }]).
-directive('myBackgroundsImg', ['$window', '$timeout', function($window,timer){
+directive('myBackgroundImg', ['$window', '$timeout', function($window,timer){
 
   return {
     restrict: 'AE',
@@ -81,8 +82,10 @@ directive('myBackgroundsImg', ['$window', '$timeout', function($window,timer){
       if(!Modernizr.touch)
       {
         timer(function(){
+          
           angular.element($window).scroll(function(){
-            var yPos = (angular.element(elem).offset().top-$window.scrollY) * 0.15;
+            var top = angular.element(elem).offset().top;
+            var yPos = (top-$window.scrollY) * 0.15;
             var coords = "50% "+yPos+"px";
             angular.element(elem).css("backgroundPosition", coords);
           });
