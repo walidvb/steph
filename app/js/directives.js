@@ -74,7 +74,6 @@ directive('myFullscreen', ['$timeout', '$window', function(timer, $window){
   }
 }]).
 directive('myBackgroundImg', ['$window', '$timeout', function($window,timer){
-
   return {
     restrict: 'AE',
     replace: true,
@@ -85,9 +84,12 @@ directive('myBackgroundImg', ['$window', '$timeout', function($window,timer){
           
           angular.element($window).scroll(function(){
             var top = angular.element(elem).offset().top;
-            var yPos = (top-$window.scrollY) * 0.15;
-            var coords = "50% "+yPos+"px";
-            angular.element(elem).css("backgroundPosition", coords);
+            if((pos = (top-$window.scrollY))-$window.innerHeight < 0)
+            {
+              var yPos = pos * 0.15;
+              var coords = "50% "+yPos+"px";
+              angular.element(elem).css("backgroundPosition", coords);
+            }
           });
         }, 0);
       }
@@ -108,6 +110,7 @@ directive('myHtml', ['$timeout', '$sce', function(timer, $sce){
     scope: {
       myHtml : "=",
     },
+    replace: true,
     template: "<span ng-bind-html='trustMe(myHtml)'></span>",
     controller: function($scope, $element)
     {
@@ -275,7 +278,7 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
         maxWidth = $window.innerHeight*ratio;
         if(maxWidth < $window.innerWidth)
         {
-          newCss.h = $window.innerHeight,
+          newCss.h = $window.innerHeight;//-angular.element('#menu'),
           newCss.w = newCss.h*ratio;
         }
         else
@@ -298,13 +301,13 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
           newCss = {};
         }
         angular.element(elem).find('iframe, img').css(newCss);
-        elem = angular.element(elem);
-        var wrapperHeight = elem.parents('.project-details, #contact').height();
-        var elemHeight = elem.height();
-        elem.css({
-          position: 'relative',
-          top: wrapperHeight/2 - elemHeight/2,
-        })
+        // elem = angular.element(elem);
+        // var wrapperHeight = elem.parents('.project-details, #contact').height();
+        // var elemHeight = elem.height();
+        // elem.css({
+        //   position: 'relative',
+        //   top: wrapperHeight/2 - elemHeight/2,
+        // });
       };
     }
     angular.element($window).bind('resize', setFull);

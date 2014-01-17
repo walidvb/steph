@@ -360,12 +360,14 @@ body{
 				min-width: 600px;
 				min-height: 340px;
 			}
+			&:not(:last-child){
+				margin-right: @navbar-height;
+			}
 			&.project-info{
 				height: 100%;
 				overflow-y: scroll;
-			}
-			&:not(:last-child){
-				margin-right: @navbar-height;
+				margin-right: 40px;
+				padding-right: 10px;
 			}
 			.img{
 				height: 100%;
@@ -467,7 +469,7 @@ body{
 	.credits{
 		font-size: small;
 		position: absolute;
-		right: 20px;
+		right: 40px;
 		bottom: 20px;
 	}
 }

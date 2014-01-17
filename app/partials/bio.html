@@ -8,7 +8,7 @@
         <!-- If it's an array, ie if it's not the later experiences -->
         <li ng-repeat="exp in category.data  | orderBy:'-date'">
           <span class='bio-date'>{{exp.date}}</span>
-          <span class='bio-title' my-html='exp.text'></span>
+          <span class='fadeIn bio-title' my-html='exp.text'></span>
           <span class='bio-venue' my-html='exp.venue'></span>
           <span class='bio-location' my-html='exp.location'></span>
         </li>
@@ -23,7 +23,7 @@
               <div class='bio-year'>{{year.year}}</div>
               <ul>
                 <li ng-repeat="line in year.experiences | orderBy:'-date'">
-                  <span class='bio-title' my-html='line.text'></span>
+                  <span class='fadeIn bio-title' my-html='line.text'></span>
                   <span class='bio-location' my-html='line.location'></span>
                   <span class='bio-venue' my-html='line.venue'></span>
                 </li>

@@ -1,26 +1,29 @@
 <div class='column left-col col-sm-4 list'>
-  <ul class='project-list'>
-    <li class='project add-new' ng-click='addProject(projects);'>
-      <div class='btn btn-lg btn-success'>
+  <div class='controls'>
+    <input class='search-box form-control' ng-model='query' placeholder='search {{filterType}}s...'>
+    <div class='project add-new' ng-click='addProject(projects);'>
+      <div class='btn btn-medium btn-success'>
         <span class='glyphicon glyphicon-plus'></span>
-        <span>Add Project</span>
+        <span>Add {{filterType}}</span>
       </div>
-    </li>
-    <li class='project' ng-class="{'project-active' : project.active || false}" ng-click='setActiveProject(project);' ng-repeat="project in projects | filter: {type: filterType} | orderBy:'type':'date'">
-      <a class='project-title' href='#' ng-click='$event.preventDefault()'>{{project.title}}</a>
+    </div>
+  </div>
+  <ul class='project-list'>
+    <li class='project' ng-class="{'project-active' : (project.active || false)}" ng-click='setActiveProject(project);$event.preventDefault()' ng-repeat="project in projects | filter: {type: filterType, $: query} | orderBy:'-date'">
+      {{project.title}}
+      <span class='glyphicon' ng-class="{'glyphicon-eye-close': !project.public, 'glyphicon-eye-open': project.public }" ng-click='project.public = !project.public;$event.stopPropagation()'></span>
+      <span class='glyphicon glyphicon-exclamation-sign' ng-if='!validates(project)'></span>
     </li>
   </ul>
 </div>
-<div class='column right-col col-sm-8 details'>
+<div class='column right-col col-sm-8 details' ng-cloak>
   <div class='project-title'>
     <h2>
       <a editable-text='activeProject.title' href='#'>{{activeProject.title}}</a>
       details
     </h2>
-    (
-    @
+    <span class='glyphicon glyphicon-link'></span>
     <a editable-text='activeProject.id' href='#'>/project/{{activeProject.id || "url"}}</a>
-    )
     <input ng-model='activeProject.public' type='checkbox'>public</input>
   </div>
   <div class='field-list project-details'>
@@ -53,7 +56,7 @@
       <a editable-text='activeProject.venue' href='#'>{{activeProject.venue || "venue"}}</a>
     </div>
     <div class='field project-description'>
-      <span class='field-title'>Description:</span>
+      <div class='field-title'>Description:</div>
       <a editable-textarea='activeProject.body' href='#' my-html='activeProject.body'>{{activeProject.body || "Description"}}</a>
     </div>
     <div class='field project-thumb' ng-if="activeProject.type == 'project'">
@@ -63,10 +66,16 @@
       </a>
     </div>
     <div class='field project-slides'>
-      <span class='field-title'>Slides ({{activeProject.slides.length}}):</span>
+      <span class='field-title'>
+        Slides ({{activeProject.slides.length}}):
+        <div class='btn btn-xs btn-success'>
+          <div class='glyphicon glyphicon-plus' item-type="'slide'" ng-click='addSlide(activeProject.slides)'></div>
+        </div>
+      </span>
       <ul ng-model='activeProject.slides' ui-sortable>
         <li class='project-slide' ng-repeat='slide in activeProject.slides'>
           <select class='project-slide-type' ng-model='slide.type' ng-options='option for option in slideOptions'></select>
+          <input ng-model='slide.public' type='checkbox'>public</input>
           <div ng-if="slide.type == 'img'">
             <a editable-textarea='slide.legend' href='#' my-html='slide.legend'>{{slide.legend || "legend"}}</a>
             <img class='project-slide-img' editable-text='slide.url' ng-src="{{slide.url || 'somesource'}}">
@@ -74,10 +83,8 @@
           <div ng-if="slide.type == 'html'">
             <a editable-text='slide.body' href='#' my-html='slide.body'>{{"Code html"}}</a>
           </div>
-          <input ng-model='slide.public' type='checkbox'>public</input>
           <delete-item item-type="'slide'" my-class="'btn-xs'" ng-click='removeSlide(slide)'></delete-item>
         </li>
-        <add-item item-type="'slide'" my-class="'btn-lg'" ng-click='addSlide(activeProject.slides)'></add-item>
       </ul>
     </div>
     <delete-item item-type="'project'" my-class="'btn-lg'" ng-click='removeProject(activeProject)'></delete-item>

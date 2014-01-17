@@ -29,7 +29,7 @@ angular.module('myApp.services', ['ngResource']).
 	factory('Home', ['$resource', 
 		function($resource)
 		{
-			return $resource('https://dl.dropboxusercontent.com/s/hpjp932yzrwnlzp/theme.json', {}, {
+			return $resource('data/theme.json', {}, {
 				getData: {method: 'GET', isArray: false}
 			});
 			// return $resource('https://dl.dropboxusercontent.com/s/hpjp932yzrwnlzp/theme.json', {}, {

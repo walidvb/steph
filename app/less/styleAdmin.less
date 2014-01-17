@@ -37,14 +37,54 @@ border-bottom: dashed 1px @theme-color;
 }
 
 @list-color: @theme-color;
+.controls{
+	padding: 5px 0px;
+	border-right: solid 1px @text-color;
+	.search-box{
+		float: left;
+		margin-right: 5px;
+		width: auto;
+	}
+	.add-new{
+		display: inline-block;
+	}
+}
 .project-list{
 	li{
+		&:hover{
+			.glyphicon{
+				opacity: 1!important;
+			}
+		}
+		&.project-active{
+			.glyphicon-eye-open{
+				opacity: 1!important;
+			}
+		}
+		.glyphicon{
+			float: right;
+			line-height: inherit;
+			margin: 0px 15px;
+			&.glyphicon-exclamation-sign{
+				color: red!important;
+				opacity: 1;
+			}
+			&.glyphicon-eye-open{
+				opacity: 0;
+			}
+		}
+		padding-left: 10px;
 		line-height: 3;
 		list-style: none;
 		line-height: 3.4;
 		border-right: solid 1px @text-color;
 		border-radius: 2px;
 		.background-color(@theme-color, 0.1);
+		&.project-problem{
+			background: rgba(255,0,0,0.7);
+			color: white;
+			text-decoration: underline;
+		}
 		&:nth-child(even){
 			border-bottom: solid 1px lighten(@theme-color, 30%);
 			border-top: solid 1px lighten(@theme-color, 30%);
@@ -66,6 +106,7 @@ border-bottom: dashed 1px @theme-color;
 		}
 		&:hover:not(.project-active){
 			background: rgba(red(@theme-color),green(@theme-color),blue(@theme-color), 0.2);
+			
 			color: @theme-color;
 		}
 	}
@@ -93,7 +134,14 @@ border-bottom: dashed 1px @theme-color;
 			list-style: decimal;
 		}
 	}
+	.project-slides {
+		margin-top: 10px;
+		& > ul{
+		margin-left: 20px;
+	}
+}
 	.project-slide{
+		cursor: all-scroll;
 		padding: 5px 5px;
 
 		&:nth-child(even) {

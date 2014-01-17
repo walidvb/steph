@@ -7,8 +7,8 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
   $scope.menu = [
     {name: 'projects'},
     {name: 'shows'},
-    {name: 'bio'},
-    {name: 'contact'}
+    // {name: 'bio'},
+    // {name: 'contact'}
   ];
   $scope.currentMenu = '';
   $scope.url = function(item) {
@@ -27,16 +27,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', function($scope, 
       }
     })
   };
-  
-  $scope.scrollTo = function(id, event)
-  {
-    console.log($location);
-      //event.preventDefault();
-      //location.hash(id);
-      // setTimeout($anchorScroll, 1000);
-      //reset to old to keep any additional routing logic from kicking in
-      //$location.hash(old); 
-    };
+
   }]).
 controller('projectCtrl', ['$scope', 'Projects', function($scope, Projects) {
 }]).
@@ -67,6 +58,12 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
   $scope.slideOptions = ["img", "html"];
 
   $scope.setActiveProject = function(project){
+    if(typeof project == 'number')
+    {
+      project = $scope.projects[0];
+    }
+
+
     if($scope.activeProject)
     {
       $scope.activeProject.active = false;
@@ -75,25 +72,66 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
     project.active = true;
   };
 
-  $scope.addProject = function(projects){
-    var newProject = {
-      title: 'New ' + $scope.filterType,
-      public: true,
-      type: $scope.filterType,
-      id: 'new_' + $scope.filterType,
-      thumb: 'img/thumbs/black.jpg',
-      slides: [],
+  var dummyProject = function() {
+    return {
+        title: 'New ' + $scope.filterType,
+        public: true,
+        type: $scope.filterType,
+        id: 'new_' + $scope.filterType,
+        thumb: 'img/thumbs/black.jpg',
+        slides: [],
+      }
     };
-    projects.push(newProject);
-    $scope.setActiveProject(newProject);
+
+  $scope.validates = function(project, $index){
+    var i = 0;// $index || 0
+
+    
+    //check if has a proper url
+    if(project.id == dummyProject.id)
+    {
+      return false;
+    }
+    //check if project has at least one public slide
+    if(project.slides.length == 0)
+    {
+      return false;
+    }
+    else
+    {
+      var publicExists = false;
+      for(var j = 0; j < project.slides.length; j++)
+      {
+        publicExists = project.slides[j].public;
+      }
+      if(!publicExists)
+      {
+        return false;
+      }
+    }
+    //complexity is obviously too high, this should of course run only for following projects. however, to not add an attribute in the json(that should only be used in the admin), check is run that way...
+    for(; i < $scope.projects.length; i++)
+    {
+      if(project !== $scope.projects[i] && project.id == $scope.projects[i].id && project.type == $scope.projects[i].type)
+      {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  $scope.addProject = function(projects){
+    var proj = new dummyProject()
+    projects.push(proj);
+    $scope.setActiveProject(proj);
   };
 
   $scope.removeProject = function(project){
     var index = $scope.projects.indexOf(project);
-    console.log(index);
     if (index > -1) {
       $scope.projects.splice(index, 1);
     }
+    $scope.setActiveProject(0);
   };
   
   $scope.addSlide = function(slides){
