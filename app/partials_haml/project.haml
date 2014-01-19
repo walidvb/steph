@@ -3,6 +3,7 @@
 	-#.project-slides{"infinite-scroll" => "loadSlide()", "infinite-scroll-distance" => 0, "infinite-scroll-direction" => "horz"}
 	.slide.project-info{"ng-class" => "'slide-'+0"}
 		%h1.project-title {{project.title}}
+		.project-location{"ng-if" => "project.type == 'show'"} {{project.venue}}, {{project.location}}
 		.project-date {{project.date | date:'yyyy'}}
 		.project-medium {{project.medium}}
 		%h2.apropos{"ng-if" => 'project.body.length > 0'} Apropos 

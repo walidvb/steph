@@ -2,6 +2,7 @@
 <div class='project-details project-single' id='{{project.type+s}}' my-horizontal-scroll ng-cloak='true'>
   <div class='slide project-info' ng-class="'slide-'+0">
     <h1 class='project-title'>{{project.title}}</h1>
+    <div class='project-location' ng-if="project.type == 'show'">{{project.venue}}, {{project.location}}</div>
     <div class='project-date'>{{project.date | date:'yyyy'}}</div>
     <div class='project-medium'>{{project.medium}}</div>
     <h2 class='apropos' ng-if='project.body.length &gt; 0'>Apropos</h2>

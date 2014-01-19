@@ -153,7 +153,6 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
             itemSelector: attrs.myIsotope,
             gutter: 20,
             columnWidth: function( containerWidth ) {
-              console.log('containerWidth', containerWidth);
               return containerWidth / 3;
             }
           }).animate({'opacity': 1});
@@ -278,7 +277,7 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
         maxWidth = $window.innerHeight*ratio;
         if(maxWidth < $window.innerWidth)
         {
-          newCss.h = $window.innerHeight;//-angular.element('#menu'),
+          newCss.h = $window.innerHeight-angular.element('.menu').height();
           newCss.w = newCss.h*ratio;
         }
         else
@@ -311,6 +310,6 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
       };
     }
     angular.element($window).bind('resize', setFull);
-    timer(setFull, 0);
+    timer(setFull, 10);
   }
 }]);
