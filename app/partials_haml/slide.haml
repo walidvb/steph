@@ -1,4 +1,4 @@
 .img{"my-iframe" => "img", "ng-if" => "slide.type == 'img'"}
-	%img.slide-img{"ng-src" => "{{slide.url}}" }
+	%img.slide-img{"my-src" => "{{slide.url}}"}
 	.slide-legend{"ng-if" => "slide.legend.length > 0", "my-html" => "slide.legend"}
 .html{"ng-if" => "slide.type == 'html'", "my-html" => 'slide.body', "my-iframe" => "html"}

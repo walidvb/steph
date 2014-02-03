@@ -1,5 +1,5 @@
 <div class='img' my-iframe='img' ng-if="slide.type == 'img'">
-  <img class='slide-img' ng-src='{{slide.url}}'>
+  <img class='slide-img' my-src='{{slide.url}}'>
   <div class='slide-legend' my-html='slide.legend' ng-if='slide.legend.length &gt; 0'></div>
 </div>
 <div class='html' my-html='slide.body' my-iframe='html' ng-if="slide.type == 'html'"></div>

@@ -73,28 +73,57 @@ directive('myFullscreen', ['$timeout', '$window', function(timer, $window){
     }
   }
 }]).
-directive('myBackgroundImg', ['$window', '$timeout', function($window,timer){
+directive('mySrc', ['$timeout', '$window', function(timer, $window){
+  return function(scope, elem, attrs){
+
+    var $elem = angular.element(elem);
+    $elem.hide();
+    var img = new Image();
+    img.src = attrs.mySrc;
+    img.onload = function(){
+      console.log(img);
+      $elem.attr('src', attrs.mySrc)
+      .fadeIn();
+    }
+  };
+}]).
+directive('myBackgroundImg', ['$window', '$timeout', function($window, timer){
   return {
     restrict: 'AE',
-    replace: true,
+    //replace: true,
     link: function(scope, elem, attrs){
-      if(!Modernizr.touch)
-      {
-        timer(function(){
-          
-          angular.element($window).scroll(function(){
-            var top = angular.element(elem).offset().top;
-            if((pos = (top-$window.scrollY))-$window.innerHeight < 0)
-            {
-              var yPos = pos * 0.15;
-              var coords = "50% "+yPos+"px";
-              angular.element(elem).css("backgroundPosition", coords);
-            }
-          });
-        }, 0);
+      var $elem = angular.element(elem);
+      console.log(scope.backgrounds);
+      var lazy = function(){
+        //LazyLoad
+        var img = new Image();
+        img.src = scope.backgrounds[attrs.myBackgroundImg].url;
+
+        img.onload = function(){
+          console.log(elem);
+          $elem.css('background-image', "url('" + this.src + "')");
+        }
       }
-    }
+      if(!Modernizr.touch)
+      { 
+
+        var parallax = function() {
+          var top = $elem.offset().top;
+          if((pos = (top-$window.scrollY))-$window.innerHeight <= 0)
+          {
+            var yPos = pos * 0.15;
+            var coords = "50% "+yPos+"px";
+            $elem.css("backgroundPosition", coords);
+          }
+        }
+        timer(function(){
+          angular.element($window).scroll(parallax);
+          parallax();
+        }, 450);
+      }
+      timer(lazy, 150);
   }
+}
 }]).
 directive('mySlide', function(){
   return {
@@ -153,6 +182,7 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
             itemSelector: attrs.myIsotope,
             gutter: 20,
             columnWidth: function( containerWidth ) {
+              console.log('containerWidth', containerWidth);
               return containerWidth / 3;
             }
           }).animate({'opacity': 1});
@@ -177,7 +207,7 @@ directive('myHorizontalScroll', ['$timeout', function(timer){
   return {
     link: function(scope, elem, attrs)
     {
-      timer(function() {
+      timer(function() {
         // $('html, body').mousewheel(function(event, delta) {
         //  this.scrollLeft -= (delta * 2);
         //  event.preventDefault();
@@ -277,7 +307,7 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
         maxWidth = $window.innerHeight*ratio;
         if(maxWidth < $window.innerWidth)
         {
-          newCss.h = $window.innerHeight-angular.element('.menu').height();
+          newCss.h = $window.innerHeight;//-angular.element('#menu'),
           newCss.w = newCss.h*ratio;
         }
         else
@@ -310,6 +340,6 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
       };
     }
     angular.element($window).bind('resize', setFull);
-    timer(setFull, 10);
+    timer(setFull, 0);
   }
 }]);

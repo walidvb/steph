@@ -127,7 +127,7 @@ directive('deleteItem', ['$timeout', function(timer){
 			itemType: "=itemType",
 			class: "=myClass"
 		},
-		template: '<button class="btn btn-danger" net.Socket(options);g-class="{class}"> Delete {{itemType}}</button>',
+		template: '<button class="btn btn-danger" ng-class="{class}"> Delete {{itemType}}</button>',
 		link: function(scope, elem, attrs) {
 
 		},

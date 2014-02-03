@@ -13,7 +13,7 @@ angular.module('myApp', [
 run(function($rootScope, $location){
 }).
 config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-  //$locationProvider.html5Mode(true)
+  //$locationProvider.html5Mode(true);
   $routeProvider.when('/', {templateUrl: 'partials/home.html', reloadOnSearch: false, controller: 'homeCtrl'});
   $routeProvider.when('/show/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});
   $routeProvider.when('/project/:projectID', {templateUrl: 'partials/project.html', controller: 'projectCtrl'});

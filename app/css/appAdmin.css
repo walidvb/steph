@@ -5975,6 +5975,10 @@ td.visible-print {
 .x-ng-cloak {
   display: none !important;
 }
+.slide-img-wrapper {
+  background-image: url('http://www.ajaxload.info/cache/FF/FF/FF/FF/60/00/16-1.gif');
+  background-position: center;
+}
 ul {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;

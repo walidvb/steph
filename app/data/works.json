@@ -12,7 +12,7 @@
     "slides": [
       {
         "type": "html",
-        "body": "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "body": "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
         "public": true
       }
     ],
@@ -29,177 +29,183 @@
       {
         "type": "html",
         "url": "img/interviews/",
-        "body": "<iframe src=\"//player.vimeo.com/video/42503732?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "body": "<iframe src=\"//player.vimeo.com/video/56019255?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
         "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42503732?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42793011?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42666147?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43862966?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42793010?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43098903?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "legend": "<iframe src=\"//player.vimeo.com/video/43098903?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
         "body": "<iframe src=\"//player.vimeo.com/video/42739529?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42642074?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43931578?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43931577?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43862967?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43501946?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43723054?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43495278?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43477481?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43103384?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43100682?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/43099309?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42829353?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42739532?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42739530?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42666144?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42689483?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42666145?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/42666146?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/83432026?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/83432027?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/83450977?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       },
       {
         "type": "html",
         "url": "img/interviews/",
         "body": "<iframe src=\"//player.vimeo.com/video/83432025?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-        "public": true
+        "public": false
       }
     ],
     "active": false,
@@ -251,7 +257,8 @@
     "public": true,
     "date": "2012-06-27T23:00:00.000Z",
     "category": "installation",
-    "medium": "Carbon &amp; oil on glass, spontaneous writing from the audience",
+    "medium": "Carbon & oil on glass, writing from the audience",
+    "body": "<p>DIRT is a participatory installation that emerged from observing the numerous vitrines of small shoppings left empty in countries such as Portugal, Spain and Italy after the European crisis late 2009. The idea was to reproduce the dust from the pollution left on the glass. People would leave comments, drawing as reminiscence of the time passing by and the fact that nothing is changing.&nbsp;</p><p>The building chosen for the work was the Ben Pimlott Building from Goldsmiths College, designed by Will Alsop, achieved in 2005. Its very corporate aspect doesn&rsquo;t reflect the neighbourhood of New Cross where it was built. During the opening of the MFA final show in 2012, the audience spontaneously wrote messages adding in this manner meaning to the piece. This intervention was also a way to echo the protest of students against the governmental cuts, occupying the building in 2010.</p>",
     "dimensions": "Variable"
   },
   {
@@ -421,7 +428,7 @@
   {
     "title": "Rag Tag (Play#2)",
     "type": "project",
-    "id": "new_project",
+    "id": "ragtag",
     "thumb": "img/thumbs/ragtag.jpg",
     "slides": [
       {
@@ -538,7 +545,7 @@
       }
     ],
     "active": false,
-    "body": "<p>For the series of EMOTICONS, Blumer has objectified the most widespread icon representing our emotions. This hyperbolic manner of showing emoticons intends to stimulate the audience to reflect on our daily-mediated relationship to each other, whether it is in a superficial or profound way. The emoticons are sort of emptied out symbols. Their primordial iconicity fades away because of our overuse of them. One could say that the more we use an emoticon the less it actually represents our emotional state. It&rsquo;s, however, not always the case, the emoticons do still carry a profound power of self-reflectivity. Displayed within the traditional white cube, the Emoticons series doesn&rsquo;t leave indifferent. They continuously inspire a reaction. Whether the viewers smile or not, they are caught in a ceaseless play on signs and signification since the emoticon exists at this strange edge between pure abstraction and representation. &nbsp;</p>",
+    "body": "<p>The emoticons are the most widely used international language symbolising emotions. It first appeared when typewritten texts largely expanded and then with the era of mobile phones and of live chat on the Internet. These icons are being used here within the language of monochrome paintings. The emoticon has been turned into a palpable object. This hyperbolic manner of showing emoticons intends to stimulate the audience to reflect on our daily-mediated relationship to each other, whether it is in a superficial or profound way. The emoticons are sort of emptied out symbols. Their primordial iconicity fades away as we use them in a daily basis. One could say that the more we use an emoticon the less it actually represents our emotional state. It&rsquo;s, however, not always the case, the emoticons do still carry a profound power of self-reflectivity. Displayed within the traditional white cube, the Emoticons series doesn&rsquo;t leave indifferent. They continuously inspire a reaction. Whether the viewers smile or not, they are caught in a ceaseless play on signs and signification since the emoticon exists at this strange edge between pure abstraction and representation. &nbsp;</p>",
     "medium": "Fabric on shaped stretchers",
     "date": "2012-03-07T00:00:00.000Z",
     "category": "object",
@@ -590,7 +597,8 @@
       {
         "type": "html",
         "url": "img/snowrug/",
-        "body": "<iframe src=\"//player.vimeo.com/video/39334858?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+        "body": "<iframe src=\"//player.vimeo.com/video/39334858?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
       }
     ],
     "active": false,
@@ -625,7 +633,7 @@
     "title": "Epi(deixis)",
     "type": "show",
     "id": "epideixis",
-    "thumb": "img/shows/epideixis.jpg",
+    "thumb": "img/thumb/black.jpg",
     "slides": [
       {
         "type": "img",
@@ -682,9 +690,11 @@
         "public": true
       }
     ],
-    "active": true,
+    "active": false,
     "public": true,
     "date": "2013-01-17T00:00:00.000Z",
+    "location": "Milan, IT",
+    "venue": "BYCR gallery",
     "body": "<p>The word epideictic (epidittico in Italian) comes from the ancient Greek <em>epideiktikos&nbsp;</em>based on <em>deiknunai,</em> which means &lsquo;to show&rsquo;. It is one of the three subdivisions of rhetoric as described in Aristotle&rsquo;s book <em>Rhetoric (367 &ndash; 322 BC). Epideixis </em>is characterized by or designed to display rhetorical or oratorical skill. <em>Epideixis </em>is a demonstrative speech commonly used for opening events, anniversaries, births and funeral orations. Aristotle and many philosophers after him define<em> Epideixis</em> as a speech of style from which neither agonistic achievement nor polemic arouses. An epideictic oratorical demonstration does not provoke controversy but promotes values that are shared in the communities.&nbsp;</p>"
   },
   {
@@ -692,8 +702,29 @@
     "type": "project",
     "id": "balloons",
     "thumb": "img/thumbs/balloons.jpg",
-    "slides": [],
-    "active": false,
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/balloons/01.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/balloons/02.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/balloons/03.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/balloons/04.jpg",
+        "public": true
+      }
+    ],
+    "active": true,
     "public": true,
     "category": "object",
     "medium": "Latex & Wood",
@@ -986,7 +1017,7 @@
         "public": true
       }
     ],
-    "active": true,
+    "active": false,
     "medium": "Fabric on shaped stretchers",
     "category": "object",
     "date": "2012-01-01T00:00:00.000Z",
@@ -1001,7 +1032,7 @@
       {
         "type": "img",
         "url": "img/shows/waterproof/01.jpg",
-        "legend": "<p><em>Rebelotte</em>, plastic bottle, 100 American dollars' bill, 25 cm, 2013</p>",
+        "legend": "<p><em>Rebelotte</em>, plastic bottle, 100 american dollar bill, 25 cm, 2013</p>",
         "public": true
       },
       {
@@ -1063,12 +1094,14 @@
     "slides": [
       {
         "type": "img",
-        "url": "img/shows/superlatus/01.jpg",
+        "url": "img/shows/superlatuss/01.jpg",
+        "public": true,
         "legend": "<p>Installation view of <em>(Super)latus</em>,<em>&nbsp;</em>HD videos on iPads, 20 minutes, 2013</p>"
       },
       {
         "type": "img",
-        "url": "img/shows/superlatus/02.jpg",
+        "url": "img/shows/superlatuss/02.jpg",
+        "public": true,
         "legend": "<p>Installation view of&nbsp;<em>FULL STOPS</em>,<em>&nbsp;</em>Sound Piece on wireless headphones, 20&nbsp;minutes, 2013</p>"
       }
     ],
@@ -1106,12 +1139,6 @@
       },
       {
         "type": "img",
-        "url": "img/shows/whilesupplylast/04.jpg",
-        "public": true,
-        "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
-      },
-      {
-        "type": "img",
         "url": "img/shows/whilesupplylast/05.jpg",
         "public": true,
         "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
@@ -1133,7 +1160,7 @@
         "public": true
       }
     ],
-    "active": false,
+    "active": true,
     "public": true,
     "date": "2012-01-01T00:00:00.000Z",
     "category": "group",
@@ -1145,7 +1172,7 @@
     "title": "Ellipsis",
     "public": true,
     "type": "show",
-    "id": "ellipsis",
+    "id": "ellipsisshow",
     "thumb": "img/thumbs/black.jpg",
     "slides": [
       {
@@ -1210,7 +1237,7 @@
         "type": "img",
         "url": "img/shows/dobra/02.jpg",
         "public": true,
-        "legend": "<p>Installation view of INTER[...]VIEWS, 2012</p>"
+        "legend": "<p>Installation view of the work Inter[...]Views</p>"
       }
     ],
     "active": false,
@@ -1218,7 +1245,7 @@
     "category": "solo",
     "location": "Lisbon, PT",
     "venue": "Flausina",
-    "body": "<p>Dobra was a solo show at Flausina, an independant art space in Lisbon, PT. It was a collaboration with S for Seward in the form of a live concert/performance with the work INTER[...]VIEWS.&nbsp;</p>"
+    "body": "<p>Dobra was a double solo show with Sofia Lopes Borges at Flausina, an independant art space in Lisbon, PT. It was a collaboration with S for Seward in the form of a live concert/performance with the work INTER[...]VIEWS."
   },
   {
     "title": "Folklore",
@@ -1238,6 +1265,6 @@
     "category": "group",
     "location": "Geneva, CH",
     "venue": "La Villa Dutoit",
-    "body": "<p>This group show emphasised in a satirical way on the notions of folklore. The work shown was a dyptic of two of Manuel Krebs design.&nbsp;</p>"
+    "body": "<p>This group show emphasised in a satirical way on the notions of folklore. The work shown was a diptych of two painting inspired by the work of <a href=\"http://www.snb.ch/en/iabout/cash/newcash/id/cash_new_result\">Manuel Krebs</a> new design for the Swiss bills, Bank Of Switzerland. It was later rejected to be realised as real bills, because, inter alia, of the skull on the 1000 note.</p>"
   }
 ]

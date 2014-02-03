@@ -102,7 +102,8 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
       var publicExists = false;
       for(var j = 0; j < project.slides.length; j++)
       {
-        publicExists = project.slides[j].public;
+        if(project.slides[j].public)
+          publicExists = true;  
       }
       if(!publicExists)
       {
@@ -138,6 +139,7 @@ controller('projectListCtrl', ['$scope', '$location', 'Projects', function($scop
     var newSlide = {
       type: 'img',
       url: 'img/'+$scope.activeProject.id+'/',
+      legend: 'legend',
       public: true,
     };
     slides.push(newSlide);

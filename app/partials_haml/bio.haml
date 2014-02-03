@@ -22,7 +22,8 @@
 							%ul
 								%li{"ng-repeat" => "line in year.experiences | orderBy:'-date'"} 
 									%span.fadeIn.bio-title{"my-html" => 'line.text'}
-									%span.bio-location{"my-html" => 'line.location'}
 									%span.bio-venue{"my-html" => 'line.venue'}
+									%span.bio-location{"my-html" => 'line.location'}
+
 
 	%a.bio-pdf{:href => "{{pdf.url}}"} {{pdf.title}}

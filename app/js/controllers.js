@@ -55,7 +55,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', '$timeout
 
   //called at the end of ng-view->home, seo that it's called after render. spent hours on this, do not remove, unless you know what you're doing
   $scope.forceAnchor = function(){
-    $scope.scrollTo($location.$$hash, false)  
+    //$scope.scrollTo($location.$$hash, false)  
   };
 
 }]).
