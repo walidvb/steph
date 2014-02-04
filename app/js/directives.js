@@ -93,21 +93,24 @@ directive('myBackgroundImg', ['$window', '$timeout', function($window, timer){
     //replace: true,
     link: function(scope, elem, attrs){
       var $elem = angular.element(elem);
-      console.log(scope.backgrounds);
       var lazy = function(){
         //LazyLoad
-        var img = new Image();
-        img.src = scope.backgrounds[attrs.myBackgroundImg].url;
-
-        img.onload = function(){
-          console.log(elem);
-          $elem.css('background-image', "url('" + this.src + "')");
-        }
+        //using $observe, as using the scope directly would trigger the directive 
+        //before the controller had time to fetch its data.
+        attrs.$observe('myBackgroundImg', function(){
+          var img = new Image();
+          img.src = attrs.myBackgroundImg;
+          img.onload = function(){
+            $elem.css('background-image', "url('" + this.src + "')");
+          }
+        })
       }
       if(!Modernizr.touch)
       { 
 
         var parallax = function() {
+          //Again, problem is that if top is calculated beforehand, 
+          //it is incorrect because DOM hasn't compiled entirely yet...
           var top = $elem.offset().top;
           if((pos = (top-$window.scrollY))-$window.innerHeight <= 0)
           {
@@ -119,11 +122,11 @@ directive('myBackgroundImg', ['$window', '$timeout', function($window, timer){
         timer(function(){
           angular.element($window).scroll(parallax);
           parallax();
-        }, 450);
+        }, 0);
       }
-      timer(lazy, 150);
+      timer(lazy, 0);
+    }
   }
-}
 }]).
 directive('mySlide', function(){
   return {
@@ -194,6 +197,7 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
       }
       if(!Modernizr.touch && $window.innerWidth > mobileWidth)
       {
+        console.log(scope);
        angular.element(elem).css('opacity', 0);
        timer(function(){   
         isotopeIt()
@@ -202,19 +206,6 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
      }
    },
  };
-}]).
-directive('myHorizontalScroll', ['$timeout', function(timer){
-  return {
-    link: function(scope, elem, attrs)
-    {
-      timer(function() {
-        // $('html, body').mousewheel(function(event, delta) {
-        //  this.scrollLeft -= (delta * 2);
-        //  event.preventDefault();
-        // });
-    }, 0);
-    }
-  }
 }]).
 directive('scrollSpy', function($window, $location) {
   return {
@@ -330,13 +321,7 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
           newCss = {};
         }
         angular.element(elem).find('iframe, img').css(newCss);
-        // elem = angular.element(elem);
-        // var wrapperHeight = elem.parents('.project-details, #contact').height();
-        // var elemHeight = elem.height();
-        // elem.css({
-        //   position: 'relative',
-        //   top: wrapperHeight/2 - elemHeight/2,
-        // });
+
       };
     }
     angular.element($window).bind('resize', setFull);

@@ -1,0 +1,1254 @@
+[
+  {
+    "type": "project",
+    "id": "superlatus",
+    "url": "superlatus Project",
+    "date": "2013-05-02T23:00:00.000Z",
+    "title": "(Super)latus",
+    "category": "video",
+    "medium": "HD videos",
+    "thumb": "img/thumbs/superlatus.jpg",
+    "body": "This works features two identical protagonists who are mutually critiquing each other with superlative adjectives, positives and negatives. Both counterparts become increasingly pixelated, censoring one another and disappearing over time. This work puts at stake the notion of critical subjectivity and the self-cancelling quality of such criticism. The vile for some may well be valuable to others. Even though it&#39;s often sterile, such criticism may sometimes create fertile antagonistic appreciations and clashes that result into third definitions.",
+    "slides": [
+      {
+        "type": "html",
+        "body": "<iframe src=\"//player.vimeo.com/video/66078478?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "public": true,
+    "dimensions": "5 minutes"
+  },
+  {
+    "title": "Inter[...]Views",
+    "type": "project",
+    "id": "interviews",
+    "thumb": "img/thumbs/interviews1.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/56019255?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42503732?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42793011?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42666147?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43862966?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42793010?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43098903?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "legend": "<iframe src=\"//player.vimeo.com/video/43098903?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "body": "<iframe src=\"//player.vimeo.com/video/42739529?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42642074?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43931578?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43931577?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43862967?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43501946?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43723054?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43495278?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43477481?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43103384?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43100682?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43099309?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42829353?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42739532?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42739530?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42666144?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42689483?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42666145?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/42666146?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83432026?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83432027?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83450977?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      },
+      {
+        "type": "html",
+        "url": "img/interviews/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83432025?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": false
+      }
+    ],
+    "active": false,
+    "public": true,
+    "date": "2012-06-29T23:00:00.000Z",
+    "category": "video",
+    "body": "The work INTER[&hellip;]VIEWS is a series of videos found on the internet drastically re-edited. What remains from the original video is an abstract speech emptied out of its former subject matter outlining in this way the phatic expressions of the speaker. Consequentially the media is extremely censored. In these videos the spokesperson is caught in the moments where he/she is rhetorically thinking about what will be said and how. In turn, subtle signs of personal gesture and social conventions more forcefully emerge and render substantial the gap between language and idea.",
+    "dimensions": "150 minutes",
+    "medium": "HD videos"
+  },
+  {
+    "title": "Dirt",
+    "type": "project",
+    "id": "dirt",
+    "thumb": "img/thumbs/dirt.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/dirt/01.jpg",
+        "legend": "<p>Installation view of the work Dirt, New Cross, London, 2012</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/dirt/02.jpg",
+        "legend": "<p>Dirt (details), New Cross, London, 2012</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/dirt/03.jpg",
+        "legend": "<p>Dirt (details), New Cross, London, 2012</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/dirt/04.jpg",
+        "legend": "<p>Dirt (details), New Cross, London, 2012</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/dirt/05.jpg",
+        "legend": "<p>Dirt (details), New Cross, London, 2012</p>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "public": true,
+    "date": "2012-06-27T23:00:00.000Z",
+    "category": "installation",
+    "medium": "Carbon &amp; oil on glass, writing from the audience",
+    "body": "<p>DIRT is a participatory installation that emerged from observing the numerous vitrines of small shoppings left empty in countries such as Portugal, Spain and Italy after the European crisis late 2009. The idea was to reproduce the dust from the pollution left on the glass. People would leave comments, drawing as reminiscence of the time passing by and the fact that nothing is changing.&nbsp;</p><p>The building chosen for the work was the Ben Pimlott Building from Goldsmiths College, designed by Will Alsop, achieved in 2005. It&rsquo;s very corporate aspect doesn&rsquo;t reflect the neighbourhood of New Cross where it was built. During the opening of the MFA final show in 2012, the audience spontaneously wrote messages adding in this manner meaning to the piece. This intervention was also a way to echo the protest of students against the governmental cuts, occupying the building in 2010.</p>",
+    "dimensions": "Variable"
+  },
+  {
+    "title": "Full Stops",
+    "type": "project",
+    "id": "fullstops",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/83450978?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" width=\"1000\" height=\"562\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "body": "<p>&lsquo;Full Stops&rsquo; is a musical arrangement made from the last notes of hundreds of the most famous classical songs downloaded on the Internet. Blending all classical eras from Baroque to Romantic passing by Classic, the work produces improbable encounters, including Mozart (&dagger; 1791) and Tchaikovsky (&dagger; 1893), Handel (&dagger; 1759) and Rachmaninoff (&dagger; 1943). The result is a new harmonious symphony, sometimes pompous, sometimes meditative, which begins and ends indefinitely, again and again.</p>\n<p>&nbsp;</p>",
+    "medium": "Sound piece",
+    "public": true,
+    "date": "2014-03-05T00:00:00.000Z",
+    "category": "sound",
+    "dimensions": "51 minutes"
+  },
+  {
+    "title": "Best Of Best Of Best Of",
+    "type": "project",
+    "id": "bestof",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78424760?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78425558?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78425954?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78426161?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78426427?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78426864?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78462268?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78463988?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548020?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548516?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548520?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548521?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548522?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78548524?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78550353?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78550354?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78550355?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/bestof/",
+        "body": "<iframe src=\"//player.vimeo.com/video/78550356?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "public": true,
+    "category": "sound",
+    "body": "<p>Best Of Best Of Best Of is a series of songs from various musicians and music bands. Each songs is a cumulative crescendo of the best of each artists turning into a cacophony. The work is shown within the form of an album listenable on iPod. &nbsp;</p>",
+    "date": "2014-03-06T00:00:00.000Z",
+    "medium": "Sound piece",
+    "dimensions": "90 minutes"
+  },
+  {
+    "title": "Statues (Play#1)",
+    "type": "project",
+    "id": "statues",
+    "thumb": "img/thumbs/statues.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43101783?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "category": "video",
+    "medium": "HD video",
+    "public": true,
+    "date": "2012-04-30T23:00:00.000Z",
+    "dimensions": "10 minutes"
+  },
+  {
+    "title": "Rag Tag (Play#2)",
+    "type": "project",
+    "id": "new_project",
+    "thumb": "img/thumbs/ragtag.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/43105046?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "category": "video",
+    "medium": "HD video",
+    "public": true,
+    "date": "2012-05-01T23:00:00.000Z",
+    "dimensions": "15 minutes"
+  },
+  {
+    "title": "Inter(lude)",
+    "type": "project",
+    "id": "interlude",
+    "thumb": "img/thumbs/interlude.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/interlude/",
+        "body": "<iframe src=\"//player.vimeo.com/video/54714369?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "date": "2012-04-03T23:00:00.000Z",
+    "medium": "HD video",
+    "public": true,
+    "category": "video",
+    "dimensions": "21 minutes"
+  },
+  {
+    "title": "Emoticons",
+    "type": "project",
+    "id": "emoticons",
+    "thumb": "img/thumbs/emoticons.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/01.jpg",
+        "legend": "<p>:) 2 x 21 x 21 cm &amp; 177 x 48 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/02.jpg",
+        "legend": "<p>:o 2 x 21 x 21 cm &amp; &oslash; 110 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/03.jpg",
+        "legend": "<p>:* 2 x 21 x 21 cm &amp; 60 x 60 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/04.jpg",
+        "legend": "<p>:D 2 x 21 x 21 cm &amp; 120 x 110 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/05.jpg",
+        "legend": "<p>2 x 21 x 21 cm &amp; 99 x 13 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/06.jpg",
+        "legend": "<p>:P 2 x 21 x 21 cm &amp; 120 x 110 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/07.jpg",
+        "legend": "<p>:| 2 x 21 x 21 cm &amp; 190 x 13 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/08.jpg",
+        "legend": "<p>._. 2 x 21 x 21 cm &amp; 13 x 90 cm, 2012</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/09.jpg",
+        "legend": "<p>Emoticons series, installation view, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/10.jpg",
+        "legend": "<p>:] 2 x 21 x 21 cm &amp; 177 x 15 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/11.jpg",
+        "legend": "<p>:\\ 2 x 21 x 21 cm &amp; 160 x 15 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/emoticons/12.jpg",
+        "legend": "<p>&deg;v&deg; 2 x &oslash; 36 cm &amp; 56 x 69 cm, 2012</p>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "body": "<p>The emoticons are the most widely used international language symbolising emotions. It first appeared when typewritten texts largely expanded and then with the era of mobile phones and of live chat on the Internet. These icons are being used here within the language of monochrome paintings. The emoticon has been turned into a palpable object. This hyperbolic manner of showing emoticons intends to stimulate the audience to reflect on our daily-mediated relationship to each other, whether it is in a superficial or profound way. The emoticons are sort of emptied out symbols. Their primordial iconicity fades away as we use them in a daily basis. One could say that the more we use an emoticon the less it actually represents our emotional state. It&rsquo;s, however, not always the case, the emoticons do still carry a profound power of self-reflectivity. Displayed within the traditional white cube, the Emoticons series doesn&rsquo;t leave indifferent. They continuously inspire a reaction. Whether the viewers smile or not, they are caught in a ceaseless play on signs and signification since the emoticon exists at this strange edge between pure abstraction and representation. &nbsp;</p>",
+    "medium": "Fabric on shaped stretchers",
+    "date": "2012-03-07T00:00:00.000Z",
+    "category": "object",
+    "public": true
+  },
+  {
+    "title": "Clock",
+    "type": "project",
+    "id": "clock",
+    "thumb": "img/thumbs/clock.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/clock/01.jpg",
+        "legend": "<p><em>Clock,&nbsp;</em>12 x &oslash; 41 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/clock/02.jpg",
+        "legend": "<p><em>Clock,&nbsp;</em>12 x &oslash; 41 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/clock/03.jpg",
+        "legend": "<p><em>Barrel, 6</em>&nbsp;x &oslash; 41 cm &amp; &oslash; 24 cm, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/clock/04.jpg",
+        "legend": "<p><em>Barrel, 6</em>&nbsp;x &oslash; 41 cm &amp; &oslash; 24 cm, 2011</p>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "category": "object",
+    "date": "2011-11-10T00:00:00.000Z",
+    "public": true,
+    "medium": "Fabric on shaped Stretchers"
+  },
+  {
+    "title": "Snow Rug (Shave#3)",
+    "type": "project",
+    "id": "snowrug",
+    "thumb": "img/thumbs/snowrug.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/snowrug/",
+        "body": "<iframe src=\"//player.vimeo.com/video/39334858?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": false,
+    "category": "video",
+    "medium": "HD videos",
+    "dimensions": "15 minutes",
+    "date": "2012-02-01T00:00:00.000Z",
+    "public": true
+  },
+  {
+    "title": "Ellipsis",
+    "type": "project",
+    "id": "ellipsis",
+    "thumb": "img/thumbs/ellipsis.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/new_project/",
+        "body": "<iframe src=\"//player.vimeo.com/video/39334469?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\"  frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "body": "<p>In a text, the ellipsis is signalled by 3 dots and brackets (&hellip;) which indicates when an author takes out some parts of an original text that is quoted in order to follow the logic of the argument. This absence is inevitably catching our attention and our mind eventually creates something to feed the gap. It is this lack in content of a text that the performance Ellipsis intends to question. The performance is made of 3 black dots covered with faux-fur hanged on a wall carefully and slowly shaved-off by the performers. As the ellipsis, the work is created through a subtraction of some of the original material. This antithetical action contrasts with traditional painting where commonly the material (paint) is added onto the canvas to generate new meanings. It also and mainly emphasis on how the &ldquo;left un-told&rdquo; becomes a condition for multiple. In this case, the ellipsis is not only the representation of a silent omission but also enhances a creative and fertile process, unfolding a variety of meaning, exploiting the void until it becomes productive.</p>",
+    "medium": "HD video",
+    "category": "video",
+    "public": true,
+    "date": "2011-02-02T00:00:00.000Z",
+    "dimensions": "21 minutes"
+  },
+  {
+    "title": "Epi(deixis)",
+    "type": "show",
+    "id": "epideixis",
+    "thumb": "img/shows/epideixis.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/01.jpg",
+        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/02.jpg",
+        "legend": "<p>View of the performance <em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/03.jpg",
+        "legend": "<p>View of the work&nbsp;<em>Ellipsis&nbsp;(Shave#4)</em>, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/04.jpg",
+        "legend": "<p>View of the work <em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/05.jpg",
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>Inter[...]Views</em>, HD Videos, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/06.jpg",
+        "legend": "<p>View of the&nbsp;work <em>:P from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/07.jpg",
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>:) from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/08.jpg",
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>:* from the series Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/epideixis/09.jpg",
+        "legend": "<p>View of installations<em>&nbsp;Emoticons</em>, frabic on shaped stretchers, BYCR gallery, Milan, IT, 2013</p>",
+        "public": true
+      }
+    ],
+    "active": true,
+    "public": true,
+    "date": "2013-01-17T00:00:00.000Z",
+    "location": "Milan, IT",
+    "venue": "BYCR gallery",
+    "body": "<p>The word epideictic (epidittico in Italian) comes from the ancient Greek <em>epideiktikos&nbsp;</em>based on <em>deiknunai,</em> which means &lsquo;to show&rsquo;. It is one of the three subdivisions of rhetoric as described in Aristotle&rsquo;s book <em>Rhetoric (367 &ndash; 322 BC). Epideixis </em>is characterized by or designed to display rhetorical or oratorical skill. <em>Epideixis </em>is a demonstrative speech commonly used for opening events, anniversaries, births and funeral orations. Aristotle and many philosophers after him define<em> Epideixis</em> as a speech of style from which neither agonistic achievement nor polemic arouses. An epideictic oratorical demonstration does not provoke controversy but promotes values that are shared in the communities.&nbsp;</p>"
+  },
+  {
+    "title": "Balloons",
+    "type": "project",
+    "id": "balloons",
+    "thumb": "img/thumbs/balloons.jpg",
+    "slides": [],
+    "active": false,
+    "public": true,
+    "category": "object",
+    "medium": "Latex & Wood",
+    "body": "<p>The Balloon's Sculptures are simple metaphorical shapes expressing the confrontation between two&nbsp;languages, the agencies of the materials employed and the structure's layout.</p>",
+    "date": "2011-01-12T00:00:00.000Z"
+  },
+  {
+    "title": "Livestock",
+    "type": "project",
+    "id": "livestock",
+    "thumb": "img/thumbs/livestock.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/livestock/02.jpg",
+        "public": false
+      },
+      {
+        "type": "img",
+        "url": "img/projects/livestock/01.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/livestock/04.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/livestock/05.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/livestock/06.jpg",
+        "public": true
+      }
+    ],
+    "active": false,
+    "date": "2010-10-27T23:00:00.000Z",
+    "category": "performance",
+    "medium": "Salt on canvas, chairs, hairdryer",
+    "body": "<p>Livestock is a performance made at Goldsmiths College in 2009 that marks a transition between the 2 years work on the series Sweat Dreams and a new body of works opening up on different other mediums - performance, video, sculptures. It&rsquo;s composed of an installation of 2 chairs, 1 salt painting representing a sheep, a hairdryer. The performer seated on the first chair makes a speech quoting Winston Churchill on notions of tradition, then licks half of the sheep painting, kneeling in front of it, dries the canvas out with the hairdryer and sits on the second chair.&nbsp;</p>"
+  },
+  {
+    "title": "Balloon#1",
+    "type": "project",
+    "id": "new_project",
+    "thumb": "img/thumbs/balloon1.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/balloon1/01.jpg",
+        "legend": "<p><em>Still from the video Balloon#1</em>, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/balloon1/02.jpg",
+        "legend": "<p><em>Still from the video Balloon#1</em>, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/balloon1/03.jpg",
+        "legend": "<p><em>Still from the video Balloon#1</em>, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/balloon1/04.jpg",
+        "legend": "<p><em>Still from the video Balloon#1</em>, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/balloon1/05.jpg",
+        "legend": "<p><em>Still from the video Balloon#1</em>, 2011</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/balloon1/06.jpg",
+        "legend": "<p><em>Still from the video Balloon#1</em>, 2011</p>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "body": "<p>This performance explores the idea of exhaustion. The performer sited on a chair blows up a balloon and eventually disappear behind it. This monotonous task operated demands that the audience watches for a long time in order to know the end which is inevitable.</p>",
+    "medium": "SD video",
+    "category": "video",
+    "date": "2011-02-09T00:00:00.000Z",
+    "dimensions": "41 minutes"
+  },
+  {
+    "title": "Green Pea (Balloon#2)",
+    "type": "project",
+    "id": "balloon2",
+    "thumb": "img/thumbs/balloon2.jpg",
+    "slides": [
+      {
+        "type": "html",
+        "url": "img/balloon2/",
+        "body": "<iframe src=\"//player.vimeo.com/video/39334706?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "public": true,
+    "date": "2011-09-30T23:00:00.000Z",
+    "category": "video",
+    "medium": "HD video",
+    "dimensions": "40 minutes",
+    "body": "<p>This performance explores the idea of exhaustion. The performer sited on a chair blows up a balloon and eventually disappear behind it. This monotonous task operated demands that the audience watches for a long time in order to know the end which is inevitable.</p>"
+  },
+  {
+    "title": "Sweat Dreams",
+    "type": "project",
+    "id": "sweat",
+    "thumb": "img/thumbs/sweat.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/sweat/01.jpg",
+        "legend": "<p><em>Antropometria,&nbsp;</em>185 x 150 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/02.jpg",
+        "legend": "<p><em>Stranded Strangled</em>, 42 x 58 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/03.jpg",
+        "legend": "<p><em>&Icirc;les Suisses</em>,&nbsp;21 x 29,7 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/04.jpg",
+        "legend": "<p><em>Missin White Cube,&nbsp;</em>60 x 80, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/05.jpg",
+        "legend": "<p><em>Schwitzen,</em>&nbsp;42 x 58 cm, 2009</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/06.jpg",
+        "legend": "<p><em>Strauss,&nbsp;</em>42 x 58 cm, 2009</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/07.jpg",
+        "legend": "<p><em>Nice Crap,&nbsp;</em>42 x 58 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/08.jpg",
+        "legend": "<p><em>Kiwi's not Dead</em>, 29.7 x 42 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/09.jpg",
+        "legend": "<p><em>Kiwi's not Dead</em>, 29.7 x 42 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/10.jpg",
+        "legend": "<p><em>Quaga,&nbsp;</em>158 x 220 x 64 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/11.jpg",
+        "legend": "<p><em>Skanky Skunk,</em>&nbsp;66 x 73 x 40 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/12.jpg",
+        "legend": "<p><em>Walliser Ziege,&nbsp;</em>84 x 118 x 29 cm, 2009</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/13.jpg",
+        "legend": "<p><em>Sue's T.Rex,&nbsp;</em>119 x 168 x 70 cm, 2009</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/14.jpg",
+        "legend": "<p><em>X-Ray,&nbsp;</em>29,7 x 21 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/15.jpg",
+        "legend": "<p><em>Salinas de Salta</em>, 59 x 84 cm, 2009</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/16.jpg",
+        "legend": "<p><em>Family Party,&nbsp;</em>170 x 130 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/17.jpg",
+        "legend": "<p><em>AB,&nbsp;</em>185 x 70 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/18.jpg",
+        "legend": "<p><em>MK,&nbsp;</em>185 x 70 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/19.jpg",
+        "legend": "<p><em>PA,&nbsp;</em>185 x 70 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/20.jpg",
+        "legend": "<p><em>VR,&nbsp;</em>185 x 70 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/21.jpg",
+        "legend": "<p><em>SB,&nbsp;</em>185 x 70 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/22.jpg",
+        "legend": "<p><em>USAIN,&nbsp;</em>185 x 150 cm, 2010</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/23.jpg",
+        "legend": "<p><em>Gagn&eacute;!,&nbsp;</em>185 x 150 cm, 2008</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/sweat/24.jpg",
+        "legend": "<p><em>Larry Brancusi,</em>&nbsp;40 x 60 cm, 2009</p>",
+        "public": true
+      }
+    ],
+    "active": false,
+    "category": "painting",
+    "medium": "Salt on Canvas",
+    "body": "<p>The initial idea of this series of paintings was to reproduce the white traces left by human sweat on dark cloths when, for example, one makes sports or dance during hours. Painting, here, is conceptually and literally referring to a physical effort or labour; painting as work. With this technique the various visual references to art history amalgamate with improbable other references forming a mix of different languages uniformed aesthetically within one body of work. Like these non-perennial traces of salt on canvas, all the images have one thing in common: their potential disappearance.</p>",
+    "public": true,
+    "date": "2008-01-02T00:00:00.000Z"
+  },
+  {
+    "title": "Piece & Love",
+    "type": "project",
+    "id": "piecelove",
+    "thumb": "img/thumbs/pieceandlove.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/projects/piecelove/01.jpg",
+        "legend": "<p><em>Piece and Love</em>, 2 x 106 x 56 cm &amp; 2 x 50 x 36 cm &amp; 2 x 122 x 68 cm, 2012</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/projects/piecelove/02.jpg",
+        "legend": "<p><em>Piece and Love</em>, 2 x 106 x 56 cm &amp; 2 x 50 x 36 cm &amp; 2 x 122 x 68 cm, 2012</p>",
+        "public": true
+      }
+    ],
+    "active": true,
+    "medium": "Fabric on shaped stretchers",
+    "category": "object",
+    "date": "2012-01-01T00:00:00.000Z",
+    "public": true
+  },
+  {
+    "title": "Waterproof",
+    "type": "show",
+    "id": "waterproof",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/waterproof/01.jpg",
+        "legend": "<p><em>Rebelotte</em>, plastic bottle, 100 American dollars' bill, 25 cm, 2013</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/waterproof/02.jpg",
+        "legend": "<p>Installation View at&nbsp;Urgent Paradise, Lausanne, CH, photo by&nbsp;Manuel Publication</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/waterproof/03.jpg",
+        "legend": "<p>Installation View at&nbsp;Urgent Paradise, Lausanne, CH, photo by&nbsp;Manuel Publication</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/waterproof/04.jpg",
+        "legend": "<p>Installation View at&nbsp;Urgent Paradise, Lausanne, CH, photo by&nbsp;Manuel Publication</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/waterproof/05.jpg",
+        "legend": "<p>Installation View at Urgent Paradise, Lausanne, CH, photo by&nbsp;Manuel Publication</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/waterproof/06.jpg",
+        "legend": "<p>Installation View at Le 6B Gallery, Paris, FR, photo by Assi Joseph Meidan</p>",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/waterproof/07.jpg",
+        "legend": "<p>Installation View at Le 6B Gallery, Paris, FR, photo by Assi Joseph Meidan</p>",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/waterproof/",
+        "public": true,
+        "body": "<iframe src=\"//www.youtube.com/embed/TQFtXcISx08\" frameborder=\"0\" allowfullscreen></iframe>"
+      }
+    ],
+    "active": false,
+    "category": "group",
+    "location": "Lausanne, CH & Paris, FR",
+    "venue": "Urgent Paradise, Le 6B Galerie",
+    "body": "<p>Waterproof was a group show organised by Manuel Publication in 2013.</p>\n<p>Press release in french</p>\n<p>Existe-t&rsquo;&icirc;le?<br />Vivant dans un hors temps, reflux entre deux eaux, pour ce Manuel #3 nous cherchons le paradoxe insulaire entre la France et la Suisse. &Agrave; travers les &icirc;les, murs et passerelles de la mer :un horizon &agrave; notre port&eacute;e. <br />L&rsquo;&icirc;le est l&rsquo;image d&rsquo;un autre monde, repli myst&eacute;rieux, riche de mythes. D&rsquo;Alcatraz aux Bermudes, en passant par les Ca&iuml;mans, ces bouts de terre entour&eacute;s de mer sont &agrave; la fois espace de refuge ou de conqu&ecirc;te. Charmant paradoxe, l&rsquo;ambivalence cr&eacute;&eacute;e par son autonomie aiguise notre curiosit&eacute;. Prenant la forme d&rsquo;un territoire vierge ou d&rsquo;une zone interdite, qu&rsquo;il soit celui d&rsquo;une d&eacute;couverte permissive, ou Atlas d&rsquo;un anti-monde, l&rsquo;imaginaire que renvoient les territoires insulaires est riche d&rsquo;Ailleurs. Zone utopique d&rsquo;un monde coup&eacute; de la civilisation, elle devient le symbole d&rsquo;une autonomie affranchie, terre d&rsquo;autarcie r&eacute;sistant aux forces consum&eacute;ristes, terrain de jeux pour Robinson en devenir ...<br />Espace d&rsquo;interstice, l&rsquo;&icirc;le se caract&eacute;rise comme une br&egrave;che, une possibilit&eacute; de fonctionner autrement. L&rsquo;isolement n&rsquo;est pas seulement une question d&rsquo;&eacute;loignement : L&rsquo;hypo-insularit&eacute; d&eacute;signe ces &icirc;les ou zones dont l&rsquo;autonomie d&eacute;passe les crit&egrave;res purement physiques. L&rsquo;importance des connexions avec l&rsquo;autour, modifie la sensation d&rsquo;isolement et propose une alternative exp&eacute;rimental de la communication. Les kilom&egrave;tres ne sont plus seuls facteurs d&rsquo;isolation. En reliant les &icirc;les &agrave; un flux (tel des satellites) il se cr&eacute;e une nouvelle mise en r&eacute;seau &eacute;conomique, social ou utopique. Elle est physique autant que fictive elle existe lorsqu&rsquo;il s&rsquo;agit d&rsquo;une zone isol&eacute;e, &agrave; part et peu accessible, &laquo;elle existe au milieu du temps, la possibilit&eacute; d&rsquo;une &icirc;le&raquo;.</p>",
+    "public": true,
+    "date": "2012-05-31T23:00:00.000Z"
+  },
+  {
+    "title": "(Super)latus",
+    "type": "show",
+    "id": "superlatusshow",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/superlatuss/01.jpg",
+        "public": true,
+        "legend": "<p>Installation view of <em>(Super)latus</em>,<em>&nbsp;</em>HD videos on iPads, 20 minutes, 2013</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/superlatuss/02.jpg",
+        "public": true,
+        "legend": "<p>Installation view of&nbsp;<em>FULL STOPS</em>,<em>&nbsp;</em>Sound Piece on wireless headphones, 20&nbsp;minutes, 2013</p>"
+      }
+    ],
+    "active": false,
+    "public": true,
+    "date": "2013-06-12T23:00:00.000Z",
+    "category": "solo",
+    "location": "Geneva, CH",
+    "venue": "Tivoli Kunsthalle",
+    "body": "<p>This solo show took place near Geneva City Center&nbsp;in a house that was about to be destroyed in order to start the construction of habitation buildings.&nbsp;</p>\n<p>Curated by Nelly Haliti, the Tivoli Kunsthalle was a series of solo shows in her own house, as a response to the limited spaces in Geneva for young artist to show their works.&nbsp;</p>\n<p>Three bodies of works where shown, INTER[...]VIEWS, as a double projections, FULL STOPS, installed on two wireless headphone in the garden and (SUPER)LATUS, a two channel video shown on iPads.&nbsp;</p>"
+  },
+  {
+    "title": "While Supply Last",
+    "type": "show",
+    "id": "whilesupplylast",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/01.jpg",
+        "public": true,
+        "legend": "<p>Installation view of <em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/02.jpg",
+        "public": true,
+        "legend": "<p>Installation view of <em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/03.jpg",
+        "public": true,
+        "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/04.jpg",
+        "public": true,
+        "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/05.jpg",
+        "public": true,
+        "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/06.jpg",
+        "public": true,
+        "legend": "<p>Installation view of&nbsp;<em>WHILE SUPPLY LAST</em>, Galerie B-312, Montreal, CA</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/07.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/whilesupplylast/08.jpg",
+        "public": true
+      }
+    ],
+    "active": false,
+    "public": true,
+    "date": "2012-01-01T00:00:00.000Z",
+    "category": "group",
+    "location": "Montreal, CA",
+    "venue": "Galerie B-312",
+    "body": "<p>This group exhibition, held at Galerie B-312 in Montreal, was only visible on USB sticks that the audience could take home in order to watch privately each works of each anonymous artists from the show under numbered folders.</p>\n<p>The work proposed was a webpage that would give access to a webcam installed in the solo exhibition ELLIPSIS at La Scatola Gallery in London during the same time as the show in Montreal. People would be able to watch the exhibition in London as voyeurs from Canada.&nbsp;</p>\n<p>Exhibition curated by Maud Marique, Vincent Routhier &amp; Alexandre</p>"
+  },
+  {
+    "title": "Ellipsis",
+    "public": true,
+    "type": "show",
+    "id": "ellipsis",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/ellipsis/01.jpg",
+        "public": true,
+        "legend": "<p>View of the&nbsp;works&nbsp;<em>EMOTICONS,&nbsp;</em>fabric on shaped stretchers, since 2011 &amp;&nbsp;<em>EGGTIMER (B</em><em>ALLOONS#5),&nbsp;</em>latex &amp; pinewood, 2012</p>"
+      },
+      {
+        "type": "img",
+        "url": "img/shows/ellipsis/02.jpg",
+        "public": true,
+        "legend": "<p>View of the&nbsp;work&nbsp;<em>ELLIPSIS (SHAVE#2),&nbsp;</em>HD video, 21 minutes, 2011</p>"
+      }
+    ],
+    "active": false,
+    "date": "2012-01-23T00:00:00.000Z",
+    "category": "solo",
+    "location": "London, UK",
+    "venue": "La Scatola Gallery",
+    "body": "<p>Press Release</p>\n<p>La Scatola Gallery is pleased to present&nbsp;<em><strong>Ellipsis</strong></em>, a compilation of new and continuing works from St&eacute;phane Blumer's&nbsp;fieldwork in the realm of object, medium, and the dimensions of expression.</p>\n<p>As abstractly metonymic as they are directly childish in rudimentary expression, emoticons have more and more pervasively (and perversely) peppered messages. By removing these symbols from their text-based homes and inserting them, black, big and bleakly, onto white gallery walls, their significance to feeling and function is monochromatically magnified. Blumer&rsquo;s translation of fundamental images of emotion back into a stark, complex language is a compelling commentary on the communication between humans and their seemingly always winking minds.</p>\n<p>A highlight from Blumer&rsquo;s oeuvre, &lsquo;Balloon&rsquo;, will also be on display. This piece, like much of his work, shows the artist&rsquo;s interest in the constant, excessively curious compromises that humans must make with the materials granted to them, and in the bargains the elements must make amongst themselves.</p>\n<p>Blumer&rsquo;s work communicates its subtle and straightforward messages through a combination of precise experimentation and the chances that well-defined research provides. La Scatola Gallery would like to invite you to partake in this exciting artist&rsquo;s discussion with spheres that would otherwise remain incommunicable and without shape.</p>\n<p>An exhibition curated by Valentina Fois<br />Text by&nbsp;Chris Piegza</p>"
+  },
+  {
+    "title": "The Face Of The Shape",
+    "public": true,
+    "type": "show",
+    "id": "thefaceoftheshape",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/thefaceoftheshape/01.jpg",
+        "public": true
+      },
+      {
+        "type": "img",
+        "url": "img/shows/thefaceoftheshape/02.jpg",
+        "public": true
+      },
+      {
+        "type": "html",
+        "url": "img/thefaceoftheshape/",
+        "public": true,
+        "body": "<iframe src=\"//player.vimeo.com/video/34368046?title=0&amp;byline=0&amp;portrait=0&amp;color=ff6000\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      }
+    ],
+    "active": false,
+    "date": "2011-12-08T00:00:00.000Z",
+    "category": "group",
+    "location": "London, UK",
+    "venue": "La Scatola Gallery",
+    "body": "<p>Press Release</p>\n<p>Without the innovative approaches to medium that a handful of up-and-coming artists have displayed, La Scatola Gallery could not have so fully realised its first-year ambitions.</p>\n<p>La Scatola Gallery is pleased to present a group exhibition with the best multinational emerging artists working in London, Rebecca Ackroyd, St&eacute;phane Blumer, Balint Bolygo, Ronin Cho, Blue Curry, Daniel Eatock, Rowena Harris, Hirofumi Isoya, Hannah Catherine Jones, Jukhee Kwon, Fabio Lattanzi Antinori, Russell Maurice, Steven Morgana, Alicja Pytlewska, Tal Regev, Lisa Selby, Richard Stone, Sarah Tew, Dominic Wilcox, Kentaro Yamada, Gyeong Yoon An.</p>\n<p>At a time when &lsquo;mixed media&rsquo; has become a blanket with which to cover and obscure the formerly well-defined and hard-fought realms of sculpture, painting and installation, any working definition of medium becomes both abstruse and all-inclusive. Rather than abide complacently within the abyss of namelessness, &lsquo;THE FACE OF THE SHAPE&rsquo; will showcase a new era of sculpture, one that does, in fact, mix media to explore form, but also embraces each dimension, of space and of concept, more fully, in contour, craft and narrative, than its recent predecessors. To highlight the success both of the gallery and of the pioneering practices of a select group of artists, La Scatola is pleased to present &lsquo;THE FACE OF THE SHAPE&rsquo;.(...)<br />Although each artist&rsquo; s young ouevre is individually intriguing, it is the ambition of this group show to accentuate the new course that they are taking sculpture in. Whilst unable and unwilling to label the astounding differences between each featured artists&rsquo; aspirations, this show presents a common vision of expression through sculpture. Please join us as the gallery and the artists welcome the new directions shaping the future of form.</p>\n<p>An exhibition curated by Valentina Fois<br />Texts by&nbsp;Chris Piegza</p>"
+  },
+  {
+    "title": "Dobra",
+    "public": true,
+    "type": "show",
+    "id": "dobra",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/dobra/02.jpg",
+        "public": true,
+        "legend": "<p>Installation view of the work Inter[...]Views</p>"
+      }
+    ],
+    "active": false,
+    "date": "2012-09-04T23:00:00.000Z",
+    "category": "solo",
+    "location": "Lisbon, PT",
+    "venue": "Flausina",
+    "body": "<p>Dobra was a solo show at Flausina, an independant art space in Lisbon, PT. It was a collaboration with S for Seward in the form of a live concert/performance with the work INTER[...]VIEWS.&nbsp;</p>"
+  },
+  {
+    "title": "Folklore",
+    "public": true,
+    "type": "show",
+    "id": "folklore",
+    "thumb": "img/thumbs/black.jpg",
+    "slides": [
+      {
+        "type": "img",
+        "url": "img/shows/folklore/01.jpg",
+        "public": true
+      }
+    ],
+    "active": false,
+    "date": "2009-05-13T23:00:00.000Z",
+    "category": "group",
+    "location": "Geneva, CH",
+    "venue": "La Villa Dutoit",
+    "body": "<p>This group show emphasised in a satirical way on the notions of folklore. The work shown was a dyptic of two of Manuel Krebs design.&nbsp;</p>"
+  }
+]

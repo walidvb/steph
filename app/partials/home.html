@@ -1,12 +1,12 @@
 <div class='container' id='home' ng-controller='homeCtrl' scroll-spy>
-  <div class='background-img' data-stellar-ratio='0.15' id='background-img-0' my-background-img='0' my-fullscreen='true' ng-click="scrollTo('menu', true,$event);$event.prevenDefault();" ng-cloak='true'></div>
+  <div class='background-img' data-stellar-ratio='0.15' id='background-img-0' my-background-img='{{backgrounds[0].url}}' my-fullscreen='true' ng-click="scrollTo('menu', true,$event);$event.prevenDefault();" ng-cloak='true'></div>
   <div fixed-menu id='menu' ng-cloak='true' ng-include src="'partials/menu.html'"></div>
   <section class='row' id='projects' ng-cloak='true' ng-controller='projectListCtrl' ng-include src="'partials/projectList.html'"></section>
-  <div class='background-img' data-stellar-ratio='0.15' id='background-img-2' my-background-img='1' my-fullscreen ng-cloak='true'></div>
+  <div class='background-img' data-stellar-ratio='0.15' id='background-img-2' my-background-img='{{backgrounds[1].url}}' my-fullscreen ng-cloak='true'></div>
   <section class='row' id='shows' ng-cloak='true' ng-controller='projectListCtrl' ng-include src="'partials/showList.html'"></section>
-  <div class='background-img' data-stellar-ratio='0.15' id='background-img-3' my-background-img='2' my-fullscreen ng-cloak='true'></div>
+  <div class='background-img' data-stellar-ratio='0.15' id='background-img-3' my-background-img='{{backgrounds[2].url}}' my-fullscreen ng-cloak='true'></div>
   <section class='row' id='bio' ng-cloak='true' ng-controller='bioListCtrl' ng-include src="'partials/bio.html'"></section>
-  <div class='background-img' data-stellar-ratio='0.15' id='background-img-4' my-background-img='3' my-fullscreen ng-cloak='true'></div>
+  <div class='background-img' data-stellar-ratio='0.15' id='background-img-4' my-background-img='{{backgrounds[3].url}}' my-fullscreen ng-cloak='true'></div>
   <section class='row' id='contact' my-fullscreen ng-cloak='true' ng-include src="'partials/contact.html'"></section>
   {{forceAnchor()}}
 </div>
