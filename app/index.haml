@@ -1,58 +1,42 @@
-!!!
-%html{:lang => "en", "ng-app" => "myApp"}
+!!! 
+%html{lang : "en", "ng-app" : "myApp"}
   %head
-    %meta{:charset => "utf-8"}
-    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}
-    %link{:href=> "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
-
-    %meta{:content => "art", :property => "og:type"}
-    %meta{:content => "http://www.stephaneblumer.com/", :property => "og:url"}
-    %meta{:content => "http://www.stephaneblumer.com/", :property => "og:image"}
-    %meta{:content => "See the work of Stéphane Blumer.", :property => "og:description"}
-    %meta{:content => "Stéphane Blumer", :property => "og:site_name"}
-
-
-    %title{"ng-bing" => ""} Stéphane Blumer
-    -#%link{:href => "//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css", :rel => "stylesheet"}
-    %link{:href => "css/app.css", :rel => "stylesheet"}
-    / %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
-    %script{:src => "lib/jquery.min.js"}
-    -#%script{:src => "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"}
-    / %script{:src => "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"}
-    %script{:src => "lib/underscore-min.js"}
-    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.5/mousetrap.min.js"}
-    %script{:src => "lib/scrollsnap/jquery.event.special.js"}
-    %script{:src => "lib/scrollsnap/jquery.easing.min.js"}
-    %script{:src => "lib/scrollsnap/jquery.scrollsnap.js"}
-    -#%script{:src => "//cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"}
-    -#%script{:src => "//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js"}
-    %script{:src => "lib/jquery.masonry.min.js"}
-    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"}
-    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.6/jquery.mousewheel.min.js"}
-    %script{:src => "js/script.js"}
-  %body{"ng-class" => "", "ng-class" => "active", "ng-controller" => "appCtrl"}
+    %meta{charset : "utf-8"}
+    %meta{content : "width=device-width, initial-scale=1.0, maximum-scale=1.0", name : "viewport"}
+    %link{href: "favicon.ico", rel : "shortcut icon", type : "image/x-icon"}
+    %meta{content : "art", property : "og:type"}
+    %meta{content : "http://www.stephaneblumer.com/", property : "og:url"}
+    %meta{content : "http://www.stephaneblumer.com/", property : "og:image"}
+    %meta{content : "See the work of Stéphane Blumer.", property : "og:description"}
+    %meta{content : "Stéphane Blumer", property : "og:site_name"}
+    %title{"ng-bing" : ""} Stéphane Blumer
+    -#%link{href : "//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css", rel : "stylesheet"}
+    %link{href : "css/app.css", rel : "stylesheet"}
+    / %script{src : "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    %script{src : "lib/jquery.min.js"}
+    -#%script{src : "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"}
+    / %script{src : "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"}
+    %script{src : "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"}
+    %script{src : "//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.5/mousetrap.min.js"}
+    %script{src : "lib/scrollsnap/jquery.event.special.js"}
+    %script{src : "lib/scrollsnap/jquery.easing.min.js"}
+    %script{src : "lib/scrollsnap/jquery.scrollsnap.js"}
+    -#%script{src : "//cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"}
+    -#%script{src : "//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js"}
+    %script{src : "lib/jquery.masonry.min.js"}
+    %script{src : "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"}
+    %script{src : "//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.6/jquery.mousewheel.min.js"}
+    %script{src : "js/script.js"}
+  %body{"ng-class" : "", "ng-class" : "active", "ng-controller" : "appCtrl"}
     %h1.hidden Stephane Blumer
-    .view{"ng-view" => true, "ng-cloak" => true}
-
-    -#%script{:src => "//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"}
-    %script{:src => "lib/angular/angular.js"}
-    %script{:src => "lib/angular/angular-route.js"}
-    %script{:src => "lib/angular/angular-resource.js"}
-    %script{:src => "lib/angular/angular-animate.min.js"}
-    %script{:src => "lib/ngInfiniteScroll/ng-infinite-scroll.js"}
-    %script{:src => "js/app.js"}
-    %script{:src => "js/services.js"}
-    %script{:src => "js/controllers.js"}
-    %script{:src => "js/filters.js"}
-    %script{:src => "js/directives.js"}
-
-    :javascript
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-27024782-4']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
+    .view{"ng-view" : true, "ng-cloak" : true}
+    %script{src : "lib/angular/angular.js"}
+    %script{src : "lib/angular/angular-route.js"}
+    %script{src : "lib/angular/angular-resource.js"}
+    %script{src : "lib/angular/angular-animate.min.js"}
+    %script{src : "lib/ngInfiniteScroll/ng-infinite-scroll.js"}
+    %script{src : "js/app.js"}
+    %script{src : "js/services.js"}
+    %script{src : "js/controllers.js"}
+    %script{src : "js/filters.js"}
+    %script{src : "js/directives.js"}
