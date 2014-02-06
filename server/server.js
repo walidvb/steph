@@ -9,7 +9,6 @@ function start(route, render){
 		var path = url.parse(request.url);
 		
 		var result = route(path, render);
-		console.log(result.type);
 		response.writeHead(result.code, {"Content-Type": result.type});
 		response.write(result.data);
 		response.end();

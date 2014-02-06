@@ -1,5 +1,6 @@
 'use strict';
 
+  console.log('hello you');
 
 // Declare app level module which depends on filters, and services
 var myApp = angular.module('myApp', [
@@ -18,7 +19,6 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/shows', {templateUrl: 'partials/projectListAdmin.html', controller: 'projectListCtrl'});
   $routeProvider.when('/bio', {templateUrl: 'partials/bioAdmin.html', controller: 'bioCtrl'});
   $routeProvider.when('/contact', {templateUrl: 'partials/contactAdmin.html', controller: 'contactCtrl'});
-
   $routeProvider.otherwise({redirectTo: ''});
 }]);
 

@@ -2,14 +2,14 @@
 %html{lang : "en", "ng-app" : "myApp"}
   %head
     %meta{charset : "utf-8"}/
-    %title Stéphane Blumer | Admin
-    %link{href : "css/appAdmin.css", rel : "stylesheet"}
-    / %script{src : "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
-    %script{src : "lib/jquery.min.js"}
-    / %script{src : "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"}
+    %title Admin
+    %link{href : "/css/appAdmin.css", rel : "stylesheet"}
+    -#%script{src : "//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    %script{src : "/lib/jquery.min.js"}
+    -#%script{src : "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"}
     %script{src : "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"}
     %script{src : "//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.5/mousetrap.min.js"}
-    %script{src : "lib/tinymce/js/tinymce/tinymce.min.js"}
+    %script{src : "/lib/tinymce/js/tinymce/tinymce.min.js"}
     -#%script{src : "lib/zeroclipboard/ZeroClipboard.min.js"}
     %script{src : "//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"}
   %body.admin{"ng-class" : "active", "ng-controller" : "appCtrl"}
@@ -17,19 +17,18 @@
     %button.btn.btn-lg.btn-success#copy-button{"data-target" : "#modal-result", "my-modal-trigger" : true} Get result!
     .view{"ng-view" : true}
     -#%script{src : "//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"}
-    %script{src : "lib/angular/angular.js"}
-    %script{src : "lib/angular/angular-route.js"}
-    %script{src : "lib/angular/angular-resource.js"}
+    %script{src : "/lib/angular/angular.js"}
+    %script{src : "/lib/angular/angular-route.js"}
+    %script{src : "/lib/angular/angular-resource.js"}
     %script{src : "//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"}
-    %script{src : "lib/ui-sortable/src/sortable.js"}
-    %script{src : "lib/ui-tinymce/src/tinymce.js"}
+    %script{src : "/lib/ui-sortable/src/sortable.js"}
+    %script{src : "/lib/ui-tinymce/src/tinymce.js"}
     -#%script{src : "///cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"}
-    %script{src : "js/appAdmin.js"}
-    %script{src : "js/services.js"}
-    %script{src : "js/controllersAdmin.js"}
-    %script{src : "js/filters.js"}
-    %script{src : "js/directivesAdmin.js"}
-    %script{src : "lib/angular-xeditable/xeditable.js"}
-    %link{href : "lib/angular-xeditable/xeditable.css", rel : "stylesheet"}
+    %script{src : "/js/appAdmin.js"}
+    %script{src : "/js/services.js"}
+    %script{src : "/js/controllersAdmin.js"}
+    %script{src : "/js/filters.js"}
+    %script{src : "/js/directivesAdmin.js"}
+    %script{src : "/lib/angular-xeditable/xeditable.js"}
+    %link{href : "/lib/angular-xeditable/xeditable.css", rel : "stylesheet"}
     %script{src : "//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.6.0/ui-bootstrap-tpls.min.js"}
-    /%script{src : "js/script.js"}
