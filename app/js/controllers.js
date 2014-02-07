@@ -31,9 +31,8 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', '$timeout
   $scope.scrollTo = function(id, animated)
     {
       animated = animated || false;
-      var menuHeight = 0; 
+      var menuHeight = 0;
       if(id != "menu"){
-            $location.hash(id); 
             menuHeight = angular.element('#menu').height();
       }
       if(angular.element('#'+id).length)
@@ -55,7 +54,7 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', '$timeout
 
   //called at the end of ng-view->home, seo that it's called after render. spent hours on this, do not remove, unless you know what you're doing
   $scope.forceAnchor = function(){
-    //$scope.scrollTo($location.$$hash, false)  
+    $scope.scrollTo($location.$$hash, false);
   };
 
 }]).
@@ -64,7 +63,7 @@ controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', '$wi
     timer(function(){
       $scope.backgrounds = data.backgrounds; 
       console.log($scope);   
-      }, 6000);
+      }, 0);
   })
 }]).
 controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', '$location', 'Projects', function($scope, $routeParams, $filter, $sce, $location, Projects) {
