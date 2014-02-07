@@ -61,11 +61,10 @@ controller('appCtrl', ['$scope', '$location', '$anchorScroll', '$sce', '$timeout
 }]).
 controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', '$window', 'Home', function($scope, $location, $anchorScroll, timer, $window, Home) {
   Home.get(function(data){
-    $scope.backgrounds = data.backgrounds;
-    var timeout;
-    
-
-    
+    timer(function(){
+      $scope.backgrounds = data.backgrounds; 
+      console.log($scope);   
+      }, 6000);
   })
 }]).
 controller('projectCtrl', ['$scope', '$routeParams', '$filter', '$sce', '$location', 'Projects', function($scope, $routeParams, $filter, $sce, $location, Projects) {
@@ -151,8 +150,7 @@ controller('bioListCtrl', ['$scope', '$filter', 'Bio', function($scope, $filter,
         };
         years.push(year);
       });
-      $scope.shows.push( 
-        {
+      $scope.shows.push({
           shows: years,
           categoryName: showType
         });

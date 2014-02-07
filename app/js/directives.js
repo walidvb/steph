@@ -81,7 +81,6 @@ directive('mySrc', ['$timeout', '$window', function(timer, $window){
     var img = new Image();
     img.src = attrs.mySrc;
     img.onload = function(){
-      console.log(img);
       $elem.attr('src', attrs.mySrc)
       .fadeIn();
     }
@@ -102,8 +101,8 @@ directive('myBackgroundImg', ['$window', '$timeout', function($window, timer){
           img.src = attrs.myBackgroundImg;
           img.onload = function(){
             $elem.css('background-image', "url('" + this.src + "')");
-          }
-        })
+          };
+        });
       }
       if(!Modernizr.touch)
       { 
