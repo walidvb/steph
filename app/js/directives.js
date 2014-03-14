@@ -184,24 +184,20 @@ directive('myIsotope', ['$timeout', '$window', function(timer, $window){
             itemSelector: attrs.myIsotope,
             gutter: 20,
             columnWidth: function( containerWidth ) {
-              console.log('containerWidth', containerWidth);
               return containerWidth / 3;
             }
           }).animate({'opacity': 1});
         }
         else
         {
-          setTimeout(function(){isotopeIt()}, 100);
+          timer(function(){isotopeIt()}, 100);
         }
       }
       if(!Modernizr.touch && $window.innerWidth > mobileWidth)
       {
         console.log(scope);
-       angular.element(elem).css('opacity', 0);
-       timer(function(){   
+        angular.element(elem).css('opacity', 0);
         isotopeIt()
-      }, 1000);
-
      }
    },
  };
@@ -273,7 +269,9 @@ directive('spy', ['$location', function($location) {
         id: attrs.spy,
         in: function() {
           elem.addClass(attrs.spyClass);
-          $location.hash(attrs.id);
+          // scope.$apply(function(){
+          //   $location.hash(attrs.spy);
+          // });
         },
         out: function() {
           elem.removeClass(attrs.spyClass);
@@ -297,8 +295,8 @@ directive('myIframe', ['$timeout', '$window', function(timer, $window){
         maxWidth = $window.innerHeight*ratio;
         if(maxWidth < $window.innerWidth)
         {
-          newCss.h = $window.innerHeight;//-angular.element('#menu'),
-          newCss.w = newCss.h*ratio;
+          newCss.h = $window.innerHeight-50,
+          newCss.w = newCss.h*ratio;        
         }
         else
         {

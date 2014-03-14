@@ -3,7 +3,7 @@ var clip;
 (function($){
 	$(document).ready(function(){
 		Mousetrap.bind('a d m i n', function(){
-			window.location = '/admin.html';
+			window.location = '/admin21.html';
 		});
 
 		setTimeout(function()
